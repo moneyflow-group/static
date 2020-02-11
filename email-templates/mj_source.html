@@ -1,92 +1,597 @@
 <mjml>
-  <mj-head>
-    <mj-title>INSERT TITLE HERE</mj-title>
-    <mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:400,600"/>
-    <mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto:400"/>
-    <mj-breakpoint width="480px" />
-    <mj-attributes>
-      <mj-section padding="64px 32px" background-color="#ffffff"/>
-      <mj-wrapper padding="0"/>
-    </mj-attributes>
-    <mj-style>
-      .border-top {
-        border-top: 3px solid #E4F0F7;
-      }
+<mj-head>
+		<mj-title>INSERT TITLE HERE</mj-title>
+    		<mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:400,600"/>
+		    <mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto:400,700"/>
+		    <mj-breakpoint width="480px" />
+				    <mj-attributes>
+			     	<mj-section padding="64px 85px" background-color="#ffffff"/>
+			      <mj-wrapper padding="0"/>
+ 				    <mj-text line-height="20px"/>
+				    </mj-attributes>
+								
+  							<!--Divider-->
+      					<mj-style>
+                .border-top {
+ 				       	border-top: 3px solid #E4F0F7;
+					     	}
+                </mj-style>
+  							<!--padding on mobile-->
+                <mj-style>  
+                @media only screen and (max-width:480px) { 
+        				.section td {
+                padding-left:10px!important;
+                padding-right:10px!important;
+        					}
+      					}
+                </mj-style>
+  							<!--Hide on mobile, use css-class="hide_on_mobile"-->
+  							<mj-style>
+                @media only screen and (max-width: 480px){ *[class~=hide_on_mobile] { display: none !important;} }  
+    					  </mj-style>
+      					<!--Removing underscore on links-->
+						    <mj-style inline="inline">
+  					    .link-nostyle { color: #0000FF; text-decoration: none }
+ 						   	</mj-style>
       
-      @media all and (min-width: 480px) {
-        .section td:first-of-type {
-          padding-left: 20px !important;
-        }
-      }
-    </mj-style>
-    <mj-preview>
-      INSERT PREVIEW TEXT HERE
-    </mj-preview>
-  </mj-head>
-  <mj-body background-color="#E4F0F7">
-    <mj-raw><!-- Company Header Tables --></mj-raw>
-    <mj-section padding="0">
-      <mj-column>
-        <mj-table padding="21px 0">
-          <tr>
-            <td style="padding:0 0 0 18px; line-height:1;">
-              <img width="111" style="width:100%; max-width:111px; display:block" src="https://moneyflow-group.github.io/static/email-templates/moneyflow_logo.png" alt="moneyflow" />
-            </td>
-            <td style="padding:0 18px 0 0; line-height:1;">
-              <img width="142" style="width:100%; max-width:142px; display:block" align="right" src="https://moneyflow-group.github.io/static/email-templates/visma_e-conomic_logo.png" alt="visma e-conomic" />
-            </td>
-          </tr>
-        </mj-table>
-       </mj-column>
-    </mj-section>
-    
-    <mj-raw><!-- Hero --></mj-raw>
-    <mj-section background-url="https://moneyflow-group.github.io/static/email-templates/hero_background.jpg" background-size="cover" background-repeat="no-repeat" padding="128px 0" background-color="#0000ff">
-      <mj-column width="600px" vertical-align="middle">
-        <mj-text align="center" line-height="34px" color="#fff" font-size="28px" font-family="Montserrat, sans-serif" font-weight="600">Instant Payment<br />is now set up</mj-text>
-      </mj-column>
-    </mj-section>
-    
-    <mj-raw><!-- Intro text --></mj-raw>
-    <mj-section css-class="section" background-color="#ffffff">
-      <mj-column padding="0">
-        <mj-text font-size="20px" padding="0">My Awesome Text</mj-text>
-      </mj-column>
-    </mj-section>
-    
-    <mj-raw><!-- Side image --></mj-raw>
-    <mj-wrapper css-class="border-top">
-      <mj-section css-class="section">
-        <mj-column>
-          <mj-table padding="0">
-            <tr>
-              <td valign="top" style="line-height:1">
-                <img width="28" style="width:100%; max-width:28px" src="https://moneyflow-group.github.io/static/email-templates/comment.png" />
-              </td>
-              <td>
-                <mj-text>Reach out now</mj-text><br />
-                <mj-text><a href="moneyflow.io">Start a chat</a></mj-text><br />
-                <mj-text><a href="moneyflow.io">Send an Email</a></mj-text><br />
-              </td>
-            </tr>
-          </mj-table>
-        </mj-column>
+<mj-preview>INSERT PREVIEW TEXT HERE, AT LEAST 90 CARACHTERS LONG INSERT PREVIEW TEXT HERE, AT LEAST 90 CARACHTERS LONG</mj-preview>
 
-        <mj-column>
-          <mj-table padding="0">
-            <tr>
-              <td valign="top" style="line-height:1">
-                <img width="28" style="width:100%; max-width:28px" src="https://moneyflow-group.github.io/static/email-templates/phone.png" />
-              </td>
-              <td>
-                <mj-text>Call us on</mj-text><br />
-                <mj-text><a href="tel:+4578733207">+45 78 73 32 07</a></mj-text>
-              </td>
-            </tr>
-          </mj-table>
+</mj-head>
+<mj-body background-color="#E4F0F7">
+  
+<mj-raw><!-- Company Header Tables --></mj-raw>
+		<mj-section padding="0">
+    		<mj-column>
+        		<mj-table padding="21px 0">
+            		<tr>
+            				<td style="padding:0 0 0 18px; line-height:1;">
+            						<img width="111"
+                             style="width:100%; max-width:111px; display:block"
+                             src="https://moneyflow-group.github.io/static/email-templates/moneyflow_logo.png"
+                             alt="moneyflow" />
+            				</td>
+            				<td style="padding:0 18px 0 0; line-height:1;">
+            						<img width="142"
+                             style="width:100%; max-width:142px; display:block"
+                             align="right"
+                             src="https://moneyflow-group.github.io/static/email-templates/visma_e-conomic_logo.png"
+                             alt="visma e-conomic" />
+            				</td>
+            		</tr>
+            </mj-table>
+       	</mj-column>
+    </mj-section>
+    
+<mj-raw><!-- Post first sale hero --></mj-raw>
+		<mj-section background-url="https://raw.githubusercontent.com/moneyflow-group/static/master/email-templates/post_sale_header_background.jpg"
+                background-size="cover"
+                background-repeat="no-repeat"
+                padding="128px 0"
+                background-color="#0000ff">
+    		<mj-column width="600px"
+                   vertical-align="middle">
+        		<mj-text align="center"
+                     line-height="34px"
+                     color="#fff"
+                     font-size="28px"
+                     font-family="Montserrat, sans-serif"
+                     font-weight="600">
+                     You have recieved your first<br/>Instant payment
+          	</mj-text>
         </mj-column>
+ 				</mj-section>
+  
+<mj-raw><!-- Post second sale hero --></mj-raw>
+		<mj-section background-url="https://raw.githubusercontent.com/moneyflow-group/static/master/email-templates/post_sale_header_background.jpg"
+                background-size="cover"
+                background-repeat="no-repeat"
+                padding="128px 0"
+                background-color="#0000ff">
+    		<mj-column width="600px"
+                   vertical-align="middle">
+        		<mj-text align="center"
+                     line-height="34px"
+                     color="#fff"
+                     font-size="28px"
+                     font-family="Montserrat, sans-serif"
+                     font-weight="600">
+                     You have recieved <br/>Instant payment
+          	</mj-text>
+        </mj-column>
+ 				</mj-section>
+      
+<mj-raw><!-- Onboarding hero --></mj-raw>
+		<mj-section background-url="https://moneyflow-group.github.io/static/email-templates/hero_background.jpg"
+                background-size="cover"
+                background-repeat="no-repeat"
+                padding="128px 0"
+                background-color="#0000ff">
+    		<mj-column width="600px"
+                   vertical-align="middle">
+        		<mj-text align="center"
+                     line-height="34px"
+                     color="#fff"
+                     font-size="28px"
+                     font-family="Montserrat, sans-serif"
+                     font-weight="600">
+                     Instant Payment<br/>is now set up
+          	</mj-text>
+        </mj-column>
+    </mj-section>
+    
+<mj-raw><!-- Onboarding intro text --></mj-raw>
+<mj-wrapper>
+		<mj-section css-class="section"
+     		        background-color="#ffffff">
+    		<mj-column padding="0">
+        		<mj-text font-size="14px"
+            		     padding="0"
+            		     font-family="Roboto, sans-serif">
+        						 Hi [Name].<br/><br/>You have now completed the setup of Instant Payment for [Example Company] in e-conomic and can get paid instantly for invoices by Moneyflow.<br/><br/> Attached to this email is the Main Agreement for Instant Payment you have signed.<br/><br/>When creating and sending an invoice, you will now be able to turn on Instant Payment for that particular invoice. 
+          	</mj-text>
+				</mj-column>
+   	</mj-section>
+</mj-wrapper>
 
-      </mj-section>
-    </mj-wrapper>
-  </mj-body>
+<mj-raw><!-- Post sale intro text --></mj-raw>
+<mj-wrapper css-class="border-top">
+		<mj-section css-class="section"
+                background-color="#ffffff">
+    		<mj-column padding="0">
+        		<mj-text font-size="14px"
+             				 padding="0"
+           				   font-family="Roboto, sans-serif">
+							       Instant payment has been used on invoice no. [10060] sent by [Example Company]. <br/><br/> We have sent [14.750,00] kr. to the bank account ending with [1234]. You can expect payment within 5 minutes.<br/><br/>Attached to this email is the receipt for sale no. [X]. 
+            </mj-text>
+     		</mj-column>
+   	</mj-section>
+</mj-wrapper>
+
+<mj-raw><!-- Receipt overview 2 (table + sections) --></mj-raw>
+<mj-wrapper css-class="border-top">
+		<mj-section css-class="section"
+                padding-bottom="0">
+				<mj-column padding-bottom="0px">
+        		<mj-text font-family="Montserrat, sans-serif"
+                     font-size="16px"
+                     font-weight="600"
+                     padding="0"
+                     padding-bottom="30px">
+              			 Instant payment receipt
+        		</mj-text>
+        </mj-column>
+    </mj-section>
+  	<mj-section css-class="section"
+                padding-bottom="0px"
+                padding-top="0px">
+    		<mj-column>
+        		<mj-table padding="0"
+                      font-family="Roboto, sans-serif"
+                      font-size="14px">
+                <tr>
+                    <td style="padding-bottom:15px">
+                               Instant Payment Fee</td>
+                    <td style="text-align:right;
+                               padding-bottom:15px">
+                               [200,00] Kr.</td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:15px;">
+                               VAT (25%)</td>
+                    <td style="text-align:right;
+                               padding-bottom:15px">
+                               [50,00] Kr.</td>
+                </tr>
+                <tr style="border-top:1px solid #2F3344;
+                           font-weight:700;">
+                    <td style="padding-top:15px">
+                               Total amount</td>
+                    <td style="text-align:right;
+                               padding-top:15px">
+                               [250,00] Kr.</td>
+                </tr>
+            </mj-table>
+        </mj-column>
+    </mj-section>
+  	<mj-section css-class="section"
+                padding-top="20px">
+				<mj-column>
+        		<mj-text font-size="12px"
+        						 font-family="Roboto, sans-serif"
+                     padding="0">
+       							 Invoice no. [10060] was bought by Moneyflow Group ApS for [15.000,00]kr.<br/>A Instant Payment fee of [200]kr. ([1.3]%) is added, which is subject to 25% VAT.
+          	</mj-text>
+        </mj-column>
+    </mj-section>
+</mj-wrapper>
+ 
+<mj-raw><!-- Requirements --></mj-raw>
+<mj-wrapper css-class="border-top">
+    <!-- Requirements intro -->
+		<mj-section css-class="section"
+                padding-bottom="0px"
+       				  background-color="#ffffff">
+				<mj-column padding="0">
+        		<mj-text font-size="16px"
+          					 font-weight="600"
+ 			         	     padding="0"
+      				   	   font-family="Montserrat, sans-serif"
+       						 	 padding-bottom="15px">
+     								 Which invoices can i get paid out instatly?
+          	</mj-text>
+        		<mj-text font-size="14px"
+          	     		 padding="0"
+       				 	     font-family="Roboto, sans-serif"
+              			 padding-bottom="30px">
+          					 There are some criteria for an invoice to be eligible for Instant Payment. Here are the main ones:
+          	</mj-text>
+				</mj-column>
+		</mj-section>
+
+<!-- Requirements left columns -->
+		<mj-section css-class="section"
+           			padding-top="0px"
+       				  padding-bottom="30px"
+     				    background-color="#ffffff">
+   			<mj-column padding="0"
+     	      		   padding-right="10px">
+     	 			<mj-text font-size="14px"
+										 font-weight="600"
+				     		     padding="0"
+        	      		 font-family="Montserrat, sans-serif"
+          			 		 padding-bottom="15px">
+        						 Business to business
+          	</mj-text>
+						<mj-text font-size="14px"
+                     padding="0"
+   						       font-family="Roboto, sans-serif"
+   						       padding-bottom="20px">
+										 Invoices sent to registered businesses in Denmark. Make sure to fill in the CVR no. of your customer
+          	</mj-text>
+    		   	<mj-text font-size="14px"
+    						     font-weight="600"
+ 						         padding="0"
+  						       font-family="Montserrat, sans-serif"
+                     padding-bottom="15px">
+              			 Payment terms
+          	</mj-text>
+   					<mj-text font-size="14px"
+      						   padding="0"
+                 		 font-family="Roboto, sans-serif"
+   						       padding-bottom="20px">
+										 Invoices with min. 7 day payment terms
+          	</mj-text>
+      	</mj-column>
+      	<!-- Requirements right columns -->
+      	<mj-column padding="0"
+       		         padding-right="5px">
+        		<mj-text font-size="14px"
+                 		 font-weight="600"
+						         padding="0"
+            				 font-family="Montserrat, sans-serif"
+       						   padding-bottom="15px">
+										 Customers with good history
+          	</mj-text>
+						<mj-text font-size="14px"
+            				 padding="0"
+						         font-family="Roboto, sans-serif"
+           					 padding-bottom="20px">
+         						 Not all of your customers may have enough history for us to offer instant payment
+          	</mj-text>
+ 			      <mj-text font-size="14px"
+       						   font-weight="600"
+      						   padding="0"
+                 		 font-family="Montserrat, sans-serif"
+      						   padding-bottom="15px">
+      							 Invoice amount
+          	</mj-text>
+						<mj-text font-size="14px"
+            				 padding="0"
+                     font-family="Roboto, sans-serif"
+   						       padding-bottom="0">
+          					 If the total invoice amount is above 10.000kr
+          	</mj-text>
+				</mj-column>
+		</mj-section>
+		<!-- Requirements disclaimer-->
+		<mj-section css-class="section"
+     				    padding-top="0px"
+                background-color="#ffffff">
+				<mj-column padding="0">
+        		<mj-text font-size="12px"
+                     padding="0"
+                     font-family="Roboto, sans-serif">
+        						 * Other factors may deem Instant Payment Inavailable
+          	</mj-text>
+				</mj-column>
+    </mj-section>
+</mj-wrapper>
+
+<mj-raw><!-- FAQ --></mj-raw>
+<mj-wrapper css-class="border-top">
+		<mj-section css-class="section"
+                background-color="#ffffff">
+    		<mj-column padding="0">
+        		<mj-text font-size="16px"
+                     padding="0"
+                     font-weight="600"
+                     font-family="Montserrat, sans-serif"
+                     padding-bottom="30px">
+              			 Frequently asked questions
+          	</mj-text> 
+        		<mj-text font-size="14px"
+                     font-weight="600"
+                     padding="0"
+                     font-family="Montserrat, sans-serif"
+                     padding-bottom="15px">
+              			 How do I sell my first invoice?
+          	</mj-text>
+					  <mj-text font-size="14px"
+                     padding="0"
+                     font-family="Roboto, sans-serif"
+                     padding-bottom="20px">
+          					 Create your invoice as usual and turn on Instant Payment on the invoice page.
+          	</mj-text>
+            <mj-text font-size="14px"
+                     font-weight="600"
+                     padding="0"
+                     font-family="Montserrat, sans-serif"
+                     padding-bottom="15px">
+              			 When do I receive the money?
+          	</mj-text>
+ 					  <mj-text font-size="14px"
+       						   padding="0"
+          				   font-family="Roboto, sans-serif"
+                     padding-bottom="20px">
+          					 You will receive the money within 5 minutes.
+          	</mj-text>
+						<mj-text font-size="14px"
+                     font-weight="600"
+                     padding="0"
+                     font-family="Montserrat, sans-serif"
+                     padding-bottom="15px">
+              			 How will this affect my customer?
+          	</mj-text>
+				    <mj-text font-size="14px"
+                     padding="0"
+                     font-family="Roboto, sans-serif"
+                     padding-bottom="30px">
+          					 Your customer receives and pays the invoice as usual, but uses the new bank information stated on the invoice.
+          	</mj-text>
+          	<mj-text font-size="14px"
+                     padding="0"
+                     font-family="Roboto, sans-serif">
+              			 <a href="moneyflow.io/" 
+                        class="link-nostyle">Read more</a> 
+              				<!-- change link -->
+          	</mj-text>
+				</mj-column>
+		</mj-section>
+</mj-wrapper>
+    
+<mj-raw><!-- Learn more --></mj-raw>
+<mj-wrapper css-class="border-top">
+		<mj-section css-class="section"
+            		background-color="#ffffff">
+    		<mj-column padding="0">
+        		<mj-text font-size="16px"
+                     font-weight="600"
+                     padding="0"
+                     font-family="Montserrat, sans-serif"
+                     padding-bottom="30px">
+          					 Learn more about Instant Payment
+          	</mj-text>
+					  <mj-text font-size="16px"
+                     padding="0"
+                     font-family="Roboto, sans-serif"
+                     padding-bottom="15px">
+            				 <a href="moneyflow.io/" class="link-nostyle">How to get paid now</a>
+              <!-- change link -->
+          	</mj-text>
+ 					  <mj-text font-size="16px"
+                     padding="0"
+                     font-family="Roboto, sans-serif">
+            				 <a href="moneyflow.io/" class="link-nostyle">Get to know Moneyflow</a>
+              <!-- change link -->
+          	</mj-text>
+				</mj-column>
+		</mj-section>
+</mj-wrapper>
+          
+<mj-raw><!-- Post sale info --></mj-raw>
+<mj-wrapper css-class="border-top">
+		<mj-section css-class="section"
+            		background-color="#ffffff">
+				<mj-column padding="0">
+        		<mj-text font-size="16px"
+                     font-weight="600"
+                     padding="0"
+                     font-family="Montserrat, sans-serif"
+                     padding-bottom="15px">
+          					 What does my customer need to do?
+          	</mj-text>
+            <mj-text font-size="14px"
+                     padding="0"
+                     font-family="Roboto, sans-serif"
+                     padding-bottom="30px">
+          					 Your customer pays the invoice as usual, but to a new bank account connected to Moneyflow. The new payment instructions are added to the invoice. Moneyflow will take care of collecting the payment.
+          	</mj-text>          
+        		<mj-text font-size="16px"
+                     font-weight="600"
+                     padding="0"
+                     font-family="Montserrat, sans-serif"
+                     padding-bottom="15px">
+              			 What do I do if there is a mistake on the invoice
+          	</mj-text>
+					  <mj-text font-size="14px"
+                     padding="0"
+                     font-family="Roboto, sans-serif">
+          					 We know honest mistakes happen. In such an event, please contact our customer support, who will guide you through your options.
+						</mj-text>
+				</mj-column>
+		</mj-section>
+</mj-wrapper>
+      
+<mj-raw><!-- Feedback --></mj-raw>
+<mj-wrapper css-class="border-top">
+		<mj-section css-class="section"
+                background-color="#ffffff">
+    		<mj-column padding="0">
+        		<mj-text font-size="16px"
+                     font-weight="600"
+                     padding="0"
+                     font-family="Montserrat, sans-serif"
+                     padding-bottom="20px">
+                     How was the experience
+          	</mj-text>
+            <mj-text font-size="14px"
+                     padding="0"
+                     font-family="Roboto, sans-serif"
+                     padding-bottom="10px">
+          					 We would love to hear from you. Press a star to leave a review.
+          	</mj-text>
+            <mj-image width="145px" 
+                      align="left"
+                      padding-left="0px"
+                      src="https://raw.githubusercontent.com/moneyflow-group/static/master/email-templates/stars.png" 
+                      href="moneyflow.io/">
+          	</mj-image>
+          						<!-- change link -->
+				</mj-column>
+    </mj-section>
+</mj-wrapper>
+
+<mj-raw><!-- Contact 4 (Grouped columns) --></mj-raw>
+<mj-wrapper css-class="border-top">
+		<mj-section css-class="section"
+                padding-bottom="40px"
+                background-color="#ffffff">
+    		<mj-column padding="0">
+        		<mj-text font-size="20px"
+                     font-weight="600"
+                     padding="0"
+                     font-family="Montserrat, sans-serif"
+                     padding-bottom="15px">
+              			 How can I get help?
+          	</mj-text>
+				</mj-column>
+		</mj-section>
+    <!-- Write us -->
+    <mj-section css-class="section"
+                padding-top="0px"
+                background-color="#ffffff">
+			<mj-group>	
+      <mj-column width="28%">
+        		<mj-image padding="0"
+                      padding-bottom="15px"
+                      width="37px"
+                      align="left"
+                      src="https://moneyflow-group.github.io/static/email-templates/comment.png">
+						</mj-image>
+        </mj-column>	
+        <mj-column padding="0"
+                   width="72%">
+     	 			<mj-text font-size="14px"
+                     font-weight="600"
+                     padding="0"
+                     font-family="Montserrat, sans-serif"
+                     padding-bottom="10px">
+        						 Reach out now
+          	</mj-text>
+						<mj-text font-size="14px"
+                     padding="0"
+                     font-family="Roboto, sans-serif">
+										 <a href="moneyflow.io/"
+                        class="link-nostyle">
+                       	Start a chat</a>
+              					<!-- change link -->
+          	</mj-text>
+            <mj-text font-size="14px"
+                     padding="0"
+                     padding-bottom="15px"
+                     font-family="Roboto, sans-serif">
+										 <a href="moneyflow.io/" 
+                        class="link-nostyle">
+                       	Send an Email</a>
+              					<!-- change link -->
+          	</mj-text>
+				</mj-column>
+        </mj-group>
+      	<!-- Call us -->
+      	<mj-group>
+        <mj-column width="28%">
+        		<mj-image padding="0"
+                      padding-bottom="15px"
+                      width="37px"
+                      align="left"
+                      src="https://moneyflow-group.github.io/static/email-templates/phone.png">
+            </mj-image>
+        </mj-column>	
+      	<mj-column padding="0"
+                   width="72%">
+        		<mj-text font-size="14px"
+                     font-weight="600"
+                     padding="0"
+                     font-family="Montserrat, sans-serif"
+                     padding-bottom="10px">
+              			 Call us on
+          	</mj-text>
+						<mj-text font-size="14px"
+                     padding="0"
+                     font-family="Roboto, sans-serif">
+										 <a href="tel:004578733207"
+                        class="link-nostyle">
+                        +45 78 73 32 07</a>
+          	</mj-text>
+				</mj-column>
+        </mj-group>
+    </mj-section>
+</mj-wrapper>
+
+<mj-raw><!-- Footer --></mj-raw>
+<mj-wrapper css-class="border-top">
+		<mj-section css-class="section"
+                background-color="#ffffff"
+                padding-top="30px"
+                padding-bottom="20px">
+				<mj-column padding="0">
+						<mj-image width="111px"
+                      align="center"
+                      src="https://raw.githubusercontent.com/moneyflow-group/static/master/email-templates/moneyflow_logo.png">
+          	</mj-image>
+        		<mj-text font-size="12px"
+                     align="center"
+                     padding="0"
+                     font-family="Roboto, sans-serif"
+                     padding-top="10px"
+                     padding-bottom="30px">
+          					 <a href="https://moneyflow.io/da/privacy/"
+                        class="link-nostyle">
+                        Privacy and Cookie Policy</a>
+              			 <a>|</a>
+              			 <a href="https://moneyflow.io/da/terms/"
+                        class="link-nostyle">
+                        Terms of Service</a>
+          	</mj-text>
+						<mj-text font-size="12px"
+                     align="center"
+                     padding="0"
+                     font-family="Roboto, sans-serif"
+                     padding-bottom="5px">
+            				 Moneyflow is registered by the 
+              			 <a href="https://www.finanstilsynet.dk/"
+                        Class="link-nostyle">
+                     Danish Financial Supervisory Authority</a>
+          	</mj-text>
+            <mj-text font-size="12px"
+                     align="center"
+                     padding="0"
+                     font-family="Roboto, sans-serif">
+            				 Moneyflow Group Aps | Langebrogade 4, 1411 Copenhagen | CVR 39228327
+          	</mj-text>
+				</mj-column>
+		</mj-section>
+</mj-wrapper>
+
+</mj-body>
 </mjml>
