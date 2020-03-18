@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Receipt</title>
+  <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container {
+        width: 466px; 
+        margin: auto; 
+        padding-top: 64px;
+        position: relative;
+    }
+
+    td {
+        vertical-align: top;
+        margin-right: 500px;
+    }
+
+    h2 {
+        font-family: "Montserrat", Helvetica, Arial, serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 16.0px;
+        letter-spacing: -0.3px;
+        color: #0E1019;
+        -webkit-font-smoothing: antialiased;
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-family: "Roboto", Helvetica, Arial, serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 12.0px;
+        color: #2F3344;
+        letter-spacing: -0.07px;
+        line-height: 20px;
+    }
+
+    th {
+        padding-top: 80px;
+        padding-bottom: 2px;
+        text-align: left;
+        color: #2F3344;
+        font-family: "Montserrat", Helvetica, Arial, serif;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: -0.26px;
+        line-height: 15px;
+        border-bottom: 1px solid #2F3344;
+    }
+
+    .column2 {
+        text-align: right;
+    }
+
+    .column3 {
+        text-align: right;
+        padding-right: 5px;
+    }
+
+    .column4 {
+        text-align: right;
+    }
+
+    .row1{
+        padding-top: 2px;
+    }
+
+    .footer {
+        margin-top: 100px;
+        text-align: center;
+        color: #2F3344;
+        font-family: "Montserrat", Helvetica, Arial, serif;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 20px;
+    }
+  </style>
+  </head>
+  <body>
+    <div class="container">
+
+        <table style="width: 466px; margin-right: 0">
+        <!-- Customer and Moneyflow Logo -->
+        <tr>
+            <td style="width: 270px; padding-bottom: 50px">
+              <h2>Customer</h2>
+              <p>
+                  {{ company_name }}<br/>
+                  Att: {{ signee_name }}<br/>
+                  {{ company_street }}<br/>
+                  {{ company_city }}, {{ company_country }}<br/>
+                  CVR: {{ company_crn }}<br/>
+              </p>
+            </td>
+            <td style="padding-left: 48px">
+              <img src="moneyflow_logo.png" style="margin-top: -5px; width: 149px; heigth: 27px">
+            </td>
+        </tr>
+
+        <!-- Description and Receipt -->
+        <tr>
+            <td>
+              <h2>Description</h2>
+              <p style="width: 270px">
+              Instant Payment fee for the administration of claims, including the transfer of credit risk for invoice no. <b>{{ invoice_number }}</b>.
+              This invoice was purchased by Moneyflow Group ApS for DKK <b>{{ factoring_amount }}</b>. 
+              The difference between the total value of the purchased invoice and the purchase price reflects the Instant Payment fee. 
+              This includes VAT of DKK <b>{{ vat_amount }}</b>.
+              </p>
+            </td>
+            <td style="padding-left: 47px; width: 149px;">
+              <h2>Receipt</h2>
+              <table style="width: 100%">
+                <tr>
+                  <td><p>Date:</p></td><td style="text-align: right"><p>{{ invoice_date }}</p></td>
+                </tr>
+                <tr>
+                  <td><p>Receipt no:</p></td><td style="text-align: right"><p>{{ receipt_number }}</p></td>
+                </tr>
+              </table>
+            </td>
+        </tr>
+
+        <!-- Order list -->
+        <tr>
+            <table style="width: 466px">
+            <tr>
+                <th style="padding-right: 200px;">Item</th>
+                <th style="padding-right: 0px;">Amount</th>
+                <th class="column3">Unit price</th>
+                <th class="column4">Price</th>
+            </tr>
+            <tr>
+                <td class="row1"><p>Instant Payment fee</p></td>
+                <td class="row1 column2" style="border-bottom: 1px solid #2F3344"><p>1<p></td>
+                <td class="row1 column3" style="border-bottom: 1px solid #2F3344"><p>{{ fee_amount }}DKK</p></td>
+                <td class="row1 column4" style="border-bottom: 1px solid #2F3344"><p>{{ fee_amount }}DKK</p></td>
+            </tr>
+            <tr>
+                <td><p></p></td>
+                <td><p></p></td>
+                <td class="column3"><p><b>Subtotal</b></p></td>
+                <td class="column4"><p>{{ fee_amount }}DKK</p></td>
+            </tr>
+            <tr>
+                <td><p></p></td>
+                <td><p></p></td>
+                <td class="column3"><p><b>VAT {{ vat_percent }}%</b></p></td>
+                <td class="column4"><p>{{ vat_amount }}</p></td>
+            </tr>
+            <tr>
+                <td><p></p></td>
+                <td><p></p></td>
+                <td class="column3"><p><b>Total DKK</b></p></td>
+                <td class="column4"><p><b>{{ total_fee_amount }}</b></p></td>
+            </tr>
+            </table>
+        </tr>
+        </table>
+
+      <!-- Footer -->
+      <div>
+        <p class="footer">Moneyflow Group ApS | Langebrogade 4, 1411 Copenhagen | CVR 39228327<br/>Phone: +45 78 73 32 07 | Email: contact@moneyflow.io</p>
+      </div>
+    </div>
+  </body>
+</html>
