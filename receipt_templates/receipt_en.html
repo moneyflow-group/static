@@ -118,7 +118,7 @@
               <h2>Receipt</h2>
               <table style="width: 100%">
                 <tr>
-                  <td><p>Date:</p></td><td style="text-align: right"><p>{{ invoice_date }}</p></td>
+                  <td><p>Date:</p></td><td style="text-align: right"><p>{{ receipt_date }}</p></td>
                 </tr>
                 <tr>
                   <td><p>Receipt no:</p></td><td style="text-align: right"><p>{{ receipt_number }}</p></td>
@@ -139,14 +139,14 @@
             <tr>
                 <td class="row1"><p>Instant Payment fee</p></td>
                 <td class="row1 column2" style="border-bottom: 1px solid #2F3344"><p>1<p></td>
-                <td class="row1 column3" style="border-bottom: 1px solid #2F3344"><p>{{ fee_amount }}DKK</p></td>
-                <td class="row1 column4" style="border-bottom: 1px solid #2F3344"><p>{{ fee_amount }}DKK</p></td>
+                <td class="row1 column3" style="border-bottom: 1px solid #2F3344"><p>{{ fee_amount }}</p></td>
+                <td class="row1 column4" style="border-bottom: 1px solid #2F3344"><p>{{ fee_amount }}</p></td>
             </tr>
             <tr>
                 <td><p></p></td>
                 <td><p></p></td>
                 <td class="column3"><p><b>Subtotal</b></p></td>
-                <td class="column4"><p>{{ fee_amount }}DKK</p></td>
+                <td class="column4"><p>{{ fee_amount }}</p></td>
             </tr>
             <tr>
                 <td><p></p></td>
