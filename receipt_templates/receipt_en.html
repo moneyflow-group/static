@@ -6,51 +6,58 @@
     * {
         margin: 0;
         padding: 0;
+        font-family: "Montserrat";
+    }
+
+    @page {
+        size: A4; /* Change from the default size of A4 */
+        margin: 0mm; /* Set margin on each page */
     }
     
     .container {
         width: 466px; 
-        margin: auto; 
-        padding-top: 64px;
+        margin-top:64px;
+        margin-left: 64px;
         position: relative;
     }
 
     td {
         vertical-align: top;
-        margin-right: 500px;
     }
 
     h2 {
-        font-family: "Montserrat", Helvetica, Arial, serif;
+        font-family: "Montserrat";
         font-weight: 600;
         font-style: normal;
-        font-size: 16.0px;
-        letter-spacing: -0.3px;
+        font-size: 16px;
         color: #0E1019;
         -webkit-font-smoothing: antialiased;
         margin-bottom: 15px;
     }
 
     p {
-        font-family: "Roboto", Helvetica, Arial, serif;
+        font-family: "Roboto";
         font-weight: 400;
         font-style: normal;
-        font-size: 12.0px;
+        font-size: 12px;
         color: #2F3344;
         letter-spacing: -0.07px;
         line-height: 20px;
+    }
+
+    h3 {
+        color: #2F3344;
+        font-family: "Montserrat";
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: -0.26px;
+        line-height: 15px;
     }
 
     th {
         padding-top: 80px;
         padding-bottom: 2px;
         text-align: left;
-        color: #2F3344;
-        font-family: "Montserrat", Helvetica, Arial, serif;
-        font-size: 12px;
-        font-weight: 600;
-        letter-spacing: -0.26px;
-        line-height: 15px;
         border-bottom: 1px solid #2F3344;
     }
 
@@ -63,19 +70,37 @@
         padding-right: 5px;
     }
 
+    h4 {
+        color: #2F3344;
+        font-family: "Montserrat";
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: -0.26px;
+        line-height: 15px;
+    }
+
     .column4 {
         text-align: right;
     }
 
-    .row1{
+    .row-orderlist{
         padding-top: 2px;
+        padding-bottom: 2px;
+    }
+
+    .total_fee_amount{
+        color: #2F3344;
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: 900;
+        letter-spacing: -0.07px;
     }
 
     .footer {
         margin-top: 100px;
         text-align: center;
         color: #2F3344;
-        font-family: "Montserrat", Helvetica, Arial, serif;
+        font-family: "Montserrat";
         font-size: 12px;
         font-weight: 600;
         line-height: 20px;
@@ -98,8 +123,8 @@
                   CVR: {{ company_crn }}<br/>
               </p>
             </td>
-            <td style="padding-left: 48px">
-              <img src="moneyflow_logo.png" style="margin-top: -5px; width: 149px; heigth: 27px">
+            <td style="padding-left: 48px; text-align: right;">
+              <img src="https://github.com/moneyflow-group/static/raw/master/images/Logo%402x.png" style="width: 149px; height: 27px">
             </td>
         </tr>
 
@@ -114,7 +139,7 @@
               This includes VAT of DKK <b>{{ vat_amount }}</b>.
               </p>
             </td>
-            <td style="padding-left: 47px; width: 149px;">
+            <td style="padding-left: 48px; width: 149px;">
               <h2>Receipt</h2>
               <table style="width: 100%">
                 <tr>
@@ -131,34 +156,34 @@
         <tr>
             <table style="width: 466px">
             <tr>
-                <th style="padding-right: 200px;">Item</th>
-                <th style="padding-right: 0px;">Amount</th>
-                <th class="column3">Unit price</th>
-                <th class="column4">Price</th>
+                <th class="row-orderlist" style="padding-right: 200px;"><h3>Item</h3></th>
+                <th class=style="padding-right: 0px;"><h3>Amount</h3></th>
+                <th class="column3"><h3>Unit price</h3></th>
+                <th class="column4"><h3>Price</h3></th>
             </tr>
             <tr>
-                <td class="row1"><p>Instant Payment fee</p></td>
-                <td class="row1 column2" style="border-bottom: 1px solid #2F3344"><p>1<p></td>
-                <td class="row1 column3" style="border-bottom: 1px solid #2F3344"><p>{{ fee_amount }}</p></td>
-                <td class="row1 column4" style="border-bottom: 1px solid #2F3344"><p>{{ fee_amount }}</p></td>
+                <td class="row-orderlist"><p>Instant Payment fee</p></td>
+                <td class="row-orderlist column2" style="border-bottom: 1px solid #2F3344"><p>1<p></td>
+                <td class="row-orderlist column3" style="border-bottom: 1px solid #2F3344"><p>{{ fee_amount }}</p></td>
+                <td class="row-orderlist column4" style="border-bottom: 1px solid #2F3344"><p>{{ fee_amount }}</p></td>
             </tr>
             <tr>
-                <td><p></p></td>
-                <td><p></p></td>
-                <td class="column3"><p><b>Subtotal</b></p></td>
-                <td class="column4"><p>{{ fee_amount }}</p></td>
+                <td class="row-orderlist"><p></p></td>
+                <td class="row-orderlist"><p></p></td>
+                <td class="row-orderlist column3"><h4>Subtotal</h4></td>
+                <td class="row-orderlist column4"><p>{{ fee_amount }}</p></td>
             </tr>
             <tr>
-                <td><p></p></td>
-                <td><p></p></td>
-                <td class="column3"><p><b>VAT {{ vat_percent }}%</b></p></td>
-                <td class="column4"><p>{{ vat_amount }}</p></td>
+                <td class="row-orderlist"><p></p></td>
+                <td class="row-orderlist"><p></p></td>
+                <td class="row-orderlist column3"><h4>VAT {{ vat_percent }}%</h4></td>
+                <td class="row-orderlist column4"><p>{{ vat_amount }}</p></td>
             </tr>
             <tr>
-                <td><p></p></td>
-                <td><p></p></td>
-                <td class="column3"><p><b>Total DKK</b></p></td>
-                <td class="column4"><p><b>{{ total_fee_amount }}</b></p></td>
+                <td class="row-orderlist"><p></p></td>
+                <td class="row-orderlist"><p></p></td>
+                <td class="row-orderlist column3"><h4>Total DKK</h4></td>
+                <td class="row-orderlist column4"><p class="total_fee_amount">{{ total_fee_amount }}</p></td>
             </tr>
             </table>
         </tr>
