@@ -89,7 +89,7 @@
           <mj-text font-size="14px" padding="0" font-family="Roboto, sans-serif">
             Hej {{ signee_name }},<br/><br/>For at fuldføre din konto hos Moneyflow.io, skal du bekræfte din e-mailadresse: {{ company_email }}
 
-            <a class="flow-button" href="https://www.figma.com/file/qbnakituSQ1EZeRAMWXg5j/Dinero-MF-flow?node-id=414%3A559">Verificér e-mailadresse</a>
+            <a class="flow-button" href="{{ url_verify_email }}">Verificér e-mailadresse</a>
           </mj-text>
         </mj-column>
       </mj-section>
