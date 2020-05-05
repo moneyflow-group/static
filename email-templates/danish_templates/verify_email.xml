@@ -68,12 +68,13 @@
       <mj-section css-class="section" background-color="#ffffff">
         <mj-column padding="0">
           <mj-text font-size="14px" padding="0" font-family="Roboto, sans-serif">
-            Hej {{ signee_name }},<br/><br/>For at fuldføre din konto hos Moneyflow.io, skal du bekræfte din e-mailadresse: {{ company_email }}
+            <p>
+              Hej {{ signee_name }},<br/><br/>For at fuldføre din konto hos Moneyflow.io, skal du bekræfte din e-mailadresse: {{ company_email }}
+            </p>
 
-            <a
-              href="{{ url_verify_email }}"
-              style="
-                display: block;
+            <p style="text-align: center;">
+              <span style="
+                display: inline-block;
                 width: 173px;
                 height: 24px;
                 margin: 90px auto 0 auto;
@@ -89,10 +90,21 @@
                 border: 0;
                 border-radius: 6px;
                 text-decoration: none;
-              "
-            >
-              Verificér e-mailadresse
-            </a>
+              ">
+                <a
+                  style="
+                    display: inline-block;
+                    height: 24px;
+                    line-height: 24px;
+                    color: #fff;
+                    text-decoration: none;
+                  "
+                  href="{{ url_verify_email }}"
+                >
+                  Verificér e-mailadresse
+                </a>
+              </span>
+            </p>
           </mj-text>
         </mj-column>
       </mj-section>
