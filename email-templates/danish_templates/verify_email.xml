@@ -25,25 +25,6 @@
     <!--Removing underscore on links-->
     <mj-style inline="inline">
       .link-nostyle { color: #0000FF; text-decoration: none }
-      .flow-button {
-      	display: block;
-        width: 173px;
-        height: 24px;
-        margin: 90px auto 0 auto;
-        line-height: 24px;
-        background: #0000ff;
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 12px;
-        text-align: center;
-        letter-spacing: -0.0026em;
-        color: #fff;
-        border: 0;
-        border-radius: 6px;
-        text-decoration: none;
-        cursor: pointer;
-      }
     </mj-style>
 
     <mj-preview>Hej {{ signee_name }},<br/><br/>For at fuldføre din konto hos Moneyflow.io, skal du bekræfte din e-mailadresse: {{ company_email }}</mj-preview>
@@ -87,9 +68,43 @@
       <mj-section css-class="section" background-color="#ffffff">
         <mj-column padding="0">
           <mj-text font-size="14px" padding="0" font-family="Roboto, sans-serif">
-            Hej {{ signee_name }},<br/><br/>For at fuldføre din konto hos Moneyflow.io, skal du bekræfte din e-mailadresse: {{ company_email }}
+            <p>
+              Hej {{ signee_name }},<br/><br/>For at fuldføre din konto hos Moneyflow.io, skal du bekræfte din e-mailadresse: {{ company_email }}
+            </p>
 
-            <a class="flow-button" href="{{ url_verify_email }}">Verificér e-mailadresse</a>
+            <p style="text-align: center;">
+              <span style="
+                display: inline-block;
+                width: 173px;
+                height: 24px;
+                margin: 90px auto 0 auto;
+                line-height: 24px;
+                background: #0000ff;
+                font-family: Montserrat, sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 12px;
+                text-align: center;
+                letter-spacing: -0.0026em;
+                color: #fff;
+                border: 0;
+                border-radius: 6px;
+                text-decoration: none;
+              ">
+                <a
+                  style="
+                    display: inline-block;
+                    height: 24px;
+                    line-height: 24px;
+                    color: #fff;
+                    text-decoration: none;
+                  "
+                  href="{{ url_verify_email }}"
+                >
+                  Verificér e-mailadresse
+                </a>
+              </span>
+            </p>
           </mj-text>
         </mj-column>
       </mj-section>
