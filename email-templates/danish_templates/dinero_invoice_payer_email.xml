@@ -1,0 +1,70 @@
+<mjml>
+  <mj-head>
+    <mj-title>Ny faktura</mj-title>
+    <mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:400,600" />
+    <mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto:400,700" />
+    <mj-breakpoint width="480px" />
+    <mj-attributes>
+      <mj-section padding="64px 85px" background-color="#ffffff"/>
+      <mj-wrapper padding="0" />
+      <mj-text line-height="20px"/>
+    </mj-attributes>
+
+    <!--Divider-->
+    <mj-style>
+      .border-top {
+        border-top: 3px solid #E4F0F7;
+      }
+    </mj-style>
+
+    <!--padding on mobile-->
+    <mj-style>
+      @media only screen and (max-width:480px) {
+        .section td {
+          padding-left:10px!important;
+          padding-right:10px!important;
+        }
+      }
+    </mj-style>
+
+    <!--Hide on mobile, use css-class="hide_on_mobile"-->
+    <mj-style>
+      @media only screen and (max-width: 480px){ *[class~=hide_on_mobile] { display: none !important;} }
+    </mj-style>
+
+    <!--Removing underscore on links-->
+    <mj-style inline="inline">
+      .link-nostyle { color: #0000FF; text-decoration: none }
+    </mj-style>
+
+    <mj-preview>Faktura #{{ invoice_number }} fra {{ company_name }}</mj-preview>
+  </mj-head>
+  <mj-body background-color="#E4F0F7">
+    <mj-raw><!-- Onboarding intro text --></mj-raw>
+    <mj-wrapper>
+      <mj-section css-class="section" background-color="#ffffff">
+        <mj-column padding="0">
+          <mj-text font-size="14px" padding="0" font-family="Roboto, sans-serif">
+            Kære {{ payer_company_name }},<br /><br />
+
+            På vegne af {{ company_name }} sender vi dig faktura #{{ invoice_number }} vedhæftet denne e-mail.<br /><br />
+
+            <strong>{{ invoice_amount }}</strong> kr. skal indbetales til reg. nr. <strong>{{ MF_reg_no }}</strong> kontonr. <strong>{{ MF_account_no }}</strong>.<br /><br />
+
+            Fakturaen skal senest betales d. <strong>{{ due_date }}</strong>.<br /><br />
+
+            Hvis du har nogle indsigelser til fakturaen bedes du venligst kontakte {{ company_name }}.<br /><br />
+          </mj-text>
+          <mj-text font-size="14px" padding="0" font-family="Roboto, sans-serif">
+            <div style="border: 1px solid #0000FF; margin-top: 40px; padding: 20px 25px;">
+              <strong style="font-weight: normal; font-family: Montserrat, sans-serif; font-size: 12px;">Vi benytter Moneyflow</strong><br /><br />
+              Denne faktura er overført til Moneyflow for fleksibel betaling. Hvis du har spørgsmål omkring betaling af fakturaen eller Moneyflow, så følg et af de links herunder<br /><br />
+              <a href="https://moneyflow.io?open_chat=true">Start chat ></a><br />
+              <a href="https://www.moneyflow.io/">Eller læs mere om Moneyflow her ></a>
+            </div>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+  </mj-body>
+</mjml>
