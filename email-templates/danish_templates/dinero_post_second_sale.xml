@@ -150,40 +150,6 @@
       </mj-section>
   </mj-wrapper>
 
-  <mj-wrapper css-class="border-top">
-      <mj-section css-class="section"
-                  padding-bottom="0px"
-                   background-color="#ffffff">
-          <mj-column padding="0">
-              <mj-text font-size="16px"
-                       font-weight="600"
-                         padding="0"
-                        font-family="Montserrat, sans-serif"
-                         padding-bottom="15px">
-                         Hvad skal min kunde gøre?
-              </mj-text>
-              <mj-text font-size="14px"
-                        padding="0"
-                         font-family="Roboto, sans-serif"
-                       padding-bottom="30px">
-                       Din kunde betaler fakturaen som normalt, men til en ny bankkonto, der tilhører Moneyflow. De nye betalingsinstrukser er tilføjet på fakturaen. Moneyflow overtager en eventuel rykkerprocedure.
-              </mj-text>
-              <mj-text font-size="16px"
-                       font-weight="600"
-                         padding="0"
-                        font-family="Montserrat, sans-serif"
-                         padding-bottom="15px">
-                         Hvad gør jeg, hvis der er en fejl på fakturaen?
-              </mj-text>
-              <mj-text font-size="14px"
-                        padding="0"
-                        font-family="Roboto, sans-serif"
-                       padding-bottom="60px">
-                       Vi ved, at der kan ske fejl på fakturaer. Kontakt vores kundeservice, som vil hjælpe dig og fortælle om dine muligheder.
-              </mj-text>
-          </mj-column>
-      </mj-section>
-
   <mj-raw><!-- Feedback --></mj-raw>
   <mj-wrapper css-class="border-top">
       <mj-section css-class="section"
