@@ -183,7 +183,7 @@
               </mj-text>
           </mj-column>
       </mj-section>
-
+    </mj-wrapper>
   <mj-raw><!-- Feedback --></mj-raw>
   <mj-wrapper css-class="border-top">
       <mj-section css-class="section"
