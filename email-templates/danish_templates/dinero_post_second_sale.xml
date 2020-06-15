@@ -1,6 +1,6 @@
 <mjml>
   <mj-head>
-      <mj-title>Dit første fakturasalg</mj-title>
+      <mj-title>Fakturasalg</mj-title>
           <mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:400,600"/>
           <mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto:400,700"/>
           <mj-breakpoint width="480px" />
@@ -34,7 +34,7 @@
                   .link-nostyle { color: #0000FF; text-decoration: none }
                     </mj-style>
 
-  <mj-preview>Du har modtaget din første tidlige betaling</mj-preview>
+  <mj-preview>Du har modtaget tidlig betaling</mj-preview>
 
   </mj-head>
   <mj-body background-color="#E4F0F7">
@@ -68,7 +68,7 @@
                        font-size="28px"
                        font-family="Montserrat, sans-serif"
                        font-weight="600">
-                       Du har modtaget din første<br/>tidlige betaling
+                       Du har modtaget<br/>tidlig betaling
               </mj-text>
           </mj-column>
            </mj-section>
@@ -80,12 +80,12 @@
               <mj-text font-size="14px"
                 padding="0"
                 font-family="Roboto, sans-serif">
-                "Vi har modtaget faktura nr. {{ invoice_number }} sendt af {{ company_name }} til Moneyflow.<br /><br />
+                Vi har modtaget faktura nr. {{ invoice_number }} sendt af {{ company_name }} til Moneyflow.<br /><br />
 
                 Vi har sendt {{ factoring_amount }} kr. til din bankkonto, der slutter med {{ account_number }}.<br />
                 Du kan forvente at modtage din betaling inden for få timer.<br /><br />
 
-                Vedhæftet denne e-mail er kvitteringen for salget."
+                Vedhæftet denne e-mail er kvitteringen for salget.
               </mj-text>
           </mj-column>
        </mj-section>
