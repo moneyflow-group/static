@@ -34,7 +34,7 @@
                   .link-nostyle { color: #0000FF; text-decoration: none }
                     </mj-style>
 
-  <mj-preview>Du har modtaget tidlig betaling</mj-preview>
+  <mj-preview>Vi har modtaget faktura nr. {{ invoice_number }} sendt af {{ company_name }} til Moneyflow.</mj-preview>
 
   </mj-head>
   <mj-body background-color="#E4F0F7">
