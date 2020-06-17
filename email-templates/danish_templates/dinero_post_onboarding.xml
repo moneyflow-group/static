@@ -1,0 +1,578 @@
+<!-- THIS EMAIL WAS BUILT AND TESTED WITH LITMUS http://litmus.com -->
+<!-- IT WAS RELEASED UNDER THE MIT LICENSE https://opensource.org/licenses/MIT -->
+<!-- QUESTIONS? TWEET US @LITMUSAPP -->
+<!doctype html>
+<html>
+<head>
+<title></title>
+<!-- Web Font / @font-face : BEGIN -->
+<!-- NOTE: If web fonts are not required, lines 10 - 27 can be safely removed. -->
+
+<!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. -->
+<!--[if mso]>
+	<style>
+		* {
+			font-family: Arial, sans-serif !important;
+		}
+	</style>
+<![endif]-->
+
+<!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
+<!--[if !mso]><!-->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600|Roboto:400&display=swap" rel="stylesheet">
+<!--<![endif]-->
+
+<!-- Web Font / @font-face : END -->
+<style type="text/css">
+/* CLIENT-SPECIFIC STYLES */
+body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+img { -ms-interpolation-mode: bicubic; }
+
+/* RESET STYLES */
+img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
+table { border-collapse: collapse !important; }
+body { height: 100% !important; margin: 0 !important; padding: 0 !important; width: 100% !important; }
+
+/* iOS BLUE LINKS */
+a[x-apple-data-detectors] {
+	color: inherit !important;
+	text-decoration: none !important;
+	font-size: inherit !important;
+	font-family: inherit !important;
+	font-weight: inherit !important;
+	line-height: inherit !important;
+}
+
+/* MONEYFLOW STYLES */
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: Roboto, sans-serif;
+}
+
+img {
+	height: auto;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: Montserrat, sans-serif;
+	font-weight: 600;
+	line-height: 100%;
+	color: #0E1019;
+	margin: 0 0 15px 0;
+}
+
+h1 {
+	font-size: 28px;
+	line-height: 34px;
+	letter-spacing: -0.6px;
+	color: #FFFFFF;
+}
+
+h2 {
+	font-size: 20px;
+	letter-spacing: -0.7px;
+}
+h3 {
+	font-size: 16px;
+	letter-spacing: -0.3px;
+}
+
+h4 {
+	font-size: 14px;
+	letter-spacing: -0.26px;
+}
+
+h5 {
+	font-size: 12px;
+	letter-spacing: -0.3px;
+	color: #2F3344;
+	margin: 24px 0 18px 0;
+}
+a {
+	line-height: 100%;
+	color: #0000FF;
+	text-decoration: none;
+}
+
+p {
+	font-size: 14px;
+	line-height: 20px;
+	color: #2F3344;
+	margin: 0;
+}
+
+.module-padding {
+	padding: 64px 85px;
+}
+
+.module-border-top {
+	border-top: 3px solid #E4F0F7;
+}
+
+/* MOBILE STYLES */
+@media screen and (max-width: 600px) {
+	.img-max {
+		width: 100% !important;
+		max-width: 100% !important;
+		height: auto !important;
+	}
+
+	.max-width {
+		max-width: 100% !important;
+	}
+
+	.mobile-wrapper {
+		width: 85% !important;
+		max-width: 85% !important;
+	}
+
+	.mobile-padding {
+		padding-left: 32px !important;
+		padding-right: 32px !important;
+	}
+
+	.mobile-hide {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 601px) {
+	.desktop-hide {
+		display: none;
+	}
+}
+
+/* ANDROID CENTER FIX */
+div[style*="margin: 16px 0;"] { margin: 0 !important; }
+</style>
+</head>
+<body style="margin: 0 !important; padding: 0; !important background-color: #E4F0F7;" bgcolor="#E4F0F7">
+
+<!-- HIDDEN PREHEADER TEXT -->
+<div style="display: none; font-size: 1px; color: #fefefe; line-height: 1px; font-family: sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">
+	Du kan nu få tidlig betaling for dine fakturaer
+</div>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<!-- HEADER -->
+	<tr>
+		<td align="center" width="100%">
+			<table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+				<tr>
+					<td align="left" valign="center" bgcolor="#ffffff" style="padding: 23px 0 17px 18px;">
+						<img src="https://raw.githubusercontent.com/moneyflow-group/static/master/email-templates/moneyflow_logo.png" width="111" height="20" alt="moneyflow" border="0" style="font-family: sans-serif; font-size: 15px; line-height: 15px; color: #0000FF;">
+					</td>
+					<td align="right" valign="center" bgcolor="#ffffff" style="padding: 0" class="mobile-hide">
+						<h5 style="margin: 20px 0 0 0; display: inline;"></h5>
+					</td>
+					<td align="right" valign="center" bgcolor="#ffffff" style="padding: 2px 18px 0; width: 190px;">
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<!-- HERO -->
+	<tr>
+		<td align="center" valign="top" width="100%">
+			<!--[if (gte mso 9)|(IE)]>
+			<table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
+			<tr>
+			<td align="center" valign="top" width="600">
+			<![endif]-->
+			<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+				<tr>
+					<td align="center" valign="top" bgcolor="#0000ff" background="hero_background.jpg" style="background: #0000ff url('hero_background.jpg'); padding: 110px 0 110px 0; font-family: Montserrat, sans-serif;">
+						<h1>Straksindbetaling<br>er nu installeret</h1>
+					</td>
+				</tr>
+			</table>
+			<!--[if (gte mso 9)|(IE)]>
+			</td>
+			</tr>
+			</table>
+			<![endif]-->
+		</td>
+	</tr>
+	<!-- ONE COL -->
+	<tr>
+		<td align="center" valign="top" width="100%">
+			<!--[if (gte mso 9)|(IE)]>
+			<table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
+			<tr>
+			<td align="center" valign="top" width="600">
+			<![endif]-->
+			<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+				<tr>
+					<td align="left" valign="top" bgcolor="#ffffff" class="module-padding mobile-padding">
+						<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+							<tr>
+								<td align="left" valign="top" style="font-family: Roboto, sans-serif;" >
+									<p style="color: #2F3344; font-size: 14px; line-height: 20px; margin: 0;">
+									  Hej {{ signee_name }}.
+									</p>
+									<p style="color: #2F3344; font-size: 14px; line-height: 20px; margin-top: 18px;">
+									  Du har nu gennemført installationen for {{ company_name }} og kan begynde at få tidlige betalinger for dine fakturaer af Moneyflow.
+									</p>
+									<p style="color: #2F3344; font-size: 14px; line-height: 20px; margin-top: 18px;">
+										Vedhæftet denne mail finder du hovedaftalen for brug af Moneyflow's service, som du har underskrevet.
+									</p>
+									<p style="color: #2F3344; font-size: 14px; line-height: 20px; margin-top: 18px;">
+										Du kan nu overføre fakturakladder og vælge hvilke kvalificerede fakturaer, som du vil have tidlig betaling for.
+									</p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<!--[if (gte mso 9)|(IE)]>
+			</td>
+			</tr>
+			</table>
+			<![endif]-->
+		</td>
+	</tr>
+	<!-- TWO COL -->
+	<tr>
+		<td align="center" height="100%" valign="top" width="100%">
+			<!--[if (gte mso 9)|(IE)]>
+			<table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
+			<tr>
+			<td align="center" valign="top" width="600">
+			<![endif]-->
+			<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+				<tr>
+					<td align="left" valign="top" bgcolor="#ffffff" style="font-size:0;" class="module-border-top module-padding mobile-padding">
+						<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+							<tr>
+								<td align="left" valign="top" style="font-family: Roboto, sans-serif;" >
+									<h3>Hvilke fakturaer kan jeg få tidlig betaling for?</h3>
+									<p>
+										Der er nogle kriterier for at en faktura kan kvalificere sig til tidlig betaling. Disse er de mest relevante:
+									</p>
+								</td>
+							</tr>
+						</table>
+						<!--[if (gte mso 9)|(IE)]>
+						<table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
+						<tr>
+						<td align="left" valign="top" width="205">
+						<![endif]-->
+						<div style="display:inline-block; max-width:50%; min-width:205px; vertical-align:top; width:100%;" class="mobile-wrapper">
+							<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:205px;" class="max-width">
+								<tr>
+									<td align="left" valign="top" style="padding-top: 30px">
+										<h4>Virksomhed til virksomhed</h4>
+										<p>
+											Fakturaer sendt til dansk registrerede virksomheder.
+										</p>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td>
+						<td width="20" style="font-size: 1px;">&nbsp;</td>
+						<td align="right" valign="top" width="205">
+						<![endif]-->
+						<div style="display:inline-block; max-width:50%; min-width:205px; vertical-align:top; width:100%;" class="mobile-wrapper">
+							<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:205px; float: right;" class="max-width">
+								<tr>
+									<td align="left" valign="top" style="padding-top: 30px">
+										<h4>Fakturabeløb</h4>
+										<p>
+											Det totale fakturabeløb er min. 5.000kr.
+										</p>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td>
+						</tr>
+						</table>
+						<![endif]-->
+						<!--[if (gte mso 9)|(IE)]>
+						<table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
+						<tr>
+						<td align="left" valign="top" width="205">
+						<![endif]-->
+						<div style="display:inline-block; max-width:50%; min-width:205px; vertical-align:top; width:100%;" class="mobile-wrapper">
+							<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:205px;" class="max-width">
+								<tr>
+									<td align="left" valign="top" style="padding-top: 30px">
+										<h4>Betalingsfrist</h4>
+										<p>
+											Fakturaen er med en betalingsfrist på mere end 7 dage
+										</p>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td>
+						<td width="20" style="font-size: 1px;">&nbsp;</td>
+						<td align="right" valign="top" width="205">
+						<![endif]-->
+						<div style="display:inline-block; max-width:50%; min-width:205px; vertical-align:top; width:100%;" class="mobile-wrapper">
+							<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:205px; float: right;" class="max-width">
+								<tr>
+									<td align="left" valign="top" style="padding-top: 30px">
+										<h4>Kunder med god historik</h4>
+										<p>
+											Det er ikke sikkert, at alle dine kunder har nok historik, til at vi kan tilbyde tidlig betaling.
+										</p>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td>
+						</tr>
+						</table>
+						<![endif]-->
+						<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+							<tr>
+								<td align="left" valign="top" style="padding-top: 20px">
+									<p style="color: #2F3344;; font-size: 12px; line-height: 12px;">
+										*Andre faktorer kan medvirke at servicen ikke er mulig
+									</p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<!--[if (gte mso 9)|(IE)]>
+			</td>
+			</tr>
+			</table>
+			<![endif]-->
+		</td>
+	</tr>
+	<!-- ONE COL -->
+	<tr>
+		<td align="center" valign="top" width="100%">
+			<!--[if (gte mso 9)|(IE)]>
+			<table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
+			<tr>
+			<td align="center" valign="top" width="600">
+			<![endif]-->
+			<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+				<tr>
+					<td align="left" valign="top" bgcolor="#ffffff" style="padding: 64px 85px; border-top: 3px solid #E4F0F7;" class="mobile-padding">
+						<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+							<tr>
+								<td align="left" valign="top" style="font-family: Roboto, sans-serif;" >
+									<h3 style="margin-bottom: 32px;">
+										Ofte stillede spørgsmål
+									</h3>
+									<h5>
+										Hvordan sælger jeg min første faktura?
+									</h5>
+									<p>
+									  Lav din faktura som du plejer og gem den som en kladde. Herefter går du til <a href="https://flow.moneyflow.io/dinero/login">flow.moneyflow.io/dinero/login</a> og fortsætter fakturasalget der.
+									</p>
+									<h5>
+										Hvornår modtager jeg pengene?
+									</h5>
+									<p>
+									  Du modtager pengene indenfor 2 timer (hverdage, mellem kl 8 og 18)
+									</p>
+									<h5>
+										Hvad betyder det for min kunde?
+									</h5>
+									<p>
+									  Din kunde modtager og betaler fakturaen som normalt, men benytter de nye bankoplysninger, som fremgår af fakturaen
+									</p>
+									<p style="margin-top: 15px">
+										<a href="https://moneyflow.io/en/faq/" style="font-size: 12px; font-family: Montserrat, sans-serif; font-weight: bold;">Læs mere ></a>
+									</p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<!--[if (gte mso 9)|(IE)]>
+			</td>
+			</tr>
+			</table>
+			<![endif]-->
+		</td>
+	</tr>
+	<!-- ONE COL -->
+	<tr>
+		<td align="center" valign="top" width="100%">
+			<!--[if (gte mso 9)|(IE)]>
+			<table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
+			<tr>
+			<td align="center" valign="top" width="600">
+			<![endif]-->
+			<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+				<tr>
+					<td align="left" valign="top" bgcolor="#ffffff" class="module-padding mobile-padding">
+						<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+							<tr>
+								<td align="left" valign="top" style="font-family: Roboto, sans-serif;" >
+									<h3>
+										Se mere om Moneyflow
+									</h3>
+									<p style="margin-top: 30px;">
+										<a href="https://moneyflow.io/faq" style="font-size: 16px;">Sådan får du betaling med det samme</a>
+									</p>
+									<p style="margin-top: 15px;">
+										<a href="https://moneyflow.io/faq" style="font-size: 16px;">Lær Moneyflow at kende</a>
+									</p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<!--[if (gte mso 9)|(IE)]>
+			</td>
+			</tr>
+			</table>
+			<![endif]-->
+		</td>
+	</tr>
+	<!-- TWO COL WITH ICONS -->
+	<tr>
+		<td align="center" height="100%" valign="top" width="100%">
+			<!--[if (gte mso 9)|(IE)]>
+			<table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
+			<tr>
+			<td align="center" valign="top" width="600">
+			<![endif]-->
+			<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+				<tr>
+					<td align="left" valign="top" bgcolor="#ffffff" style="font-size: 0" class="module-border-top module-padding mobile-padding">
+						<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+							<tr>
+								<td align="left" valign="top">
+									<h2 style="margin-bottom: 30px;">
+										How can I get help?
+									</h2>
+								</td>
+							</tr>
+						</table>
+						<!--[if (gte mso 9)|(IE)]>
+						<table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
+						<tr>
+						<td align="left" valign="top" width="205">
+						<![endif]-->
+						<div style="display:inline-block; max-width:50%; min-width:205px; vertical-align:top; width:100%;" class="mobile-wrapper">
+							<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:205px;" class="max-width">
+								<tr>
+									<td align="left" valign="top" style="padding-top: 30px">
+										<table border="0" cellpadding="0" cellspacing="0" width="100%">
+											<tr>
+												<td align="left" valign="top" style="width: 70px;">
+													<img src="https://moneyflow-group.github.io/static/email-templates/comment.png" width="37" alt="Contact" border="0">
+												</td>
+												<td>
+													<h4 style="margin: 0 0 12px 0;">
+														Reach out now
+													</h4>
+													<p>
+														<a href="https://moneyflow.io?open_chat=true" style="font-size: 12px; line-height: 20px;">
+															Start a chat
+														</a>
+														<br>
+														<a href="mailto:support@moneyflow.io" style="font-size: 12px; line-height: 20px;">
+															Send an Email
+														</a>
+													</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td>
+						<td width="20" style="font-size: 1px;">&nbsp;</td>
+						<td align="right" valign="top" width="205">
+						<![endif]-->
+						<div style="display:inline-block; max-width:50%; min-width:205px; vertical-align:top; width:100%;" class="mobile-wrapper">
+							<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:205px; float: right;" class="max-width">
+								<tr>
+									<td align="left" valign="top" style="padding-top: 30px">
+										<table border="0" cellpadding="0" cellspacing="0" width="100%">
+											<tr>
+												<td align="left" valign="top" style="width: 70px">
+													<img src="https://moneyflow-group.github.io/static/email-templates/phone.png" width="37" alt="Phone" border="0">
+												</td>
+												<td>
+													<h4 style="margin: 0 0 12px 0;">
+														Call us on
+													</h4>
+													<p>
+														<a href="tel:+45 78 73 32 07" style="font-size: 12px;">
+															+45 78 73 32 07
+														</a>
+													</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td>
+						</tr>
+						</table>
+						<![endif]-->
+					</td>
+				</tr>
+			</table>
+			<!--[if (gte mso 9)|(IE)]>
+			</td>
+			</tr>
+			</table>
+			<![endif]-->
+		</td>
+	</tr>
+	<!-- FOOTER -->
+	<tr>
+		<td align="center" height="100%" valign="top" width="100%">
+			<!--[if (gte mso 9)|(IE)]>
+			<table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
+			<tr>
+			<td align="center" valign="top" width="600">
+			<![endif]-->
+			<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+				<tr>
+					<td align="center" valign="top" bgcolor="#ffffff" style="padding: 32px 85px 16px 85px;" class="module-border-top mobile-padding">
+						<img src="https://raw.githubusercontent.com/moneyflow-group/static/master/email-templates/moneyflow_logo.png" width="111" height="20" alt="moneyflow" border="0">
+						<p style="margin-top: 16px">
+							<a href="https://moneyflow.io/en/privacy/" style="font-size: 12px;">
+								Privatlivs- og cookiepolitik
+							</a>
+							<a href="https://moneyflow.io/en/terms/" style="font-size: 12px;">
+								Generelle Betingelser
+							</a>
+						</p>
+						<p style="font-size: 12px; color: #303344; margin-top: 43px">
+							Moneyflow er godkendt af <a href="" style="font-size: 12px; line-height: 12px;  text-decoration: none; color: #0000FF; ">Finanstilsynet</a>
+							<br>
+							Moneyflow 1 A/S ⎥ Langebrogade 4, 1411 Copenhagen, Denmark ⎥ CVR 41234490
+						</p>
+					</td>
+				</tr>
+			</table>
+			<!--[if (gte mso 9)|(IE)]>
+			</td>
+			</tr>
+			</table>
+			<![endif]-->
+		</td>
+	</tr>
+</table>
+</body>
+</html>
