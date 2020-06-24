@@ -9,7 +9,7 @@
 			      <mj-wrapper padding="0"/>
  				    <mj-text line-height="20px"/>
 				    </mj-attributes>
-								
+
   							<!--Divider-->
       					<mj-style>
                 .border-top {
@@ -17,8 +17,8 @@
 					     	}
                 </mj-style>
   							<!--padding on mobile-->
-                <mj-style>  
-                @media only screen and (max-width:480px) { 
+                <mj-style>
+                @media only screen and (max-width:480px) {
         				.section td {
                 padding-left:10px!important;
                 padding-right:10px!important;
@@ -27,18 +27,18 @@
                 </mj-style>
   							<!--Hide on mobile, use css-class="hide_on_mobile"-->
   							<mj-style>
-                @media only screen and (max-width: 480px){ *[class~=hide_on_mobile] { display: none !important;} }  
+                @media only screen and (max-width: 480px){ *[class~=hide_on_mobile] { display: none !important;} }
     					  </mj-style>
       					<!--Removing underscore on links-->
 						    <mj-style inline="inline">
   					    .link-nostyle { color: #0000FF; text-decoration: none }
  						   	</mj-style>
-      
+
 <mj-preview>Hi {{ signee_name }}. You have now completed the setup for {{ company_name }} and can get paid early for invoices by Moneyflow.</mj-preview>
 
 </mj-head>
 <mj-body background-color="#E4F0F7">
-  
+
 <mj-raw><!-- Company Header Tables --></mj-raw>
 		<mj-section padding="0">
     		<mj-column>
@@ -56,7 +56,7 @@
             </mj-table>
        	</mj-column>
     </mj-section>
-    
+
 
 <mj-raw><!-- Onboarding hero --></mj-raw>
 		<mj-section background-url="https://moneyflow-group.github.io/static/email-templates/hero_background.jpg"
@@ -76,7 +76,7 @@
           	</mj-text>
         </mj-column>
     </mj-section>
-    
+
 <mj-raw><!-- Onboarding intro text --></mj-raw>
 <mj-wrapper>
 		<mj-section css-class="section"
@@ -89,7 +89,7 @@
 <br/><br/>
 Du har nu gennemført installationen for {{ company_name }} og kan begynde at få tidlige betalinger for dine fakturaer af Moneyflow.
 <br/><br/>
-Vedhæftet denne mail finder du hovedaftalen for brug af Moneyflow's service, som du har underskrevet. 
+Vedhæftet denne mail finder du hovedaftalen for brug af Moneyflow's service, som du har underskrevet.
 <br/><br/>
 Du kan nu overføre fakturakladder og vælge hvilke kvalificerede fakturaer, som du vil have tidlig betaling for.
           	</mj-text>
@@ -97,7 +97,7 @@ Du kan nu overføre fakturakladder og vælge hvilke kvalificerede fakturaer, som
    	</mj-section>
 </mj-wrapper>
 
- 
+
 <mj-raw><!-- Requirements --></mj-raw>
 <mj-wrapper css-class="border-top">
     <!-- Requirements intro -->
@@ -182,7 +182,7 @@ Du kan nu overføre fakturakladder og vælge hvilke kvalificerede fakturaer, som
             				 padding="0"
                      font-family="Roboto, sans-serif"
    						       padding-bottom="0">
-          					 If the total invoice amount is minimum 5.000kr
+          					 Det totale fakturabeløb er min. 5.000kr.
           	</mj-text>
 				</mj-column>
 		</mj-section>
@@ -211,7 +211,7 @@ Du kan nu overføre fakturakladder og vælge hvilke kvalificerede fakturaer, som
                      font-family="Montserrat, sans-serif"
                      padding-bottom="30px">
               			 Ofte stillede spørgsmål
-          	</mj-text> 
+          	</mj-text>
         		<mj-text font-size="14px"
                      font-weight="600"
                      padding="0"
@@ -254,14 +254,14 @@ Du kan nu overføre fakturakladder og vælge hvilke kvalificerede fakturaer, som
           	<mj-text font-size="14px"
                      padding="0"
                      font-family="Roboto, sans-serif">
-              			 <a href="https://moneyflow.io/faq/" 
-                        class="link-nostyle">Læs mere</a> 
+              			 <a href="https://moneyflow.io/faq/"
+                        class="link-nostyle">Læs mere</a>
               				<!-- change link -->
           	</mj-text>
 				</mj-column>
 		</mj-section>
 </mj-wrapper>
-    
+
 <mj-raw><!-- Learn more --></mj-raw>
 <mj-wrapper css-class="border-top">
 		<mj-section css-class="section"
@@ -310,7 +310,7 @@ Du kan nu overføre fakturakladder og vælge hvilke kvalificerede fakturaer, som
     <mj-section css-class="section"
                 padding-top="0px"
                 background-color="#ffffff">
-			<mj-group>	
+			<mj-group>
       <mj-column width="28%">
         		<mj-image padding="0"
                       padding-bottom="15px"
@@ -318,7 +318,7 @@ Du kan nu overføre fakturakladder og vælge hvilke kvalificerede fakturaer, som
                       align="left"
                       src="https://moneyflow-group.github.io/static/email-templates/comment.png">
 						</mj-image>
-        </mj-column>	
+        </mj-column>
         <mj-column padding="0"
                    width="72%">
      	 			<mj-text font-size="14px"
@@ -340,7 +340,7 @@ Du kan nu overføre fakturakladder og vælge hvilke kvalificerede fakturaer, som
                      padding="0"
                      padding-bottom="15px"
                      font-family="Roboto, sans-serif">
-										 <a href="mailto:support@moneyflow.io" 
+										 <a href="mailto:support@moneyflow.io"
                         class="link-nostyle">
                        	Skriv en mail</a>
               					<!-- change link -->
@@ -356,7 +356,7 @@ Du kan nu overføre fakturakladder og vælge hvilke kvalificerede fakturaer, som
                       align="left"
                       src="https://moneyflow-group.github.io/static/email-templates/phone.png">
             </mj-image>
-        </mj-column>	
+        </mj-column>
       	<mj-column padding="0"
                    width="72%">
         		<mj-text font-size="14px"
@@ -408,7 +408,7 @@ Du kan nu overføre fakturakladder og vælge hvilke kvalificerede fakturaer, som
                      padding="0"
                      font-family="Roboto, sans-serif"
                      padding-bottom="5px">
-            				 Moneyflow er godkendt af 
+            				 Moneyflow er godkendt af
               			 <a href="https://www.finanstilsynet.dk/"
                         Class="link-nostyle">
                      Finanstilsynet</a>
