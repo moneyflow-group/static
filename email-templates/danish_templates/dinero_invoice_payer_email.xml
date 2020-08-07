@@ -57,7 +57,7 @@
 
             Fakturaen skal senest betales d. <strong>{{ due_date }}</strong>.<br /><br />
 
-            Hvis du har nogle indsigelser til fakturaen bedes du venligst kontakte {{ company_name }}.<br /><br />
+            Hvis du har nogle spørgsmål til indholdet af fakturaen bedes du venligst kontakte {{ company_name }}.<br /><br />
           </mj-text>
           <mj-text font-size="14px" padding="0" font-family="Roboto, sans-serif">
             <div style="border: 1px solid #0000FF; margin-top: 40px; padding: 20px 25px;">
