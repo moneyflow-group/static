@@ -1,15 +1,14 @@
-<mjml>
+<mjml> <!--SUBJECT: Straksindbetaling er nu installerat--> 
 <mj-head>
-		<mj-title>Straksbetaling er nu installeret</mj-title>
-    		<mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:400,600"/>
+		<mj-title>Post onboarding-DA</mj-title>
+    		<mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:600"/>
 		    <mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto:400,700"/>
 		    <mj-breakpoint width="480px" />
 				    <mj-attributes>
-			     	<mj-section padding="64px 85px" background-color="#ffffff"/>
+			     	<mj-section padding="64px 80px" background-color="#ffffff"/>
 			      <mj-wrapper padding="0"/>
- 				    <mj-text line-height="20px"/>
+ 				    <mj-text line-height="24px"/>
 				    </mj-attributes>
-								
   							<!--Divider-->
       					<mj-style>
                 .border-top {
@@ -25,21 +24,17 @@
         					}
       					}
                 </mj-style>
-  							<!--Hide on mobile, use css-class="hide_on_mobile"-->
-  							<mj-style>
-                @media only screen and (max-width: 480px){ *[class~=hide_on_mobile] { display: none !important;} }  
-    					  </mj-style>
       					<!--Removing underscore on links-->
 						    <mj-style inline="inline">
   					    .link-nostyle { color: #0000FF; text-decoration: none }
  						   	</mj-style>
-      
-<mj-preview>Du har nu gennemført installationen af Straksbetaling for {{ company_name }} i e-conomic og kan få betaling med det samme for fakturaer af Moneyflow.</mj-preview>
-
+ 								<!--Preview text-->      
+ 								<mj-preview>Hej {{ signee_name }}.<br/><br/>Du har nu gennemført installationen af Straksindbetaling for {{ company_name }} i e-conomic og kan få betaling med det samme for fakturaer gennem Moneyflow.</mj-preview> 
 </mj-head>
 <mj-body background-color="#E4F0F7">
   
-<mj-raw><!-- Company Header Tables --></mj-raw>
+<mj-raw><!-- Top bar(EC) --></mj-raw>
+<mj-wrapper>
 		<mj-section padding="0">
     		<mj-column>
         		<mj-table padding="21px 0">
@@ -61,9 +56,10 @@
             </mj-table>
        	</mj-column>
     </mj-section>
-
-      
-<mj-raw><!-- Onboarding hero --></mj-raw>
+</mj-wrapper>
+    
+<mj-raw><!-- Swosh header --></mj-raw>
+<mj-wrapper>
 		<mj-section background-url="https://moneyflow-group.github.io/static/email-templates/hero_background.jpg"
                 background-size="cover"
                 background-repeat="no-repeat"
@@ -77,12 +73,13 @@
                      font-size="28px"
                      font-family="Montserrat, sans-serif"
                      font-weight="600">
-                     Straksbetaling er<br/>nu installeret
+                     Straksindbetaling er<br/>nu installeret
           	</mj-text>
         </mj-column>
     </mj-section>
-    
-<mj-raw><!-- Onboarding intro text --></mj-raw>
+</mj-wrapper>
+  
+<mj-raw><!-- Onboarding text(EC)-DA --></mj-raw>
 <mj-wrapper>
 		<mj-section css-class="section"
      		        background-color="#ffffff">
@@ -90,19 +87,13 @@
         		<mj-text font-size="14px"
             		     padding="0"
             		     font-family="Roboto, sans-serif">
-Hej {{ signee_name }}.
-<br/><br/>
-Du har nu gennemført installationen af Straksbetaling for {{ company_name }} i e-conomic og kan få betaling med det samme for fakturaer af Moneyflow. 
-<br/><br/>
-Vedhæftet denne mail finder du hovedaftalen for fakturasalg, som du har underskrevet. 
-<br/><br/>
-Når du bogfører og sender en faktura, har du nu mulighed for at aktivere Straksbetaling for den specifikke faktura. 
+        						 Hej {{ signee_name }}.<br/><br/>Du har nu gennemført installationen af Straksindbetaling for {{ company_name }} i e-conomic og kan få betaling med det samme for fakturaer gennem Moneyflow.<br/><br/> Vedhæftet denne e-mail finder du hovedaftalen som du har underskrevet.<br/><br/>Når du laver og sender en faktura, har du nu mulighed for at aktivere Straksindbetaling for den specifikke faktura. 
           	</mj-text>
 				</mj-column>
    	</mj-section>
 </mj-wrapper>
-
-<mj-raw><!-- Requirements --></mj-raw>
+  
+<mj-raw><!-- Requirements-DA --></mj-raw>
 <mj-wrapper css-class="border-top">
     <!-- Requirements intro -->
 		<mj-section css-class="section"
@@ -111,7 +102,7 @@ Når du bogfører og sender en faktura, har du nu mulighed for at aktivere Strak
 				<mj-column padding="0">
         		<mj-text font-size="16px"
           					 font-weight="600"
- 			         	     padding="0"
+ 			         	     padding ="0"
       				   	   font-family="Montserrat, sans-serif"
        						 	 padding-bottom="15px">
      								 Hvilke fakturaer kan jeg få betaling for med det samme?
@@ -120,8 +111,8 @@ Når du bogfører og sender en faktura, har du nu mulighed for at aktivere Strak
           	     		 padding="0"
        				 	     font-family="Roboto, sans-serif"
               			 padding-bottom="30px">
-										 Der er nogle kriterier for at en faktura kan bruges til Straksbetaling. Disse er de mest relevante:  
-          </mj-text>
+          					 For at du kan bruge Straksindbetaling på en faktura skal disse forhold være opfyldt:
+          	</mj-text>
 				</mj-column>
 		</mj-section>
 
@@ -156,7 +147,7 @@ Når du bogfører og sender en faktura, har du nu mulighed for at aktivere Strak
       						   padding="0"
                  		 font-family="Roboto, sans-serif"
    						       padding-bottom="20px">
-										 Fakturaen er med en betalingsfrist på min. 7 dage
+										 Fakturaens betalingsfrist er mellem 8 og 90 dage
           	</mj-text>
       	</mj-column>
       	<!-- Requirements right columns -->
@@ -173,20 +164,20 @@ Når du bogfører og sender en faktura, har du nu mulighed for at aktivere Strak
             				 padding="0"
 						         font-family="Roboto, sans-serif"
            					 padding-bottom="20px">
-         						 Det er ikke sikkert, at alle dine kunder har nok historik til at vi kan tilbyde Straksbetaling. 
+         						 Du skal have handlet med dine kunder indenfor de seneste 12 måneder
           	</mj-text>
  			      <mj-text font-size="14px"
        						   font-weight="600"
       						   padding="0"
                  		 font-family="Montserrat, sans-serif"
       						   padding-bottom="15px">
-      							 Fakturabeløg
+      							 Fakturabeløb
           	</mj-text>
 						<mj-text font-size="14px"
             				 padding="0"
                      font-family="Roboto, sans-serif"
    						       padding-bottom="0">
-          					 Det totale fakturabeløb er over 10.000kr.
+          					 Det totale fakturabeløb er min. 1.000 kr.
           	</mj-text>
 				</mj-column>
 		</mj-section>
@@ -198,13 +189,13 @@ Når du bogfører og sender en faktura, har du nu mulighed for at aktivere Strak
         		<mj-text font-size="12px"
                      padding="0"
                      font-family="Roboto, sans-serif">
-        						 *Andre faktorer kan medvirke at Straksbetaling ikke er mulig
+        						 *Andre faktorer kan medvirke at Straksindbetaling ikke er mulig
           	</mj-text>
 				</mj-column>
     </mj-section>
 </mj-wrapper>
-
-<mj-raw><!-- FAQ --></mj-raw>
+  
+<mj-raw><!-- FAQ(EC)-DA --></mj-raw>
 <mj-wrapper css-class="border-top">
 		<mj-section css-class="section"
                 background-color="#ffffff">
@@ -227,7 +218,7 @@ Når du bogfører og sender en faktura, har du nu mulighed for at aktivere Strak
                      padding="0"
                      font-family="Roboto, sans-serif"
                      padding-bottom="20px">
-          					 Lav din faktura som du plejer og aktiver Straksbetaling på fakturasiden.
+          					 Lav din faktura som du plejer og aktiver Straksindbetaling på fakturakladden.
           	</mj-text>
             <mj-text font-size="14px"
                      font-weight="600"
@@ -240,7 +231,7 @@ Når du bogfører og sender en faktura, har du nu mulighed for at aktivere Strak
        						   padding="0"
           				   font-family="Roboto, sans-serif"
                      padding-bottom="20px">
-          					 Du modtager pengene indenfor 5 minutter
+          					 Du modtager pengene indefor 2 timer (hverdage, mellem 8 og 18)
           	</mj-text>
 						<mj-text font-size="14px"
                      font-weight="600"
@@ -253,39 +244,65 @@ Når du bogfører og sender en faktura, har du nu mulighed for at aktivere Strak
                      padding="0"
                      font-family="Roboto, sans-serif"
                      padding-bottom="30px">
-										Din kunde modtager og betaler fakturaen som normalt, men bruger nye bankoplysninger som fremgår af fakturaen          	</mj-text>
+          					 Din kunde modtager og betaler fakturaen som normalt, men benytter de nye bankoplysninger som fremgår af fakturaen.
+          	</mj-text>
           	<mj-text font-size="14px"
                      padding="0"
                      font-family="Roboto, sans-serif">
-              			 <a href="moneyflow.io/da/" 
+              			 <a href="https://moneyflow.io/da/faq/" 
                         class="link-nostyle">Læs mere</a> 
-              				<!-- change link -->
           	</mj-text>
 				</mj-column>
 		</mj-section>
 </mj-wrapper>
-    
-
-
-<mj-raw><!-- Contact 4 (Grouped columns) --></mj-raw>
+  
+<mj-raw><!-- Learn more(EC)-DA --></mj-raw>
 <mj-wrapper css-class="border-top">
 		<mj-section css-class="section"
-                padding-bottom="40px"
-                background-color="#ffffff">
+            		background-color="#ffffff">
+    		<mj-column padding="0">
+        		<mj-text font-size="16px"
+                     font-weight="600"
+                     padding="0"
+                     font-family="Montserrat, sans-serif"
+                     padding-bottom="30px">
+          					 Se mere om Straksindbetaling
+          	</mj-text>
+					  <mj-text font-size="16px"
+                     padding="0"
+                     font-family="Roboto, sans-serif"
+                     padding-bottom="15px">
+            				 <a href="https://www.e-conomic.dk/funktioner/straksindbetaling"
+ 	 											class="link-nostyle">
+                        Sådan får du betaling med det samme</a>
+          	</mj-text>
+ 					  <mj-text font-size="16px"
+                     padding="0"
+                     font-family="Roboto, sans-serif">
+            				 <a href="moneyflow.io/da"
+                        class="link-nostyle">
+                        Lær Moneyflow at kende</a>
+          	</mj-text>
+				</mj-column>
+		</mj-section>
+</mj-wrapper>
+  
+<mj-raw><!-- Contact-DA --></mj-raw>
+<mj-wrapper css-class="border-top">
+		<mj-section css-class="section"
+                padding-bottom="48px">
     		<mj-column padding="0">
         		<mj-text font-size="20px"
                      font-weight="600"
                      padding="0"
-                     font-family="Montserrat, sans-serif"
-                     padding-bottom="15px">
+                     font-family="Montserrat, sans-serif">
               			 Hvordan kan jeg få hjælp?
           	</mj-text>
 				</mj-column>
 		</mj-section>
     <!-- Write us -->
     <mj-section css-class="section"
-                padding-top="0px"
-                background-color="#ffffff">
+                padding-top="0px">
 			<mj-group>	
       <mj-column width="28%">
         		<mj-image padding="0"
@@ -301,25 +318,24 @@ Når du bogfører og sender en faktura, har du nu mulighed for at aktivere Strak
                      font-weight="600"
                      padding="0"
                      font-family="Montserrat, sans-serif"
-                     padding-bottom="10px">
+                     padding-bottom="8px">
         						 Kontakt os nu
           	</mj-text>
 						<mj-text font-size="14px"
                      padding="0"
                      font-family="Roboto, sans-serif">
-										 <a href="moneyflow.io/da/"
+										 <a href="moneyflow.io/?open_chat=true"
                         class="link-nostyle">
                        	Start en chat</a>
-              					<!-- change link -->
           	</mj-text>
             <mj-text font-size="14px"
                      padding="0"
                      padding-bottom="15px"
                      font-family="Roboto, sans-serif">
-										 <a href="moneyflow.io/da/" 
+										 <a href="mailto:support@moneyflow.io" 
                         class="link-nostyle">
                        	Skriv en mail</a>
-              					<!-- change link -->
+              					<!-- add subject line ?subject=Subject here" -->
           	</mj-text>
 				</mj-column>
         </mj-group>
@@ -339,22 +355,22 @@ Når du bogfører og sender en faktura, har du nu mulighed for at aktivere Strak
                      font-weight="600"
                      padding="0"
                      font-family="Montserrat, sans-serif"
-                     padding-bottom="10px">
-              			 Ring til os
+                     padding-bottom="8px">
+              			 Ring til os på
           	</mj-text>
 						<mj-text font-size="14px"
                      padding="0"
                      font-family="Roboto, sans-serif">
-										 <a href="tel:004578733207"
+										 <a href="tel:004589877036"
                         class="link-nostyle">
-                        +45 78 73 32 07</a>
+                        +45 89 87 70 36</a>
           	</mj-text>
 				</mj-column>
         </mj-group>
     </mj-section>
 </mj-wrapper>
 
-<mj-raw><!-- Footer --></mj-raw>
+<mj-raw><!-- Footer-DA --></mj-raw>
 <mj-wrapper css-class="border-top">
 		<mj-section css-class="section"
                 background-color="#ffffff"
@@ -371,20 +387,20 @@ Når du bogfører og sender en faktura, har du nu mulighed for at aktivere Strak
                      font-family="Roboto, sans-serif"
                      padding-top="10px"
                      padding-bottom="30px">
-          					 <a href="https://moneyflow.io/da/privacy/"
+          					 <a href="https://moneyflow.io/en/privacy/"
                         class="link-nostyle">
-                        PPrivatlivs- og cookiepolitik</a>
+                        Privatlivs- og cookiepolitik</a>
               			 <a>|</a>
-              			 <a href="https://moneyflow.io/da/terms/"
+              			 <a href="https://moneyflow.io/en/terms/"
                         class="link-nostyle">
-                        Forretningsbetingelser</a>
+                        Forettningsbetingelser</a>
           	</mj-text>
 						<mj-text font-size="12px"
                      align="center"
                      padding="0"
                      font-family="Roboto, sans-serif"
                      padding-bottom="5px">
-            				 Moneyflow er registreret og reguleret af 
+            				 Moneyflow er godkendt af 
               			 <a href="https://www.finanstilsynet.dk/"
                         Class="link-nostyle">
                      Finanstilsynet</a>
@@ -393,11 +409,11 @@ Når du bogfører og sender en faktura, har du nu mulighed for at aktivere Strak
                      align="center"
                      padding="0"
                      font-family="Roboto, sans-serif">
-            				 Moneyflow Group Aps | Langebrogade 4, 1411 Copenhagen | CVR 39228327
+            				 Moneyflow Group A/S | Langebrogade 4, 1411 København | CVR 39228327
           	</mj-text>
 				</mj-column>
 		</mj-section>
 </mj-wrapper>
-
+  
 </mj-body>
 </mjml>
