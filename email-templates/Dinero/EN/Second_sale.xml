@@ -1,15 +1,14 @@
-<mjml>
+<mjml> <!--SUBJECT: Early payment for invoice no. {{ invoice_number }} is on its way--> 
 <mj-head>
-		<mj-title>Invoice sale</mj-title>
-    		<mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:400,600"/>
+		<mj-title>Post sale-EN</mj-title>
+    		<mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:600"/>
 		    <mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto:400,700"/>
 		    <mj-breakpoint width="480px" />
 				    <mj-attributes>
-			     	<mj-section padding="64px 85px" background-color="#ffffff"/>
+			     	<mj-section padding="64px 80px" background-color="#ffffff"/>
 			      <mj-wrapper padding="0"/>
- 				    <mj-text line-height="20px"/>
+ 				    <mj-text line-height="24px"/>
 				    </mj-attributes>
-
   							<!--Divider-->
       					<mj-style>
                 .border-top {
@@ -17,32 +16,28 @@
 					     	}
                 </mj-style>
   							<!--padding on mobile-->
-                <mj-style>
-                @media only screen and (max-width:480px) {
+                <mj-style>  
+                @media only screen and (max-width:480px) { 
         				.section td {
                 padding-left:10px!important;
                 padding-right:10px!important;
         					}
       					}
                 </mj-style>
-  							<!--Hide on mobile, use css-class="hide_on_mobile"-->
-  							<mj-style>
-                @media only screen and (max-width: 480px){ *[class~=hide_on_mobile] { display: none !important;} }
-    					  </mj-style>
       					<!--Removing underscore on links-->
 						    <mj-style inline="inline">
   					    .link-nostyle { color: #0000FF; text-decoration: none }
  						   	</mj-style>
-
-<mj-preview>Your invoice sale is completed</mj-preview>
-
+ 								<!--Preview text-->      
+ 								<mj-preview>Moneyflow's service has been used on invoice no. {{ invoice_number }} sent by {{ company_name }}.</mj-preview>
 </mj-head>
 <mj-body background-color="#E4F0F7">
-
-<mj-raw><!-- Company Header Tables --></mj-raw>
+  
+<mj-raw><!-- Top bar(DIN) --></mj-raw>
+<mj-wrapper>
 		<mj-section padding="0">
     		<mj-column>
-        		<mj-table padding="21px 0">
+        		<mj-table padding="16px 0">
             		<tr>
             				<td style="padding:0 0 0 18px; line-height:1;">
             						<img width="111"
@@ -51,13 +46,20 @@
                              alt="moneyflow" />
             				</td>
             				<td style="padding:0 18px 0 0; line-height:1;">
+            						<img width="80"
+                             style="width:100%; max-width:80px; display:block"
+                             align="right"
+                             src="https://moneyflow-group.github.io/static/email-templates/dinero_logo.png"
+                             alt="Dinero" />
             				</td>
             		</tr>
             </mj-table>
        	</mj-column>
     </mj-section>
-
-<mj-raw><!-- Post first sale hero --></mj-raw>
+</mj-wrapper>  
+  
+<mj-raw><!-- Tick header --></mj-raw>
+<mj-wrapper>
 		<mj-section background-url="https://raw.githubusercontent.com/moneyflow-group/static/master/email-templates/post_sale_header_background.jpg"
                 background-size="cover"
                 background-repeat="no-repeat"
@@ -71,31 +73,27 @@
                      font-size="28px"
                      font-family="Montserrat, sans-serif"
                      font-weight="600">
-                     You have received<br />your early payment
+                     Early payment<br/>is on its way
           	</mj-text>
         </mj-column>
  				</mj-section>
-
-
-<mj-raw><!-- Onboarding intro text --></mj-raw>
+</mj-wrapper>
+  
+<mj-raw><!-- Post sale text(DIN)-EN --></mj-raw>
 <mj-wrapper>
 		<mj-section css-class="section"
-     		        background-color="#ffffff">
+                background-color="#ffffff">
     		<mj-column padding="0">
         		<mj-text font-size="14px"
-            		     padding="0"
-										 font-family="Roboto, sans-serif">
-										 We have received and transferred invoice no. <strong>{{ invoice_number }}</strong> sent by <strong>{{ company_name }}</strong> to Moneyflow.<br /><br />
-
-											We have sent <strong>{{ factoring_amount }}</strong> kr. to the bank account ending with <strong>{{ account_number }}</strong>. You can expect your payment within a few hours.<br /><br />
-
-											Attached to this email is the receipt for the sale.
-          	</mj-text>
-				</mj-column>
+             				 padding="0"
+           				   font-family="Roboto, sans-serif">
+							       Moneyflow's service has been used on invoice no. {{ invoice_number }} sent by {{ company_name }}. <br/><br/> We have sent {{ factoring_amount }} kr. to your bank account ending with {{ account_number }} and done the book keeping for you. You can expect payment within 2 hours (weekdays, between 8am and 6pm).<br/><br/>Attached to this email is the receipt for the sale. 
+            </mj-text>
+     		</mj-column>
    	</mj-section>
-</mj-wrapper>
-
-<mj-raw><!-- Receipt overview 2 (table + sections) --></mj-raw>
+ </mj-wrapper>
+  
+<mj-raw><!-- Receipt(DIN)-EN --></mj-raw>
 <mj-wrapper css-class="border-top">
 		<mj-section css-class="section"
                 padding-bottom="0">
@@ -118,25 +116,25 @@
                       font-size="14px">
                 <tr>
                     <td style="padding-bottom:15px">
-											Funding fee</td>
+                               Fee</td>
                     <td style="text-align:right;
                                padding-bottom:15px">
-                               [200,00] Kr.</td>
+                               {{ fee_amount }} kr.</td>
                 </tr>
                 <tr>
                     <td style="padding-bottom:15px;">
-											Fee VAT (25%)</td>
+                               VAT (25%)</td>
                     <td style="text-align:right;
                                padding-bottom:15px">
-                               [50,00] Kr.</td>
+                               {{ vat_amount }} kr.</td>
                 </tr>
                 <tr style="border-top:1px solid #2F3344;
                            font-weight:700;">
                     <td style="padding-top:15px">
-											Total amount</td>
+                               Total amount</td>
                     <td style="text-align:right;
                                padding-top:15px">
-                               [250,00] Kr.</td>
+                               {{ total_fee_amount }} kr.</td>
                 </tr>
             </mj-table>
         </mj-column>
@@ -147,14 +145,13 @@
         		<mj-text font-size="12px"
         						 font-family="Roboto, sans-serif"
                      padding="0">
-										 Invoice no. {{ invoice_number }} was bought by Moneyflow 1 A/S for {{ invoice_amount }} Kr.<br />
-										 An early payment fee of {{ fee_amount }} Kr. ( {{ fee_percent }} %) is added, which is subject to 25% VAT.
+       							 Invoice no. {{ invoice_number }} was bought by Moneyflow I A/S for {{ invoice_amount }} kr. An invoice sale fee of {{ fee_amount }} kr. is added, which is subject to 25% VAT.
           	</mj-text>
         </mj-column>
     </mj-section>
 </mj-wrapper>
-
-<mj-raw><!-- Feedback --></mj-raw>
+  
+<mj-raw><!-- Feedback-EN --></mj-raw>
 <mj-wrapper css-class="border-top">
 		<mj-section css-class="section"
                 background-color="#ffffff">
@@ -172,37 +169,33 @@
                      padding-bottom="10px">
           					 We would love to hear from you. Press a star to leave a review.
           	</mj-text>
-            <mj-image width="145px"
+            <mj-image width="145px" 
                       align="left"
                       padding-left="0px"
-                      src="https://raw.githubusercontent.com/moneyflow-group/static/master/email-templates/stars.png"
-                      href="https://docs.google.com/forms/d/1TZb1-sKFsPZ5VhxxAwpkh54qYj-_R9EsanRmYZ9rvzs">
+                      src="https://raw.githubusercontent.com/moneyflow-group/static/master/email-templates/stars.png" 
+                      href="https://www.trustpilot.com/evaluate/moneyflow.io">
           	</mj-image>
-          						<!-- change link -->
 				</mj-column>
     </mj-section>
 </mj-wrapper>
-
-<mj-raw><!-- Contact 4 (Grouped columns) --></mj-raw>
+  
+<mj-raw><!-- Contact-EN --></mj-raw>
 <mj-wrapper css-class="border-top">
 		<mj-section css-class="section"
-                padding-bottom="40px"
-                background-color="#ffffff">
+                padding-bottom="48px">
     		<mj-column padding="0">
         		<mj-text font-size="20px"
                      font-weight="600"
                      padding="0"
-                     font-family="Montserrat, sans-serif"
-                     padding-bottom="15px">
+                     font-family="Montserrat, sans-serif">
               			 How can I get help?
           	</mj-text>
 				</mj-column>
 		</mj-section>
     <!-- Write us -->
     <mj-section css-class="section"
-                padding-top="0px"
-                background-color="#ffffff">
-			<mj-group>
+                padding-top="0px">
+			<mj-group>	
       <mj-column width="28%">
         		<mj-image padding="0"
                       padding-bottom="15px"
@@ -210,32 +203,31 @@
                       align="left"
                       src="https://moneyflow-group.github.io/static/email-templates/comment.png">
 						</mj-image>
-        </mj-column>
+        </mj-column>	
         <mj-column padding="0"
                    width="72%">
      	 			<mj-text font-size="14px"
                      font-weight="600"
                      padding="0"
                      font-family="Montserrat, sans-serif"
-                     padding-bottom="10px">
+                     padding-bottom="8px">
         						 Reach out now
           	</mj-text>
 						<mj-text font-size="14px"
                      padding="0"
                      font-family="Roboto, sans-serif">
-										 <a href="https://moneyflow.io?open_chat=true"
+										 <a href="moneyflow.io/?open_chat=true"
                         class="link-nostyle">
                        	Start a chat</a>
-              					<!-- change link -->
           	</mj-text>
             <mj-text font-size="14px"
                      padding="0"
                      padding-bottom="15px"
                      font-family="Roboto, sans-serif">
-										 <a href="mailto:support@moneyflow.io"
+										 <a href="mailto:support@moneyflow.io" 
                         class="link-nostyle">
-                       	Send an E-mail</a>
-              					<!-- change link -->
+                       	Send an email</a>
+              					<!-- add subject line ?subject=Subject here" -->
           	</mj-text>
 				</mj-column>
         </mj-group>
@@ -248,20 +240,20 @@
                       align="left"
                       src="https://moneyflow-group.github.io/static/email-templates/phone.png">
             </mj-image>
-        </mj-column>
+        </mj-column>	
       	<mj-column padding="0"
                    width="72%">
         		<mj-text font-size="14px"
                      font-weight="600"
                      padding="0"
                      font-family="Montserrat, sans-serif"
-                     padding-bottom="10px">
+                     padding-bottom="8px">
               			 Call us on
           	</mj-text>
 						<mj-text font-size="14px"
                      padding="0"
                      font-family="Roboto, sans-serif">
-										 <a href="tel:004578733207"
+										 <a href="tel:004589877036"
                         class="link-nostyle">
                         +45 89 87 70 36</a>
           	</mj-text>
@@ -269,8 +261,8 @@
         </mj-group>
     </mj-section>
 </mj-wrapper>
-
-<mj-raw><!-- Footer --></mj-raw>
+  
+<mj-raw><!-- Footer-EN --></mj-raw>
 <mj-wrapper css-class="border-top">
 		<mj-section css-class="section"
                 background-color="#ffffff"
@@ -287,29 +279,29 @@
                      font-family="Roboto, sans-serif"
                      padding-top="10px"
                      padding-bottom="30px">
-          					 <a href="https://moneyflow.io/da/privacy/"
+          					 <a href="https://moneyflow.io/en/privacy/"
                         class="link-nostyle">
                         Privacy and Cookie Policy</a>
               			 <a>|</a>
-              			 <a href="https://moneyflow.io/da/terms/"
+              			 <a href="https://moneyflow.io/en/terms/"
                         class="link-nostyle">
-                        General Terms</a>
+                        General Terms and Conditions</a>
           	</mj-text>
 						<mj-text font-size="12px"
                      align="center"
                      padding="0"
                      font-family="Roboto, sans-serif"
                      padding-bottom="5px">
-            				 Moneyflow is registered by the
+            				 Moneyflow is registered by the 
               			 <a href="https://www.finanstilsynet.dk/"
                         Class="link-nostyle">
-                     Danish Financial Supervisory Authority</a>
+                     Danish FSA</a>
           	</mj-text>
             <mj-text font-size="12px"
                      align="center"
                      padding="0"
                      font-family="Roboto, sans-serif">
-            				 Moneyflow 1 A/S | Langebrogade 4, 1411 Copenhagen | CVR 41234490
+            				 Moneyflow Group A/S | Langebrogade 4, 1411 Copenhagen | CVR 39228327
           	</mj-text>
 				</mj-column>
 		</mj-section>

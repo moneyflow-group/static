@@ -1,15 +1,14 @@
-<mjml>
+<mjml> <!-- SUBJECT: Tidlig betaling for fakturanr. {{ invoice_number }} er på vej -->
 <mj-head>
-		<mj-title>Dit fakturasalg er gennemført</mj-title>
-    		<mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:400,600"/>
+		<mj-title>First sale-DA</mj-title>
+    		<mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:600"/>
 		    <mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto:400,700"/>
 		    <mj-breakpoint width="480px" />
 				    <mj-attributes>
-			     	<mj-section padding="64px 85px" background-color="#ffffff"/>
+			     	<mj-section padding="64px 80px" background-color="#ffffff"/>
 			      <mj-wrapper padding="0"/>
- 				    <mj-text line-height="20px"/>
+ 				    <mj-text line-height="24px"/>
 				    </mj-attributes>
-
   							<!--Divider-->
       					<mj-style>
                 .border-top {
@@ -17,32 +16,28 @@
 					     	}
                 </mj-style>
   							<!--padding on mobile-->
-                <mj-style>
-                @media only screen and (max-width:480px) {
+                <mj-style>  
+                @media only screen and (max-width:480px) { 
         				.section td {
                 padding-left:10px!important;
                 padding-right:10px!important;
         					}
       					}
                 </mj-style>
-  							<!--Hide on mobile, use css-class="hide_on_mobile"-->
-  							<mj-style>
-                @media only screen and (max-width: 480px){ *[class~=hide_on_mobile] { display: none !important;} }
-    					  </mj-style>
       					<!--Removing underscore on links-->
 						    <mj-style inline="inline">
   					    .link-nostyle { color: #0000FF; text-decoration: none }
  						   	</mj-style>
-
-<mj-preview>Instant payment has been used on invoice no. {{ invoice_number }} sent by {{ company_name }}. We have sent {{ factoring_amount }} kr. to the bank account ending with {{ account_number }}.</mj-preview>
-
-</mj-head>
+ 								<!--Preview text-->      
+ 								<mj-preview>Du har brugt Moneyflow's service på fakturanr. {{ invoice_number }} sendt af {{ company name }}.</mj-preview>
+</mj-head> 
 <mj-body background-color="#E4F0F7">
-
-<mj-raw><!-- Company Header Tables --></mj-raw>
+  
+<mj-raw><!-- Top bar(DIN) --></mj-raw>
+<mj-wrapper>
 		<mj-section padding="0">
     		<mj-column>
-        		<mj-table padding="21px 0">
+        		<mj-table padding="16px 0">
             		<tr>
             				<td style="padding:0 0 0 18px; line-height:1;">
             						<img width="111"
@@ -51,19 +46,20 @@
                              alt="moneyflow" />
             				</td>
             				<td style="padding:0 18px 0 0; line-height:1;">
-            						<img width="142"
-                             style="width:100%; max-width:142px; display:block"
+            						<img width="80"
+                             style="width:100%; max-width:80px; display:block"
                              align="right"
-                             src="https://moneyflow-group.github.io/static/email-templates/visma_e-conomic_logo.png"
-                             alt="visma e-conomic" />
+                             src="https://moneyflow-group.github.io/static/email-templates/dinero_logo.png"
+                             alt="Dinero" />
             				</td>
             		</tr>
             </mj-table>
        	</mj-column>
     </mj-section>
-
-
-<mj-raw><!-- Post second sale hero --></mj-raw>
+</mj-wrapper>  
+  
+<mj-raw><!-- Tick header --></mj-raw>
+<mj-wrapper>
 		<mj-section background-url="https://raw.githubusercontent.com/moneyflow-group/static/master/email-templates/post_sale_header_background.jpg"
                 background-size="cover"
                 background-repeat="no-repeat"
@@ -77,27 +73,27 @@
                      font-size="28px"
                      font-family="Montserrat, sans-serif"
                      font-weight="600">
-                     Du har modtaget <br/>Straksbetaling
+                     Din første tidlige<br/>betaling er på vej
           	</mj-text>
         </mj-column>
  				</mj-section>
-
-
-<mj-raw><!-- Post sale intro text --></mj-raw>
-<mj-wrapper css-class="border-top">
+</mj-wrapper>
+  
+<mj-raw><!-- Post sale text(DIN)-DA --></mj-raw>
+<mj-wrapper>
 		<mj-section css-class="section"
                 background-color="#ffffff">
     		<mj-column padding="0">
         		<mj-text font-size="14px"
              				 padding="0"
            				   font-family="Roboto, sans-serif">
-							       Du har brugt Straksbetaling på fakturanr. {{ invoice_number }}.<br/><br/>Vi har overført {{ factoring_amount }} Kr. til bankkontoen med følgende fire sidste tal {{ account_number }}.<br/>Du kan forvente betaling indenfor 5 minutter.<br/><br/>Vedhæftet finder du kvitteringen for straksbetalingsgebyret.
+							       Du har brugt Moneyflow's service på fakturanr. {{ invoice_number }} sendt af {{ company name }}. <br/><br/> Vi har sendt {{ factoring_amount }} kr. til din bankkonto, der slutter med {{ account_number }}, og lavet bogføringen for dig. Du kan forvente betaling indenfor 2 timer (hverdage, mellem 8 og 18).<br/><br/>Vedhæftet denne e-mail er kvittering for salget. 
             </mj-text>
      		</mj-column>
    	</mj-section>
 </mj-wrapper>
-
-<mj-raw><!-- Receipt overview 2 (table + sections) --></mj-raw>
+  
+<mj-raw><!-- Receipt(DIN)-DA --></mj-raw>
 <mj-wrapper css-class="border-top">
 		<mj-section css-class="section"
                 padding-bottom="0">
@@ -107,7 +103,7 @@
                      font-weight="600"
                      padding="0"
                      padding-bottom="30px">
-              			 Fakturasalgskvittering
+              			 Kvittering for tidlig betaling
         		</mj-text>
         </mj-column>
     </mj-section>
@@ -120,17 +116,17 @@
                       font-size="14px">
                 <tr>
                     <td style="padding-bottom:15px">
-                               Straksbetalingsgebyr ( {{ fee_procent }} %)</td>
+                               Gebyr</td>
                     <td style="text-align:right;
                                padding-bottom:15px">
-                               {{ fee_amount }} Kr.</td>
+                               {{ fee_amount }} kr.</td>
                 </tr>
                 <tr>
                     <td style="padding-bottom:15px;">
-                               Moms ({{ vat_percent }})</td>
+                               Moms (25%)</td>
                     <td style="text-align:right;
                                padding-bottom:15px">
-                               {{ vat_amount }} Kr.</td>
+                               {{ vat_amount }} kr.</td>
                 </tr>
                 <tr style="border-top:1px solid #2F3344;
                            font-weight:700;">
@@ -138,7 +134,7 @@
                                Samlet beløb</td>
                     <td style="text-align:right;
                                padding-top:15px">
-                               {{ total_fee_amount }} Kr.</td>
+                               {{ total_fee_amount }} kr.</td>
                 </tr>
             </mj-table>
         </mj-column>
@@ -149,16 +145,47 @@
         		<mj-text font-size="12px"
         						 font-family="Roboto, sans-serif"
                      padding="0">
-       							 Fakturanr. {{ invoice_number }} er solgt til Moneyflow Group ApS for {{ invoice_amount }} Kr.<br/>
-Et momspligtigt fakturasalgsgebyr på {{ fee_amount }} Kr. ( {{ fee_procent }} %) er tilføjet.
+       							 Fakturanr. {{ invoice_number }} er solgt til Moneyflow I A/S for {{ invoice_amount }} kr. Et momspligtigt fakturasalgsgebyr på {{ fee_amount }} kr. er tilføjet.
           	</mj-text>
         </mj-column>
     </mj-section>
 </mj-wrapper>
-
-
-
-<mj-raw><!-- Feedback --></mj-raw>
+  
+<mj-raw><!-- Post sale info-DA --></mj-raw>
+<mj-wrapper css-class="border-top">
+		<mj-section css-class="section"
+            		background-color="#ffffff">
+				<mj-column padding="0">
+        		<mj-text font-size="16px"
+                     font-weight="600"
+                     padding="0"
+                     font-family="Montserrat, sans-serif"
+                     padding-bottom="15px">
+          					 Hvad skal min kunde gøre?
+          	</mj-text>
+            <mj-text font-size="14px"
+                     padding="0"
+                     font-family="Roboto, sans-serif"
+                     padding-bottom="30px">
+          					 Din kunde betaler fakturaen som normalt, men til en ny bankkonto, der tilhører Moneyflow. De nye betalingsinstrukser er tilføjet på fakturaen. Moneyflow overtager en eventuel rykkerprocedure.
+          	</mj-text>          
+        		<mj-text font-size="16px"
+                     font-weight="600"
+                     padding="0"
+                     font-family="Montserrat, sans-serif"
+                     padding-bottom="15px">
+              			 Hvad gør jeg, hvis der er en fejl på fakturaen?
+          	</mj-text>
+					  <mj-text font-size="14px"
+                     padding="0"
+                     font-family="Roboto, sans-serif">
+          					 Vi ved, at der kan ske fejl på fakturaer. Kontakt vores kundeservice, som vil hjælpe dig og fortælle om dine muligheder.
+						</mj-text>
+				</mj-column>
+		</mj-section>
+</mj-wrapper>
+  
+<mj-raw><!-- Feedback-DA --></mj-raw>
 <mj-wrapper css-class="border-top">
 		<mj-section css-class="section"
                 background-color="#ffffff">
@@ -174,39 +201,35 @@ Et momspligtigt fakturasalgsgebyr på {{ fee_amount }} Kr. ( {{ fee_procent }} %
                      padding="0"
                      font-family="Roboto, sans-serif"
                      padding-bottom="10px">
-          					 Vi sætter pris på din mening. Klik på en stjerne for at give os en anmeldelse.
+          					 Vi sætter pris på din mening. Klik på en stjerne for at give os en anmeldelse
           	</mj-text>
-            <mj-image width="145px"
+            <mj-image width="145px" 
                       align="left"
                       padding-left="0px"
-                      src="https://raw.githubusercontent.com/moneyflow-group/static/master/email-templates/stars.png"
-                      href="moneyflow.io/">
+                      src="https://raw.githubusercontent.com/moneyflow-group/static/master/email-templates/stars.png" 
+                      href="https://www.trustpilot.com/evaluate/moneyflow.io">
           	</mj-image>
-          						<!-- change link -->
 				</mj-column>
     </mj-section>
 </mj-wrapper>
-
-<mj-raw><!-- Contact 4 (Grouped columns) --></mj-raw>
+  
+<mj-raw><!-- Contact-DA --></mj-raw>
 <mj-wrapper css-class="border-top">
 		<mj-section css-class="section"
-                padding-bottom="40px"
-                background-color="#ffffff">
+                padding-bottom="48px">
     		<mj-column padding="0">
         		<mj-text font-size="20px"
                      font-weight="600"
                      padding="0"
-                     font-family="Montserrat, sans-serif"
-                     padding-bottom="15px">
+                     font-family="Montserrat, sans-serif">
               			 Hvordan kan jeg få hjælp?
           	</mj-text>
 				</mj-column>
 		</mj-section>
     <!-- Write us -->
     <mj-section css-class="section"
-                padding-top="0px"
-                background-color="#ffffff">
-			<mj-group>
+                padding-top="0px">
+			<mj-group>	
       <mj-column width="28%">
         		<mj-image padding="0"
                       padding-bottom="15px"
@@ -214,32 +237,31 @@ Et momspligtigt fakturasalgsgebyr på {{ fee_amount }} Kr. ( {{ fee_procent }} %
                       align="left"
                       src="https://moneyflow-group.github.io/static/email-templates/comment.png">
 						</mj-image>
-        </mj-column>
+        </mj-column>	
         <mj-column padding="0"
                    width="72%">
      	 			<mj-text font-size="14px"
                      font-weight="600"
                      padding="0"
                      font-family="Montserrat, sans-serif"
-                     padding-bottom="10px">
+                     padding-bottom="8px">
         						 Kontakt os nu
           	</mj-text>
 						<mj-text font-size="14px"
                      padding="0"
                      font-family="Roboto, sans-serif">
-										 <a href="moneyflow.io/"
+										 <a href="moneyflow.io/?open_chat=true"
                         class="link-nostyle">
                        	Start en chat</a>
-              					<!-- change link -->
           	</mj-text>
             <mj-text font-size="14px"
                      padding="0"
                      padding-bottom="15px"
                      font-family="Roboto, sans-serif">
-										 <a href="moneyflow.io/"
+										 <a href="mailto:support@moneyflow.io" 
                         class="link-nostyle">
                        	Skriv en mail</a>
-              					<!-- change link -->
+              					<!-- add subject line ?subject=Subject here" -->
           	</mj-text>
 				</mj-column>
         </mj-group>
@@ -252,29 +274,29 @@ Et momspligtigt fakturasalgsgebyr på {{ fee_amount }} Kr. ( {{ fee_procent }} %
                       align="left"
                       src="https://moneyflow-group.github.io/static/email-templates/phone.png">
             </mj-image>
-        </mj-column>
+        </mj-column>	
       	<mj-column padding="0"
                    width="72%">
         		<mj-text font-size="14px"
                      font-weight="600"
                      padding="0"
                      font-family="Montserrat, sans-serif"
-                     padding-bottom="10px">
+                     padding-bottom="8px">
               			 Ring til os på
           	</mj-text>
 						<mj-text font-size="14px"
                      padding="0"
                      font-family="Roboto, sans-serif">
-										 <a href="tel:004578733207"
+										 <a href="tel:004589877036"
                         class="link-nostyle">
-                        +45 78 73 32 07</a>
+                        +45 89 87 70 36</a>
           	</mj-text>
 				</mj-column>
         </mj-group>
     </mj-section>
 </mj-wrapper>
-
-<mj-raw><!-- Footer --></mj-raw>
+  
+<mj-raw><!-- Footer-DA --></mj-raw>
 <mj-wrapper css-class="border-top">
 		<mj-section css-class="section"
                 background-color="#ffffff"
@@ -291,20 +313,20 @@ Et momspligtigt fakturasalgsgebyr på {{ fee_amount }} Kr. ( {{ fee_procent }} %
                      font-family="Roboto, sans-serif"
                      padding-top="10px"
                      padding-bottom="30px">
-          					 <a href="https://moneyflow.io/da/privacy/"
+          					 <a href="https://moneyflow.io/en/privacy/"
                         class="link-nostyle">
                         Privatlivs- og cookiepolitik</a>
               			 <a>|</a>
-              			 <a href="https://moneyflow.io/da/terms/"
+              			 <a href="https://moneyflow.io/en/terms/"
                         class="link-nostyle">
-                        Forretningsbetingelser</a>
+                        Forettningsbetingelser</a>
           	</mj-text>
 						<mj-text font-size="12px"
                      align="center"
                      padding="0"
                      font-family="Roboto, sans-serif"
                      padding-bottom="5px">
-            				 Moneyflow er registreret og reguleret af
+            				 Moneyflow er godkendt af 
               			 <a href="https://www.finanstilsynet.dk/"
                         Class="link-nostyle">
                      Finanstilsynet</a>
@@ -313,7 +335,7 @@ Et momspligtigt fakturasalgsgebyr på {{ fee_amount }} Kr. ( {{ fee_procent }} %
                      align="center"
                      padding="0"
                      font-family="Roboto, sans-serif">
-            				 Moneyflow Group Aps | Langebrogade 4, 1411 Copenhagen | CVR 39228327
+            				 Moneyflow Group A/S | Langebrogade 4, 1411 København | CVR 39228327
           	</mj-text>
 				</mj-column>
 		</mj-section>
