@@ -1,6 +1,6 @@
-<mjml> <!--SUBJECT: Fakturanr. {{ invoice_number }} fra {{ company_name }}-->
+<mjml> <!--SUBJECT: Invoice no. {{ invoice_number }} from {{ company_name }}-->
 <mj-head>
-		<mj-title>Invoice payer-DA</mj-title>
+		<mj-title>Invoice payer-EN</mj-title>
     		<mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:600"/>
 		    <mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto:400,700"/>
 		    <mj-breakpoint width="480px" />
@@ -29,12 +29,11 @@
   					    .link-nostyle { color: #0000FF; text-decoration: none }
  						   	</mj-style>
  								<!--Preview text-->      
- 								<mj-preview>Kære {{ payer_company_name }}, På vegne af {{ company_name }} sender vi dig fakturanr. {{ invoice_number }} vedhæftet denne e-mail.</mj-preview>
+ 								<mj-preview>Dear {{ payer_company_name }}, On behave of {{ company_name }} we're sending you invoice no. {{ invoice_number }} attached to this email.</mj-preview> 
 </mj-head>
-  
 <mj-body background-color="#E4F0F7">
 
-<mj-raw><!-- INvoice payer-DA --></mj-raw>
+<mj-raw><!-- Invoice payer-EN --></mj-raw>
 <mj-wrapper>
 		<mj-section css-class="section"
                 background-color="#ffffff">
@@ -42,12 +41,11 @@
         		<mj-text font-size="14px"
                      padding="0"
                      font-family="Roboto, sans-serif">
-           					 Kære {{ payer_company_name }},<br/><br/>
-              På vegne af {{ company_name }} sender vi dig fakturanr. {{ invoice_number }} vedhæftet denne e-mail.<br/><br/>
-              <strong>{{ invoice_amount }}</strong> kr. skal indbetales til reg. nr. <strong>{{ MF_reg_no }}</strong> kontonr. <strong>{{ MF_account_no }}</strong>.<br/><br/>
-              Fakturaen skal senest betales d. <strong>{{ due_date }}</strong>.<br /><br />
-              Hvis du har nogle spørgsmål til indholdet af fakturaen bedes du venligst kontakte {{ company_name }}.
-          	</mj-text>
+           					 Dear {{ payer_company_name }},<br/><br/>
+              On behave of {{ company_name }} we're sending you invoice no. {{ invoice_number }} attached to this email.<br/><br/>
+              <strong>{{ invoice_amount }}</strong> kr. is to be paid to reg. no. <strong>{{ MF_reg_no }}</strong> account no. <strong>{{ MF_account_no }}</strong>.<br/><br/>
+              The invoice is due <strong>{{ due_date }}</strong>.<br /><br />
+              Please make sure to contact {{ company_name }} if you have any disputes.
           	<mj-text font-size="14px"
                      padding="0"
                      font-family="Roboto, sans-serif">
@@ -57,20 +55,20 @@
               			<p style="font-weight: 600;
                                    font-family: Montserrat, sans-serif;
                                    font-size: 12px;">
-                       						 Vi benytter Moneyflow</p>
-              										 Denne faktura er overført til Moneyflow for fleksibel betaling. Hvis du har spørgsmål omkring betaling af fakturaen eller Moneyflow, så følg et af de links herunder <br/><br/>
+                       						 We use Moneyflow</p>
+              										 This invoice has been tranferred to Moneyflow for more flexibility on payments. Please click on the links below if you have any questions about how to pay this invoice or about Moneyflow.<br/><br/>
               			<a style="text-decoration: none;
                               font-weight: 600;
                               font-family: Montserrat, sans-serif;
                               font-size: 12px;"
-                       				href="https://moneyflow.io?open_chat=true">
-                      				Start chat ></a><br />
+                       				href="https://moneyflow.io/en/?open_chat=true">
+                      				Start a chat ></a><br />
               			<a style="text-decoration: none;
                               font-weight: 600;
                               font-family: Montserrat, sans-serif;
                               font-size: 12px;"
-                       				href="https://www.moneyflow.io/">
-                      				Læs mere om Moneyflow ></a>
+                       				href="https://www.moneyflow.io/en">
+                      				Read more about Moneyflow ></a>
             		</div>
           	</mj-text>
         </mj-column>

@@ -1,4 +1,4 @@
-<mjml> <!--SUBJECT: Early payment for invoice no. {{ invoice_number }} is on its way--> 
+<mjml> <!--SUBJECT: Instant Payment for invoice no. {{ invoice_number }} is on its way-->
 <mj-head>
 		<mj-title>Post sale-EN</mj-title>
     		<mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:600"/>
@@ -29,15 +29,15 @@
   					    .link-nostyle { color: #0000FF; text-decoration: none }
  						   	</mj-style>
  								<!--Preview text-->      
- 								<mj-preview>Moneyflow's service has been used on invoice no. {{ invoice_number }} sent by {{ company_name }}.</mj-preview>
+ 								<mj-preview>Instant Payment has been used on invoice no. {{ invoice_number }} sent by {{ company_name }}.</mj-preview>
 </mj-head>
 <mj-body background-color="#E4F0F7">
   
-<mj-raw><!-- Top bar(DIN) --></mj-raw>
+<mj-raw><!-- Top bar(EC) --></mj-raw>
 <mj-wrapper>
 		<mj-section padding="0">
     		<mj-column>
-        		<mj-table padding="16px 0">
+        		<mj-table padding="21px 0">
             		<tr>
             				<td style="padding:0 0 0 18px; line-height:1;">
             						<img width="111"
@@ -46,17 +46,17 @@
                              alt="moneyflow" />
             				</td>
             				<td style="padding:0 18px 0 0; line-height:1;">
-            						<img width="80"
-                             style="width:100%; max-width:80px; display:block"
+            						<img width="142"
+                             style="width:100%; max-width:142px; display:block"
                              align="right"
-                             src="https://moneyflow-group.github.io/static/email-templates/dinero_logo.png"
-                             alt="Dinero" />
+                             src="https://moneyflow-group.github.io/static/email-templates/visma_e-conomic_logo.png"
+                             alt="visma e-conomic" />
             				</td>
             		</tr>
             </mj-table>
        	</mj-column>
     </mj-section>
-</mj-wrapper>  
+</mj-wrapper>
   
 <mj-raw><!-- Tick header --></mj-raw>
 <mj-wrapper>
@@ -73,13 +73,13 @@
                      font-size="28px"
                      font-family="Montserrat, sans-serif"
                      font-weight="600">
-                     Early payment<br/>is on its way
+                     Instant Payment<br/>is on its way
           	</mj-text>
         </mj-column>
  				</mj-section>
 </mj-wrapper>
   
-<mj-raw><!-- Post sale text(DIN)-EN --></mj-raw>
+<mj-raw><!-- Post sale text(EC)-EN --></mj-raw>
 <mj-wrapper>
 		<mj-section css-class="section"
                 background-color="#ffffff">
@@ -87,13 +87,13 @@
         		<mj-text font-size="14px"
              				 padding="0"
            				   font-family="Roboto, sans-serif">
-							       Moneyflow's service has been used on invoice no. {{ invoice_number }} sent by {{ company_name }}. <br/><br/> We have sent {{ factoring_amount }} kr. to your bank account ending with {{ account_number }} and done the book keeping for you. You can expect payment within 2 hours (weekdays, between 8am and 6pm).<br/><br/>Attached to this email is the receipt for the sale. 
+							       Instant Payment has been used on invoice no. {{ invoice_number }} sent by {{ company_name }}. <br/><br/> We have sent {{ factoring_amount }} kr. to your bank account ending with {{ account_number }} and prepared the book keeping for you, which you just have to approve in e-conomic. You can expect payment within 2 hours (weekdays, between 8am and 6pm).<br/><br/>Attached to this email is the receipt for the sale. 
             </mj-text>
      		</mj-column>
    	</mj-section>
  </mj-wrapper>
   
-<mj-raw><!-- Receipt(DIN)-EN --></mj-raw>
+<mj-raw><!-- Receipt(EC)-EN --></mj-raw>
 <mj-wrapper css-class="border-top">
 		<mj-section css-class="section"
                 padding-bottom="0">
@@ -103,7 +103,7 @@
                      font-weight="600"
                      padding="0"
                      padding-bottom="30px">
-              			 Receipt for early payment
+              			 Receipt for Instant Payment
         		</mj-text>
         </mj-column>
     </mj-section>
@@ -216,7 +216,7 @@
 						<mj-text font-size="14px"
                      padding="0"
                      font-family="Roboto, sans-serif">
-										 <a href="moneyflow.io/?open_chat=true"
+										 <a href="https://moneyflow.io/en/?open_chat=true"
                         class="link-nostyle">
                        	Start a chat</a>
           	</mj-text>

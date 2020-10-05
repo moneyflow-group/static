@@ -1,4 +1,4 @@
-<mjml> <!--SUBJECT: Du kan nu få tidlig betaling for dina fakturaer-->
+<mjml> <!--SUBJECT: Straksindbetaling er nu installerat--> 
 <mj-head>
 		<mj-title>Post onboarding-DA</mj-title>
     		<mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:600"/>
@@ -29,15 +29,15 @@
   					    .link-nostyle { color: #0000FF; text-decoration: none }
  						   	</mj-style>
  								<!--Preview text-->      
- 								<mj-preview>Hej {{ signee_name }}.<br/><br/>Du har nu gennemført installationen for {{ company_name }} og kan begynde at få tidlige betalinger for dine fakturaer gennem Moneyflow.</mj-preview>
+ 								<mj-preview>Hej {{ signee_name }}.<br/><br/>Du har nu gennemført installationen af Straksindbetaling for {{ company_name }} i e-conomic og kan få betaling med det samme for fakturaer gennem Moneyflow.</mj-preview> 
 </mj-head>
 <mj-body background-color="#E4F0F7">
   
-<mj-raw><!-- Top bar(DIN) --></mj-raw>
+<mj-raw><!-- Top bar(EC) --></mj-raw>
 <mj-wrapper>
 		<mj-section padding="0">
     		<mj-column>
-        		<mj-table padding="16px 0">
+        		<mj-table padding="21px 0">
             		<tr>
             				<td style="padding:0 0 0 18px; line-height:1;">
             						<img width="111"
@@ -46,18 +46,18 @@
                              alt="moneyflow" />
             				</td>
             				<td style="padding:0 18px 0 0; line-height:1;">
-            						<img width="80"
-                             style="width:100%; max-width:80px; display:block"
+            						<img width="142"
+                             style="width:100%; max-width:142px; display:block"
                              align="right"
-                             src="https://moneyflow-group.github.io/static/email-templates/dinero_logo.png"
-                             alt="Dinero" />
+                             src="https://moneyflow-group.github.io/static/email-templates/visma_e-conomic_logo.png"
+                             alt="visma e-conomic" />
             				</td>
             		</tr>
             </mj-table>
        	</mj-column>
     </mj-section>
-</mj-wrapper>  
-  
+</mj-wrapper>
+    
 <mj-raw><!-- Swosh header --></mj-raw>
 <mj-wrapper>
 		<mj-section background-url="https://moneyflow-group.github.io/static/email-templates/hero_background.jpg"
@@ -73,13 +73,13 @@
                      font-size="28px"
                      font-family="Montserrat, sans-serif"
                      font-weight="600">
-                     Din Moneyflow konto<br/>er nu klar til brug
+                     Straksindbetaling er<br/>nu installeret
           	</mj-text>
         </mj-column>
     </mj-section>
 </mj-wrapper>
   
-<mj-raw><!-- Onboarding text(DIN)-DA --></mj-raw>
+<mj-raw><!-- Onboarding text(EC)-DA --></mj-raw>
 <mj-wrapper>
 		<mj-section css-class="section"
      		        background-color="#ffffff">
@@ -87,7 +87,7 @@
         		<mj-text font-size="14px"
             		     padding="0"
             		     font-family="Roboto, sans-serif">
-        						 Hej {{ signee_name }}.<br/><br/>Du har nu gennemført installationen for {{ company_name }} og kan begynde at få tidlige betalinger for dine fakturaer gennem Moneyflow.<br/><br/> Vedhæftet denne e-mail finder du hovedaftalen som du har underskrevet.<br/><br/>Du kan nu importere fakturakladder og vælge hvilke kvalificerede fakturaer, som du vil have tidlig betaling for. 
+        						 Hej {{ signee_name }}.<br/><br/>Du har nu gennemført installationen af Straksindbetaling for {{ company_name }} i e-conomic og kan få betaling med det samme for fakturaer gennem Moneyflow.<br/><br/> Vedhæftet denne e-mail finder du hovedaftalen som du har underskrevet.<br/><br/>Når du laver og sender en faktura, har du nu mulighed for at aktivere Straksindbetaling for den specifikke faktura. 
           	</mj-text>
 				</mj-column>
    	</mj-section>
@@ -111,7 +111,7 @@
           	     		 padding="0"
        				 	     font-family="Roboto, sans-serif"
               			 padding-bottom="30px">
-          					 For at du kan bruge tidlig betaling på en faktura skal disse forhold være opfyldt:
+          					 For at du kan bruge Straksindbetaling på en faktura skal disse forhold være opfyldt:
           	</mj-text>
 				</mj-column>
 		</mj-section>
@@ -164,7 +164,7 @@
             				 padding="0"
 						         font-family="Roboto, sans-serif"
            					 padding-bottom="20px">
-         						 Du skal have handlet med dine kunder indenfor de seneste 12 måneder
+             		  	 Du skal have handlet med dine kunder indenfor de seneste 12 måneder </br></br>
           	</mj-text>
  			      <mj-text font-size="14px"
        						   font-weight="600"
@@ -189,13 +189,13 @@
         		<mj-text font-size="12px"
                      padding="0"
                      font-family="Roboto, sans-serif">
-        						 *Andre faktorer kan medvirke at tidlig betaling ikke er mulig
+        						 *Andre faktorer kan medvirke at Straksindbetaling ikke er mulig
           	</mj-text>
 				</mj-column>
     </mj-section>
 </mj-wrapper>
   
-<mj-raw><!-- FAQ(DIN)-DA --></mj-raw>
+<mj-raw><!-- FAQ(EC)-DA --></mj-raw>
 <mj-wrapper css-class="border-top">
 		<mj-section css-class="section"
                 background-color="#ffffff">
@@ -218,7 +218,7 @@
                      padding="0"
                      font-family="Roboto, sans-serif"
                      padding-bottom="20px">
-          					 Lav din faktura som du plejer og gem den som en kladde. Herefter går du till <a href="https://flow.moneyflow.io/en/dinero/login" class="link-nostyle">moneyflow.io/dinero</a> og fortsætter fakturasalget der. 
+          					 Lav din faktura som du plejer og aktiver Straksindbetaling på fakturakladden.
           	</mj-text>
             <mj-text font-size="14px"
                      font-weight="600"
@@ -256,7 +256,7 @@
 		</mj-section>
 </mj-wrapper>
   
-<mj-raw><!-- Learn more(DIN)-DA --></mj-raw>
+<mj-raw><!-- Learn more(EC)-DA --></mj-raw>
 <mj-wrapper css-class="border-top">
 		<mj-section css-class="section"
             		background-color="#ffffff">
@@ -266,20 +266,20 @@
                      padding="0"
                      font-family="Montserrat, sans-serif"
                      padding-bottom="30px">
-          					 Se mere om Moneyflow
+          					 Se mere om Straksindbetaling
           	</mj-text>
 					  <mj-text font-size="16px"
                      padding="0"
                      font-family="Roboto, sans-serif"
                      padding-bottom="15px">
-            				 <a href="https://dinero.dk/integrationer/moneyflow/"
+            				 <a href="https://www.e-conomic.dk/funktioner/straksindbetaling"
  	 											class="link-nostyle">
                         Sådan får du betaling med det samme</a>
           	</mj-text>
  					  <mj-text font-size="16px"
                      padding="0"
                      font-family="Roboto, sans-serif">
-            				 <a href="moneyflow.io/da"
+            				 <a href="https://moneyflow.io/"
                         class="link-nostyle">
                         Lær Moneyflow at kende</a>
           	</mj-text>
@@ -324,7 +324,7 @@
 						<mj-text font-size="14px"
                      padding="0"
                      font-family="Roboto, sans-serif">
-										 <a href="moneyflow.io/?open_chat=true"
+										 <a href="https://moneyflow.io/?open_chat=true"
                         class="link-nostyle">
                        	Start en chat</a>
           	</mj-text>
@@ -335,7 +335,6 @@
 										 <a href="mailto:support@moneyflow.io" 
                         class="link-nostyle">
                        	Skriv en mail</a>
-              					<!-- add subject line ?subject=Subject here" -->
           	</mj-text>
 				</mj-column>
         </mj-group>
@@ -387,11 +386,11 @@
                      font-family="Roboto, sans-serif"
                      padding-top="10px"
                      padding-bottom="30px">
-          					 <a href="https://moneyflow.io/en/privacy/"
+          					 <a href="https://moneyflow.io/da/privacy/"
                         class="link-nostyle">
                         Privatlivs- og cookiepolitik</a>
               			 <a>|</a>
-              			 <a href="https://moneyflow.io/en/terms/"
+              			 <a href="https://moneyflow.io/da/terms/"
                         class="link-nostyle">
                         Forettningsbetingelser</a>
           	</mj-text>
