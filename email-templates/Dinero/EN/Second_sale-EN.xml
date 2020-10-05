@@ -1,6 +1,6 @@
-<mjml> <!--SUBJECT: Please verify your email address-->
+<mjml> <!--SUBJECT: Early payment for invoice no. {{ invoice_number }} is on its way--> 
 <mj-head>
-		<mj-title>Verify email-EN</mj-title>
+		<mj-title>Post sale-EN</mj-title>
     		<mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:600"/>
 		    <mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto:400,700"/>
 		    <mj-breakpoint width="480px" />
@@ -29,7 +29,7 @@
   					    .link-nostyle { color: #0000FF; text-decoration: none }
  						   	</mj-style>
  								<!--Preview text-->      
- 								<mj-preview>Hello {{ signee_name }}, To complete your account at Moneyflow.io, you must confirm your email address: {{ company_email }}</mj-preview>
+ 								<mj-preview>Moneyflow's service has been used on invoice no. {{ invoice_number }} sent by {{ company_name }}.</mj-preview>
 </mj-head>
 <mj-body background-color="#E4F0F7">
   
@@ -58,9 +58,9 @@
     </mj-section>
 </mj-wrapper>  
   
-<mj-raw><!-- Swosh header --></mj-raw>
+<mj-raw><!-- Tick header --></mj-raw>
 <mj-wrapper>
-		<mj-section background-url="https://moneyflow-group.github.io/static/email-templates/hero_background.jpg"
+		<mj-section background-url="https://raw.githubusercontent.com/moneyflow-group/static/master/email-templates/post_sale_header_background.jpg"
                 background-size="cover"
                 background-repeat="no-repeat"
                 padding="128px 0"
@@ -73,33 +73,110 @@
                      font-size="28px"
                      font-family="Montserrat, sans-serif"
                      font-weight="600">
-                     Verify your email
+                     Early payment<br/>is on its way
           	</mj-text>
         </mj-column>
-    </mj-section>
+ 				</mj-section>
 </mj-wrapper>
   
-<mj-raw><!-- Verify email-EN --></mj-raw>
+<mj-raw><!-- Post sale text(DIN)-EN --></mj-raw>
 <mj-wrapper>
 		<mj-section css-class="section"
                 background-color="#ffffff">
     		<mj-column padding="0">
         		<mj-text font-size="14px"
-                  	 padding="0"
-                     font-family="Roboto, sans-serif">
-           				 	 Hello {{ signee_name }},<br/><br/>To complete your account at Moneyflow.io, you must confirm your email address: {{ company_email }}
- 						</mj-text>
-          			<mj-button background-color="#0000FF"
-                           font-family="montserrat, sans-serif"
-                           border-radius="6px"
-                           height="36px"
-                           width="146px"
-                           padding-top="48px"
-                           href="{{ url_verify_email }}">
-                   				 Verify
-          			</mj-button>
- 				</mj-column>
-		</mj-section>
+             				 padding="0"
+           				   font-family="Roboto, sans-serif">
+							       Moneyflow's service has been used on invoice no. {{ invoice_number }} sent by {{ company_name }}. <br/><br/> We have sent {{ factoring_amount }} kr. to your bank account ending with {{ account_number }} and done the book keeping for you. You can expect payment within 2 hours (weekdays, between 8am and 6pm).<br/><br/>Attached to this email is the receipt for the sale. 
+            </mj-text>
+     		</mj-column>
+   	</mj-section>
+ </mj-wrapper>
+  
+<mj-raw><!-- Receipt(DIN)-EN --></mj-raw>
+<mj-wrapper css-class="border-top">
+		<mj-section css-class="section"
+                padding-bottom="0">
+				<mj-column padding-bottom="0px">
+        		<mj-text font-family="Montserrat, sans-serif"
+                     font-size="16px"
+                     font-weight="600"
+                     padding="0"
+                     padding-bottom="30px">
+              			 Receipt for early payment
+        		</mj-text>
+        </mj-column>
+    </mj-section>
+  	<mj-section css-class="section"
+                padding-bottom="0px"
+                padding-top="0px">
+    		<mj-column>
+        		<mj-table padding="0"
+                      font-family="Roboto, sans-serif"
+                      font-size="14px">
+                <tr>
+                    <td style="padding-bottom:15px">
+                               Fee</td>
+                    <td style="text-align:right;
+                               padding-bottom:15px">
+                               {{ fee_amount }} kr.</td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:15px;">
+                               VAT (25%)</td>
+                    <td style="text-align:right;
+                               padding-bottom:15px">
+                               {{ vat_amount }} kr.</td>
+                </tr>
+                <tr style="border-top:1px solid #2F3344;
+                           font-weight:700;">
+                    <td style="padding-top:15px">
+                               Total amount</td>
+                    <td style="text-align:right;
+                               padding-top:15px">
+                               {{ total_fee_amount }} kr.</td>
+                </tr>
+            </mj-table>
+        </mj-column>
+    </mj-section>
+  	<mj-section css-class="section"
+                padding-top="20px">
+				<mj-column>
+        		<mj-text font-size="12px"
+        						 font-family="Roboto, sans-serif"
+                     padding="0">
+       							 Invoice no. {{ invoice_number }} was bought by Moneyflow I A/S for {{ invoice_amount }} kr. An invoice sale fee of {{ fee_amount }} kr. is added, which is subject to 25% VAT.
+          	</mj-text>
+        </mj-column>
+    </mj-section>
+</mj-wrapper>
+  
+<mj-raw><!-- Feedback-EN --></mj-raw>
+<mj-wrapper css-class="border-top">
+		<mj-section css-class="section"
+                background-color="#ffffff">
+    		<mj-column padding="0">
+        		<mj-text font-size="16px"
+                     font-weight="600"
+                     padding="0"
+                     font-family="Montserrat, sans-serif"
+                     padding-bottom="20px">
+                     How was the experience?
+          	</mj-text>
+            <mj-text font-size="14px"
+                     padding="0"
+                     font-family="Roboto, sans-serif"
+                     padding-bottom="10px">
+          					 We would love to hear from you. Press a star to leave a review.
+          	</mj-text>
+            <mj-image width="145px" 
+                      align="left"
+                      padding-left="0px"
+                      src="https://raw.githubusercontent.com/moneyflow-group/static/master/email-templates/stars.png" 
+                      href="https://www.trustpilot.com/evaluate/moneyflow.io">
+          	</mj-image>
+				</mj-column>
+    </mj-section>
 </mj-wrapper>
   
 <mj-raw><!-- Contact-EN --></mj-raw>
@@ -139,7 +216,7 @@
 						<mj-text font-size="14px"
                      padding="0"
                      font-family="Roboto, sans-serif">
-										 <a href="moneyflow.io/?open_chat=true"
+										 <a href="moneyflow.io/en/?open_chat=true"
                         class="link-nostyle">
                        	Start a chat</a>
           	</mj-text>

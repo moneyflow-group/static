@@ -1,6 +1,6 @@
-<mjml> <!--SUBJECT: Tidlig betaling for fakturanr. {{ invoice_number }} er på vej-->
+<mjml> <!--SUBJECT: Please verify your email address-->
 <mj-head>
-		<mj-title>Post sale-DA</mj-title>
+		<mj-title>Verify email-EN</mj-title>
     		<mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:600"/>
 		    <mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto:400,700"/>
 		    <mj-breakpoint width="480px" />
@@ -29,7 +29,7 @@
   					    .link-nostyle { color: #0000FF; text-decoration: none }
  						   	</mj-style>
  								<!--Preview text-->      
- 								<mj-preview>Du har brugt Moneyflow's service på fakturanr. {{ invoice_number }} sendt af {{ company name }}.</mj-preview>
+ 								<mj-preview>Hello {{ signee_name }}, To complete your account at Moneyflow.io, you must confirm your email address: {{ company_email }}</mj-preview>
 </mj-head>
 <mj-body background-color="#E4F0F7">
   
@@ -58,9 +58,9 @@
     </mj-section>
 </mj-wrapper>  
   
-<mj-raw><!-- Tick header --></mj-raw>
+<mj-raw><!-- Swosh header --></mj-raw>
 <mj-wrapper>
-		<mj-section background-url="https://raw.githubusercontent.com/moneyflow-group/static/master/email-templates/post_sale_header_background.jpg"
+		<mj-section background-url="https://moneyflow-group.github.io/static/email-templates/hero_background.jpg"
                 background-size="cover"
                 background-repeat="no-repeat"
                 padding="128px 0"
@@ -73,113 +73,36 @@
                      font-size="28px"
                      font-family="Montserrat, sans-serif"
                      font-weight="600">
-                     Tidlig betaling<br/>er på vej
+                     Verify your email
           	</mj-text>
         </mj-column>
- 				</mj-section>
+    </mj-section>
 </mj-wrapper>
   
-<mj-raw><!-- Post sale text(DIN)-DA --></mj-raw>
+<mj-raw><!-- Verify email-EN --></mj-raw>
 <mj-wrapper>
 		<mj-section css-class="section"
                 background-color="#ffffff">
     		<mj-column padding="0">
         		<mj-text font-size="14px"
-             				 padding="0"
-           				   font-family="Roboto, sans-serif">
-							       Du har brugt Moneyflow's service på fakturanr. {{ invoice_number }} sendt af {{ company name }}. <br/><br/> Vi har sendt {{ factoring_amount }} kr. til din bankkonto, der slutter med {{ account_number }}, og lavet bogføringen for dig. Du kan forvente betaling indenfor 2 timer (hverdage, mellem 8 og 18).<br/><br/>Vedhæftet denne e-mail er kvittering for salget. 
-            </mj-text>
-     		</mj-column>
-   	</mj-section>
+                  	 padding="0"
+                     font-family="Roboto, sans-serif">
+           				 	 Hello {{ signee_name }},<br/><br/>To complete your account at Moneyflow.io, you must confirm your email address: {{ company_email }}
+ 						</mj-text>
+          			<mj-button background-color="#0000FF"
+                           font-family="montserrat, sans-serif"
+                           border-radius="6px"
+                           height="36px"
+                           width="146px"
+                           padding-top="48px"
+                           href="{{ url_verify_email }}">
+                   				 Verify
+          			</mj-button>
+ 				</mj-column>
+		</mj-section>
 </mj-wrapper>
   
-<mj-raw><!-- Receipt(DIN)-DA --></mj-raw>
-<mj-wrapper css-class="border-top">
-		<mj-section css-class="section"
-                padding-bottom="0">
-				<mj-column padding-bottom="0px">
-        		<mj-text font-family="Montserrat, sans-serif"
-                     font-size="16px"
-                     font-weight="600"
-                     padding="0"
-                     padding-bottom="30px">
-              			 Kvittering for tidlig betaling
-        		</mj-text>
-        </mj-column>
-    </mj-section>
-  	<mj-section css-class="section"
-                padding-bottom="0px"
-                padding-top="0px">
-    		<mj-column>
-        		<mj-table padding="0"
-                      font-family="Roboto, sans-serif"
-                      font-size="14px">
-                <tr>
-                    <td style="padding-bottom:15px">
-                               Gebyr</td>
-                    <td style="text-align:right;
-                               padding-bottom:15px">
-                               {{ fee_amount }} kr.</td>
-                </tr>
-                <tr>
-                    <td style="padding-bottom:15px;">
-                               Moms (25%)</td>
-                    <td style="text-align:right;
-                               padding-bottom:15px">
-                               {{ vat_amount }} kr.</td>
-                </tr>
-                <tr style="border-top:1px solid #2F3344;
-                           font-weight:700;">
-                    <td style="padding-top:15px">
-                               Samlet beløb</td>
-                    <td style="text-align:right;
-                               padding-top:15px">
-                               {{ total_fee_amount }} kr.</td>
-                </tr>
-            </mj-table>
-        </mj-column>
-    </mj-section>
-  	<mj-section css-class="section"
-                padding-top="20px">
-				<mj-column>
-        		<mj-text font-size="12px"
-        						 font-family="Roboto, sans-serif"
-                     padding="0">
-       							 Fakturanr. {{ invoice_number }} er solgt til Moneyflow I A/S for {{ invoice_amount }} kr. Et momspligtigt fakturasalgsgebyr på {{ fee_amount }} kr. er tilføjet.
-          	</mj-text>
-        </mj-column>
-    </mj-section>
-</mj-wrapper>
-  
-<mj-raw><!-- Feedback-DA --></mj-raw>
-<mj-wrapper css-class="border-top">
-		<mj-section css-class="section"
-                background-color="#ffffff">
-    		<mj-column padding="0">
-        		<mj-text font-size="16px"
-                     font-weight="600"
-                     padding="0"
-                     font-family="Montserrat, sans-serif"
-                     padding-bottom="20px">
-                     Hvordan var din oplevelse?
-          	</mj-text>
-            <mj-text font-size="14px"
-                     padding="0"
-                     font-family="Roboto, sans-serif"
-                     padding-bottom="10px">
-          					 Vi sætter pris på din mening. Klik på en stjerne for at give os en anmeldelse
-          	</mj-text>
-            <mj-image width="145px" 
-                      align="left"
-                      padding-left="0px"
-                      src="https://raw.githubusercontent.com/moneyflow-group/static/master/email-templates/stars.png" 
-                      href="https://www.trustpilot.com/evaluate/moneyflow.io">
-          	</mj-image>
-				</mj-column>
-    </mj-section>
-</mj-wrapper>
-  
-<mj-raw><!-- Contact-DA --></mj-raw>
+<mj-raw><!-- Contact-EN --></mj-raw>
 <mj-wrapper css-class="border-top">
 		<mj-section css-class="section"
                 padding-bottom="48px">
@@ -188,7 +111,7 @@
                      font-weight="600"
                      padding="0"
                      font-family="Montserrat, sans-serif">
-              			 Hvordan kan jeg få hjælp?
+              			 How can I get help?
           	</mj-text>
 				</mj-column>
 		</mj-section>
@@ -211,14 +134,14 @@
                      padding="0"
                      font-family="Montserrat, sans-serif"
                      padding-bottom="8px">
-        						 Kontakt os nu
+        						 Reach out now
           	</mj-text>
 						<mj-text font-size="14px"
                      padding="0"
                      font-family="Roboto, sans-serif">
-										 <a href="moneyflow.io/?open_chat=true"
+										 <a href="https://moneyflow.io/en/?open_chat=true"
                         class="link-nostyle">
-                       	Start en chat</a>
+                       	Start a chat</a>
           	</mj-text>
             <mj-text font-size="14px"
                      padding="0"
@@ -226,7 +149,7 @@
                      font-family="Roboto, sans-serif">
 										 <a href="mailto:support@moneyflow.io" 
                         class="link-nostyle">
-                       	Skriv en mail</a>
+                       	Send an email</a>
               					<!-- add subject line ?subject=Subject here" -->
           	</mj-text>
 				</mj-column>
@@ -248,7 +171,7 @@
                      padding="0"
                      font-family="Montserrat, sans-serif"
                      padding-bottom="8px">
-              			 Ring til os på
+              			 Call us on
           	</mj-text>
 						<mj-text font-size="14px"
                      padding="0"
@@ -261,8 +184,8 @@
         </mj-group>
     </mj-section>
 </mj-wrapper>
-
-<mj-raw><!-- Footer-DA --></mj-raw>
+  
+<mj-raw><!-- Footer-EN --></mj-raw>
 <mj-wrapper css-class="border-top">
 		<mj-section css-class="section"
                 background-color="#ffffff"
@@ -281,31 +204,31 @@
                      padding-bottom="30px">
           					 <a href="https://moneyflow.io/en/privacy/"
                         class="link-nostyle">
-                        Privatlivs- og cookiepolitik</a>
+                        Privacy and Cookie Policy</a>
               			 <a>|</a>
               			 <a href="https://moneyflow.io/en/terms/"
                         class="link-nostyle">
-                        Forettningsbetingelser</a>
+                        General Terms and Conditions</a>
           	</mj-text>
 						<mj-text font-size="12px"
                      align="center"
                      padding="0"
                      font-family="Roboto, sans-serif"
                      padding-bottom="5px">
-            				 Moneyflow er godkendt af 
+            				 Moneyflow is registered by the 
               			 <a href="https://www.finanstilsynet.dk/"
                         Class="link-nostyle">
-                     Finanstilsynet</a>
+                     Danish FSA</a>
           	</mj-text>
             <mj-text font-size="12px"
                      align="center"
                      padding="0"
                      font-family="Roboto, sans-serif">
-            				 Moneyflow Group A/S | Langebrogade 4, 1411 København | CVR 39228327
+            				 Moneyflow Group A/S | Langebrogade 4, 1411 Copenhagen | CVR 39228327
           	</mj-text>
 				</mj-column>
 		</mj-section>
 </mj-wrapper>
-  
+
 </mj-body>
 </mjml>

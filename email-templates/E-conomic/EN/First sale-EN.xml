@@ -1,6 +1,6 @@
-<mjml> <!--SUBJECT: Instant Payment for invoice no. {{ invoice_number }} is on its way-->
+<mjml> <!--SUBJECT: Instant Payment for invoice no. {{ invoice_number }} is on its way--> 
 <mj-head>
-		<mj-title>Post sale-EN</mj-title>
+		<mj-title>First sale-EN</mj-title>
     		<mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:600"/>
 		    <mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto:400,700"/>
 		    <mj-breakpoint width="480px" />
@@ -57,7 +57,7 @@
        	</mj-column>
     </mj-section>
 </mj-wrapper>
-  
+
 <mj-raw><!-- Tick header --></mj-raw>
 <mj-wrapper>
 		<mj-section background-url="https://raw.githubusercontent.com/moneyflow-group/static/master/email-templates/post_sale_header_background.jpg"
@@ -73,7 +73,7 @@
                      font-size="28px"
                      font-family="Montserrat, sans-serif"
                      font-weight="600">
-                     Instant Payment<br/>is on its way
+                     Your first Instant Payment<br/>is on its way
           	</mj-text>
         </mj-column>
  				</mj-section>
@@ -151,6 +151,40 @@
     </mj-section>
 </mj-wrapper>
   
+<mj-raw><!-- Post sale info-EN --></mj-raw>
+<mj-wrapper css-class="border-top">
+		<mj-section css-class="section"
+            		background-color="#ffffff">
+				<mj-column padding="0">
+        		<mj-text font-size="16px"
+                     font-weight="600"
+                     padding="0"
+                     font-family="Montserrat, sans-serif"
+                     padding-bottom="15px">
+          					 What does my customer need to do?
+          	</mj-text>
+            <mj-text font-size="14px"
+                     padding="0"
+                     font-family="Roboto, sans-serif"
+                     padding-bottom="30px">
+          					 Your customer pays the invoice as usual, but to a new bank account connected to Moneyflow. The new payment instructions are added to the invoice. Moneyflow will take care of collecting the payment.
+          	</mj-text>          
+        		<mj-text font-size="16px"
+                     font-weight="600"
+                     padding="0"
+                     font-family="Montserrat, sans-serif"
+                     padding-bottom="15px">
+              			 What do I do if there is a mistake on the invoice
+          	</mj-text>
+					  <mj-text font-size="14px"
+                     padding="0"
+                     font-family="Roboto, sans-serif">
+          					 We know honest mistakes happen. In such an event, please contact our customer support, who will guide you through your options.
+						</mj-text>
+				</mj-column>
+		</mj-section>
+</mj-wrapper>
+  
 <mj-raw><!-- Feedback-EN --></mj-raw>
 <mj-wrapper css-class="border-top">
 		<mj-section css-class="section"
@@ -216,7 +250,7 @@
 						<mj-text font-size="14px"
                      padding="0"
                      font-family="Roboto, sans-serif">
-										 <a href="moneyflow.io/?open_chat=true"
+										 <a href="https://moneyflow.io/en/?open_chat=true"
                         class="link-nostyle">
                        	Start a chat</a>
           	</mj-text>

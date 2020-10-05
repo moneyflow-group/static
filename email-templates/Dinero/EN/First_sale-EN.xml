@@ -1,6 +1,6 @@
-<mjml> <!--SUBJECT: You can now recieve early payment for your invoices-->
+<mjml><!--SUBJECT: Early payment for invoice no. {{ invoice_number }} is on its way-->
 <mj-head>
-		<mj-title>Post onboarding-EN</mj-title>
+		<mj-title>First sale-EN</mj-title>
     		<mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:600"/>
 		    <mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto:400,700"/>
 		    <mj-breakpoint width="480px" />
@@ -29,7 +29,7 @@
   					    .link-nostyle { color: #0000FF; text-decoration: none }
  						   	</mj-style>
  								<!--Preview text-->      
- 								<mj-preview>Hi {{ signee_name }}.<br/><br/>You have now completed the setup for {{ company_name }} and can get paid early for invoices through Moneyflow.</mj-preview>   						
+ 								<mj-preview>Moneyflow's service has been used on invoice no. {{ invoice_number }} sent by {{ company_name }}.</mj-preview>
 </mj-head>
 <mj-body background-color="#E4F0F7">
   
@@ -58,9 +58,9 @@
     </mj-section>
 </mj-wrapper>  
     
-<mj-raw><!-- Swosh header --></mj-raw>
+<mj-raw><!-- Tick header --></mj-raw>
 <mj-wrapper>
-		<mj-section background-url="https://moneyflow-group.github.io/static/email-templates/hero_background.jpg"
+		<mj-section background-url="https://raw.githubusercontent.com/moneyflow-group/static/master/email-templates/post_sale_header_background.jpg"
                 background-size="cover"
                 background-repeat="no-repeat"
                 padding="128px 0"
@@ -73,218 +73,144 @@
                      font-size="28px"
                      font-family="Montserrat, sans-serif"
                      font-weight="600">
-                     Your Moneyflow account<br/>is now set up
+                     Your first early payment<br/>is on its way
+          	</mj-text>
+        </mj-column>
+ 				</mj-section>
+</mj-wrapper>
+  
+<mj-raw><!-- Post sale text(DIN)-EN --></mj-raw>
+<mj-wrapper>
+		<mj-section css-class="section"
+                background-color="#ffffff">
+    		<mj-column padding="0">
+        		<mj-text font-size="14px"
+             				 padding="0"
+           				   font-family="Roboto, sans-serif">
+							       Moneyflow's service has been used on invoice no. {{ invoice_number }} sent by {{ company_name }}. <br/><br/> We have sent {{ factoring_amount }} kr. to your bank account ending with {{ account_number }} and done the book keeping for you. You can expect payment within 2 hours (weekdays, between 8am and 6pm).<br/><br/>Attached to this email is the receipt for the sale. 
+            </mj-text>
+     		</mj-column>
+   	</mj-section>
+ </mj-wrapper>
+  
+<mj-raw><!-- Receipt(DIN)-EN --></mj-raw>
+<mj-wrapper css-class="border-top">
+		<mj-section css-class="section"
+                padding-bottom="0">
+				<mj-column padding-bottom="0px">
+        		<mj-text font-family="Montserrat, sans-serif"
+                     font-size="16px"
+                     font-weight="600"
+                     padding="0"
+                     padding-bottom="30px">
+              			 Receipt for early payment
+        		</mj-text>
+        </mj-column>
+    </mj-section>
+  	<mj-section css-class="section"
+                padding-bottom="0px"
+                padding-top="0px">
+    		<mj-column>
+        		<mj-table padding="0"
+                      font-family="Roboto, sans-serif"
+                      font-size="14px">
+                <tr>
+                    <td style="padding-bottom:15px">
+                               Fee</td>
+                    <td style="text-align:right;
+                               padding-bottom:15px">
+                               {{ fee_amount }} kr.</td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:15px;">
+                               VAT (25%)</td>
+                    <td style="text-align:right;
+                               padding-bottom:15px">
+                               {{ vat_amount }} kr.</td>
+                </tr>
+                <tr style="border-top:1px solid #2F3344;
+                           font-weight:700;">
+                    <td style="padding-top:15px">
+                               Total amount</td>
+                    <td style="text-align:right;
+                               padding-top:15px">
+                               {{ total_fee_amount }} kr.</td>
+                </tr>
+            </mj-table>
+        </mj-column>
+    </mj-section>
+  	<mj-section css-class="section"
+                padding-top="20px">
+				<mj-column>
+        		<mj-text font-size="12px"
+        						 font-family="Roboto, sans-serif"
+                     padding="0">
+       							 Invoice no. {{ invoice_number }} was bought by Moneyflow I A/S for {{ invoice_amount }} kr. An invoice sale fee of {{ fee_amount }} kr. is added, which is subject to 25% VAT.
           	</mj-text>
         </mj-column>
     </mj-section>
-</mj-wrapper> 
-  
-<mj-raw><!-- Onboarding text(DIN)-EN --></mj-raw>
-<mj-wrapper>
-		<mj-section css-class="section"
-     		        background-color="#ffffff">
-    		<mj-column padding="0">
-        		<mj-text font-size="14px"
-            		     padding="0"
-            		     font-family="Roboto, sans-serif">
-        						 Hi {{ signee_name }}.<br/><br/>You have now completed the setup for {{ company_name }} and can get paid early for invoices through Moneyflow.<br/><br/> Attached to this email is the signed Main Agreement.<br/><br/>You can now import invoice drafts and choose which eligible invoices you want early payment for. 
-          	</mj-text>
-				</mj-column>
-   	</mj-section>
 </mj-wrapper>
   
-<mj-raw><!-- Requirements-EN --></mj-raw>
-<mj-wrapper css-class="border-top">
-    <!-- Requirements intro -->
-		<mj-section css-class="section"
-                padding-bottom="0px"
-       				  background-color="#ffffff">
-				<mj-column padding="0">
-        		<mj-text font-size="16px"
-          					 font-weight="600"
- 			         	     padding="0"
-      				   	   font-family="Montserrat, sans-serif"
-       						 	 padding-bottom="15px">
-     								 Which invoices can I get paid out early?
-          	</mj-text>
-        		<mj-text font-size="14px"
-          	     		 padding="0"
-       				 	     font-family="Roboto, sans-serif"
-              			 padding-bottom="30px">
-          					 In order to use early payment, the following criteria needs to be met:
-          	</mj-text>
-				</mj-column>
-		</mj-section>
-
-<!-- Requirements left columns -->
-		<mj-section css-class="section"
-           			padding-top="0px"
-       				  padding-bottom="30px"
-     				    background-color="#ffffff">
-   			<mj-column padding="0"
-     	      		   padding-right="10px">
-     	 			<mj-text font-size="14px"
-										 font-weight="600"
-				     		     padding="0"
-        	      		 font-family="Montserrat, sans-serif"
-          			 		 padding-bottom="15px">
-        						 Business to business
-          	</mj-text>
-						<mj-text font-size="14px"
-                     padding="0"
-   						       font-family="Roboto, sans-serif"
-   						       padding-bottom="20px">
-										 Invoices sent to registered businesses in Denmark. Make sure to fill in the CVR no. of your customer
-          	</mj-text>
-    		   	<mj-text font-size="14px"
-    						     font-weight="600"
- 						         padding="0"
-  						       font-family="Montserrat, sans-serif"
-                     padding-bottom="15px">
-              			 Payment terms
-          	</mj-text>
-   					<mj-text font-size="14px"
-      						   padding="0"
-                 		 font-family="Roboto, sans-serif"
-   						       padding-bottom="20px">
-										 Invoices with payment terms between 8 and 90 days
-          	</mj-text>
-      	</mj-column>
-      	<!-- Requirements right columns -->
-      	<mj-column padding="0"
-       		         padding-right="5px">
-        		<mj-text font-size="14px"
-                 		 font-weight="600"
-						         padding="0"
-            				 font-family="Montserrat, sans-serif"
-       						   padding-bottom="15px">
-										 Customers with good history
-          	</mj-text>
-						<mj-text font-size="14px"
-            				 padding="0"
-						         font-family="Roboto, sans-serif"
-           					 padding-bottom="20px">
-         						 You need to have traded with your customer during the last 12 months
-          	</mj-text>
- 			      <mj-text font-size="14px"
-       						   font-weight="600"
-      						   padding="0"
-                 		 font-family="Montserrat, sans-serif"
-      						   padding-bottom="15px">
-      							 Invoice amount
-          	</mj-text>
-						<mj-text font-size="14px"
-            				 padding="0"
-                     font-family="Roboto, sans-serif"
-   						       padding-bottom="0">
-          					 If the total invoice amount is above 1.000 kr.
-          	</mj-text>
-				</mj-column>
-		</mj-section>
-		<!-- Requirements disclaimer-->
-		<mj-section css-class="section"
-     				    padding-top="0px"
-                background-color="#ffffff">
-				<mj-column padding="0">
-        		<mj-text font-size="12px"
-                     padding="0"
-                     font-family="Roboto, sans-serif">
-        						 * Other factors may deem Instant Payment inavailable
-          	</mj-text>
-				</mj-column>
-    </mj-section>
-</mj-wrapper>
-  
-<mj-raw><!-- FAQ(DIN)-EN --></mj-raw>
-<mj-wrapper css-class="border-top">
-		<mj-section css-class="section"
-                background-color="#ffffff">
-    		<mj-column padding="0">
-        		<mj-text font-size="16px"
-                     padding="0"
-                     font-weight="600"
-                     font-family="Montserrat, sans-serif"
-                     padding-bottom="30px">
-              			 Frequently asked questions
-          	</mj-text> 
-        		<mj-text font-size="14px"
-                     font-weight="600"
-                     padding="0"
-                     font-family="Montserrat, sans-serif"
-                     padding-bottom="15px">
-              			 How do I sell my first invoice?
-          	</mj-text>
-					  <mj-text font-size="14px"
-                     padding="0"
-                     font-family="Roboto, sans-serif"
-                     padding-bottom="20px">
-          					 Create your invoice as usual and save it as a draft. Then go to <a href="https://flow.moneyflow.io/en/dinero/login" class="link-nostyle">moneyflow.io/dinero</a> and continue the invoice sale from there.
-          	</mj-text>
-            <mj-text font-size="14px"
-                     font-weight="600"
-                     padding="0"
-                     font-family="Montserrat, sans-serif"
-                     padding-bottom="15px">
-              			 When do I receive the money?
-          	</mj-text>
- 					  <mj-text font-size="14px"
-       						   padding="0"
-          				   font-family="Roboto, sans-serif"
-                     padding-bottom="20px">
-          					 You will recieve the money within 2 hours (weekdays, between 8am and 6pm)
-          	</mj-text>
-						<mj-text font-size="14px"
-                     font-weight="600"
-                     padding="0"
-                     font-family="Montserrat, sans-serif"
-                     padding-bottom="15px">
-              			 How will this affect my customer?
-          	</mj-text>
-				    <mj-text font-size="14px"
-                     padding="0"
-                     font-family="Roboto, sans-serif"
-                     padding-bottom="30px">
-          					 Your customer receives and pays the invoice as usual, but uses the new bank information stated on the invoice.
-          	</mj-text>
-          	<mj-text font-size="14px"
-                     padding="0"
-                     font-family="Roboto, sans-serif">
-              			 <a href="https://moneyflow.io/en/faq/" 
-                        class="link-nostyle">Read more</a> 
-          	</mj-text>
-				</mj-column>
-		</mj-section>
- </mj-wrapper>
-  
-<mj-raw><!-- Learn more(DIN)-EN --></mj-raw>
+<mj-raw><!-- Post sale info-EN --></mj-raw>
 <mj-wrapper css-class="border-top">
 		<mj-section css-class="section"
             		background-color="#ffffff">
+				<mj-column padding="0">
+        		<mj-text font-size="16px"
+                     font-weight="600"
+                     padding="0"
+                     font-family="Montserrat, sans-serif"
+                     padding-bottom="15px">
+          					 What does my customer need to do?
+          	</mj-text>
+            <mj-text font-size="14px"
+                     padding="0"
+                     font-family="Roboto, sans-serif"
+                     padding-bottom="30px">
+          					 Your customer pays the invoice as usual, but to a new bank account connected to Moneyflow. The new payment instructions are added to the invoice. Moneyflow will take care of collecting the payment.
+          	</mj-text>          
+        		<mj-text font-size="16px"
+                     font-weight="600"
+                     padding="0"
+                     font-family="Montserrat, sans-serif"
+                     padding-bottom="15px">
+              			 What do I do if there is a mistake on the invoice
+          	</mj-text>
+					  <mj-text font-size="14px"
+                     padding="0"
+                     font-family="Roboto, sans-serif">
+          					 We know honest mistakes happen. In such an event, please contact our customer support, who will guide you through your options.
+						</mj-text>
+				</mj-column>
+		</mj-section>
+</mj-wrapper>
+  
+<mj-raw><!-- Feedback-EN --></mj-raw>
+<mj-wrapper css-class="border-top">
+		<mj-section css-class="section"
+                background-color="#ffffff">
     		<mj-column padding="0">
         		<mj-text font-size="16px"
                      font-weight="600"
                      padding="0"
                      font-family="Montserrat, sans-serif"
-                     padding-bottom="30px">
-          					 Learn more about Moneyflow
+                     padding-bottom="20px">
+                     How was the experience?
           	</mj-text>
-					  <mj-text font-size="16px"
+            <mj-text font-size="14px"
                      padding="0"
                      font-family="Roboto, sans-serif"
-                     padding-bottom="15px">
-            				 <a href="https://dinero.dk/integrationer/moneyflow/"
- 	 											class="link-nostyle">
-                        How to get paid now</a>
+                     padding-bottom="10px">
+          					 We would love to hear from you. Press a star to leave a review.
           	</mj-text>
- 					  <mj-text font-size="16px"
-                     padding="0"
-                     font-family="Roboto, sans-serif">
-            				 <a href="moneyflow.io/en"
-                        class="link-nostyle">
-                        Get to know Moneyflow</a>
-          	</mj-text>
+            <mj-image width="145px" 
+                      align="left"
+                      padding-left="0px"
+                      src="https://raw.githubusercontent.com/moneyflow-group/static/master/email-templates/stars.png" 
+                      href="https://www.trustpilot.com/evaluate/moneyflow.io">
+          	</mj-image>
 				</mj-column>
-		</mj-section>
+    </mj-section>
 </mj-wrapper>
   
 <mj-raw><!-- Contact-EN --></mj-raw>
@@ -324,7 +250,7 @@
 						<mj-text font-size="14px"
                      padding="0"
                      font-family="Roboto, sans-serif">
-										 <a href="moneyflow.io/?open_chat=true"
+										 <a href="https://moneyflow.io/en/?open_chat=true"
                         class="link-nostyle">
                        	Start a chat</a>
           	</mj-text>

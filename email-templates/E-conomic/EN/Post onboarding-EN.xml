@@ -164,7 +164,7 @@
             				 padding="0"
 						         font-family="Roboto, sans-serif"
            					 padding-bottom="20px">
-         						 You need to have traded with your customer during the last 12 months
+              			 You need to have traded with your customer during the last 12 months </br></br>
           	</mj-text>
  			      <mj-text font-size="14px"
        						   font-weight="600"
@@ -279,7 +279,7 @@
  					  <mj-text font-size="16px"
                      padding="0"
                      font-family="Roboto, sans-serif">
-            				 <a href="moneyflow.io/en"
+            				 <a href="https://moneyflow.io/en/"
                         class="link-nostyle">
                         Get to know Moneyflow</a>
           	</mj-text>
@@ -324,7 +324,7 @@
 						<mj-text font-size="14px"
                      padding="0"
                      font-family="Roboto, sans-serif">
-										 <a href="moneyflow.io/?open_chat=true"
+										 <a href="https://moneyflow.io/en/?open_chat=true"
                         class="link-nostyle">
                        	Start a chat</a>
           	</mj-text>
