@@ -44,7 +44,7 @@
                      font-family="Roboto, sans-serif">
            					 Kære {{ payer_company_name }},<br/><br/>
               På vegne af {{ company_name }} sender vi dig fakturanr. {{ invoice_number }} vedhæftet denne e-mail.<br/><br/>
-              <strong>{{ invoice_amount }}</strong> kr. skal indbetales til reg. nr. <strong>{{ MF_reg_no }}</strong> kontonr. <strong>{{ MF_account_no }}</strong>.<br/><br/>
+              <strong>{{ invoice_amount }}</strong> kr. skal indbetales til reg. nr. <strong>{{ payment_reg_number }}</strong> kontonr. <strong>{{ payment_account_number }}</strong>.<br/><br/>
               Fakturaen skal senest betales d. <strong>{{ due_date }}</strong>.<br /><br />
               Hvis du har nogle spørgsmål til indholdet af fakturaen bedes du venligst kontakte {{ company_name }}.
           	</mj-text>
