@@ -1,0 +1,4 @@
+*.DS_Store
+
+# Ignore generated HTML E-mail Templates
+email-templates/**/*.html
