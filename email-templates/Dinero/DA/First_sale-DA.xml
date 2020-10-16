@@ -81,7 +81,7 @@
       <body style="background-color:#E4F0F7;">
         
     <div style="display:none;font-size:1px;color:#ffffff;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">
-      Du har brugt Moneyflow's service på fakturanr. {{ invoice_number }} sendt af {{ company name }}.
+      Du har brugt Moneyflow's service på fakturanr. {{ invoice_number }} sendt af {{ company_name }}.
     </div>
   
         
