@@ -29,7 +29,7 @@
   					    .link-nostyle { color: #0000FF; text-decoration: none }
  						   	</mj-style>
  								<!--Preview text-->      
- 								<mj-preview>Dear {{ payer_company_name }}, On behave of {{ company_name }} we're sending you invoice no. {{ invoice_number }} attached to this email.</mj-preview> 
+ 								<mj-preview>Dear {{ payer_company_name }}, On behalf of {{ company_name }} we're sending you invoice no. {{ invoice_number }} attached to this email.</mj-preview> 
 </mj-head>
 <mj-body background-color="#E4F0F7">
 
@@ -42,8 +42,8 @@
                      padding="0"
                      font-family="Roboto, sans-serif">
            					 Dear {{ payer_company_name }},<br/><br/>
-              On behave of {{ company_name }} we're sending you invoice no. {{ invoice_number }} attached to this email.<br/><br/>
-              <strong>{{ invoice_amount }}</strong> kr. is to be paid to reg. no. <strong>{{ MF_reg_no }}</strong> account no. <strong>{{ MF_account_no }}</strong>.<br/><br/>
+              On behalf of {{ company_name }} we're sending you invoice no. {{ invoice_number }} attached to this email.<br/><br/>
+              <strong>{{ invoice_amount }}</strong> kr. is to be paid to reg. no. <strong>{{ payment_reg_number }}</strong> account no. <strong>{{ payment_account_number }}</strong>.<br/><br/>
               The invoice is due <strong>{{ due_date }}</strong>.<br /><br />
               Please make sure to contact {{ company_name }} if you have any disputes.
           	<mj-text font-size="14px"
