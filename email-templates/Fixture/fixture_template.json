@@ -1,0 +1,274 @@
+[
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "0857d53f-d93c-49dc-9497-e1328f91ef0c",
+        "fields": {
+            "created_at": "2020-06-15T12:43:22.675Z",
+            "created_by": null,
+            "modified_at": "2020-06-15T12:43:22.675Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Dit fakturasalg er g\u00e5et igennem",
+            "from_email": "\"Moneyflow.io\" <factoring@flow.moneyflow.io>",
+            "language": "DA",
+            "platform": "Dinero",
+            "identifier": "POST_SALE"
+        }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "096bcc2a-ff0b-4168-9cd1-d26965fbd826",
+        "fields": {
+            "created_at": "2020-05-04T11:42:07.897Z",
+            "created_by": null,
+            "modified_at": "2020-06-26T10:37:17.009Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Bekr\u00e6ft venligst din emailadresse indenfor 24 timer",
+            "from_email": "\"Moneyflow.io\" <factoring@flow.moneyflow.io>",
+            "language": "DA",
+            "platform": "Dinero",
+            "identifier": "ONBOARDING_VERIFY"
+        }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "0cc67313-433d-467c-9ef1-952165b819cb",
+        "fields": {
+            "created_at": "2020-06-08T09:21:20.523Z",
+            "created_by": null,
+            "modified_at": "2020-06-15T12:36:12.993Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Dit f\u00f8rste fakturasalg er g\u00e5et igennem",
+            "from_email": "\"Moneyflow.io\" <factoring@flow.moneyflow.io>",
+            "language": "DA",
+            "platform": "Dinero",
+            "identifier": "POST_SALE_FIRST"
+        }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "2580695f-8360-4ab8-b283-998597dd7531",
+        "fields": {
+            "created_at": "2020-06-18T09:16:04.919Z",
+            "created_by": null,
+            "modified_at": "2020-06-18T09:16:04.919Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Du kan nu f\u00e5 tidlig betaling for dine fakturaer",
+            "from_email": "\"Moneyflow.io\" <factoring@flow.moneyflow.io>",
+            "language": "DA",
+            "platform": "Dinero",
+            "identifier": "ONBOARDING"
+        }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "2c05cbcc-2a55-3373-b3a9-abc31a807046",
+        "fields": {
+            "created_at": "2020-02-21T12:10:50.687Z",
+            "created_by": null,
+            "modified_at": "2020-02-21T13:53:29.884Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Dit fakturasalg er gennemf\u00f8rt",
+            "from_email": "\"Moneyflow.io\" <factoring@flow.moneyflow.io>",
+            "language": "DA",
+            "platform": "E-conomic",
+            "identifier": "POST_SALE"
+        }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "3c40931c-0c14-393e-844d-ca59450f4381",
+        "fields": {
+            "created_at": "2020-02-21T12:10:50.687Z",
+            "created_by": null,
+            "modified_at": "2020-02-21T13:53:29.884Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Your invoice sale is completed",
+            "from_email": "\"Moneyflow.io\" <factoring@flow.moneyflow.io>",
+            "language": "EN",
+            "platform": "E-conomic",
+            "identifier": "POST_SALE"
+        }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "40c14bab-94c5-4b79-bba5-b11e1abd0b03",
+        "fields": {
+            "created_at": "2020-06-18T09:16:40.760Z",
+            "created_by": null,
+            "modified_at": "2020-06-18T09:16:40.760Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "You can now get early payment for your invoices",
+            "from_email": "\"Moneyflow.io\" <factoring@flow.moneyflow.io>",
+            "language": "EN",
+            "platform": "Dinero",
+            "identifier": "ONBOARDING"
+        }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "503d4c60-3ff0-3d2b-9ea0-6fb5b0078031",
+        "fields": {
+            "created_at": "2020-02-21T12:10:50.687Z",
+            "created_by": null,
+            "modified_at": "2020-02-21T13:53:29.884Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "You are now ready to get paid instantly",
+            "from_email": "\"Moneyflow.io\" <factoring@flow.moneyflow.io>",
+            "language": "EN",
+            "platform": "E-conomic",
+            "identifier": "ONBOARDING"
+        }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "5f756b68-77a9-4102-9e9b-eca2e46817fe",
+        "fields": {
+            "created_at": "2020-06-15T12:33:59.956Z",
+            "created_by": null,
+            "modified_at": "2020-06-15T12:42:19.347Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Your invoice sale is completed",
+            "from_email": "\"Moneyflow.io\" <factoring@flow.moneyflow.io>",
+            "language": "EN",
+            "platform": "Dinero",
+            "identifier": "POST_SALE"
+        }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "81cac15d-01d5-3d51-8bde-0f7a383585ae",
+        "fields": {
+            "created_at": "2020-02-21T12:10:50.687Z",
+            "created_by": null,
+            "modified_at": "2020-02-21T13:53:29.884Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Du er nu klar til f\u00e5 betaling med det samme",
+            "from_email": "\"Moneyflow.io\" <factoring@flow.moneyflow.io>",
+            "language": "DA",
+            "platform": "E-conomic",
+            "identifier": "ONBOARDING"
+        }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "8fbf5119-bbdd-3a19-aa0d-c569bd2e3b9f",
+        "fields": {
+            "created_at": "2020-02-21T12:10:50.687Z",
+            "created_by": null,
+            "modified_at": "2020-02-21T13:53:29.884Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Dit f\u00f8rste fakturasalg er g\u00e5et igennem",
+            "from_email": "\"Moneyflow.io\" <factoring@flow.moneyflow.io>",
+            "language": "DA",
+            "platform": "E-conomic",
+            "identifier": "POST_SALE_FIRST"
+        }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "939d21c1-3734-435a-a4ca-03f02cf4a5be",
+        "fields": {
+            "created_at": "2020-05-11T07:24:04.301Z",
+            "created_by": null,
+            "modified_at": "2020-06-08T09:00:38.472Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Please verify your email address within 24 hours",
+            "from_email": "\"Moneyflow.io\" <factoring@flow.moneyflow.io>",
+            "language": "EN",
+            "platform": "Dinero",
+            "identifier": "ONBOARDING_VERIFY"
+        }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "a335f1c4-26c1-4071-81f9-0d7a51b6efa3",
+        "fields": {
+            "created_at": "2020-06-08T08:58:21.451Z",
+            "created_by": null,
+            "modified_at": "2020-06-08T08:58:21.451Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Faktura #{{ invoice_number }} fra {{ company_name }}",
+            "from_email": "\"Moneyflow.io\" <factoring@flow.moneyflow.io>",
+            "language": "DA",
+            "platform": "Dinero",
+            "identifier": "INVOICE_PAYER"
+        }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "ce09d866-a134-35a8-88b8-e4f08b21af3a",
+        "fields": {
+            "created_at": "2020-02-21T12:10:50.687Z",
+            "created_by": null,
+            "modified_at": "2020-02-21T13:53:29.884Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Your first invoice sale is completed",
+            "from_email": "\"Moneyflow.io\" <factoring@flow.moneyflow.io>",
+            "language": "EN",
+            "platform": "E-conomic",
+            "identifier": "POST_SALE_FIRST"
+        }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "d27eac52-ca2f-4e7e-8b7e-a34eac6a3ed4",
+        "fields": {
+            "created_at": "2020-06-08T09:19:49.071Z",
+            "created_by": null,
+            "modified_at": "2020-06-15T12:50:27.036Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Your first invoice sale is completed",
+            "from_email": "\"Moneyflow.io\" <factoring@flow.moneyflow.io>",
+            "language": "EN",
+            "platform": "Dinero",
+            "identifier": "POST_SALE_FIRST"
+        }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "f15d9e31-3609-48a0-93fa-d0409c48d653",
+        "fields": {
+            "created_at": "2020-06-08T08:59:14.682Z",
+            "created_by": null,
+            "modified_at": "2020-06-08T11:39:41.262Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Invoice #{{ invoice_number }} from {{ company_name }}",
+            "from_email": "\"Moneyflow.io\" <factoring@flow.moneyflow.io>",
+            "language": "EN",
+            "platform": "Dinero",
+            "identifier": "INVOICE_PAYER"
+        }
+    }
+]
