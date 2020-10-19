@@ -1,12 +1,11 @@
 #!/bin/bash
 
-
 # Create email fixture json from MJML files.
-# 
+#
 # This script will start a local mjml-server as a docker instance that accept MJML files and outputs HTML files.
-# Aftwards it will traverse the directories to overwrite default_email_templates.json
-# 
-# This is all slightly convuluted, but beats doing this manually.
+# Aftwards it will traverse the directories and find HTML files which will be used to generate a new default_email_templates.json
+#
+# This is all slightly convuluted, but it beats doing it manually.
 #
 
 echo "[+] Running MJML server..."
@@ -20,9 +19,14 @@ FILES=$(find . -name "*.mjml")
 for file in $FILES; do
     INPUT=$file
     OUTPUT=$(echo $INPUT | sed s/mjml/html/)
-    echo "    $INPUT --> $OUTPUT"
+    # echo "   $INPUT --> $OUTPUT"
     http localhost <$INPUT >$OUTPUT
 done
 
 echo "[+] Stopping MJML server..."
-docker stop "mjml-server" 1>/dev/null
+docker stop "mjml-server"
+
+echo "[+] Generating Django fixture..."
+python3 Fixture/generate_fixture.py
+
+echo "[+] Done!"
