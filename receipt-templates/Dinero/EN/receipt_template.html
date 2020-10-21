@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <title>Kvittering</title>
+  <title>Receipt</title>
   <style>
     * {
         margin: 0;
@@ -113,7 +113,7 @@
         <!-- Customer and Moneyflow Logo -->
         <tr>
             <td style="width: 270px; padding-bottom: 50px">
-              <h2>Kunde</h2>
+              <h2>Customer</h2>
               <p>
                   {{ company_name }}<br/>
                   Att: {{ signee_name }}<br/>
@@ -130,21 +130,22 @@
         <!-- Description and Receipt -->
         <tr>
             <td>
-              <h2>Beskrivelse</h2>
+              <h2>Description</h2>
               <p style="width: 270px">
-              Gebyr for tidlig betaling i forbindelse med administration af fordringer, herunder overtagelse af kreditrisiko for fakturanr.  <b>{{ invoice_number }}</b>, 
-              hvilken er købt af Moneyflow I A/S for <b>{{ factoring_amount }}</b>kr. Forskellen mellem fordringens pålydende værdi og købesummen er udtryk for vores 
-              honorering for overtagelse af kreditrisiko samt administration. Heri er indehold moms på <b>{{ vat_amount }}</b>kr.
+              Early payment fee for the administration of claims, including the transfer of credit risk for invoice no. <b>{{ invoice_number }}</b>.
+              This invoice was purchased by Moneyflow I A/S for DKK <b>{{ factoring_amount }}</b>. 
+              The difference between the total value of the purchased invoice and the purchase price reflects the Instant Payment fee. 
+              This includes VAT of DKK <b>{{ vat_amount }}</b>.
               </p>
             </td>
             <td style="padding-left: 48px; width: 149px;">
-              <h2>Kvittering</h2>
+              <h2>Receipt</h2>
               <table style="width: 100%">
                 <tr>
-                  <td><p>Dato:</p></td><td style="text-align: right"><p>{{ receipt_date }}</p></td>
+                  <td><p>Date:</p></td><td style="text-align: right"><p>{{ receipt_date }}</p></td>
                 </tr>
                 <tr>
-                  <td><p>Kvitteringsnr:</p></td><td style="text-align: right"><p>{{ receipt_number }}</p></td>
+                  <td><p>Receipt no:</p></td><td style="text-align: right"><p>{{ receipt_number }}</p></td>
                 </tr>
               </table>
             </td>
@@ -154,13 +155,13 @@
         <tr>
             <table style="width: 466px; padding-top: 80px">
             <tr>
-                <th class="row-orderlist" style="padding-right: 200px; text-align: left;"><h3>Beskrivelse</h3></th>
-                <th class="row-orderlist" style="padding-right: 0px;"><h3>Antal</h3></th>
-                <th class="row-orderlist column3"><h3>Enhedspris</h3></th>
-                <th class="row-orderlist column4"><h3>Pris</h3></th>
+                <th class="row-orderlist" style="padding-right: 200px; text-align: left;"><h3>Item</h3></th>
+                <th class="row-orderlist" style="padding-right: 0px;"><h3>Amount</h3></th>
+                <th class="row-orderlist column3"><h3>Unit price</h3></th>
+                <th class="row-orderlist column4"><h3>Price</h3></th>
             </tr>
             <tr>
-                <td class="row-orderlist"><p>Gebyr for tidlig betaling</p></td>
+                <td class="row-orderlist"><p>Instant Payment fee</p></td>
                 <td class="row-orderlist column2" style="border-bottom: 1px solid #2F3344"><p>1<p></td>
                 <td class="row-orderlist column3" style="border-bottom: 1px solid #2F3344"><p>{{ fee_amount }}</p></td>
                 <td class="row-orderlist column4" style="border-bottom: 1px solid #2F3344"><p>{{ fee_amount }}</p></td>
@@ -174,7 +175,7 @@
             <tr>
                 <td class="row-orderlist"><p></p></td>
                 <td class="row-orderlist"><p></p></td>
-                <td class="row-orderlist column3"><h4>Moms {{ vat_percent }}%</h4></td>
+                <td class="row-orderlist column3"><h4>VAT {{ vat_percent }}%</h4></td>
                 <td class="row-orderlist column4"><p>{{ vat_amount }}</p></td>
             </tr>
             <tr>
@@ -189,7 +190,7 @@
 
       <!-- Footer -->
       <div>
-        <p class="footer">Moneyflow Group A/S | Langebrogade 4, 1411 København K | CVR 39228327<br/>Telefon: +45 89 87 70 36 | E-mail: support@moneyflow.io</p>
+        <p class="footer">Moneyflow I A/S | Langebrogade 4, 1411 Copenhagen | CVR 39228327<br/>Phone: +45 89 87 70 36 | Email: support@moneyflow.io</p>
       </div>
     </div>
   </body>

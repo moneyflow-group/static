@@ -26,10 +26,4 @@ done
 echo "[+] Stopping MJML server..."
 docker stop "mjml-server"
 
-echo "[+] Generating Django fixture..."
-python3 Fixture/generate_fixture.py
-
-echo "[+] Deleting HTML files recursively..."
-find . -name "*.html" -exec rm {} \;
-
 echo "[+] Done!"

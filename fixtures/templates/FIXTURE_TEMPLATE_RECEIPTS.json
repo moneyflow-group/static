@@ -1,0 +1,62 @@
+[
+    {
+        "model": "asset_service.receipttemplate",
+        "pk": "20efbe9b-b486-424e-8e01-05bc7ba35f97",
+        "fields": {
+            "created_at": "2020-06-29T09:21:16.499Z",
+            "created_by": null,
+            "modified_at": "2020-06-29T09:24:24.003Z",
+            "modified_by": null,
+            "html": "",
+            "language": "DA",
+            "platform": "DINERO",
+            "_width": 595,
+            "_height": 842
+        }
+    },
+    {
+        "model": "asset_service.receipttemplate",
+        "pk": "57c78ae9-cf91-4b6e-8e58-a1c4e970c224",
+        "fields": {
+            "created_at": "2020-03-19T15:37:27.349Z",
+            "created_by": null,
+            "modified_at": "2020-06-29T09:26:22.128Z",
+            "modified_by": null,
+            "html": "",
+            "language": "DA",
+            "platform": "ECONOMIC",
+            "_width": 595,
+            "_height": 842
+        }
+    },
+    {
+        "model": "asset_service.receipttemplate",
+        "pk": "67634cfd-c3f9-47df-aa2a-0a85690655ea",
+        "fields": {
+            "created_at": "2020-06-29T09:22:17.384Z",
+            "created_by": null,
+            "modified_at": "2020-06-29T09:24:56.916Z",
+            "modified_by": null,
+            "html": "",
+            "language": "EN",
+            "platform": "DINERO",
+            "_width": 595,
+            "_height": 842
+        }
+    },
+    {
+        "model": "asset_service.receipttemplate",
+        "pk": "b0aba198-af0f-40da-a025-c8887400ed3d",
+        "fields": {
+            "created_at": "2020-03-19T13:07:36.613Z",
+            "created_by": null,
+            "modified_at": "2020-03-19T15:30:11.353Z",
+            "modified_by": null,
+            "html": "",
+            "language": "EN",
+            "platform": "ECONOMIC",
+            "_width": 595,
+            "_height": 842
+        }
+    }
+]
