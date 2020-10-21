@@ -5,3 +5,5 @@
 
 # Ignore generated HTML E-mail Templates
 email-templates/**/*.html
+
+**/build
