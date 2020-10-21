@@ -1,4 +1,14 @@
-<mjml> <!--SUBJECT: Invoice no. {{ invoice_number }} from {{ company_name }}-->
+<mjml> 
+<!--SUBJECT: Invoice no. {{ invoice_number }} from {{ company_name }}-->
+
+<!-- {{ invoice_number }} 			invoice number-->
+<!-- {{ company_name }} 			Name of seller company-->
+<!-- {{ payer_company_name }} 		Name of payer company-->
+<!-- {{ invoice_amount }}	 		Invoice amount-->
+<!-- {{ payment_reg_number }}	 	reg number for incoming payments-->
+<!-- {{ payment_account_number }} 	account number for incoming payments-->   
+<!-- {{ due_date }} 				Invoice due date-->	
+
 <mj-head>
 		<mj-title>Invoice payer-EN</mj-title>
     		<mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:600"/>

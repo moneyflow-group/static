@@ -1,5 +1,16 @@
-<mjml> <!-- SUBJECT: Tidlig betaling for fakturanr. {{ invoice_number }} er på vej -->
-  <mj-head>
+<mjml>
+<!-- SUBJECT: Tidlig betaling for fakturanr. {{ invoice_number }} er på vej -->
+
+<!-- {{ invoice_number }} 			invoice number-->
+<!-- {{ company_name }} 			Name of seller company-->
+<!-- {{ factoring_amount }} 		Invoice amount minus fee and VAT-->
+<!-- {{ account_number }} 			four last digits on seller bank account-->
+<!-- {{ fee_amount }} 				factoring fee amount in DKK-->
+<!-- {{ vat_amount }} 				VAT amount in DKK-->
+<!-- {{ total_fee_amount }} 		Factoring fee amount + VAT amount in DKK-->
+<!-- {{ invoice_amount }}	 		Invoice amount-->
+
+<mj-head>
       <mj-title>First sale-DA</mj-title>
           <mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:600"/>
           <mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto:400,700"/>

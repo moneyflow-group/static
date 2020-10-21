@@ -1,4 +1,9 @@
-<mjml> <!--SUBJECT: Du kan nu få tidlig betaling for dina fakturaer-->
+<mjml>
+<!--SUBJECT: Du kan nu få tidlig betaling for dina fakturaer-->
+
+<!-- {{ signee_name }} 			Signee name for seller company-->
+<!-- {{ company_name }} 		Name of seller company-->
+
 <mj-head>
 		<mj-title>Post onboarding-DA</mj-title>
     		<mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:600"/>

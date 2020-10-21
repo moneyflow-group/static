@@ -1,4 +1,15 @@
-<mjml> <!--SUBJECT: Instant Payment for invoice no. {{ invoice_number }} is on its way--> 
+<mjml> 
+<!--SUBJECT: Instant Payment for invoice no. {{ invoice_number }} is on its way--> 
+
+<!-- {{ invoice_number }} 		Invoice number-->
+<!-- {{ company_name }} 		  Name of seller company-->
+<!-- {{ factoring_amount }} 	Invoice amount minus fee and VAT-->
+<!-- {{ account_number }} 		four last digits on seller bank account-->
+<!-- {{ fee_amount }} 			  factoring fee amount in DKK-->
+<!-- {{ vat_amount }} 			  VAT amount in DKK-->
+<!-- {{ total_fee_amount }} 	Factoring fee amount + VAT amount in DKK-->
+<!-- {{ invoice_amount }} 		Invoice amount-->  
+
 <mj-head>
 		<mj-title>First sale-EN</mj-title>
     		<mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:600"/>

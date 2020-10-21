@@ -1,4 +1,9 @@
-<mjml> <!--SUBJECT: You can now recieve early payment for your invoices-->
+<mjml>
+<!--SUBJECT: You can now recieve early payment for your invoices-->
+
+<!-- {{ signee_name }} 			Signee name for seller company-->
+<!-- {{ company_name }} 		Name of seller company-->
+
 <mj-head>
 		<mj-title>Post onboarding-EN</mj-title>
     		<mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:600"/>
