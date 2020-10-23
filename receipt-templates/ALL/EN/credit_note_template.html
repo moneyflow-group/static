@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <title>Kvittering</title>
+  <title>Credit note</title>
   <style>
     * {
         margin: 0;
@@ -113,15 +113,12 @@
         <!-- Customer and Moneyflow Logo -->
         <tr>
             <td style="width: 270px; padding-bottom: 50px">
-              <h2>Kunde</h2>
-              <p>
-                  {{ company_name }}<br/>
-                  Att: {{ signee_name }}<br/>
-                  {{ company_street }}<br/>
-                  {{ company_city }}, {{ company_country }}<br/>
-                  CVR: {{ company_crn }}<br/>
-              </p>
-            </td>
+                <h2>Credit note</h2>
+                <table style="width: 150px">
+                  <tr>
+                    <td><p>Date:</p></td><td style="text-align: right"><p>{{ date }}</p></td>
+                  </tr>
+                </table>
             <td style="padding-left: 48px; text-align: right;">
               <img src="https://github.com/moneyflow-group/static/raw/master/images/Logo%402x.png" style="width: 149px; height: 27px">
             </td>
@@ -130,23 +127,13 @@
         <!-- Description and Receipt -->
         <tr>
             <td>
-              <h2>Beskrivelse</h2>
-              <p style="width: 270px">
-              Straksindbetalingsgebyr for administration af fordringer, herunder overtagelse af kreditrisiko for fakturanr.  <b>{{ invoice_number }}</b>, 
-              hvilken er købt af Moneyflow I A/S for <b>{{ factoring_amount }}</b>kr. Forskellen mellem fordringens pålydende værdi og købesummen er udtryk for vores 
-              honorering for overtagelse af kreditrisiko samt administration. Heri er indehold moms på <b>{{ vat_amount }}</b>kr.
-              </p>
-            </td>
-            <td style="padding-left: 48px; width: 149px;">
-              <h2>Kvittering</h2>
-              <table style="width: 100%">
-                <tr>
-                  <td><p>Dato:</p></td><td style="text-align: right"><p>{{ receipt_date }}</p></td>
-                </tr>
-                <tr>
-                  <td><p>Kvitteringsnr:</p></td><td style="text-align: right"><p>{{ receipt_number }}</p></td>
-                </tr>
-              </table>
+                <h2>Customer</h2>
+                <p>
+                    {{ company_name }}<br/>
+                    {{ company_street }}<br/>
+                    {{ company_city }}, {{ company_country }}<br/>
+                    CVR: {{ company_crn }}<br/>
+                </p>
             </td>
         </tr>
 
@@ -154,34 +141,34 @@
         <tr>
             <table style="width: 466px; padding-top: 80px">
             <tr>
-                <th class="row-orderlist" style="padding-right: 200px; text-align: left;"><h3>Beskrivelse</h3></th>
-                <th class="row-orderlist" style="padding-right: 0px;"><h3>Antal</h3></th>
-                <th class="row-orderlist column3"><h3>Enhedspris</h3></th>
-                <th class="row-orderlist column4"><h3>Pris</h3></th>
+                <th class="row-orderlist" style="padding-right: 150px; text-align: left;"><h3>Item</h3></th>
+                <th class="row-orderlist" style="padding-right: 0px;"><h3>Amount</h3></th>
+                <th class="row-orderlist column3"><h3>Unit price</h3></th>
+                <th class="row-orderlist column4"><h3>Price</h3></th>
             </tr>
             <tr>
-                <td class="row-orderlist"><p>Straksindbetalingsgebyr</p></td>
+                <td class="row-orderlist"><p>{{ line_item }}</p></td>
                 <td class="row-orderlist column2" style="border-bottom: 1px solid #2F3344"><p>1<p></td>
-                <td class="row-orderlist column3" style="border-bottom: 1px solid #2F3344"><p>{{ fee_amount }}</p></td>
-                <td class="row-orderlist column4" style="border-bottom: 1px solid #2F3344"><p>{{ fee_amount }}</p></td>
+                <td class="row-orderlist column3" style="border-bottom: 1px solid #2F3344"><p>{{ amount }}</p></td>
+                <td class="row-orderlist column4" style="border-bottom: 1px solid #2F3344"><p>{{ amount }}</p></td>
             </tr>
             <tr>
                 <td class="row-orderlist"><p></p></td>
                 <td class="row-orderlist"><p></p></td>
                 <td class="row-orderlist column3"><h4>Subtotal</h4></td>
-                <td class="row-orderlist column4"><p>{{ fee_amount }}</p></td>
+                <td class="row-orderlist column4"><p>{{ amount }}</p></td>
             </tr>
             <tr>
                 <td class="row-orderlist"><p></p></td>
                 <td class="row-orderlist"><p></p></td>
-                <td class="row-orderlist column3"><h4>Moms {{ vat_percent }}%</h4></td>
+                <td class="row-orderlist column3"><h4>VAT {{ vat_percent }}%</h4></td>
                 <td class="row-orderlist column4"><p>{{ vat_amount }}</p></td>
             </tr>
             <tr>
                 <td class="row-orderlist"><p></p></td>
                 <td class="row-orderlist"><p></p></td>
                 <td class="row-orderlist column3"><h4>Total DKK</h4></td>
-                <td class="row-orderlist column4"><p class="total_fee_amount">{{ total_fee_amount }}</p></td>
+                <td class="row-orderlist column4"><p class="total_fee_amount">{{ total_amount }}</p></td>
             </tr>
             </table>
         </tr>
@@ -189,7 +176,7 @@
 
       <!-- Footer -->
       <div>
-        <p class="footer">Moneyflow Group A/S | Langebrogade 4, 1411 København K | CVR 39228327<br/>Telefon: +45 89 87 70 36 | E-mail: support@moneyflow.io</p>
+        <p class="footer">Moneyflow Group A/S | Langebrogade 4, 1411 Copenhagen | CVR 39228327<br/>Phone: +45 89 87 70 36 | Email: support@moneyflow.io</p>
       </div>
     </div>
   </body>
