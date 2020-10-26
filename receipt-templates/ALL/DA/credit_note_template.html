@@ -2,11 +2,24 @@
 <html>
   <head>
   <title>Kreditnota</title>
+
+<!-- {{ company_name }}      Name of seller company -->
+<!-- {{ company_street }}    Street of seller company -->
+<!-- {{ company_city }}      city of seller company -->
+<!-- {{ company_country }}   Country of seller company -->
+<!-- {{ company_crn }}       CVR of seller company -->
+<!-- {{ invoice_number }}    invoice number -->
+<!-- {{ date }}              Date of creation of credit note -->
+<!-- {{ fee_amount }}        Amount of the credited fee -->
+<!-- {{ vat_amount }}        VAT of the credited fee -->
+<!-- {{ vat_percent }}       VAT percentage -->
+<!-- {{ total_fee_amount }}  Total amount of credit note (Fee+VAT) -->
+
   <style>
     * {
         margin: 0;
         padding: 0;
-        font-family: "Montserrat";
+        font-family: "Roboto";
     }
 
     @page {
@@ -113,12 +126,14 @@
         <!-- Customer and Moneyflow Logo -->
         <tr>
             <td style="width: 270px; padding-bottom: 50px">
-                <h2>Kreditnota</h2>
-                <table style="width: 150px">
-                  <tr>
-                    <td><p>Dato:</p></td><td style="text-align: right"><p>{{ date }}</p></td>
-                  </tr>
-                </table>
+              <h2>Kunde</h2>
+              <p>
+                  {{ company_name }}<br/>
+                  {{ company_street }}<br/>
+                  {{ company_city }}, {{ company_country }}<br/>
+                  CVR: {{ company_crn }}<br/>
+              </p>
+            </td>
             <td style="padding-left: 48px; text-align: right;">
               <img src="https://github.com/moneyflow-group/static/raw/master/images/Logo%402x.png" style="width: 149px; height: 27px">
             </td>
@@ -127,13 +142,18 @@
         <!-- Description and Receipt -->
         <tr>
             <td>
-                <h2>Kunde</h2>
-                <p>
-                    {{ company_name }}<br/>
-                    {{ company_street }}<br/>
-                    {{ company_city }}, {{ company_country }}<br/>
-                    CVR: {{ company_crn }}<br/>
-                </p>
+              <h2>Beskrivelse</h2>
+              <p style="width: 270px">
+              Kreditnota for servicegebyr af fakturanr. <b>{{ invoice_number }}</b> 
+              </p>
+            </td>
+            <td style="padding-left: 48px; width: 149px;">
+              <h2>Kreditnota</h2>
+              <table style="width: 100%">
+                <tr>
+                  <td><p>Dato:</p></td><td style="text-align: right"><p>{{ date }}</p></td>
+                </tr>
+              </table>
             </td>
         </tr>
 
@@ -141,22 +161,22 @@
         <tr>
             <table style="width: 466px; padding-top: 80px">
             <tr>
-                <th class="row-orderlist" style="padding-right: 150px; text-align: left;"><h3>Beskrivelse</h3></th>
+                <th class="row-orderlist" style="padding-right: 200px; text-align: left;"><h3>Beskrivelse</h3></th>
                 <th class="row-orderlist" style="padding-right: 0px;"><h3>Antal</h3></th>
                 <th class="row-orderlist column3"><h3>Enhedspris</h3></th>
                 <th class="row-orderlist column4"><h3>Pris</h3></th>
             </tr>
             <tr>
-                <td class="row-orderlist"><p>{{ line_item }}</p></td>
+                <td class="row-orderlist"><p>Servicegebyr</p></td>
                 <td class="row-orderlist column2" style="border-bottom: 1px solid #2F3344"><p>1<p></td>
-                <td class="row-orderlist column3" style="border-bottom: 1px solid #2F3344"><p>{{ amount }}</p></td>
-                <td class="row-orderlist column4" style="border-bottom: 1px solid #2F3344"><p>{{ amount }}</p></td>
+                <td class="row-orderlist column3" style="border-bottom: 1px solid #2F3344"><p>{{ fee_amount }}</p></td>
+                <td class="row-orderlist column4" style="border-bottom: 1px solid #2F3344"><p>{{ fee_amount }}</p></td>
             </tr>
             <tr>
                 <td class="row-orderlist"><p></p></td>
                 <td class="row-orderlist"><p></p></td>
                 <td class="row-orderlist column3"><h4>Subtotal</h4></td>
-                <td class="row-orderlist column4"><p>{{ amount }}</p></td>
+                <td class="row-orderlist column4"><p>{{ fee_amount }}</p></td>
             </tr>
             <tr>
                 <td class="row-orderlist"><p></p></td>
@@ -168,7 +188,7 @@
                 <td class="row-orderlist"><p></p></td>
                 <td class="row-orderlist"><p></p></td>
                 <td class="row-orderlist column3"><h4>Total DKK</h4></td>
-                <td class="row-orderlist column4"><p class="total_fee_amount">{{ total_amount }}</p></td>
+                <td class="row-orderlist column4"><p class="total_fee_amount">{{ total_fee_amount }}</p></td>
             </tr>
             </table>
         </tr>
