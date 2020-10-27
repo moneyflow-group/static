@@ -1,6 +1,22 @@
 [
     {
         "model": "asset_service.receipttemplate",
+        "pk": "1bdf0560-7e40-4c92-898e-8680e8e72f39",
+        "fields": {
+            "created_at": "2020-10-23T13:53:35.524Z",
+            "created_by": null,
+            "modified_at": "2020-10-26T14:49:11.655Z",
+            "modified_by": null,
+            "html": "",
+            "language": "DA",
+            "platform": "ALL",
+            "identifier": "CREDITNOTE",
+            "_width": 595,
+            "_height": 842
+        }
+    },
+    {
+        "model": "asset_service.receipttemplate",
         "pk": "20efbe9b-b486-424e-8e01-05bc7ba35f97",
         "fields": {
             "created_at": "2020-06-29T09:21:16.499Z",
@@ -10,6 +26,23 @@
             "html": "",
             "language": "DA",
             "platform": "DINERO",
+            "identifier": "RECEIPT",
+            "_width": 595,
+            "_height": 842
+        }
+    },
+    {
+        "model": "asset_service.receipttemplate",
+        "pk": "290aebc7-e99e-4ee2-bccd-a454b85182e8",
+        "fields": {
+            "created_at": "2020-10-23T13:54:15.009Z",
+            "created_by": null,
+            "modified_at": "2020-10-26T14:39:17.798Z",
+            "modified_by": null,
+            "html": "",
+            "language": "EN",
+            "platform": "ALL",
+            "identifier": "CREDITNOTE",
             "_width": 595,
             "_height": 842
         }
