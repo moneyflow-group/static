@@ -58,6 +58,7 @@
             "html": "",
             "language": "DA",
             "platform": "ECONOMIC",
+            "identifier": "RECEIPT",
             "_width": 595,
             "_height": 842
         }
@@ -73,6 +74,7 @@
             "html": "",
             "language": "EN",
             "platform": "DINERO",
+            "identifier": "RECEIPT",
             "_width": 595,
             "_height": 842
         }
@@ -88,6 +90,7 @@
             "html": "",
             "language": "EN",
             "platform": "ECONOMIC",
+            "identifier": "RECEIPT",
             "_width": 595,
             "_height": 842
         }
