@@ -30,21 +30,29 @@ def generate_receipt_fixture():
         DIRNAME + "/templates/FIXTURE_TEMPLATE_RECEIPTS.json", "r"
     ) as fixture_template:
         fixtures = json.loads(fixture_template.read())
-        dinero_fixtures_dir = f"{DIRNAME}/../receipt-templates/Dinero"
-        economic_fixtures_dir = f"{DIRNAME}/../receipt-templates/E-conomic"
+        template_dirs = {
+            "ALL": f"{DIRNAME}/../receipt-templates/ALL",
+            "DINERO": f"{DIRNAME}/../receipt-templates/Dinero",
+            "ECONOMIC": f"{DIRNAME}/../receipt-templates/E-conomic",
+        }
+        template_filenames = {
+            "RECEIPT": "receipt_template.html",
+            "CREDITNOTE": "credit_note_template.html",
+        }
 
         for template in fixtures:
             language = template["fields"]["language"]
             platform = template["fields"]["platform"]
+            identifier = template["fields"]["identifier"]
 
-            template_dir = (
-                dinero_fixtures_dir if platform == "Dinero" else economic_fixtures_dir
-            )
-
-            html_template_file = f"{template_dir}/{language}/receipt_template.html"
+            template_dir = template_dirs[platform]
+            template_filename = template_filenames[identifier]
+            html_template_file = f"{template_dir}/{language}/{template_filename}"
             html_template = open(html_template_file)
 
-            print(f"Processing [{html_template_file}] as [{platform}][{language}]")
+            print(
+                f"Processing [{html_template_file}] as [{platform}][{identifier}][{language}]"
+            )
             template["fields"]["html"] = html_template.read()
 
     write_fixture_file(fixtures, fixture_filename)
