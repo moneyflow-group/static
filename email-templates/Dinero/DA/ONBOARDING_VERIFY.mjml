@@ -1,4 +1,9 @@
-<mjml> <!--SUBJECT: Venligen bekræft din e-mailadresse-->
+<mjml>
+<!--SUBJECT: Venligen bekræft din e-mailadresse-->
+
+<!-- {{ signee_name }} 				Signee name for seller company-->
+<!-- {{ company_email }} 			the email address the company onboarded with-->
+
 <mj-head>
 		<mj-title>Verify email-DA</mj-title>
     		<mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:600"/>

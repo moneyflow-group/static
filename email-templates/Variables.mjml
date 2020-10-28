@@ -1,0 +1,31 @@
+<!-- USED IN EMAILS -->
+
+<!-- {{ due_date_extended }} 			Original due date + 27 days-->
+<!-- {{ invoice_number }} 				invoice number-->
+<!-- {{ invoice_amount }}	 			Invoice amount-->
+<!-- {{ company_name }} 				Name of seller company-->
+<!-- {{ payer_company_name }} 		    Name of payer company-->
+<!-- {{ outstanding_balance }} 		    Invoice amount + late fee 100 kr.-->
+<!-- {{ payment_reg_number }}	 		reg number for incoming payments-->
+<!-- {{ payment_account_number }}       account number for incoming payments-->   
+<!-- {{ reminder_fee }} 				100 kr. reminder fee-->
+<!-- {{ due_date }} 					Invoice due date	-->	
+<!-- {{ signee_name }} 					Signee name for seller company-->
+<!-- {{ approved_customer_name }}       Company name for approved payer companies-->
+<!-- {{ factoring_amount }}			 	Invoice amount minus fee and VAT-->
+<!-- {{ account_number }} 				four last digits on seller bank account-->
+<!-- {{ fee_amount }} 					factoring fee amount in DKK-->
+<!-- {{ vat_amount }} 					VAT amount in DKK-->
+<!-- {{ total_fee_amount }}			 	Factoring fee amount + VAT amount in DKK-->
+<!-- {{ company_email }} 				The email address the company onboarded with-->
+
+
+
+<!-- USED IN RECEIPTS -->
+
+<!-- {{ company_street }} 				Seller company street address-->
+<!-- {{ company_city }} 				Seller company zip-code and city-->
+<!-- {{ company_country }} 				Seller company country-->
+<!-- {{ company_crn }} 					Seller company CVR-->
+<!-- {{ receipt_date }} 				Date of receipt creation-->
+<!-- {{ receipt_number }} 				Receipt number-->
