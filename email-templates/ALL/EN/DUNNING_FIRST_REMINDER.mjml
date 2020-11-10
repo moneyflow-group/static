@@ -1,0 +1,235 @@
+<mjml>
+<!-- SUBJECT: We haven't received your payment -->
+
+<!-- {{ invoice_number }}		 			Invoice number -->
+<!-- {{ company_name }} 					Name of seller company -->
+<!-- {{ payer_company_name }} 		Name of payer company -->
+<!-- {{ due_date }} 							Invoice due date	-->	
+<!-- {{ invoice_amount }} 				Invoice amount	-->	
+<!-- {{ payment_reg_number }} 		reg number for incoming payments -->
+<!-- {{ payment_account_number }} account number for incoming payments -->
+  
+<mj-head>
+		<mj-title>First reminder EN</mj-title>
+  <mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:600"/>
+		    <mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto:400,700"/>
+		    <mj-breakpoint width="480px" />
+				    <mj-attributes>
+			     	<mj-section padding="64px 80px" background-color="#ffffff"/>
+			      <mj-wrapper padding="0"/>
+ 				    <mj-text line-height="24px"/>
+				    </mj-attributes>
+  							<!--Divider-->
+      					<mj-style>
+                .border-top {
+ 				       	border-top: 3px solid #E4F0F7;
+					     	}
+                </mj-style>
+  							<!--padding on mobile-->
+                <mj-style>  
+                @media only screen and (max-width:480px) { 
+        				.section td {
+                padding-left:10px!important;
+                padding-right:10px!important;
+        					}
+      					}
+                </mj-style>
+      					<!--Removing underscore on links-->
+						    <mj-style inline="inline">
+  					    .link-nostyle { color: #0000FF; text-decoration: none }
+ 						   	</mj-style>
+ 								<!--Preview text-->      
+ 								<mj-preview>We haven't received your payment for invoice no. {{ invoice_number }} sent by {{ company_name }}</mj-preview>
+</mj-head> 
+<mj-body background-color="#E4F0F7">
+  
+<mj-raw><!-- Top bar(DIN) --></mj-raw>
+<mj-wrapper>
+		<mj-section padding="0">
+    		<mj-column>
+        		<mj-table padding="16px 0">
+            		<tr>
+            				<td style="padding:0 0 0 18px; line-height:1;">
+            						<img width="111"
+                             style="width:100%; max-width:111px; display:block"
+                             src="https://moneyflow-group.github.io/static/email-templates/moneyflow_logo.png"
+                             alt="moneyflow" />
+            				</td>
+            				</td>
+            		</tr>
+            </mj-table>
+       	</mj-column>
+    </mj-section>
+</mj-wrapper>  
+  
+<mj-raw><!-- Tick header --></mj-raw>
+<mj-wrapper>
+		<mj-section
+                background-size="cover"
+                background-repeat="no-repeat"
+                padding="128px 0"
+                background-color="#0000ff">
+    		<mj-column width="600px"
+                   vertical-align="middle">
+        		<mj-text align="center"
+                     line-height="34px"
+                     color="#fff"
+                     font-size="28px"
+                     font-family="Montserrat, sans-serif"
+                     font-weight="600">
+                     We haven't received <br/>your payment yet
+          	</mj-text>
+        </mj-column>
+ 				</mj-section>
+</mj-wrapper>
+  
+<mj-raw><!-- Post sale text(DIN)-DA --></mj-raw>
+<mj-wrapper>
+		<mj-section css-class="section"
+                background-color="#ffffff">
+    		<mj-column padding="0">
+        		<mj-text font-size="14px"
+             				 padding="0"
+           				   font-family="Roboto, sans-serif">
+Dear {{ payer_company_name }}, <br/><br/>Unfortunately, we have not received payment for invoice no. {{ invoice_number }} from {{ company_name }} which was due on {{ due_date }}. There can be a number of reasons why we have not received your payment. <br/><br/> I have attached a copy of the invoice, and remind you that the payment of {{ invoice_amount }} kr. must be made to reg. {{ payment_reg_number }} account no. {{ payment_account_number }} as soon as possible.<br/><br/> If you have already paid, we apologise for this email.<br/><br/> If you experience any problems, or have questions, you can contact us at
+              <a href="mailto:support@moneyflow.io" 
+                        class="link-nostyle">
+                       	support@moneyflow.io</a>
+              					or
+              <a href="tel:004589877036"
+                        class="link-nostyle">
+                        +45 89 87 70 36 </a>
+            </mj-text>
+     		</mj-column>
+   	</mj-section>
+</mj-wrapper>
+<mj-raw><!-- Contact-EN --></mj-raw>
+<mj-wrapper css-class="border-top">
+		<mj-section css-class="section"
+                padding-bottom="48px">
+    		<mj-column padding="0">
+        		<mj-text font-size="20px"
+                     font-weight="600"
+                     padding="0"
+                     font-family="Montserrat, sans-serif">
+              			 How can I get help?
+          	</mj-text>
+				</mj-column>
+		</mj-section>
+    <!-- Write us -->
+    <mj-section css-class="section"
+                padding-top="0px">
+			<mj-group>	
+      <mj-column width="28%">
+        		<mj-image padding="0"
+                      padding-bottom="15px"
+                      width="37px"
+                      align="left"
+                      src="https://moneyflow-group.github.io/static/email-templates/comment.png">
+						</mj-image>
+        </mj-column>	
+        <mj-column padding="0"
+                   width="72%">
+     	 			<mj-text font-size="14px"
+                     font-weight="600"
+                     padding="0"
+                     font-family="Montserrat, sans-serif"
+                     padding-bottom="8px">
+        						 Reach out now
+          	</mj-text>
+						<mj-text font-size="14px"
+                     padding="0"
+                     font-family="Roboto, sans-serif">
+										 <a href="moneyflow.io/?open_chat=true"
+                        class="link-nostyle">
+                       	Start a chat</a>
+          	</mj-text>
+            <mj-text font-size="14px"
+                     padding="0"
+                     padding-bottom="15px"
+                     font-family="Roboto, sans-serif">
+										 <a href="mailto:support@moneyflow.io" 
+                        class="link-nostyle">
+                       	Send an email</a>
+              					<!-- add subject line ?subject=Subject here" -->
+          	</mj-text>
+				</mj-column>
+        </mj-group>
+      	<!-- Call us -->
+      	<mj-group>
+        <mj-column width="28%">
+        		<mj-image padding="0"
+                      padding-bottom="15px"
+                      width="37px"
+                      align="left"
+                      src="https://moneyflow-group.github.io/static/email-templates/phone.png">
+            </mj-image>
+        </mj-column>	
+      	<mj-column padding="0"
+                   width="72%">
+        		<mj-text font-size="14px"
+                     font-weight="600"
+                     padding="0"
+                     font-family="Montserrat, sans-serif"
+                     padding-bottom="8px">
+              			 Call us on
+          	</mj-text>
+						<mj-text font-size="14px"
+                     padding="0"
+                     font-family="Roboto, sans-serif">
+										 <a href="tel:004589877036"
+                        class="link-nostyle">
+                        +45 89 87 70 36</a>
+          	</mj-text>
+				</mj-column>
+        </mj-group>
+    </mj-section>
+</mj-wrapper>
+  
+<mj-raw><!-- Footer-EN --></mj-raw>
+<mj-wrapper css-class="border-top">
+		<mj-section css-class="section"
+                background-color="#ffffff"
+                padding-top="30px"
+                padding-bottom="20px">
+				<mj-column padding="0">
+						<mj-image width="111px"
+                      align="center"
+                      src="https://raw.githubusercontent.com/moneyflow-group/static/master/email-templates/moneyflow_logo.png">
+          	</mj-image>
+        		<mj-text font-size="12px"
+                     align="center"
+                     padding="0"
+                     font-family="Roboto, sans-serif"
+                     padding-top="10px"
+                     padding-bottom="30px">
+          					 <a href="https://moneyflow.io/en/privacy/"
+                        class="link-nostyle">
+                        Privacy and Cookie Policy</a>
+              			 <a>|</a>
+              			 <a href="https://moneyflow.io/en/terms/"
+                        class="link-nostyle">
+                        General Terms and Conditions</a>
+          	</mj-text>
+						<mj-text font-size="12px"
+                     align="center"
+                     padding="0"
+                     font-family="Roboto, sans-serif"
+                     padding-bottom="5px">
+            				 Moneyflow is registered by the 
+              			 <a href="https://www.finanstilsynet.dk/"
+                        Class="link-nostyle">
+                     Danish FSA</a>
+          	</mj-text>
+            <mj-text font-size="12px"
+                     align="center"
+                     padding="0"
+                     font-family="Roboto, sans-serif">
+            				 Moneyflow Group A/S | Langebrogade 4, 1411 Copenhagen | CVR 39228327
+          	</mj-text>
+				</mj-column>
+		</mj-section>
+</mj-wrapper>
+  
+  </mj-body>
+</mjml>
