@@ -66,18 +66,18 @@ def generate_email_fixture():
         DIRNAME + "/templates/FIXTURE_TEMPLATE_EMAILS.json", "r"
     ) as fixture_template:
         fixtures = json.loads(fixture_template.read())
-        dinero_fixtures_dir = f"{DIRNAME}/../email-templates/Dinero"
-        economic_fixtures_dir = f"{DIRNAME}/../email-templates/E-conomic"
+        template_dirs = {
+            "ALL": f"{DIRNAME}/../email-templates/ALL",
+            "Dinero": f"{DIRNAME}/../email-templates/Dinero",
+            "E-conomic": f"{DIRNAME}/../email-templates/E-conomic",
+        }
 
         for template in fixtures:
             identifier = template["fields"]["identifier"]
             language = template["fields"]["language"]
             platform = template["fields"]["platform"]
 
-            template_dir = (
-                dinero_fixtures_dir if platform == "Dinero" else economic_fixtures_dir
-            )
-
+            template_dir = template_dirs[platform]
             html_template_file = f"{template_dir}/{language}/{identifier}.html"
             html_template = open(html_template_file)
 
