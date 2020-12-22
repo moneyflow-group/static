@@ -38,6 +38,7 @@ def generate_receipt_fixture():
         template_filenames = {
             "RECEIPT": "receipt_template.html",
             "CREDITNOTE": "credit_note_template.html",
+            "LATE_FEE_RECEIPT": "late_fee_receipt_template.html",
         }
 
         for template in fixtures:
