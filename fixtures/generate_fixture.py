@@ -17,8 +17,9 @@ def main(fixture_type):
 
 
 def write_fixture_file(fixtures, fixture_filename):
-    with open(DIRNAME + "/build/" + fixture_filename, "w") as fixture_file:
-        print(f"Writing {fixture_filename}")
+    build_folder = DIRNAME + "/build/"
+    with open(build_folder + fixture_filename, "w") as fixture_file:
+        print(f"Writing {build_folder}{fixture_filename}")
         fixture_file.write(json.dumps(fixtures))
 
 
