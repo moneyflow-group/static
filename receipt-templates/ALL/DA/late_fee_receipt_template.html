@@ -189,7 +189,7 @@
                 <td class="row-orderlist column4" style="border-bottom: 1px solid #2F3344"><p>{{ invoice_amount }}</p></td>
             </tr>
             <tr>
-                <td class="row-orderlist"><p><b>Ekstra udgift:</b> Rykkergebyr #{{ receipt_number }}</p></td>
+                <td class="row-orderlist"><p><b>Ekstra udgift:</b> Rykkergebyr #{{ late_fee_receipt_number }}</p></td>
                 <td class="row-orderlist column2" style="border-bottom: 1px solid #2F3344"><p>1<p></td>
                 <td class="row-orderlist column3" style="border-bottom: 1px solid #2F3344"><p>{{ late_fee_amount }}</p></td>
                 <td class="row-orderlist column4" style="border-bottom: 1px solid #2F3344"><p>{{ late_fee_amount }}</p></td>
@@ -214,7 +214,7 @@
         Betalingsbetingelser: betales senest <b>{{ due_date_extended }}</b> <br/>
         Det fulde beløb skal betales til: <br/>
         <b>Sydbank</b> / reg. nr. <b>{{ payment_reg_number }}</b> / bankkonti <b>{{ payment_account_number }}</b> <br/>
-        <b>Tilføj venligst faktura nr. og rykkergebyr nr. til betalingen</b><br/>
+        <b>Tilføj venligst faktura nr. {{ invoice_number }} og rykkergebyr nr. {{ late_fee_receipt_number }} til betalingen</b><br/>
       </p>
 
       <!-- Footer -->

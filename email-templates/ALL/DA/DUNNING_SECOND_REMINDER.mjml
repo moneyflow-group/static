@@ -93,7 +93,7 @@
         		<mj-text font-size="14px"
              				 padding="0"
            				   font-family="Roboto, sans-serif">
-Kære {{ payer_company_name }}, <br/><br/>Vi må desværre konstatere, at vi stadig ikke har modtaget din betaling for faktura nr. {{ invoice_number }} på {{ invoice_amount }} kr. <br/><br/> Dette er anden rykker og der er derfor blevet pålagt et rykkergebyr på {{ reminder_fee }} kr. jf. Rentelovens §9b.<br/><br/> Din udestående saldo er nu {{ outstanding_balance }} kr.<br/><br/> Hele beløbet, {{ outstanding_amount }} kr. bedes indbetales senest den {{ due_date_extended }} på reg.nr. {{ payment_reg_number }} kontonr. {{ payment_account_number }}. <br/><br/> Er beløbet ikke betalt senest {{ due_date_extended }}, modtager du et inkassovarsel. Bliver sagen overdraget til inkasso, vil det være med yderligere omkostninger til følge.<br/><br/> Hvis du oplever problemer eller har spørgsmål kan du altid kontakte os på
+Kære {{ payer_company_name }}, <br/><br/>Vi må desværre konstatere, at vi stadig ikke har modtaget din betaling for faktura nr. {{ invoice_number }} på {{ invoice_amount }} kr. <br/><br/> Dette er anden rykker og der er derfor blevet pålagt et rykkergebyr på {{ reminder_fee }} kr. jf. Rentelovens §9b.<br/><br/> Din udestående saldo er nu {{ outstanding_balance }} kr.<br/><br/> Hele beløbet, {{ outstanding_balance }} kr. bedes indbetales senest den {{ due_date_extended }} på reg.nr. {{ payment_reg_number }} kontonr. {{ payment_account_number }}. <br/><br/> Er beløbet ikke betalt senest {{ due_date_extended }}, modtager du et inkassovarsel. Bliver sagen overdraget til inkasso, vil det være med yderligere omkostninger til følge.<br/><br/> Hvis du oplever problemer eller har spørgsmål kan du altid kontakte os på
               <a href="mailto:support@moneyflow.io" 
                         class="link-nostyle">
                        	support@moneyflow.io</a>
@@ -131,7 +131,7 @@ Kære {{ payer_company_name }}, <br/><br/>Vi må desværre konstatere, at vi sta
                                Fakturabeløb</td>
                     <td style="text-align:right;
                                padding-bottom:15px">
-                               {{ inovice_amount }} kr.</td>
+                               {{ invoice_amount }} kr.</td>
                 </tr>
                 <tr>
                     <td style="padding-bottom:15px">
@@ -146,7 +146,7 @@ Kære {{ payer_company_name }}, <br/><br/>Vi må desværre konstatere, at vi sta
                                Samlet beløb</td>
                     <td style="text-align:right;
                                padding-top:15px">
-                               {{ outstanding_amount }} kr.</td>
+                               {{ outstanding_balance }} kr.</td>
                 </tr>
             </mj-table>
         </mj-column>

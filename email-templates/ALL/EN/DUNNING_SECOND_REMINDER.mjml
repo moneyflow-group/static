@@ -131,7 +131,7 @@ Dear {{ payer_company_name }}, <br/><br/>Unfortunately, we note that we have sti
                                Fakturabeløb</td>
                     <td style="text-align:right;
                                padding-bottom:15px">
-                               {{ inovice_amount }} kr.</td>
+                               {{ invoice_amount }} kr.</td>
                 </tr>
                 <tr>
                     <td style="padding-bottom:15px">
