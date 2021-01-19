@@ -41,7 +41,7 @@
   					    .link-nostyle { color: #0000FF; text-decoration: none }
  						   	</mj-style>
  								<!--Preview text-->      
- 								<mj-preview>We still haven't recieved your payment for inovice no. {{ invoice_number }} from {{ company_name }}</mj-preview>
+ 								<mj-preview>We still haven't recieved your payment for invoice no. {{ invoice_number }} from {{ company_name }}</mj-preview>
 </mj-head> 
 <mj-body background-color="#E4F0F7">
   
