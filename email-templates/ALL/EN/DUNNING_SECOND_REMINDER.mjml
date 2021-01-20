@@ -41,7 +41,7 @@
   					    .link-nostyle { color: #0000FF; text-decoration: none }
  						   	</mj-style>
  								<!--Preview text-->      
- 								<mj-preview>We still haven't recieved your payment for {{ invoice_number }} by {{ company_name }}</mj-preview>
+ 								<mj-preview>We still haven't recieved your payment for invoice no. {{ invoice_number }} from {{ company_name }}</mj-preview>
 </mj-head> 
 <mj-body background-color="#E4F0F7">
   
@@ -93,7 +93,7 @@
         		<mj-text font-size="14px"
              				 padding="0"
            				   font-family="Roboto, sans-serif">
-Dear {{ payer_company_name }}, <br/><br/>Unfortunately, we note that we have still not received your payment for invoice no. {{ invoice_number }} on {{ invoice_amount }} kr. <br/><br/> This is your second reminder, and therefore, a fee of {{ reminder_fee }} kr. has been added, pursuant to §9b of the Danish Interest Act ('Renteloven').<br/><br/> Your outstanding balance is now {{ outstanding_balance }} kr.<br/><br/> The full amount of {{ outstanding_balance }} kr. is to be paid by {{ due_date_extended }} to reg. no. {{ payment_reg_number }} account no. {{ payment_account_number }}. <br/><br/> If the amount is not paid by {{ due_date_extended }}, you will receive a debt collection notice. If the case is handed over for debt collection, this will result in additional costs.<br/><br/> If you experience any problems or have questions, you can always contact us at
+Dear {{ payer_company_name }}, <br/><br/>Unfortunately, we note that we have still not received your payment for invoice no. {{ invoice_number }} on {{ invoice_amount }} kr. from {{ company_name }} <br/><br/> This is your second reminder, and therefore, a fee of {{ reminder_fee }} kr. has been added, pursuant to §9b of the Danish Interest Act ('Renteloven').<br/><br/> Your outstanding balance is now {{ outstanding_balance }} kr.<br/><br/> The full amount of {{ outstanding_balance }} kr. is to be paid by {{ due_date_extended }} to reg. no. {{ payment_reg_number }} account no. {{ payment_account_number }}. <br/><br/> If the amount is not paid by {{ due_date_extended }}, you will receive a debt collection notice. If the case is handed over for debt collection, this will result in additional costs.<br/><br/> If you experience any problems or have questions, you can always contact us at
               <a href="mailto:support@moneyflow.io" 
                         class="link-nostyle">
                        	support@moneyflow.io</a>
@@ -116,7 +116,7 @@ Dear {{ payer_company_name }}, <br/><br/>Unfortunately, we note that we have sti
                      font-weight="600"
                      padding="0"
                      padding-bottom="30px">
-              			 Dit udestående
+              			 Outstanding balance
         		</mj-text>
         </mj-column>
     </mj-section>
@@ -128,14 +128,14 @@ Dear {{ payer_company_name }}, <br/><br/>Unfortunately, we note that we have sti
                       font-size="14px">
               	<tr>
                     <td style="padding-bottom:15px">
-                               Fakturabeløb</td>
+                               Invoice amount</td>
                     <td style="text-align:right;
                                padding-bottom:15px">
                                {{ invoice_amount }} kr.</td>
                 </tr>
                 <tr>
                     <td style="padding-bottom:15px">
-                               Rykkergebyr</td>
+                               Reminder fee</td>
                     <td style="text-align:right;
                                padding-bottom:15px">
                                {{ reminder_fee }} kr.</td>
@@ -143,7 +143,7 @@ Dear {{ payer_company_name }}, <br/><br/>Unfortunately, we note that we have sti
                 <tr style="border-top:1px solid #2F3344;
                            font-weight:700;">
                     <td style="padding-top:15px">
-                               Samlet beløb</td>
+                               Total amount</td>
                     <td style="text-align:right;
                                padding-top:15px">
                                {{ outstanding_balance }} kr.</td>
