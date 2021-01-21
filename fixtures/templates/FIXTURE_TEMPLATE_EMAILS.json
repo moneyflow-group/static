@@ -304,5 +304,39 @@
             "platform": "ALL",
             "identifier": "DUNNING_FIRST_REMINDER"
         }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "cb2a81f6-fdc6-4a56-a073-da19e6e8e944",
+        "fields": {
+            "created_at": "2020-12-07T14:13:01.452Z",
+            "created_by": null,
+            "modified_at": "2020-12-07T14:13:01.452Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Vi mangler din betaling",
+            "from_email": "\"Moneyflow.io\" <factoring@flow.moneyflow.io>",
+            "language": "DA",
+            "platform": "ALL",
+            "identifier": "DUNNING_SECOND_REMINDER"
+        }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "c2a7fd21-7443-4b5f-b727-92aab99dd8df",
+        "fields": {
+            "created_at": "2020-12-07T14:13:01.452Z",
+            "created_by": null,
+            "modified_at": "2020-12-07T14:13:01.452Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "We still haven't received your payment",
+            "from_email": "\"Moneyflow.io\" <factoring@flow.moneyflow.io>",
+            "language": "EN",
+            "platform": "ALL",
+            "identifier": "DUNNING_SECOND_REMINDER"
+        }
     }
 ]
