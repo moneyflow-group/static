@@ -10,6 +10,7 @@
 <!-- {{ payment_reg_number }}	 		reg number for incoming payments-->
 <!-- {{ payment_account_number }} account number for incoming payments-->   
 <!-- {{ reminder_fee }} 					100 kr. reminder fee-->
+<!-- {{ partial_payment }}        Partially paid amount-->
   
 <mj-head>
 		<mj-title>Second reminder EN</mj-title>
@@ -93,7 +94,7 @@
         		<mj-text font-size="14px"
              				 padding="0"
            				   font-family="Roboto, sans-serif">
-Dear {{ payer_company_name }}, <br/><br/>Unfortunately, we note that we have still not received your payment for invoice no. {{ invoice_number }} on {{ invoice_amount }} kr. from {{ company_name }} <br/><br/> This is your second reminder, and therefore, a fee of {{ reminder_fee }} kr. has been added, pursuant to §9b of the Danish Interest Act ('Renteloven').<br/><br/> Your outstanding balance is now {{ outstanding_balance }} kr.<br/><br/> The full amount of {{ outstanding_balance }} kr. is to be paid by {{ due_date_extended }} to reg. no. {{ payment_reg_number }} account no. {{ payment_account_number }}. <br/><br/> If the amount is not paid by {{ due_date_extended }}, you will receive a debt collection notice. If the case is handed over for debt collection, this will result in additional costs.<br/><br/> If you experience any problems or have questions, you can always contact us at
+Dear {{ payer_company_name }}, <br/><br/>Unfortunately, we note that we have still not received your full payment for invoice no. {{ invoice_number }} on {{ invoice_amount }} kr. from {{ company_name }} <br/><br/> This is your second reminder, and therefore, a fee of {{ reminder_fee }} kr. has been added, pursuant to §9b of the Danish Interest Act ('Renteloven').<br/><br/> Your outstanding balance is now {{ outstanding_balance }} kr.<br/><br/> This amount is to be paid by {{ due_date_extended }} to reg. no. {{ payment_reg_number }} account no. {{ payment_account_number }}. <br/><br/> If the amount is not paid by {{ due_date_extended }}, you will receive a debt collection notice. If the case is handed over for debt collection, this will result in additional costs.<br/><br/> If you experience any problems or have questions, you can always contact us at
               <a href="mailto:support@moneyflow.io" 
                         class="link-nostyle">
                        	support@moneyflow.io</a>
@@ -139,6 +140,13 @@ Dear {{ payer_company_name }}, <br/><br/>Unfortunately, we note that we have sti
                     <td style="text-align:right;
                                padding-bottom:15px">
                                {{ reminder_fee }} kr.</td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:15px">
+                               Paid amount</td>
+                    <td style="text-align:right;
+                               padding-bottom:15px">
+                               {{ partial_payment }} kr.</td>
                 </tr>
                 <tr style="border-top:1px solid #2F3344;
                            font-weight:700;">
