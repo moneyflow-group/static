@@ -1,17 +1,13 @@
 <mjml> 
-<!--SUBJECT: Instant Payment for invoice no. {{ invoice_number }} is on its way--> 
-
-<!-- {{ invoice_number }} 		Invoice number-->
-<!-- {{ company_name }} 		  Name of seller company-->
-<!-- {{ factoring_amount }} 	Invoice amount minus fee and VAT-->
-<!-- {{ account_number }} 		four last digits on seller bank account-->
-<!-- {{ fee_amount }} 			  factoring fee amount in DKK-->
-<!-- {{ vat_amount }} 			  VAT amount in DKK-->
-<!-- {{ total_fee_amount }} 	Factoring fee amount + VAT amount in DKK-->
-<!-- {{ invoice_amount }} 		Invoice amount-->  
-
+<!-- SUBJECT: Your payment of inovice no. {{ invoice_number }} -->
+  
+<!-- {{ due_date }}         		due date-->
+<!-- {{ invoice_number }} 			invoice number-->
+<!-- {{ company_name }} 			Name of seller company-->
+<!-- {{ payer_company_name }} 		Name of payer company-->
+  
 <mj-head>
-		<mj-title>First sale-EN</mj-title>
+		<mj-title>Upcoming notice EN</mj-title>
     		<mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:600"/>
 		    <mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto:400,700"/>
 		    <mj-breakpoint width="480px" />
@@ -40,15 +36,15 @@
   					    .link-nostyle { color: #0000FF; text-decoration: none }
  						   	</mj-style>
  								<!--Preview text-->      
- 								<mj-preview>Instant Payment has been used on invoice no. {{ invoice_number }} sent by {{ company_name }}.</mj-preview>
-</mj-head>
+ 								<mj-preview>Dear {{ payer_company_name }}, We're writing you this email to make you aware that {{ company_name }} has used Moneyflow for invoice no. {{ invoice_number }}.</mj-preview>
+</mj-head> 
 <mj-body background-color="#E4F0F7">
   
-<mj-raw><!-- Top bar(EC) --></mj-raw>
+<mj-raw><!-- Top bar(DIN) --></mj-raw>
 <mj-wrapper>
 		<mj-section padding="0">
     		<mj-column>
-        		<mj-table padding="21px 0">
+        		<mj-table padding="16px 0">
             		<tr>
             				<td style="padding:0 0 0 18px; line-height:1;">
             						<img width="111"
@@ -56,22 +52,16 @@
                              src="https://moneyflow-group.github.io/static/email-templates/moneyflow_logo.png"
                              alt="moneyflow" />
             				</td>
-            				<td style="padding:0 18px 0 0; line-height:1;">
-            						<img width="142"
-                             style="width:100%; max-width:142px; display:block"
-                             align="right"
-                             src="https://moneyflow-group.github.io/static/email-templates/visma_e-conomic_logo.png"
-                             alt="visma e-conomic" />
             				</td>
             		</tr>
             </mj-table>
        	</mj-column>
     </mj-section>
-</mj-wrapper>
-
+</mj-wrapper>  
+  
 <mj-raw><!-- Tick header --></mj-raw>
 <mj-wrapper>
-		<mj-section background-url="https://raw.githubusercontent.com/moneyflow-group/static/master/email-templates/post_sale_header_background.jpg"
+		<mj-section
                 background-size="cover"
                 background-repeat="no-repeat"
                 padding="128px 0"
@@ -83,14 +73,13 @@
                      color="#fff"
                      font-size="28px"
                      font-family="Montserrat, sans-serif"
-                     font-weight="600">
-                     Your first Instant Payment<br/>is on its way
+                     font-weight="600">Just a friendly reminder<br/> about payment receiver
           	</mj-text>
         </mj-column>
  				</mj-section>
 </mj-wrapper>
   
-<mj-raw><!-- Post sale text(EC)-EN --></mj-raw>
+<mj-raw><!-- Post sale text(DIN)-DA --></mj-raw>
 <mj-wrapper>
 		<mj-section css-class="section"
                 background-color="#ffffff">
@@ -98,133 +87,22 @@
         		<mj-text font-size="14px"
              				 padding="0"
            				   font-family="Roboto, sans-serif">
-							       Instant Payment has been used on invoice no. {{ invoice_number }} sent by {{ company_name }}. <br/><br/> We have sent {{ factoring_amount }} kr. to your bank account ending with {{ account_number }} and prepared the bookkeeping for you, which you just have to approve in e-conomic. You can expect payment within 2 hours (weekdays, between 8am and 6pm).<br/><br/>Attached to this email is the receipt for the sale. 
+Dear {{ payer_company_name }},<br/><br/>
+
+We're writing you this email to make you aware that {{ company_name }} has used Moneyflow for invoice no. {{ invoice_number }}. Everything looks the same, except that the account number might differ from the one you usually use.<br/><br/>
+
+As a friendly reminder, the invoice is due {{ due_date }}.<br/><br/>
+
+If you have any problems or questions, please don’t hesitate to call us on <a href="tel:004589877036" class="link-nostyle">+45 89 87 70 36</a> or simply reply to this email. <br/><br/> 
+
+Have a lovely day!
+
+
             </mj-text>
      		</mj-column>
    	</mj-section>
- </mj-wrapper>
-  
-<mj-raw><!-- Receipt(EC)-EN --></mj-raw>
-<mj-wrapper css-class="border-top">
-		<mj-section css-class="section"
-                padding-bottom="0">
-				<mj-column padding-bottom="0px">
-        		<mj-text font-family="Montserrat, sans-serif"
-                     font-size="16px"
-                     font-weight="600"
-                     padding="0"
-                     padding-bottom="30px">
-              			 Receipt for Instant Payment
-        		</mj-text>
-        </mj-column>
-    </mj-section>
-  	<mj-section css-class="section"
-                padding-bottom="0px"
-                padding-top="0px">
-    		<mj-column>
-        		<mj-table padding="0"
-                      font-family="Roboto, sans-serif"
-                      font-size="14px">
-                <tr>
-                    <td style="padding-bottom:15px">
-                               Fee</td>
-                    <td style="text-align:right;
-                               padding-bottom:15px">
-                               {{ fee_amount }} kr.</td>
-                </tr>
-                <tr>
-                    <td style="padding-bottom:15px;">
-                               VAT (25%)</td>
-                    <td style="text-align:right;
-                               padding-bottom:15px">
-                               {{ vat_amount }} kr.</td>
-                </tr>
-                <tr style="border-top:1px solid #2F3344;
-                           font-weight:700;">
-                    <td style="padding-top:15px">
-                               Total amount</td>
-                    <td style="text-align:right;
-                               padding-top:15px">
-                               {{ total_fee_amount }} kr.</td>
-                </tr>
-            </mj-table>
-        </mj-column>
-    </mj-section>
-  	<mj-section css-class="section"
-                padding-top="20px">
-				<mj-column>
-        		<mj-text font-size="12px"
-        						 font-family="Roboto, sans-serif"
-                     padding="0">
-       							 Invoice no. {{ invoice_number }} was bought by Moneyflow I A/S for {{ factoring_amount }} kr. An invoice sale fee of {{ fee_amount }} kr. is added, which is subject to 25% VAT.
-          	</mj-text>
-        </mj-column>
-    </mj-section>
 </mj-wrapper>
-  
-<mj-raw><!-- Post sale info-EN --></mj-raw>
-<mj-wrapper css-class="border-top">
-		<mj-section css-class="section"
-            		background-color="#ffffff">
-				<mj-column padding="0">
-        		<mj-text font-size="16px"
-                     font-weight="600"
-                     padding="0"
-                     font-family="Montserrat, sans-serif"
-                     padding-bottom="15px">
-          					 What does my customer need to do?
-          	</mj-text>
-            <mj-text font-size="14px"
-                     padding="0"
-                     font-family="Roboto, sans-serif"
-                     padding-bottom="30px">
-          					 Your customer pays the invoice as usual, but to a new bank account connected to Moneyflow. The new payment instructions are added to the invoice. Moneyflow will take care of collecting the payment.
-          	</mj-text>          
-        		<mj-text font-size="16px"
-                     font-weight="600"
-                     padding="0"
-                     font-family="Montserrat, sans-serif"
-                     padding-bottom="15px">
-              			 What do I do if there is a mistake on the invoice
-          	</mj-text>
-					  <mj-text font-size="14px"
-                     padding="0"
-                     font-family="Roboto, sans-serif">
-          					 We know honest mistakes happen. In such an event, please contact our customer support, who will guide you through your options.
-						</mj-text>
-				</mj-column>
-		</mj-section>
-</mj-wrapper>
-  
-<mj-raw><!-- Feedback-EN --></mj-raw>
-<mj-wrapper css-class="border-top">
-		<mj-section css-class="section"
-                background-color="#ffffff">
-    		<mj-column padding="0">
-        		<mj-text font-size="16px"
-                     font-weight="600"
-                     padding="0"
-                     font-family="Montserrat, sans-serif"
-                     padding-bottom="20px">
-                     How was the experience?
-          	</mj-text>
-            <mj-text font-size="14px"
-                     padding="0"
-                     font-family="Roboto, sans-serif"
-                     padding-bottom="10px">
-          					 We would love to hear from you. Press a star to leave a review.
-          	</mj-text>
-            <mj-image width="145px" 
-                      align="left"
-                      padding-left="0px"
-                      src="https://raw.githubusercontent.com/moneyflow-group/static/master/email-templates/stars.png" 
-                      href="https://www.trustpilot.com/evaluate/moneyflow.io">
-          	</mj-image>
-				</mj-column>
-    </mj-section>
-</mj-wrapper>
-  
-<mj-raw><!-- Contact-EN --></mj-raw>
+  <mj-raw><!-- Contact-EN --></mj-raw>
 <mj-wrapper css-class="border-top">
 		<mj-section css-class="section"
                 padding-bottom="48px">
@@ -261,7 +139,7 @@
 						<mj-text font-size="14px"
                      padding="0"
                      font-family="Roboto, sans-serif">
-										 <a href="https://moneyflow.io/en/?open_chat=true"
+										 <a href="moneyflow.io/?open_chat=true"
                         class="link-nostyle">
                        	Start a chat</a>
           	</mj-text>
@@ -351,6 +229,6 @@
 				</mj-column>
 		</mj-section>
 </mj-wrapper>
-
-</mj-body>
+  
+  </mj-body>
 </mjml>

@@ -98,7 +98,7 @@
         		<mj-text font-size="14px"
              				 padding="0"
            				   font-family="Roboto, sans-serif">
-							       Moneyflow's service has been used on invoice no. {{ invoice_number }} sent by {{ company_name }}. <br/><br/> We have sent {{ factoring_amount }} kr. to your bank account ending with {{ account_number }} and done the book keeping for you. You can expect payment within 2 hours (weekdays, between 8am and 6pm).<br/><br/>Attached to this email is the receipt for the sale. 
+							       Moneyflow's service has been used on invoice no. {{ invoice_number }} sent by {{ company_name }}. <br/><br/> We have sent {{ factoring_amount }} kr. to your bank account ending with {{ account_number }} and done the bookkeeping for you. You can expect payment within 2 hours (weekdays, between 8am and 6pm).<br/><br/>Attached to this email is the receipt for the sale. 
             </mj-text>
      		</mj-column>
    	</mj-section>
@@ -156,7 +156,7 @@
         		<mj-text font-size="12px"
         						 font-family="Roboto, sans-serif"
                      padding="0">
-       							 Invoice no. {{ invoice_number }} was bought by Moneyflow I A/S for {{ invoice_amount }} kr. An invoice sale fee of {{ fee_amount }} kr. is added, which is subject to 25% VAT.
+       							 Invoice no. {{ invoice_number }} was bought by Moneyflow I A/S for {{ factoring_amount }} kr. An invoice sale fee of {{ fee_amount }} kr. is added, which is subject to 25% VAT.
           	</mj-text>
         </mj-column>
     </mj-section>

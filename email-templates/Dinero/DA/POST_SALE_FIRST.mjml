@@ -156,7 +156,7 @@
               <mj-text font-size="12px"
                        font-family="Roboto, sans-serif"
                        padding="0">
-                        Fakturanr. {{ invoice_number }} er solgt til Moneyflow I A/S for {{ invoice_amount }} kr. Et momspligtigt fakturasalgsgebyr på {{ fee_amount }} kr. er tilføjet.
+                        Fakturanr. {{ invoice_number }} er solgt til Moneyflow I A/S for {{ factoring_amount }} kr. Et momspligtigt fakturasalgsgebyr på {{ fee_amount }} kr. er tilføjet.
               </mj-text>
           </mj-column>
       </mj-section>

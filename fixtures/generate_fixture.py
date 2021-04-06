@@ -17,8 +17,9 @@ def main(fixture_type):
 
 
 def write_fixture_file(fixtures, fixture_filename):
-    with open(DIRNAME + "/build/" + fixture_filename, "w") as fixture_file:
-        print(f"Writing {fixture_filename}")
+    build_folder = DIRNAME + "/build/"
+    with open(build_folder + fixture_filename, "w") as fixture_file:
+        print(f"Writing {build_folder}{fixture_filename}")
         fixture_file.write(json.dumps(fixtures))
 
 
@@ -38,6 +39,7 @@ def generate_receipt_fixture():
         template_filenames = {
             "RECEIPT": "receipt_template.html",
             "CREDITNOTE": "credit_note_template.html",
+            "LATE_FEE_RECEIPT": "late_fee_receipt_template.html",
         }
 
         for template in fixtures:
@@ -66,18 +68,18 @@ def generate_email_fixture():
         DIRNAME + "/templates/FIXTURE_TEMPLATE_EMAILS.json", "r"
     ) as fixture_template:
         fixtures = json.loads(fixture_template.read())
-        dinero_fixtures_dir = f"{DIRNAME}/../email-templates/Dinero"
-        economic_fixtures_dir = f"{DIRNAME}/../email-templates/E-conomic"
+        template_dirs = {
+            "ALL": f"{DIRNAME}/../email-templates/ALL",
+            "Dinero": f"{DIRNAME}/../email-templates/Dinero",
+            "E-conomic": f"{DIRNAME}/../email-templates/E-conomic",
+        }
 
         for template in fixtures:
             identifier = template["fields"]["identifier"]
             language = template["fields"]["language"]
             platform = template["fields"]["platform"]
 
-            template_dir = (
-                dinero_fixtures_dir if platform == "Dinero" else economic_fixtures_dir
-            )
-
+            template_dir = template_dirs[platform]
             html_template_file = f"{template_dir}/{language}/{identifier}.html"
             html_template = open(html_template_file)
 
