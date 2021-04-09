@@ -80,7 +80,7 @@
                            height="36px"
                            padding-top="48px"
                            href="{{ url_payer_balance }}">
-                   				 Se udenstående fakturaer
+                   				 Se udestående fakturaer
           			</mj-button>
  				</mj-column>
 		</mj-section>
