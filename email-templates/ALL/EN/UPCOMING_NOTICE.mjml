@@ -144,7 +144,7 @@
         		<mj-text font-size="14px"
             		     padding="0"
             		     font-family="Roboto, sans-serif">
-              As a friendly reminder, the invoice is due {{ due_date }}. <br></br> If you have any problems or questions, please don't hesitate to call us on <a href="tel:+4589877036" class="link-nostyle">+45 89 87 70 36</a> or simply reply to this email.
+              As a friendly reminder, the invoice is due {{ due_date }}. If you are not resposible for payment of this invoice, please forward this email to the appropriate person. <br></br> If you have any problems or questions, please don't hesitate to call us on <a href="tel:+4589877036" class="link-nostyle">+45 89 87 70 36</a> or simply reply to this email.
           	</mj-text>
 				</mj-column>
     </mj-section>
