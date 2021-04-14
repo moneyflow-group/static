@@ -1,12 +1,14 @@
 <mjml> 
-<!-- SUBJECT: Du har ubetalte fakturaer fra {{ company_name }} -->
+<!-- SUBJECT: Ubetalte fakturaer der har passeret forfaldsdatoen -->
   
 <!-- {{ payer_company_name }} 		Company name of payer company-->
-<!-- {{ company_name }} 					Company name of seller company-->
-<!-- {{ url_payer_balance }} 			Url to external payer balance page-->				
+<!-- {{ invoices }} 			List of invoices -->
+<!-- {{ outstanding_balance }} 		Total amount of oustanding invoices-->
+<!-- {{ url_payer_balance }} 			Url to external payer balance page-->
+<!-- {{ sent_date }} 							The date the email is sent-->
   
 <mj-head>
-		<mj-title>Bulk reminder EN</mj-title>
+		<mj-title>Bulk reminder DA</mj-title>
     		<mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:600"/>
 		    <mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto:400,700"/>
 		    <mj-breakpoint width="480px" />
@@ -35,15 +37,15 @@
   					    .link-nostyle { color: #0000FF; text-decoration: none }
  						   	</mj-style>
  								<!--Preview text-->      
- 								<mj-preview>Du har ubetalte fakturaer fra {{ company_name }}</mj-preview>
+ 								<mj-preview>Du modtager denne automatiske e-mail, fordi du har flere ubetalte fakturaer, der har passeret forfaldsdatoen.</mj-preview>
 </mj-head> 
 <mj-body background-color="#E4F0F7">
   
-<mj-raw><!-- Top bar(EC) --></mj-raw>
+<mj-raw><!-- Top bar(DIN) --></mj-raw>
 <mj-wrapper>
 		<mj-section padding="0">
     		<mj-column>
-        		<mj-table padding="21px 0">
+        		<mj-table padding="16px 0">
             		<tr>
             				<td style="padding:0 0 0 18px; line-height:1;">
             						<img width="111"
@@ -51,18 +53,11 @@
                              src="https://moneyflow-group.github.io/static/email-templates/moneyflow_logo.png"
                              alt="moneyflow" />
             				</td>
-            				<td style="padding:0 18px 0 0; line-height:1;">
-            						<img width="142"
-                             style="width:100%; max-width:142px; display:block"
-                             align="right"
-                             src="https://moneyflow-group.github.io/static/email-templates/visma_e-conomic_logo.png"
-                             alt="visma e-conomic" />
-            				</td>
             		</tr>
             </mj-table>
        	</mj-column>
     </mj-section>
-</mj-wrapper>
+</mj-wrapper>  
 
 <mj-raw><!-- Verify email-DA --></mj-raw>
 <mj-wrapper css-class="border-top">
@@ -72,18 +67,53 @@
         		<mj-text font-size="14px"
                   	 padding="0"
                      font-family="Roboto, sans-serif">
-           				 	 Kære {{ payer_company_name }},<br/><br/>Du har ubetalte fakturaer, der er forfaldne, fra {{ company_name }}<br/><br/>Vi beder dig om at betale disse hurtigst muligt. Følg linket for at se din saldo og fakturaoplysninger.<br/><br/>Har du allerede betalt, beklager vi denne mail.
+           				 	 Kære {{ payer_company_name }},<br/><br/>Du modtager denne automatiske e-mail, fordi du har flere ubetalte fakturaer, der har passeret forfaldsdatoen.<br/><br/>Vi beder dig om at betale disse hurtigst muligt. Har du allerede betalt, beklager vi denne mail.
  						</mj-text>
-          			<mj-button background-color="#0000FF"
+ 				</mj-column>
+		</mj-section>
+</mj-wrapper>
+  
+<mj-raw><!-- Receipt(EC)-DA --></mj-raw>
+<mj-wrapper css-class="border-top">
+		<mj-section css-class="section"
+                padding-bottom="0">
+				<mj-column padding-bottom="0px">
+        		<mj-text font-family="Montserrat, sans-serif"
+                     font-size="16px"
+                     font-weight="600"
+                     padding="0"
+                     padding-bottom="30px">
+              			 Forfaldne fakturaer pr. {{ sent_date }}
+        		</mj-text>
+        </mj-column>
+    </mj-section>
+  	<mj-section css-class="section"
+                padding-top="0px">
+    		<mj-column>
+        		<mj-table padding="0"
+                      font-family="Roboto, sans-serif"
+                      font-size="14px">
+              	{% for invoice in invoices %}
+                  <tr>
+                      <td style="padding-bottom:15px; color:#0000FF;">
+                                 {{ invoice.invoice_number }}</td>
+                      <td style="text-align:right;
+                                 padding-bottom:15px">
+                                 {{ invoice.invoice_amount }} kr.</td>
+                  </tr>
+              	{% endfor %}
+            </mj-table>
+                <mj-button background-color="#0000FF"
                            font-family="montserrat, sans-serif"
                            border-radius="6px"
                            height="36px"
+                           inner-padding="8px 16px"
                            padding-top="48px"
                            href="{{ url_payer_balance }}">
-                   				 Se udestående fakturaer
+                  Se alle ubetalte fakturaer
           			</mj-button>
- 				</mj-column>
-		</mj-section>
+        </mj-column>
+    </mj-section>
 </mj-wrapper>
  
 <mj-raw><!-- Contact-DA --></mj-raw>
