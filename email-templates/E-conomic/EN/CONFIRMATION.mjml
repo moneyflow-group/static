@@ -1,8 +1,8 @@
 <mjml>
-<!--SUBJECT: Your money is soon on the way--> 
+<!--SUBJECT: Your money is soon on the way-->
 <!-- {{ company_name }} 		Name of seller company-->
 <!-- {{ invoice_number }} 	Invoice number-->
-<!-- {{ status_page_en }} 	URL for the status/approved customer page of the seller company (in english)-->
+<!-- {{ status_page }} 	URL for the status/approved customer page of the seller company-->
 <mj-head>
 <mj-title>Confirmation-EN</mj-title>
   <mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:600"/>
@@ -31,11 +31,11 @@
 			</mj-attributes>
       </mj-style>
   				<!--padding on mobile-->
-          <mj-style>  
-          @media only screen and (max-width:480px) { 
+          <mj-style>
+          @media only screen and (max-width:480px) {
         	.section td {
           padding:16px 8px 16px 8px!important;
-        		}		
+        		}
       		}
           </mj-style>
   				<!--Top border-->
@@ -49,8 +49,8 @@
   				.link-body { color: #5B93F0; text-decoration: none; font-weight: 700; }
           .link-footer { color: #808494;}
  					</mj-style>
- 					<!--Preview text-->      
- 					<mj-preview>Dear {{ company_name }}, My name is Camilla and I am resposible for the Customer Care team behind Instant Payment.</mj-preview> 
+ 					<!--Preview text-->
+ 					<mj-preview>Dear {{ company_name }}, My name is Camilla and I am resposible for the Customer Care team behind Instant Payment.</mj-preview>
 </mj-head>
 
 <mj-body background-color="#E4F0F7">
@@ -75,7 +75,7 @@
 <mj-section css-class="section">
 		<mj-column>
 				<mj-text> Dear {{ company_name }},<br></br>My name is Camilla and I am resposible for the Customer Care team behind Instant Payment. I am here to make sure that you get the best possible experience with our service.<br></br>First of all, we want to say thank you for choosing to use Instant Payment. We are very happy to have you on board.<br></br> Before we transfer the money to your account for invoice no. {{ invoice_number }}, we must approve the details on the invoice. You can always follow the status of your invoices by clicking the button below. You will also receive a receipt as soon as it gets approved.</mj-text>
-        <mj-button href="{{ status_page_en }}">See status on my invoice</mj-button>	
+        <mj-button href="{{ status_page }}">See status on my invoice</mj-button>
 		</mj-column>
 </mj-section>
 </mj-wrapper>
@@ -106,7 +106,7 @@
 		</mj-column>
 </mj-section>
 </mj-wrapper>
-  
+
 <!-- Divider -->
 <mj-section padding="0">
 		<mj-column>
@@ -125,6 +125,6 @@
 		</mj-column>
 </mj-section>
 </mj-wrapper>
-  
+
 </mj-body>
 </mjml>

@@ -1,9 +1,9 @@
 <mjml>
-<!--SUBJECT: Your invoice, no. {{ invoice_number }}, is settled--> 
+<!--SUBJECT: Your invoice, no. {{ invoice_number }}, is settled-->
 <!-- {{ company_name }} 				Name of seller company-->
 <!-- {{ invoice_number }} 			Invoice number-->
 <!-- {{ payer_company_name }} 	Name of payer company-->
-<!-- {{ status_page_en }} 	URL for the status/approved customer page of the seller company (in english)-->
+<!-- {{ status_page }} 	URL for the status/approved customer page of the seller company-->
 <mj-head>
 <mj-title>Invoice_settled-EN</mj-title>
   <mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:600"/>
@@ -32,11 +32,11 @@
 			</mj-attributes>
       </mj-style>
   				<!--padding on mobile-->
-          <mj-style>  
-          @media only screen and (max-width:480px) { 
+          <mj-style>
+          @media only screen and (max-width:480px) {
         	.section td {
           padding:16px 8px 16px 8px!important;
-        		}		
+        		}
       		}
           </mj-style>
   				<!--Top border-->
@@ -50,8 +50,8 @@
   				.link-body { color: #5B93F0; text-decoration: none; font-weight: 700; }
           .link-footer { color: #808494;}
  					</mj-style>
- 					<!--Preview text-->      
- 					<mj-preview>We have had a really good experience with your customer</mj-preview> 
+ 					<!--Preview text-->
+ 					<mj-preview>We have had a really good experience with your customer</mj-preview>
 </mj-head>
 
 <mj-body background-color="#E4F0F7">
@@ -76,7 +76,7 @@
 <mj-section css-class="section">
 		<mj-column>
 				<mj-text> Dear {{ company_name }},<br></br>It's Camilla again.<br></br>We just want to let you know that your customer {{ payer_company_name }} has paid your invoice, no. {{ invoice_number }}, which you sent through us. We have had a really good experience with your customer and want to take this opportunity to make you aware that can turn on Instant Payment by default for all invoices to {{ payer_company_name }}. This can make both your and our administrative work even simpler.<br></br> If you click the button below and next to <b>{{ payer_company_name }}</b> press <b>Edit</b> > <b>Additional</b> > and check the box <b>Enable Instant Payment</b>, the service will automatically be turned on the next time you create an invoice to this customer.</mj-text>
-        <mj-button href="{{ status_page_en }}">See your customer list</mj-button>
+        <mj-button href="{{ status_page }}">See your customer list</mj-button>
  				<mj-image align="center"
                   padding="0px"
                   padding-top="16px"
@@ -108,7 +108,7 @@
 		</mj-column>
 </mj-section>
 </mj-wrapper>
-  
+
 <!-- Divider -->
 <mj-section padding="0">
 		<mj-column>
@@ -127,6 +127,6 @@
 		</mj-column>
 </mj-section>
 </mj-wrapper>
-  
+
 </mj-body>
 </mjml>

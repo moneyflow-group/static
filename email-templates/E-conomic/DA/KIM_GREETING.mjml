@@ -1,7 +1,7 @@
 <mjml>
-<!--SUBJECT: Status på din faktura--> 
+<!--SUBJECT: Status på din faktura-->
 <!-- {{ company_name }} 		Name of seller company-->
-<!-- {{ status_page_da }} 	URL for the status/approved customer page of the seller company (in danish)-->
+<!-- {{ status_page }} 	URL for the status/approved customer page of the seller company-->
 <mj-head>
 <mj-title>Kim_Greeting-DA</mj-title>
   <mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:600"/>
@@ -30,11 +30,11 @@
 			</mj-attributes>
       </mj-style>
   				<!--padding on mobile-->
-          <mj-style>  
-          @media only screen and (max-width:480px) { 
+          <mj-style>
+          @media only screen and (max-width:480px) {
         	.section td {
           padding:16px 8px 16px 8px!important;
-        		}		
+        		}
       		}
           </mj-style>
   				<!--Top border-->
@@ -48,8 +48,8 @@
   				.link-body { color: #5B93F0; text-decoration: none; font-weight: 700; }
           .link-footer { color: #808494;}
  					</mj-style>
- 					<!--Preview text-->      
- 					<mj-preview>Og en personlig hilsen fra direktøren for Straksindbetaling.</mj-preview> 
+ 					<!--Preview text-->
+ 					<mj-preview>Og en personlig hilsen fra direktøren for Straksindbetaling.</mj-preview>
 </mj-head>
 
 <mj-body background-color="#E4F0F7">
@@ -74,7 +74,7 @@
 <mj-section css-class="section">
 		<mj-column>
 				<mj-text> Kære {{ company_name }}<br></br>Mit navn er Kim Ulf, og jeg er direktør og stifter af virksomheden bag Straksindbetaling. Jeg tænkte, at jeg lige ville byde dig ordentligt velkommen.<br></br>Nu hvor det er første gang, du bruger Straksindbetaling, ved jeg, at det måske er lidt nervepirrende, at det er os, der står for kommunikationen med din kunde. Jeg kan dog garantere dig, at det er nogle ufatteligt dygtige folk, der tager sig af det - bl.a. Camilla, som du hilste på i sidste email.<br></br> I mellemtiden kan du på din personlige statusside se hvilke andre kunder, du kan bruge Straksindbetaling på.</mj-text>
-        <mj-button href="{{ status_page_da }}">Se tilgængelige kunder</mj-button>	
+        <mj-button href="{{ status_page }}">Se tilgængelige kunder</mj-button>
 		</mj-column>
 </mj-section>
 </mj-wrapper>
@@ -110,7 +110,7 @@
 		</mj-column>
 </mj-section>
 </mj-wrapper>
-  
+
 <!-- Divider -->
 <mj-section padding="0">
 		<mj-column>
@@ -129,6 +129,6 @@
 		</mj-column>
 </mj-section>
 </mj-wrapper>
-  
+
 </mj-body>
 </mjml>

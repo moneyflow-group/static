@@ -1,9 +1,9 @@
 <mjml>
-<!--SUBJECT: Din faktura, nr. {{ invoice_number }}, er afregnet--> 
+<!--SUBJECT: Din faktura, nr. {{ invoice_number }}, er afregnet-->
 <!-- {{ company_name }} 				Name of seller company-->
 <!-- {{ invoice_number }} 			Invoice number-->
 <!-- {{ payer_company_name }} 	Name of payer company-->
-<!-- {{ status_page_da }} 			URL for the status/approved customer page of the seller company (in danish)-->
+<!-- {{ status_page }} 			URL for the status/approved customer page of the seller company-->
 <mj-head>
 <mj-title>Invoice_settled-DA</mj-title>
   <mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:600"/>
@@ -32,11 +32,11 @@
 			</mj-attributes>
       </mj-style>
   				<!--padding on mobile-->
-          <mj-style>  
-          @media only screen and (max-width:480px) { 
+          <mj-style>
+          @media only screen and (max-width:480px) {
         	.section td {
           padding:16px 8px 16px 8px!important;
-        		}		
+        		}
       		}
           </mj-style>
   				<!--Top border-->
@@ -50,8 +50,8 @@
   				.link-body { color: #5B93F0; text-decoration: none; font-weight: 700; }
           .link-footer { color: #808494;}
  					</mj-style>
- 					<!--Preview text-->      
- 					<mj-preview>Vi har haft en mega god oplevelse med din kunde</mj-preview> 
+ 					<!--Preview text-->
+ 					<mj-preview>Vi har haft en mega god oplevelse med din kunde</mj-preview>
 </mj-head>
 
 <mj-body background-color="#E4F0F7">
@@ -76,7 +76,7 @@
 <mj-section css-class="section">
 		<mj-column>
 				<mj-text> Kære {{ company_name }}<br></br>Camilla her igen.<br></br>Vi vil egentlig bare informere dig om, at din kunde, {{ payer_company_name }}, har betalt fakturaen, {{ invoice_number }}, som du overdrog til os.<br></br> Vi har haft en mega god oplevelse med din kunde, og vi vil gerne gribe chancen for at gøre dig opmærksom på, at du kan slå Straksindbetaling til for alle fakturaer til {{ payer_company_name }}. Det kan forhåbentligt gøre både dit og vores administrative arbejde endnu nemmere. <br></br>Hvis du klikker på knappen nedenfor, kan du ved siden af <b>{{ payer_company_name }}</b> trykke på <b>Redigér</b> > <b>Øvrigt</b> > og markere afkrydsningsfeltet <b>Aktivér Straksindbetaling</b>, og tjenesten er derefter automatisk slået til, næste gang du opretter en faktura til denne kunde.</mj-text>
-        <mj-button href="{{ status_page_da }}">Se din kundeliste</mj-button>
+        <mj-button href="{{ status_page }}">Se din kundeliste</mj-button>
  				<mj-image align="center"
                   padding="0px"
                   padding-top="16px"
@@ -108,7 +108,7 @@
 		</mj-column>
 </mj-section>
 </mj-wrapper>
-  
+
 <!-- Divider -->
 <mj-section padding="0">
 		<mj-column>
@@ -127,6 +127,6 @@
 		</mj-column>
 </mj-section>
 </mj-wrapper>
-  
+
 </mj-body>
 </mjml>
