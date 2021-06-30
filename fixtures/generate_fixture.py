@@ -20,7 +20,7 @@ def write_fixture_file(fixtures, fixture_filename):
     build_folder = DIRNAME + "/build/"
     with open(build_folder + fixture_filename, "w") as fixture_file:
         print(f"Writing {build_folder}{fixture_filename}")
-        fixture_file.write(json.dumps(fixtures))
+        fixture_file.write(json.dumps(fixtures, indent=4))
 
 
 def generate_receipt_fixture():
@@ -86,7 +86,7 @@ def generate_email_fixture():
             print(
                 f"Processing [{html_template_file}] as [{platform}][{identifier}][{language}]"
             )
-            template["fields"]["html_template"] = html_template.read()
+            template["fields"]["html_template"] = html_template.read().replace('"', '\"')
     write_fixture_file(fixtures, fixture_filename)
 
 

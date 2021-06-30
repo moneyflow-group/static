@@ -10,7 +10,7 @@
             "html_template": "",
             "text_template": "",
             "subject": "Dit fakturasalg er g\u00e5et igennem",
-            "from_email": "\"Moneyflow.io\" <factoring@flow.moneyflow.io>",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "DA",
             "platform": "Dinero",
             "identifier": "POST_SALE"
@@ -27,7 +27,7 @@
             "html_template": "",
             "text_template": "",
             "subject": "Bekr\u00e6ft venligst din emailadresse indenfor 24 timer",
-            "from_email": "\"Moneyflow.io\" <factoring@flow.moneyflow.io>",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "DA",
             "platform": "Dinero",
             "identifier": "ONBOARDING_VERIFY"
@@ -44,7 +44,7 @@
             "html_template": "",
             "text_template": "",
             "subject": "Dit f\u00f8rste fakturasalg er g\u00e5et igennem",
-            "from_email": "\"Moneyflow.io\" <factoring@flow.moneyflow.io>",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "DA",
             "platform": "Dinero",
             "identifier": "POST_SALE_FIRST"
@@ -61,7 +61,7 @@
             "html_template": "",
             "text_template": "",
             "subject": "Du kan nu f\u00e5 tidlig betaling for dine fakturaer",
-            "from_email": "\"Moneyflow.io\" <factoring@flow.moneyflow.io>",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "DA",
             "platform": "Dinero",
             "identifier": "ONBOARDING"
@@ -78,7 +78,7 @@
             "html_template": "",
             "text_template": "",
             "subject": "Dit fakturasalg er gennemf\u00f8rt",
-            "from_email": "\"Moneyflow.io\" <factoring@flow.moneyflow.io>",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "DA",
             "platform": "E-conomic",
             "identifier": "POST_SALE"
@@ -95,7 +95,7 @@
             "html_template": "",
             "text_template": "",
             "subject": "Your invoice sale is completed",
-            "from_email": "\"Moneyflow.io\" <factoring@flow.moneyflow.io>",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "EN",
             "platform": "E-conomic",
             "identifier": "POST_SALE"
@@ -112,7 +112,7 @@
             "html_template": "",
             "text_template": "",
             "subject": "You can now get early payment for your invoices",
-            "from_email": "\"Moneyflow.io\" <factoring@flow.moneyflow.io>",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "EN",
             "platform": "Dinero",
             "identifier": "ONBOARDING"
@@ -129,7 +129,7 @@
             "html_template": "",
             "text_template": "",
             "subject": "You are now ready to get paid instantly",
-            "from_email": "\"Moneyflow.io\" <factoring@flow.moneyflow.io>",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "EN",
             "platform": "E-conomic",
             "identifier": "ONBOARDING"
@@ -146,7 +146,7 @@
             "html_template": "",
             "text_template": "",
             "subject": "Your invoice sale is completed",
-            "from_email": "\"Moneyflow.io\" <factoring@flow.moneyflow.io>",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "EN",
             "platform": "Dinero",
             "identifier": "POST_SALE"
@@ -163,7 +163,7 @@
             "html_template": "",
             "text_template": "",
             "subject": "Du er nu klar til f\u00e5 betaling med det samme",
-            "from_email": "\"Moneyflow.io\" <factoring@flow.moneyflow.io>",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "DA",
             "platform": "E-conomic",
             "identifier": "ONBOARDING"
@@ -180,7 +180,7 @@
             "html_template": "",
             "text_template": "",
             "subject": "Dit f\u00f8rste fakturasalg er g\u00e5et igennem",
-            "from_email": "\"Moneyflow.io\" <factoring@flow.moneyflow.io>",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "DA",
             "platform": "E-conomic",
             "identifier": "POST_SALE_FIRST"
@@ -197,7 +197,7 @@
             "html_template": "",
             "text_template": "",
             "subject": "Please verify your email address within 24 hours",
-            "from_email": "\"Moneyflow.io\" <factoring@flow.moneyflow.io>",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "EN",
             "platform": "Dinero",
             "identifier": "ONBOARDING_VERIFY"
@@ -214,7 +214,7 @@
             "html_template": "",
             "text_template": "",
             "subject": "Faktura #{{ invoice_number }} fra {{ company_name }}",
-            "from_email": "\"Moneyflow.io\" <factoring@flow.moneyflow.io>",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "DA",
             "platform": "Dinero",
             "identifier": "INVOICE_PAYER"
@@ -231,7 +231,7 @@
             "html_template": "",
             "text_template": "",
             "subject": "Your first invoice sale is completed",
-            "from_email": "\"Moneyflow.io\" <factoring@flow.moneyflow.io>",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "EN",
             "platform": "E-conomic",
             "identifier": "POST_SALE_FIRST"
@@ -248,7 +248,7 @@
             "html_template": "",
             "text_template": "",
             "subject": "Your first invoice sale is completed",
-            "from_email": "\"Moneyflow.io\" <factoring@flow.moneyflow.io>",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "EN",
             "platform": "Dinero",
             "identifier": "POST_SALE_FIRST"
@@ -265,7 +265,7 @@
             "html_template": "",
             "text_template": "",
             "subject": "Invoice #{{ invoice_number }} from {{ company_name }}",
-            "from_email": "\"Moneyflow.io\" <factoring@flow.moneyflow.io>",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "EN",
             "platform": "Dinero",
             "identifier": "INVOICE_PAYER"
@@ -282,7 +282,7 @@
             "html_template": "",
             "text_template": "",
             "subject": "Vi mangler din betaling",
-            "from_email": "\"Moneyflow.io\" <factoring@flow.moneyflow.io>",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "DA",
             "platform": "ALL",
             "identifier": "DUNNING_FIRST_REMINDER"
@@ -299,7 +299,7 @@
             "html_template": "",
             "text_template": "",
             "subject": "We haven't received your payment",
-            "from_email": "\"Moneyflow.io\" <factoring@flow.moneyflow.io>",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "EN",
             "platform": "ALL",
             "identifier": "DUNNING_FIRST_REMINDER"
@@ -316,7 +316,7 @@
             "html_template": "",
             "text_template": "",
             "subject": "Vi mangler din betaling",
-            "from_email": "\"Moneyflow.io\" <factoring@flow.moneyflow.io>",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "DA",
             "platform": "ALL",
             "identifier": "DUNNING_SECOND_REMINDER"
@@ -333,10 +333,197 @@
             "html_template": "",
             "text_template": "",
             "subject": "We still haven't received your payment",
-            "from_email": "\"Moneyflow.io\" <factoring@flow.moneyflow.io>",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "EN",
             "platform": "ALL",
             "identifier": "DUNNING_SECOND_REMINDER"
+        }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "2f1061bc-383d-4111-8b45-bfec225596ff",
+        "fields": {
+            "created_at": "2021-04-26T14:13:01.452Z",
+            "created_by": null,
+            "modified_at": "2021-04-26T14:13:01.452Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Your payment of inovice no. {{ invoice_number }}",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
+            "language": "EN",
+            "platform": "ALL",
+            "identifier": "UPCOMING_NOTICE"
+        }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "7b7cdd52-8b37-4a84-bf82-b9404879bad9",
+        "fields": {
+            "created_at": "2020-12-07T14:13:01.452Z",
+            "created_by": null,
+            "modified_at": "2020-12-07T14:13:01.452Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Din betaling af fakturanr. {{ invoice_number }}",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
+            "language": "DA",
+            "platform": "ALL",
+            "identifier": "UPCOMING_NOTICE"
+        }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "7b7cdd52-8b37-4a84-bf82-b9404879bad9",
+        "fields": {
+            "created_at": "2021-05-10T14:13:01.452Z",
+            "created_by": null,
+            "modified_at": "2021-05-10T14:13:01.452Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Email failure, support needed",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
+            "language": "EN",
+            "platform": "ALL",
+            "identifier": "CS_EMAIL_NOTIFICATION"
+        }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "488e751e-8a34-485c-9efc-0a7b5f3098ff",
+        "fields": {
+            "created_at": "2021-06-26T14:13:01.452Z",
+            "created_by": null,
+            "modified_at": "2021-06-26T14:13:01.452Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Receipt for inovice no. {{ invoice_number }}",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
+            "language": "EN",
+            "platform": "E-conomic",
+            "identifier": "RECEIPT"
+        }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "7aaaa64c-a985-4492-ae3f-c67fa55db000",
+        "fields": {
+            "created_at": "2021-06-26T14:13:01.452Z",
+            "created_by": null,
+            "modified_at": "2021-06-26T14:13:01.452Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Kvittering for faktura nr. {{ invoice_number }}",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
+            "language": "DA",
+            "platform": "E-conomic",
+            "identifier": "RECEIPT"
+        }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "adfae2f1-259a-4eac-960a-b0c0845d4d21",
+        "fields": {
+            "created_at": "2021-06-26T14:13:01.452Z",
+            "created_by": null,
+            "modified_at": "2021-06-26T14:13:01.452Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Your invoice has been settled",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
+            "language": "EN",
+            "platform": "E-conomic",
+            "identifier": "INVOICE_SETTLED"
+        }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "f7deecd6-ff1e-4eba-bed9-6e56851fd8c4",
+        "fields": {
+            "created_at": "2021-06-26T14:13:01.452Z",
+            "created_by": null,
+            "modified_at": "2021-06-26T14:13:01.452Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Din faktura er afregnet",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
+            "language": "DA",
+            "platform": "E-conomic",
+            "identifier": "INVOICE_SETTLED"
+        }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "7e731551-27e1-48d6-b5b9-98c5e2e1bee6",
+        "fields": {
+            "created_at": "2021-06-26T14:13:01.452Z",
+            "created_by": null,
+            "modified_at": "2021-06-26T14:13:01.452Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Your money is coming soon!",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
+            "language": "EN",
+            "platform": "E-conomic",
+            "identifier": "CONFIRMATION"
+        }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "a48f8241-ce63-4a33-bf95-d4e15d93111a",
+        "fields": {
+            "created_at": "2021-06-26T14:13:01.452Z",
+            "created_by": null,
+            "modified_at": "2021-06-26T14:13:01.452Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Dine penge er snart på vej!",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
+            "language": "DA",
+            "platform": "E-conomic",
+            "identifier": "CONFIRMATION"
+        }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "8d129b1f-7660-423b-832a-dab267672175",
+        "fields": {
+            "created_at": "2021-06-26T14:13:01.452Z",
+            "created_by": null,
+            "modified_at": "2021-06-26T14:13:01.452Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Status of your invoice",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
+            "language": "EN",
+            "platform": "E-conomic",
+            "identifier": "KIM_GREETING"
+        }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "48fe7259-4db4-4c57-9315-8eef2a21ef39",
+        "fields": {
+            "created_at": "2021-06-26T14:13:01.452Z",
+            "created_by": null,
+            "modified_at": "2021-06-26T14:13:01.452Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Status på din faktura",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
+            "language": "DA",
+            "platform": "E-conomic",
+            "identifier": "KIM_GREETING"
         }
     }
 ]
