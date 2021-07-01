@@ -139,7 +139,7 @@
                      padding="0"
    						       font-family="Roboto, sans-serif"
    						       padding-bottom="20px">
-										 Invoices sent to registered businesses in Denmark. Make sure to fill in the CVR no. of your customer
+										 Invoices sent to registered businesses in Denmark or Sweden. Make sure to fill in the CVR/Org no. of your customer
           	</mj-text>
     		   	<mj-text font-size="14px"
     						     font-weight="600"
@@ -163,13 +163,13 @@
 						         padding="0"
             				 font-family="Montserrat, sans-serif"
        						   padding-bottom="15px">
-										 Customers with good history
+										 Customers payment history
           	</mj-text>
 						<mj-text font-size="14px"
             				 padding="0"
 						         font-family="Roboto, sans-serif"
            					 padding-bottom="20px">
-              			 You need to have traded with your customer during the last 12 months </br></br>
+              			 We calculate the offer based on payment information from your customer </br></br>
           	</mj-text>
  			      <mj-text font-size="14px"
        						   font-weight="600"
@@ -182,7 +182,7 @@
             				 padding="0"
                      font-family="Roboto, sans-serif"
    						       padding-bottom="0">
-          					 If the total invoice amount is above 1.000 kr.
+          					 The total invoice amount needs to be under 250.000 kr.
           	</mj-text>
 				</mj-column>
 		</mj-section>
