@@ -139,7 +139,7 @@
                      padding="0"
    						       font-family="Roboto, sans-serif"
    						       padding-bottom="20px">
-										 Fakturaer sendt til dansk registrerede virksomheder. Vær opmærksom på at noter CVR nummeret på din kunde
+										 Fakturaer sendt til danske eller svenskregistrerede virksomheder. Vær opmærksom på at noter CVR/Org. nummeret på din kunde
           	</mj-text>
     		   	<mj-text font-size="14px"
     						     font-weight="600"
@@ -163,13 +163,13 @@
 						         padding="0"
             				 font-family="Montserrat, sans-serif"
        						   padding-bottom="15px">
-										 Kunder med god historik
+										 Din kundes betalingshistorik
           	</mj-text>
 						<mj-text font-size="14px"
             				 padding="0"
 						         font-family="Roboto, sans-serif"
            					 padding-bottom="20px">
-              Du skal have handlet med dine kunder indenfor de seneste 12 måneder </br></br>
+              Vi beregner tilbuddet ud fra på betalingshistorikken med din kunde </br></br>
           	</mj-text>
  			      <mj-text font-size="14px"
        						   font-weight="600"
@@ -182,7 +182,7 @@
             				 padding="0"
                      font-family="Roboto, sans-serif"
    						       padding-bottom="0">
-          					 Det totale fakturabeløb er min. 1.000 kr.
+          					 Det samlede fakturabeløb skal være under 250.000 kr.
           	</mj-text>
 				</mj-column>
 		</mj-section>
