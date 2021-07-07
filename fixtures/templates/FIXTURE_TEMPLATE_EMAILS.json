@@ -341,7 +341,7 @@
     },
     {
         "model": "message_service.emailtemplate",
-        "pk": "2f1061bc-383d-4111-8b45-bfec225596ff",
+        "pk": "7b7cdd52-8b37-4a84-bf82-b9404879bad9",
         "fields": {
             "created_at": "2021-04-26T14:13:01.452Z",
             "created_by": null,
@@ -358,7 +358,7 @@
     },
     {
         "model": "message_service.emailtemplate",
-        "pk": "7b7cdd52-8b37-4a84-bf82-b9404879bad9",
+        "pk": "2f1061bc-383d-4111-8b45-bfec225596ff",
         "fields": {
             "created_at": "2020-12-07T14:13:01.452Z",
             "created_by": null,
@@ -375,7 +375,7 @@
     },
     {
         "model": "message_service.emailtemplate",
-        "pk": "066558d5-37a4-45c7-9596-ed75b6743be7",
+        "pk": "fc541168-9d64-4855-bbf2-e119af24455f",
         "fields": {
             "created_at": "2021-05-10T14:13:01.452Z",
             "created_by": null,
@@ -472,7 +472,7 @@
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "EN",
             "platform": "E-conomic",
-            "identifier": "CONFIRMATION"
+            "identifier": "FIRST_CONFIRMATION"
         }
     },
     {
@@ -489,7 +489,7 @@
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "DA",
             "platform": "E-conomic",
-            "identifier": "CONFIRMATION"
+            "identifier": "FIRST_CONFIRMATION"
         }
     },
     {
