@@ -1,0 +1,134 @@
+<mjml>
+<!--SUBJECT: Status på din faktura-->
+<!-- {{ company_name }} 		Name of seller company-->
+<!-- {{ status_page }} 	URL for the status/approved customer page of the seller company-->
+<mj-head>
+<mj-title>Kim_Greeting-DA</mj-title>
+  <mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:600"/>
+	<mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto:400,700"/>
+  <mj-breakpoint width="480px"/>
+  		<mj-attributes>
+					<mj-section padding="64px 80px"
+                      background-color="#ffffff"/>
+			    <mj-wrapper padding="0"/>
+ 				  <mj-text font-family="Roboto, sans-serif"
+                   line-height="24px"
+                   font-size="14px"
+                   color="#2F3344"
+                   padding="0"/>
+          <mj-button background-color="#5B93F0"
+                     font-family="montserrat, sans-serif"
+                     font-size="12px"
+                     line-height="24px"
+                     border-radius="6px"
+                     inner-padding="8px 24px"
+                     padding-top="32px"/>
+          <mj-divider padding="0"
+                      border-width="2px"
+                      border-style="dashed"
+                      border-color="#E4F0F7"/>
+			</mj-attributes>
+      </mj-style>
+  				<!--padding on mobile-->
+          <mj-style>
+          @media only screen and (max-width:480px) {
+        	.section td {
+          padding:16px 8px 16px 8px!important;
+        		}
+      		}
+          </mj-style>
+  				<!--Top border-->
+      		<mj-style inline="inline">
+          .border-top {
+ 				  border-top: 4px solid #5B93F0;
+					}
+          </mj-style>
+      		<!--Removing underscore on links-->
+					<mj-style inline="inline">
+  				.link-body { color: #5B93F0; text-decoration: none; font-weight: 700; }
+          .link-footer { color: #808494;}
+ 					</mj-style>
+ 					<!--Preview text-->
+ 					<mj-preview>Og en personlig hilsen fra direktøren for Straksindbetaling.</mj-preview>
+</mj-head>
+
+<mj-body background-color="#E4F0F7">
+
+<mj-raw><!-- Top bar --></mj-raw>
+<mj-wrapper>
+<mj-section padding="0"
+            background-color="#E4F0F7">
+		<mj-column>
+    		<mj-image height="20px"
+                  width="189px"
+                  align="left"
+                  padding="32px 0px 24px 8px"
+                  src="https://moneyflow-group.github.io/static/email-templates/E-conomic-2.png"
+                  alt="visma e-conomic"/>
+		</mj-column>
+</mj-section>
+</mj-wrapper>
+
+<mj-raw><!-- Body --></mj-raw>
+<mj-wrapper css-class="border-top">
+<mj-section css-class="section">
+		<mj-column>
+				<mj-text> Kære {{ company_name }}<br></br>Mit navn er Kim Ulf, og jeg er direktør og stifter af virksomheden bag Straksindbetaling. Jeg tænkte, at jeg lige ville byde dig ordentligt velkommen.<br></br>Nu hvor det er første gang, du bruger Straksindbetaling, ved jeg, at det måske er lidt nervepirrende, at det er os, der står for kommunikationen med din kunde. Jeg kan dog garantere dig, at det er nogle ufatteligt dygtige folk, der tager sig af det - bl.a. Camilla, som du hilste på i sidste email.<br></br> I mellemtiden kan du på din personlige statusside se hvilke andre kunder, du kan bruge Straksindbetaling på.</mj-text>
+        <mj-button href="{{ status_page }}">Se tilgængelige kunder</mj-button>
+		</mj-column>
+</mj-section>
+</mj-wrapper>
+
+<!-- Divider -->
+<mj-section padding="0">
+		<mj-column>
+    		<mj-divider/>
+		</mj-column>
+</mj-section>
+
+<mj-raw><!-- Contact 2 columns --></mj-raw>
+<mj-wrapper>
+<mj-section  css-class="section">
+<!-- Left column -->
+		<mj-column>
+ 				<mj-image align="center"
+                  padding="0px"
+                  width="180px"
+                  src="https://moneyflow-group.github.io/static/email-templates/Kim-email.png"
+                  alt="Kim Ulf"/>
+		</mj-column>
+<!-- Right column -->
+		<mj-column>
+				<mj-text>De bedste hilsner</mj-text>
+      	<mj-image align="left"
+                  padding="8px 0px 8px 0px"
+                  src="https://moneyflow-group.github.io/static/email-templates/Kim-signature.png"
+                  alt="Kim Signature"/>
+    		<mj-text font-family="Montserrat"
+                 color="#5B93F0">Kim Ulf Rehfeld Thoden</mj-text>
+      	<mj-text>Direktør, Straksindbetaling</mj-text>
+		</mj-column>
+</mj-section>
+</mj-wrapper>
+
+<!-- Divider -->
+<mj-section padding="0">
+		<mj-column>
+				<mj-divider>
+		</mj-column>
+</mj-section>
+
+<mj-raw><!-- Disclaimer-DA --></mj-raw>
+<mj-wrapper>
+<mj-section padding="24px 0px 32px 0px"
+            background-color="#E4F0F7">
+		<mj-column>
+    		<mj-text align="center"
+                 color="#808494"
+                 font-size="12px">Du modtager denne e-mail, fordi det er første gang du bruger Straksindbetaling. <br> Sendt af <a class="link-footer" href="https://moneyflow.io/">Moneyflow Group A/S</a> på vegne af Straksindbetaling fra e-conomic <br> Moneyflow Group A/S | Langebrogade 4, 1411 København K | CVR 39228327 <br>Moneyflow er registreret og reguleret af <a class="link-footer" href="https://www.finanstilsynet.dk/">Finanstilsynet</a></mj-text>
+		</mj-column>
+</mj-section>
+</mj-wrapper>
+
+</mj-body>
+</mjml>
