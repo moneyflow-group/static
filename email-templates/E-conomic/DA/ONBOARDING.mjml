@@ -3,7 +3,7 @@
 
 <!-- {{ signee_name }} 		Signee name for seller company-->
 <!-- {{ company_name }} 	Name of seller company-->
-
+  
 <mj-head>
 		<mj-title>Post onboarding-DA</mj-title>
     		<mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:600"/>
@@ -34,7 +34,7 @@
   					    .link-nostyle { color: #0000FF; text-decoration: none }
  						   	</mj-style>
  								<!--Preview text-->      
- 								<mj-preview>Hej {{ signee_name }}.<br/><br/>Du har nu gennemført installationen af Straksindbetaling for {{ company_name }} i e-conomic og kan få betaling med det samme for fakturaer gennem Moneyflow.</mj-preview> 
+ 								<mj-preview>Vi vil tilbyde dig at bruge Straksindbetaling til halvdelen af prisen på alle fakturaer.</mj-preview> 
 </mj-head>
 <mj-body background-color="#E4F0F7">
   
@@ -78,7 +78,7 @@
                      font-size="28px"
                      font-family="Montserrat, sans-serif"
                      font-weight="600">
-                     Straksindbetaling er<br/>nu installeret
+                     50% rabat<br/>på alle fakturaer
           	</mj-text>
         </mj-column>
     </mj-section>
@@ -92,7 +92,7 @@
         		<mj-text font-size="14px"
             		     padding="0"
             		     font-family="Roboto, sans-serif">
-        						 Hej {{ signee_name }}.<br/><br/>Du har nu gennemført installationen af Straksindbetaling for {{ company_name }} i e-conomic og kan få betaling med det samme for fakturaer gennem Moneyflow.<br/><br/> Vedhæftet denne e-mail finder du hovedaftalen som du har underskrevet.<br/><br/>Når du laver og sender en faktura, har du nu mulighed for at aktivere Straksindbetaling for den specifikke faktura. 
+        						 Hej {{ signee_name }}.<br><br>Du har nu gennemført installationen af Straksindbetaling for {{ company_name }} i e-conomic og kan få betaling med det samme for fakturaer gennem Moneyflow.<br><br> Som noget helt særligt vi vil gerne tilbyde jer at bruge Straksindbetaling til halvdelen af prisen. Den første faktura er selvfølgelig stadig gratis.<br><br>I skal egentlig ikke gøre noget for at aktivere din rabat bortset fra at huske at slå Straksindbetaling til, når I opretter jeres næste faktura i e-conomic. <br><br>Vedhæftet denne e-mail finder du hovedaftalen som du har underskrevet.
           	</mj-text>
 				</mj-column>
    	</mj-section>
@@ -139,7 +139,7 @@
                      padding="0"
    						       font-family="Roboto, sans-serif"
    						       padding-bottom="20px">
-										 Fakturaer sendt til danske eller svenskregistrerede virksomheder. Vær opmærksom på at noter CVR/Org. nummeret på din kunde
+										 Fakturaer sendt til danske eller svenskregistrerede virksomheder. Vær opmærksom på at noter CVR/Org. nr. på din kunde
           	</mj-text>
     		   	<mj-text font-size="14px"
     						     font-weight="600"
@@ -397,7 +397,7 @@
               			 <a>|</a>
               			 <a href="https://moneyflow.io/da/terms/"
                         class="link-nostyle">
-                        Forettningsbetingelser</a>
+                        Forretningsbetingelser</a>
           	</mj-text>
 						<mj-text font-size="12px"
                      align="center"
