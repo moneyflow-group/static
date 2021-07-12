@@ -92,7 +92,7 @@
         		<mj-text font-size="14px"
             		     padding="0"
             		     font-family="Roboto, sans-serif">
-        						 Hi {{ signee_name }}.<br></br>You have now completed the setup of Instant Payment for {{ company_name }} in e-conomic and can get paid instantly for invoices through Moneyflow.<br></br>As something very special we would like to offer you to use Instant Payment for half the price. The first invoice is of course still free.<br></br>You don't have to do anything to activate your discount other than remembering to turn on Instant Payment when you create your next invoice in e-conomic. <br></br>Attached to this email is the signed Main Agreement.
+        						 Hi {{ signee_name }}.<br><br>You have now completed the setup of Instant Payment for {{ company_name }} in e-conomic and can get paid instantly for invoices through Moneyflow.<br><br>As something very special we would like to offer you to use Instant Payment for half the price. The first invoice is of course still free.<br><br>You don't have to do anything to activate your discount other than remembering to turn on Instant Payment when you create your next invoice in e-conomic. <br><br>Attached to this email is the signed Main Agreement.
           	</mj-text>
 				</mj-column>
    	</mj-section>
