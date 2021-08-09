@@ -139,7 +139,7 @@
                      padding="0"
    						       font-family="Roboto, sans-serif"
    						       padding-bottom="20px">
-										 Fakturaer sendt til danske eller svenskregistrerede virksomheder. Vær opmærksom på at noter CVR/Org. nummeret på din kunde
+										 Fakturaer sendt til danske eller svenskregistrerede virksomheder. Vær opmærksom på at noter CVR/Org. nr. på din kunde
           	</mj-text>
     		   	<mj-text font-size="14px"
     						     font-weight="600"
@@ -397,7 +397,7 @@
               			 <a>|</a>
               			 <a href="https://moneyflow.io/da/terms/"
                         class="link-nostyle">
-                        Forettningsbetingelser</a>
+                        Forretningsbetingelser</a>
           	</mj-text>
 						<mj-text font-size="12px"
                      align="center"
