@@ -78,7 +78,7 @@
                      font-size="28px"
                      font-family="Montserrat, sans-serif"
                      font-weight="600">
-                     Straksindbetaling er<br/>nu installeret
+                     Straksindbetaling er<br>nu installeret
           	</mj-text>
         </mj-column>
     </mj-section>
@@ -92,7 +92,7 @@
         		<mj-text font-size="14px"
             		     padding="0"
             		     font-family="Roboto, sans-serif">
-        						 Hej {{ signee_name }}.<br/><br/>Du har nu gennemført installationen af Straksindbetaling for {{ company_name }} i e-conomic og kan få betaling med det samme for fakturaer gennem Moneyflow.<br/><br/> Vedhæftet denne e-mail finder du hovedaftalen som du har underskrevet.<br/><br/>Når du laver og sender en faktura, har du nu mulighed for at aktivere Straksindbetaling for den specifikke faktura. 
+        						 Hej {{ signee_name }}.<br><br>Du har nu gennemført installationen af Straksindbetaling for {{ company_name }} i e-conomic og kan få betaling med det samme for fakturaer gennem Moneyflow.<br><br> Vedhæftet denne e-mail finder du hovedaftalen som du har underskrevet.<br><br>Når du laver og sender en faktura, har du nu mulighed for at aktivere Straksindbetaling for den specifikke faktura. 
           	</mj-text>
 				</mj-column>
    	</mj-section>
