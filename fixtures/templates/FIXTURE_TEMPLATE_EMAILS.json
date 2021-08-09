@@ -404,7 +404,7 @@
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "EN",
             "platform": "E-conomic",
-            "identifier": "RECEIPT"
+            "identifier": "FIRST_RECEIPT"
         }
     },
     {
@@ -421,7 +421,7 @@
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "DA",
             "platform": "E-conomic",
-            "identifier": "RECEIPT"
+            "identifier": "FIRST_RECEIPT"
         }
     },
     {
