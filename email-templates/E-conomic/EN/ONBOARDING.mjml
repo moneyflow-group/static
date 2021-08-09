@@ -34,7 +34,7 @@
   					    .link-nostyle { color: #0000FF; text-decoration: none }
  						   	</mj-style>
  								<!--Preview text-->      
- 								<mj-preview>We want to offer you to use Instant Payment for half the price on all invoices.</mj-preview>
+ 								<mj-preview>You have now completed the setup of Instant Payment for {{ company_name }} in e-conomic and can get paid instantly for invoices through Moneyflow.</mj-preview>
 </mj-head>
 <mj-body background-color="#E4F0F7">
   
@@ -78,7 +78,7 @@
                      font-size="28px"
                      font-family="Montserrat, sans-serif"
                      font-weight="600">
-                     50% discount<br/>on all invoices
+                     Instant payment<br/>is now set up
           	</mj-text>
         </mj-column>
     </mj-section>
@@ -92,7 +92,7 @@
         		<mj-text font-size="14px"
             		     padding="0"
             		     font-family="Roboto, sans-serif">
-        						 Hi {{ signee_name }}.<br><br>You have now completed the setup of Instant Payment for {{ company_name }} in e-conomic and can get paid instantly for invoices through Moneyflow.<br><br>As something very special we would like to offer you to use Instant Payment for half the price. The first invoice is of course still free.<br><br>You don't have to do anything to activate your discount other than remembering to turn on Instant Payment when you create your next invoice in e-conomic. <br><br>Attached to this email is the signed Main Agreement.
+        						 Hi {{ signee_name }}.<br/><br/>You have now completed the setup of Instant Payment for {{ company_name }} in e-conomic and can get paid instantly for invoices through Moneyflow.<br/><br/> Attached to this email is the signed Main Agreement. <br/><br/>When creating and sending an invoice, you will now be able to turn on Instant Payment for that particular invoice. 
           	</mj-text>
 				</mj-column>
    	</mj-section>
