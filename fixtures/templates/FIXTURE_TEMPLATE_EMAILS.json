@@ -525,5 +525,39 @@
             "platform": "E-conomic",
             "identifier": "KIM_GREETING"
         }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "09d193ee-c22d-46d6-9a5c-4285b9216f8e",
+        "fields": {
+            "created_at": "2021-08-02T17:13:01.452Z",
+            "created_by": null,
+            "modified_at": "2021-08-02T17:13:01.452Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Vi har modtaget betaling fra dig. Tak!",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
+            "language": "DA",
+            "platform": "ALL",
+            "identifier": "PAYER_SETTLED_INVOICE"
+        }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "a4d470aa-ce59-4979-9714-12da615829a9",
+        "fields": {
+            "created_at": "2021-08-02T17:13:01.452Z",
+            "created_by": null,
+            "modified_at": "2021-08-02T17:13:01.452Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "We have received your payment. Thank you!",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
+            "language": "EN",
+            "platform": "ALL",
+            "identifier": "PAYER_SETTLED_INVOICE"
+        }
     }
 ]

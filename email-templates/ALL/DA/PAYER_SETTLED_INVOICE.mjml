@@ -1,0 +1,112 @@
+<mjml>
+<!--SUBJECT: Vi har modtaget betaling fra dig. Tak!-->
+<!-- {{ payer_balance_page }} 		Oustanding balance page for receiver company-->
+<!-- {{ company_name }}	 					Seller company of this invocie-->
+
+<mj-head>
+<mj-title>Receipt-DA</mj-title>
+  <mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:600"/>
+	<mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto:400,700"/>
+  <mj-breakpoint width="480px"/>
+  		<mj-attributes>
+					<mj-section padding="64px 80px"
+                      background-color="#ffffff"/>
+			    <mj-wrapper padding="0"/>
+ 				  <mj-text font-family="Roboto, sans-serif"
+                   line-height="24px"
+                   font-size="14px"
+                   color="#2F3344"
+                   padding="0"/>
+          <mj-button background-color="#5B93F0"
+                     font-family="montserrat, sans-serif"
+                     font-size="12px"
+                     line-height="24px"
+                     border-radius="6px"
+                     inner-padding="8px 24px"
+                     padding-top="32px"/>
+          <mj-divider padding="0"
+                      border-width="2px"
+                      border-style="dashed"
+                      border-color="#E4F0F7"/>
+			</mj-attributes>
+      </mj-style>
+  				<!--padding on mobile-->
+          <mj-style>
+          @media only screen and (max-width:480px) {
+        	.section td {
+          padding:16px 8px 16px 8px!important;
+        		}
+      		}
+          </mj-style>
+  				<!--Top border-->
+      		<mj-style inline="inline">
+          .border-top {
+ 				  border-top: 4px solid #5B93F0;
+					}
+          </mj-style>
+      		<!--Removing underscore on links-->
+					<mj-style inline="inline">
+  				.link-body { color: #5B93F0; text-decoration: none; font-weight: 700; }
+          .link-footer { color: #808494;}
+ 					</mj-style>
+ 					<!--Preview text-->
+ 					<mj-preview>Vi har opdateret dit udestående beløb og holder dig løbende opdateret maks. engang i ugen, såfremt vi modtager nye betalinger fra dig.</mj-preview>
+</mj-head>
+
+<mj-body background-color="#E4F0F7">
+
+<mj-raw><!-- Top bar --></mj-raw>
+<mj-wrapper>
+<mj-section padding="0"
+            background-color="#E4F0F7">
+		<mj-column>
+    		<mj-image height="25px"
+                  width="140px"
+                  align="left"
+                  padding="32px 0px 24px 8px"
+                  src="https://moneyflow-group.github.io/static/email-templates/moneyflow_logo.png"
+                  alt="Moneyflow"/>
+		</mj-column>
+</mj-section>
+</mj-wrapper>
+
+<mj-raw><!-- Body --></mj-raw>
+<mj-wrapper css-class="border-top">
+<mj-section css-class="section">
+		<mj-column>
+      	<mj-text font-family="Montserrat"
+                 color="#2F3344"
+                 font-size="16px"
+                 padding-bottom="16px"> Vi har modtaget betaling fra dig. Tak!</mj-text>
+				<mj-text padding-bottom="24px"> Vi har opdateret dit udestående beløb og holder dig løbende opdateret maks. engang i ugen, såfremt vi modtager nye betalinger fra dig. </mj-text>
+      	<mj-text font-family="Montserrat"
+                 color="#5B93F0"
+                 font-size="20px"
+                 padding-bottom="16px"> Skab større kontrol over dit cashflow med Moneyflow</mj-text>
+				<mj-text> Få betaling på din faktura i dét øjeblik den bliver udstedt. Hos  Moneyflow tilbyder vi dig mere kontrol over dit cashflow ved at spare dig for ventetiden på betalinger.<br><br>Du modtager din betaling inden for kun 2 timer, og bliver samtidig fri for at bruge tid på at jagte betalinger - så kan du fokusere på din forretning!<br><br>Indtil videre har vi sparet virksomheder for over 4.2 millioner timers ventedtid på betalinger. Det svarer til mere end 175.000 dage, 5738 måneder eller næsten 500 års ventetid! <br><br>Hvor lang tid bruger I på at vente på betalinger?  </mj-text>
+        <mj-button href="https://kampagne.moneyflow.io/home">Læs mere om Moneyflow</mj-button>
+		</mj-column>
+</mj-section>
+</mj-wrapper>
+
+<!-- Divider -->
+<mj-section padding="0">
+		<mj-column>
+				<mj-divider/>
+		</mj-column>
+</mj-section>
+
+<mj-raw><!-- Disclaimer --></mj-raw>
+<mj-wrapper>
+<mj-section padding="24px 0px 32px 0px"
+            background-color="#E4F0F7">
+		<mj-column>
+    		<mj-text align="center"
+                 color="#808494"
+                 font-size="12px">For at se dine udestående beløb. <a text-decoration="underline" class="link-footer" href="https://moneyflow.io">Klik her</a><br> Sendt af <a class="link-footer" href="https://moneyflow.io/">Moneyflow Group A/S</a> på vegne af {{ company_name }} <br> Moneyflow Group A/S | Langebrogade 4, 1411 København K | CVR 39228327 <br>Moneyflow er registreret og reguleret af <a class="link-footer" href="https://www.finanstilsynet.dk/">Finanstilsynet</a></mj-text>
+		</mj-column>
+</mj-section>
+</mj-wrapper>
+
+</mj-body>
+</mjml>
