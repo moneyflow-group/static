@@ -73,6 +73,9 @@
        				 	     font-family="Roboto, sans-serif">
               			 Email to {{ payer_company_name }} failed, manual handling required. <br></br>
           					 <b>Email status:</b> {{ email_status }} <br>
+										 <b>Description:</b> {{ email_status_desc }} <br>
+										 <b>Event reason:</b> {{ email_reject_reason }} <br>
+										 <b>Email type:</b> {{ email_type }} <br>
   									 <b>Invoice number:</b> {{ invoice_number }} <br>
               			 <b>Payer Company:</b> {{ payer_company_name }} <br>
               			 <b>Recipient email:</b> {{ recipient_email }} <br>
