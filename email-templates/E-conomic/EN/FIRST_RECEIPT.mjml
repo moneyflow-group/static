@@ -74,7 +74,7 @@
 <mj-wrapper css-class="border-top">
 <mj-section css-class="section">
 		<mj-column>
-				<mj-text> Dear {{ company_name }},<br></br>Attached to this email is the receipt for invoice no. {{ invoice_number }} sent with Instant Payment.<br></br>The total amount: {{ payout_amount }} will soon be tranferred to your bank account.<br></br> We have prepared an entry for you in e-conomic, which only needs an approval from you or your accountant.</mj-text>
+				<mj-text> Dear {{ company_name }},<br></br>Attached to this email is the receipt for invoice no. {{ invoice_number }} sent with Instant Payment.<br></br>The total amount: {{ payout_amount }} will soon be tranferred to your bank account.<br></br> Approve your entry directly from e-conomic by following the link below. We have already prepared it, so it only needs a few clicks from you.</mj-text>
         <mj-button href="https://secure.e-conomic.com/accounting/journals/">Approve entry in e-conomic</mj-button>
 		</mj-column>
 </mj-section>
