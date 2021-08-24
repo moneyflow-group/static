@@ -7,6 +7,7 @@
 <!-- {{ account_number }} 		four last digits on seller bank account-->
 <!-- {{ fee_amount }} 			factoring fee amount in DKK-->
 <!-- {{ vat_amount }} 			VAT amount in DKK-->
+<!-- {{ fee_discount_text_dk }} Discount text (eg. 50% discount)-->
 <!-- {{ total_fee_amount }} 	Factoring fee amount + VAT amount in DKK-->
 <!-- {{ invoice_amount }} 		Invoice amount-->  
 
@@ -130,8 +131,15 @@
                                  Gebyr</td>
                       <td style="text-align:right;
                                  padding-bottom:15px">
-                                 {{ fee_amount }} kr.</td>
+                                 {{ interest_rate_amount_before_discount }} kr.</td>
                   </tr>
+                  <tr>
+                      <td style="padding-bottom:15px">
+                                 Gebyr rabat {{ fee_discount_text_dk }}</td>
+                      <td style="text-align:right;
+                                 padding-bottom:15px">
+                                 -{{ interest_rate_discount_amount }} kr.</td>
+                  </tr>                  
                   <tr>
                       <td style="padding-bottom:15px;">
                                  Moms (25%)</td>
