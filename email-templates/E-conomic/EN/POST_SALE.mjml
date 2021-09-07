@@ -8,6 +8,9 @@
 <!-- {{ fee_amount }} 			    factoring fee amount in DKK-->
 <!-- {{ vat_amount }} 			    VAT amount in DKK-->
 <!-- {{ fee_discount_text_en }} Discount text (eg. 50% discount)-->
+<!-- {{ offer_cost_discount_percent }} 	Percent discount on the offer cost-->
+<!-- {{ offer_cost_before_discount }}   Offer cost before applying any discount-->
+<!-- {{ offer_cost_discount }}          Discount on the offer cost in currency-->
 <!-- {{ total_fee_amount }} 	  Factoring fee amount + VAT amount in DKK-->
 <!-- {{ invoice_amount }} 		  Invoice amount-->  
 
@@ -131,14 +134,14 @@
                                Instant Payment Fee</td>
                     <td style="text-align:right;
                                padding-bottom:15px">
-                               {{ interest_rate_amount_before_discount }} kr.</td>
+                               {{ offer_cost_before_discount }} kr.</td>
                 </tr>
                 <tr>
                     <td style="padding-bottom:15px">
                                Fee discount {{ fee_discount_text_en }}</td>
                     <td style="text-align:right;
                                padding-bottom:15px">
-                               -{{ interest_rate_discount_amount }} kr.</td>
+                               -{{ offer_cost_discount }} kr.</td>
                 </tr>
                 <tr>
                     <td style="padding-bottom:15px;">
