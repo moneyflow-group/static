@@ -559,5 +559,39 @@
             "platform": "ALL",
             "identifier": "PAYER_SETTLED_INVOICE"
         }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "1dc325d6-705f-40e5-9ae5-145b2d76a6e0",
+        "fields": {
+            "created_at": "2021-04-09T17:13:01.452Z",
+            "created_by": null,
+            "modified_at": "2021-08-02T17:13:01.452Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Ubetalte fakturaer der har passeret forfaldsdatoen",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
+            "language": "DA",
+            "platform": "ALL",
+            "identifier": "BULK_REMINDER"
+        }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "56907bd1-73e4-4a95-bfed-0227c3785268",
+        "fields": {
+            "created_at": "2021-04-09T17:13:01.452Z",
+            "created_by": null,
+            "modified_at": "2021-04-09T17:13:01.452Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Unpaid invoices that are overdue",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
+            "language": "EN",
+            "platform": "ALL",
+            "identifier": "BULK_REMINDER"
+        }
     }
 ]
