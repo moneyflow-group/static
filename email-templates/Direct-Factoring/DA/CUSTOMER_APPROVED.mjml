@@ -1,10 +1,11 @@
 <mjml>
-<!--SUBJECT: Receipt for invoice no. {{ invoice_number }}--> 
-<!-- {{ invoice_number }} 		Invoice number-->
-<!-- {{ company_name }} 			Name of seller company-->
-<!-- {{ payout_amount }} 			Payout amount-->
+<!--SUBJECT: Din kunde er blevet godkend til Invoice funding--> 
+<!--{{ company_name }} 				Name of the seller company-->
+<!--{{ payer_company_name }}		Name of the payer company-->
+<!--{{ fund_invoice_url }}			URL to the fund an inovice page-->	
+
 <mj-head>
-<mj-title>Receipt-EN</mj-title>
+<mj-title>customer_approved-DA</mj-title>
   <mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:600"/>
 	<mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto:400,700"/>
   <mj-breakpoint width="480px"/>
@@ -50,7 +51,7 @@
           .link-footer { color: #808494;}
  					</mj-style>
  					<!--Preview text-->      
- 					<mj-preview>Kære {{ company_name }}, Vedhæftet denne email er kvitteringen for faktura nr. {{ invoice_number }} sendt med Straksindbetaling.</mj-preview> 
+ 					<mj-preview>Kære {{ seller_company_name }}, Din kunde {{ payer_company_name }} er blevet godkendt til Invoice funding.</mj-preview> 
 </mj-head>
 
 <mj-body background-color="#E4F0F7">
@@ -60,12 +61,12 @@
 <mj-section padding="0"
             background-color="#E4F0F7">
 		<mj-column>
-    		<mj-image height="20px"
-                  width="189px"
+    		<mj-image height="25px"
+                  width="140px"
                   align="left"
                   padding="32px 0px 24px 8px"
-                  src="https://moneyflow-group.github.io/static/email-templates/E-conomic-2.png"
-                  alt="visma e-conomic"/>
+                  src="https://moneyflow-group.github.io/static/email-templates/moneyflow_logo.png"
+                  alt="Moneyflow"/>
 		</mj-column>
 </mj-section>
 </mj-wrapper>
@@ -74,26 +75,26 @@
 <mj-wrapper css-class="border-top">
 <mj-section css-class="section">
 		<mj-column>
-				<mj-text> Dear {{ company_name }},<br></br>Attached to this email is the receipt for invoice no. {{ invoice_number }} sent with Instant Payment.<br></br>The total amount: {{ payout_amount }} will soon be tranferred to your bank account.<br></br> Approve your entry directly from e-conomic by following the link below. We have already prepared it, so it only needs a few clicks from you.</mj-text>
-        <mj-button href="https://secure.e-conomic.com/accounting/journals/">Approve entry in e-conomic</mj-button>
+				<mj-text>Kære {{ seller_company_name }},<br><br>Din kunde {{ payer_company_name }} er blevet godkendt til Invoice funding. Du kan nu bruge vores service på din næste faktura til dem.</mj-text>
+        <mj-button href="{{ fund_invoice_url }}">Finansier en faktura</mj-button>
 		</mj-column>
 </mj-section>
 </mj-wrapper>
-  
+          
 <!-- Divider -->
 <mj-section padding="0">
 		<mj-column>
-				<mj-divider>
+    		<mj-divider/>
 		</mj-column>
 </mj-section>
-  
+
 <mj-raw><!-- Contact --></mj-raw>
 <mj-wrapper>
 <mj-section css-class="section">
 		<mj-column>
-    		<mj-text>If you have any questions regarding our service, you are always very welcome to reach out to us on <a href="tel:004589877036" class="link-body">+45 89 87 70 36 </a>(weekdays 8am-6pm), or by simply replying to this email. <br></br>Best regards,</mj-text>
+    		<mj-text>Hvis du har spørgsmål vedrørende vores tjeneste, er du altid meget velkommen til at række ud til nogen af os på <a href="tel:004589877036" class="link-body">+45 89 87 70 36 </a>(hverdage 08-18), eller ved blot at besvare denne e-mail.<br></br>De bedste hilsner,</mj-text>
  				<mj-text font-family="Montserrat"
-                 color="#5B93F0">E-conomic and the team behind Instant Payment</mj-text>
+                 color="#5B93F0">Moneyflow</mj-text>
 		</mj-column>
 </mj-section>
 </mj-wrapper>
@@ -105,14 +106,14 @@
 		</mj-column>
 </mj-section>
 
-<mj-raw><!-- Disclaimer-EN --></mj-raw>
+<mj-raw><!-- Disclaimer --></mj-raw>
 <mj-wrapper>
 <mj-section padding="24px 0px 32px 0px"
             background-color="#E4F0F7">
 		<mj-column>
     		<mj-text align="center"
                  color="#808494"
-                 font-size="12px"> You are receiving this e-mail because it is the first time you are using Instant Payment <br> Sent by <a class="link-footer" href="https://moneyflow.io/en">Moneyflow Group A/S</a> on behalf of Instant Payment by e-conomic <br> Moneyflow Group A/S | Langebrogade 4, 1411 København K | CVR 39228327 <br>Moneyflow is registered and regulated by the <a class="link-footer" href="https://www.dfsa.dk/">Danish FSA</a></mj-text>
+                 font-size="12px">Du modtager denne e-mail fordi din kunde er blevet godkendt til Invoice funding.<br>Moneyflow Group A/S | Langebrogade 4, 1411 København K | CVR 39228327 <br>Moneyflow er registreret og reguleret af <a class="link-footer" href="https://www.finanstilsynet.dk/">Finanstilsynet</a></mj-text>
 		</mj-column>
 </mj-section>
 </mj-wrapper>

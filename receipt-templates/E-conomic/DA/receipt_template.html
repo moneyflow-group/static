@@ -3,20 +3,23 @@
   <head>
   <title>Kvittering</title>
 
-<!-- {{ company_name }}      Name of seller company -->
-<!-- {{ signee_name }}      Name of signee of seller company -->  
-<!-- {{ company_street }}    Street of seller company -->
-<!-- {{ company_city }}      city of seller company -->
-<!-- {{ company_country }}   Country of seller company -->
-<!-- {{ company_crn }}       CVR of seller company -->
-<!-- {{ invoice_number }}    invoice number -->
-<!-- {{ factoring_amount }}  Amount that MF pay to seller (invoice amount - fee & VAT) -->
-<!-- {{ receipt_date }}      Date of creation of receipt -->
-<!-- {{ receipt_number }}    Receipt number -->
-<!-- {{ fee_amount }}        Amount of the credited fee -->
-<!-- {{ vat_amount }}        VAT of the credited fee -->
-<!-- {{ vat_percent }}       VAT percentage -->
-<!-- {{ total_fee_amount }}  Total amount of credit note (Fee+VAT) -->
+<!-- {{ company_name }}          Name of seller company -->
+<!-- {{ signee_name }}           Name of signee of seller company -->  
+<!-- {{ company_street }}        Street of seller company -->
+<!-- {{ company_city }}         city of seller company -->
+<!-- {{ company_country }}      Country of seller company -->
+<!-- {{ company_crn }}          CVR of seller company -->
+<!-- {{ invoice_number }}       invoice number -->
+<!-- {{ factoring_amount }}     Amount that MF pay to seller (invoice amount - fee & VAT) -->
+<!-- {{ receipt_date }}         Date of creation of receipt -->
+<!-- {{ receipt_number }}       Receipt number -->
+<!-- {{ fee_amount }}           Amount of the credited fee -->
+<!-- {{ offer_cost_before_discount }} The fee cost before any discount is applied -->
+<!-- {{ offer_cost_discount }}  The amount of discount on the offer fee-->
+<!-- {{ offer_cost_discount_percent }}        The fee cost after any interest discount is applied --> 
+<!-- {{ vat_amount }}           VAT of the credited fee -->
+<!-- {{ vat_percent }}          VAT percentage -->
+<!-- {{ total_fee_amount }}     Total amount of credit note (Fee+VAT) -->
 
   <style>
     * {
@@ -178,9 +181,15 @@
             <tr>
                 <td class="row-orderlist"><p>Straksindbetalingsgebyr</p></td>
                 <td class="row-orderlist column2" style="border-bottom: 1px solid #2F3344"><p>1<p></td>
-                <td class="row-orderlist column3" style="border-bottom: 1px solid #2F3344"><p>{{ fee_amount }}</p></td>
-                <td class="row-orderlist column4" style="border-bottom: 1px solid #2F3344"><p>{{ fee_amount }}</p></td>
+                <td class="row-orderlist column3" style="border-bottom: 1px solid #2F3344"><p>{{ offer_cost_before_discount }}</p></td>
+                <td class="row-orderlist column4" style="border-bottom: 1px solid #2F3344"><p>{{ offer_cost_before_discount }}</p></td>
             </tr>
+            <tr>
+              <td class="row-orderlist"><p>Gebyr rabat {{ fee_discount_text_dk }}</p></td>
+              <td class="row-orderlist column2" style="border-bottom: 1px solid #2F3344"><p>1<p></td>
+              <td class="row-orderlist column3" style="border-bottom: 1px solid #2F3344"><p>-{{ offer_cost_discount }}</p></td>
+              <td class="row-orderlist column4" style="border-bottom: 1px solid #2F3344"><p>-{{ offer_cost_discount }}</p></td>
+           </tr>
             <tr>
                 <td class="row-orderlist"><p></p></td>
                 <td class="row-orderlist"><p></p></td>
