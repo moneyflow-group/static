@@ -528,6 +528,19 @@
     },
     {
         "model": "message_service.emailtemplate",
+        "pk": "09d193ee-c22d-46d6-9a5c-4285b9216f8e",
+        "fields": {
+            "created_at": "2021-08-02T17:13:01.452Z",
+            "created_by": null,
+            "modified_at": "2021-08-02T17:13:01.452Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Vi har modtaget betaling fra dig. Tak!",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
+            "language": "DA",
+            "platform": "ALL",
+            "identifier": "PAYER_SETTLED_INVOICE"
         "pk": "379f1e11-9de0-4901-800a-9b6befab07ce",
         "fields": {
             "created_at": "2021-06-26T14:13:01.452Z",
@@ -545,6 +558,19 @@
     },
     {
         "model": "message_service.emailtemplate",
+        "pk": "a4d470aa-ce59-4979-9714-12da615829a9",
+        "fields": {
+            "created_at": "2021-08-02T17:13:01.452Z",
+            "created_by": null,
+            "modified_at": "2021-08-02T17:13:01.452Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "We have received your payment. Thank you!",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
+            "language": "EN",
+            "platform": "ALL",
+            "identifier": "PAYER_SETTLED_INVOICE"
         "pk": "e423c3ef-a936-45dd-8676-0eb783aec860",
         "fields": {
             "created_at": "2021-06-26T14:13:01.452Z",
@@ -562,6 +588,19 @@
     },
     {
         "model": "message_service.emailtemplate",
+        "pk": "1dc325d6-705f-40e5-9ae5-145b2d76a6e0",
+        "fields": {
+            "created_at": "2021-04-09T17:13:01.452Z",
+            "created_by": null,
+            "modified_at": "2021-08-02T17:13:01.452Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Ubetalte fakturaer der har passeret forfaldsdatoen",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
+            "language": "DA",
+            "platform": "ALL",
+            "identifier": "BULK_REMINDER"
         "pk": "83748d44-f30f-4d06-9eb3-d3280b619983",
         "fields": {
             "created_at": "2021-06-26T14:13:01.452Z",
@@ -579,6 +618,19 @@
     },
     {
         "model": "message_service.emailtemplate",
+        "pk": "56907bd1-73e4-4a95-bfed-0227c3785268",
+        "fields": {
+            "created_at": "2021-04-09T17:13:01.452Z",
+            "created_by": null,
+            "modified_at": "2021-04-09T17:13:01.452Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Unpaid invoices that are overdue",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
+            "language": "EN",
+            "platform": "ALL",
+            "identifier": "BULK_REMINDER"
         "pk": "318618f9-d347-4743-85ae-41980267c63d",
         "fields": {
             "created_at": "2021-06-26T14:13:01.452Z",

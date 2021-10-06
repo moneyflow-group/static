@@ -87,7 +87,7 @@ def generate_email_fixture():
             print(
                 f"Processing [{html_template_file}] as [{platform}][{identifier}][{language}]"
             )
-            template["fields"]["html_template"] = html_template.read().replace('"', '"')
+            template["fields"]["html_template"] = html_template.read()
     write_fixture_file(fixtures, fixture_filename)
 
 
