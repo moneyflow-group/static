@@ -1,0 +1,122 @@
+<mjml>
+<!--SUBJECT: Dine penge er snart på vej--> 
+<!-- {{ company_name }} 		Name of seller company-->
+<!-- {{ invoice_number }} 	Invoice number-->
+<!-- {{ status_page_da }} 	URL for the status/approved customer page of the seller company (in danish)-->
+<mj-head>
+<mj-title>Confirmation-DA</mj-title>
+  <mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:600"/>
+	<mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto:400,700"/>
+  <mj-breakpoint width="480px"/>
+  		<mj-attributes>
+					<mj-section padding="64px 80px"
+                      background-color="#ffffff"/>
+			    <mj-wrapper padding="0"/>
+ 				  <mj-text font-family="Roboto, sans-serif"
+                   line-height="24px"
+                   font-size="14px"
+                   color="#2F3344"
+                   padding="0"/>
+          <mj-button background-color="#5B93F0"
+                     font-family="montserrat, sans-serif"
+                     font-size="12px"
+                     font-weight="600"
+                     line-height="24px"
+                     border-radius="6px"
+                     inner-padding="8px 24px"
+                     padding-top="32px"/>
+          <mj-divider padding="0"
+                      border-width="2px"
+                      border-style="dashed"
+                      border-color="#E4F0F7"/>
+			</mj-attributes>
+      </mj-style>
+  				<!--padding on mobile-->
+          <mj-style>  
+          @media only screen and (max-width:480px) { 
+        	.section td {
+          padding:16px 8px 16px 8px!important;
+        		}		
+      		}
+          </mj-style>
+  				<!--Top border-->
+      		<mj-style inline="inline">
+          .border-top {
+ 				  border-top: 4px solid #5B93F0;
+					}
+          </mj-style>
+      		<!--Removing underscore on links-->
+					<mj-style inline="inline">
+  				.link-body { color: #5B93F0; text-decoration: none; font-weight: 700; }
+          .link-footer { color: #808494;}
+ 					</mj-style>
+ 					<!--Preview text-->      
+ 					<mj-preview>Jeg hedder Anton og er ansvarlig for kundeservice i teamet bag Moneyflow</mj-preview> 
+</mj-head>
+
+<mj-body background-color="#E4F0F7">
+
+<mj-raw><!-- Top bar --></mj-raw>
+<mj-wrapper>
+<mj-section padding="0"
+            background-color="#E4F0F7">
+		<mj-column>
+    		<mj-image width="140px"
+                  align="left"
+                  padding="24px 0px 16px 8px"
+                  src="https://moneyflow-group.github.io/static/email-templates/moneyflow_logo.png"
+                  alt="moneyflow"/>
+		</mj-column>
+</mj-section>
+</mj-wrapper>
+
+<mj-raw><!-- Body --></mj-raw>
+<mj-wrapper css-class="border-top">
+<mj-section css-class="section">
+		<mj-column>
+				<mj-text> Kære {{ company_name }},<br><br>Jeg hedder Anton og er ansvarlig for kundeservice hos Moneyflow. Jeg er her for at sørge for, at du får den bedst mulige oplevelse med vores service.<br><br>Først og fremmest vil vi gerne bare sige tak, fordi du har valgt at bruge vores service. Vi er vildt glade for at have dig ombord.<br><br>Inden vi sender pengene til din konto for faktura nr. {{ invoice_number }}, skal vi først lige godkende detaljerne på fakturaen. Du kan altid følge med i statussen på dine fakturaer ved at klikke på knappen nedenfor. Du modtager også en kvittering, så snart den er godkendt.</mj-text>
+        <mj-button href="{{ status_page_da }}">Se status på min faktura</mj-button>	
+		</mj-column>
+</mj-section>
+</mj-wrapper>
+
+<!-- Divider -->
+<mj-section padding="0">
+		<mj-column>
+    		<mj-divider/>
+		</mj-column>
+</mj-section>
+
+<mj-raw><!-- Contact 2 columns --></mj-raw>
+<mj-wrapper>
+<mj-section  css-class="section">
+		<mj-column>
+				<mj-text>Hvis du har spørgsmål vedrørende vores tjeneste, er du altid meget velkommen til at række ud til mig eller en af mine dygtige kollegaer på <a href="tel:004589877036" class="link-body">+45 89 87 70 36 </a>(hverdage 08-18), eller ved blot at besvare denne e-mail.<br></br>De bedste hilsner</mj-text>
+    		<mj-text font-family="Montserrat"
+                 font-weight="600"
+                 color="#5B93F0">Anton og resten af teamet</mj-text>
+		</mj-column>
+</mj-section>
+</mj-wrapper>
+  
+<!-- Divider -->
+<mj-section padding="0">
+		<mj-column>
+				<mj-divider>
+		</mj-column>
+</mj-section>
+
+<mj-raw><!-- Disclaimer-DA --></mj-raw>
+<mj-wrapper>
+<mj-section padding="24px 0px 32px 0px"
+            background-color="#E4F0F7">
+		<mj-column>
+    		<mj-text align="center"
+                 color="#808494"
+                 font-size="12px"> Du modtager denne e-mail, fordi det er første gang du bruger Invoice funding <br> Sendt af <a class="link-footer" href="https://moneyflow.io/en">Moneyflow Group A/S</a> på vegne af Ordrestyring <br> Moneyflow Group A/S | Langebrogade 4, 1411 København K | CVR 39228327 <br>Moneyflow er registreret og reguleret af <a class="link-footer" href="https://www.finanstilsynet.dk/">Finanstilsynet</a></mj-text>
+		</mj-column>
+</mj-section>
+</mj-wrapper>
+  
+</mj-body>
+</mjml>

@@ -657,5 +657,141 @@
             "platform": "Direct-Factoring",
             "identifier": "INVOICE_APPROVED"
         }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "adc23990-de85-4ed7-9dbf-57dc58907359",
+        "fields": {
+            "created_at": "2021-11-29T17:13:01.452Z",
+            "created_by": null,
+            "modified_at": "2021-11-29T17:13:01.452Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Hovedaftale underskrevet",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
+            "language": "DA",
+            "platform": "Ordrestyring",
+            "identifier": "ONBOARDING"
+        }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "f3b47c43-7d3f-4d7a-927b-380a5bb614ad",
+        "fields": {
+            "created_at": "2021-11-29T17:13:01.452Z",
+            "created_by": null,
+            "modified_at": "2021-11-29T17:13:01.452Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Hovedaftale underskrevet",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
+            "language": "EN",
+            "platform": "Ordrestyring",
+            "identifier": "ONBOARDING"
+        }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "1c8393c8-46d9-4869-8abb-9920b76f8444",
+        "fields": {
+            "created_at": "2021-11-29T17:13:01.452Z",
+            "created_by": null,
+            "modified_at": "2021-11-29T17:13:01.452Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Status på din faktura",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
+            "language": "DA",
+            "platform": "Ordrestyring",
+            "identifier": "KIM_GREETING"
+        }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "adc23990-de85-4ed7-9dbf-57dc58907359",
+        "fields": {
+            "created_at": "2021-11-29T17:13:01.452Z",
+            "created_by": null,
+            "modified_at": "2021-11-29T17:13:01.452Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Status på din faktura",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
+            "language": "EN",
+            "platform": "Ordrestyring",
+            "identifier": "KIM_GREETING"
+        }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "11b3bdfc-f783-484b-bdfb-227977f69ba7",
+        "fields": {
+            "created_at": "2021-11-29T17:13:01.452Z",
+            "created_by": null,
+            "modified_at": "2021-11-29T17:13:01.452Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Dine penge er snart på vej",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
+            "language": "DA",
+            "platform": "Ordrestyring",
+            "identifier": "FIRST_CONFIRMATION"
+        }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "d15de675-e9b9-47ac-9a6b-5d052f4f65cc",
+        "fields": {
+            "created_at": "2021-11-29T17:13:01.452Z",
+            "created_by": null,
+            "modified_at": "2021-11-29T17:13:01.452Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Dine penge er snart på vej",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
+            "language": "EN",
+            "platform": "Ordrestyring",
+            "identifier": "FIRST_CONFIRMATION"
+        }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "5aebe0aa-7aff-41f9-8faf-b860cf86dab1",
+        "fields": {
+            "created_at": "2021-11-29T17:13:01.452Z",
+            "created_by": null,
+            "modified_at": "2021-11-29T17:13:01.452Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Kvittering for faktura nr. {{ invoice_number }}",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
+            "language": "DA",
+            "platform": "Ordrestyring",
+            "identifier": "FIRST_RECEIPT"
+        }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "9de3e8f0-7dc8-41a7-b2e4-83041f2b5457",
+        "fields": {
+            "created_at": "2021-11-29T17:13:01.452Z",
+            "created_by": null,
+            "modified_at": "2021-11-29T17:13:01.452Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Kvittering for faktura nr. {{ invoice_number }}",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
+            "language": "EN",
+            "platform": "Ordrestyring",
+            "identifier": "FIRST_RECEIPT"
+        }
     }
 ]
