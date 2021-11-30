@@ -73,6 +73,7 @@ def generate_email_fixture():
             "Dinero": f"{DIRNAME}/../email-templates/Dinero",
             "E-conomic": f"{DIRNAME}/../email-templates/E-conomic",
             "Direct-Factoring": f"{DIRNAME}/../email-templates/Direct-Factoring",
+            "Ordrestyring": f"{DIRNAME}/../email-templates/Ordrestyring",
         }
 
         for template in fixtures:
