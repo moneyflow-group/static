@@ -1,10 +1,10 @@
 <mjml>
-<!--SUBJECT: Dine penge er snart på vej--> 
+<!--SUBJECT: Your money is soon on the way-->
 <!-- {{ company_name }} 		Name of seller company-->
 <!-- {{ invoice_number }} 	Invoice number-->
-<!-- {{ status_page_da }} 	URL for the status/approved customer page of the seller company (in danish)-->
+<!-- {{ status_page_en }} 	URL for the status/approved customer page of the seller company (in english)-->
 <mj-head>
-<mj-title>Confirmation-DA</mj-title>
+<mj-title>Confirmation-EN</mj-title>
   <mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:600"/>
 	<mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto:400,700"/>
   <mj-breakpoint width="480px"/>
@@ -51,7 +51,7 @@
           .link-footer { color: #808494;}
  					</mj-style>
  					<!--Preview text-->      
- 					<mj-preview>Jeg hedder Anton og er ansvarlig for kundeservice i teamet bag Moneyflow</mj-preview> 
+ 					<mj-preview>My name is Anton and I am resposible for the customer service at Moneyflow</mj-preview> 
 </mj-head>
 
 <mj-body background-color="#E4F0F7">
@@ -74,8 +74,8 @@
 <mj-wrapper css-class="border-top">
 <mj-section css-class="section">
 		<mj-column>
-				<mj-text> Kære {{ company_name }},<br><br>Jeg hedder Anton og er ansvarlig for kundeservice hos Moneyflow. Jeg er her for at sørge for, at du får den bedst mulige oplevelse med vores service.<br><br>Først og fremmest vil vi gerne bare sige tak, fordi du har valgt at bruge vores service. Vi er vildt glade for at have dig ombord.<br><br>Inden vi sender pengene til din konto for faktura nr. {{ invoice_number }}, skal vi først lige godkende detaljerne på fakturaen. Du kan altid følge med i statussen på dine fakturaer ved at klikke på knappen nedenfor. Du modtager også en kvittering, så snart den er godkendt.</mj-text>
-        <mj-button href="{{ status_page_da }}">Se status på min faktura</mj-button>	
+				<mj-text> Hi {{ company_name }},<br><br>My name is Anton and I am responsible for the customer service at Moneyflow. I am here to make sure that you get the best possible experience when using our service.<br><br>First of all we want to say thank you for choosing to use our service. We are very happy to have you on board.<br><br>Before tranferring money to your account for invoice no. {{ invoice_number }}, we just need to validate a few details on the invoice. You can always follow the status of your by clicking the button below. You will also receive a receipt as soon as the invoice is approved.</mj-text>
+        <mj-button href="{{ status_page_en }}">See status on my invoice</mj-button>	
 		</mj-column>
 </mj-section>
 </mj-wrapper>
@@ -91,10 +91,11 @@
 <mj-wrapper>
 <mj-section  css-class="section">
 		<mj-column>
-				<mj-text>Hvis du har spørgsmål vedrørende vores tjeneste, er du altid meget velkommen til at række ud til mig eller en af mine dygtige kollegaer på <a href="tel:004589877036" class="link-body">+45 89 87 70 36 </a>(hverdage 08-18), eller ved blot at besvare denne e-mail.<br></br>De bedste hilsner</mj-text>
-    		<mj-text font-family="Montserrat"
+    		<mj-text>If you have any questions regarding our service, you are always very welcome to reach out to me or one of my skilled colleagues on <a href="tel:004589877036" class="link-body">+45 89 87 70 36 </a>(weekdays 8am-6pm), or by simply replying to this email. <br><br>Best regards,</mj-text>
+ 				<mj-text font-family="Montserrat"
                  font-weight="600"
-                 color="#5B93F0">Anton og resten af teamet</mj-text>
+                 padding-top="16px"
+                 color="#5B93F0">Anton and the rest of the team </mj-text>
 		</mj-column>
 </mj-section>
 </mj-wrapper>
@@ -113,7 +114,7 @@
 		<mj-column>
     		<mj-text align="center"
                  color="#808494"
-                 font-size="12px"> Du modtager denne e-mail, fordi det er første gang du bruger Invoice funding <br> Sendt af <a class="link-footer" href="https://moneyflow.io/en">Moneyflow Group A/S</a> på vegne af Ordrestyring <br> Moneyflow Group A/S | Langebrogade 4, 1411 København K | CVR 39228327 <br>Moneyflow er registreret og reguleret af <a class="link-footer" href="https://www.finanstilsynet.dk/">Finanstilsynet</a></mj-text>
+                 font-size="12px"> You are receiving this e-mail because you are a user of Invoice Funding in Ordrestyring <br> Sent by <a class="link-footer" href="https://moneyflow.io/en">Moneyflow Group A/S</a> on behalf of <a class="link-footer" href="https://ordrestyring.dk/">Ordrestyring</a> <br> Moneyflow Group A/S | Langebrogade 4, 1411 Copenhagen K | CVR 39228327 <br>Moneyflow is registered and regulated by the <a class="link-footer" href="https://www.dfsa.dk/">Danish FSA</a></mj-text>
 		</mj-column>
 </mj-section>
 </mj-wrapper>

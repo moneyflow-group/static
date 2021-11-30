@@ -1,9 +1,9 @@
 <mjml>
-<!--SUBJECT: Status på din faktura--> 
+<!--SUBJECT: Status on your invoice--> 
 <!-- {{ company_name }} 		Name of seller company-->
-<!-- {{ status_page_da }} 	URL for the status/approved customer page of the seller company (in danish)-->
+<!-- {{ status_page_en }} 	URL for the status/approved customer page of the seller company (in english)-->
 <mj-head>
-<mj-title>Kim_Greeting-DA</mj-title>
+<mj-title>Kim_Greeting-EN</mj-title>
   <mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:600"/>
 	<mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto:400,700"/>
   <mj-breakpoint width="480px"/>
@@ -50,7 +50,7 @@
           .link-footer { color: #808494;}
  					</mj-style>
  					<!--Preview text-->      
- 					<mj-preview>Og en personlig hilsen fra direktøren for Moneyflow.</mj-preview> 
+ 					<mj-preview>And a personal greeting from the director of Moneyflow.</mj-preview> 
 </mj-head>
 
 <mj-body background-color="#E4F0F7">
@@ -73,8 +73,8 @@
 <mj-wrapper css-class="border-top">
 <mj-section css-class="section">
 		<mj-column>
-				<mj-text> Kære {{ company_name }}<br></br>Mit navn er Kim Ulf, og jeg er direktør og stifter af Moneyflow. Jeg tænkte, at jeg lige ville byde dig ordentligt velkommen.<br></br>Nu hvor det er første gang, du bruger vores service, ved jeg, at det måske er lidt nervepirrende, at det er os, der står for kommunikationen med din kunde. Jeg kan dog garantere dig, at det er nogle ufatteligt dygtige folk, der tager sig af det - bl.a. Anton, som du hilste på i sidste email.<br></br> I mellemtiden kan du på din personlige statusside se hvilke andre kunder, du kan anvende vores service på.</mj-text>
-        <mj-button href="{{ status_page_da }}">Se tilgængelige kunder</mj-button>	
+				<mj-text> Dear {{ company_name }}<br></br>My name is Kim Ulf, and I am the director and founder of Moneyflow. I just wanted to take a moment to give you a proper welcome.<br></br>Now when it's the first time you are using our service, I know that it can feel a little intimidating that we are handeling the communication with your customer. However, I can guarantee you that it is some incredibly talented people who take care of it - among others, Anton, whom greeted you in the last email.<br></br> In the meantime, you can have a look at your personal status page to see which other customer you can use our service on.</mj-text>
+        <mj-button href="{{ status_page_en }}">See available customers</mj-button>	
 		</mj-column>
 </mj-section>
 </mj-wrapper>
@@ -99,14 +99,14 @@
 		</mj-column>
 <!-- Right column -->
 		<mj-column>
-				<mj-text>De bedste hilsner</mj-text>
+				<mj-text>Best regards,</mj-text>
       	<mj-image align="left"
                   padding="8px 0px 8px 0px"
                   src="https://moneyflow-group.github.io/static/email-templates/Kim-signature.png"
                   alt="Kim Signature"/>
     		<mj-text font-family="Montserrat"
                  color="#5B93F0">Kim Ulf Rehfeld Thoden</mj-text>
-      	<mj-text>Direktør, Moneyflow</mj-text>
+      	<mj-text>Director, Moneyflow</mj-text>
 		</mj-column>
 </mj-section>
 </mj-wrapper>
@@ -125,7 +125,7 @@
 		<mj-column>
     		<mj-text align="center"
                  color="#808494"
-                 font-size="12px"> Du modtager denne e-mail, fordi det er første gang du bruger Invoice funding <br> Sendt af <a class="link-footer" href="https://moneyflow.io/en">Moneyflow Group A/S</a> på vegne af Ordrestyring <br> Moneyflow Group A/S | Langebrogade 4, 1411 København K | CVR 39228327 <br>Moneyflow er registreret og reguleret af <a class="link-footer" href="https://www.finanstilsynet.dk/">Finanstilsynet</a></mj-text>
+                 font-size="12px"> You are receiving this e-mail because you are a user of Invoice Funding in Ordrestyring <br> Sent by <a class="link-footer" href="https://moneyflow.io/en">Moneyflow Group A/S</a> on behalf of <a class="link-footer" href="https://ordrestyring.dk/">Ordrestyring</a> <br> Moneyflow Group A/S | Langebrogade 4, 1411 Copenhagen K | CVR 39228327 <br>Moneyflow is registered and regulated by the <a class="link-footer" href="https://www.dfsa.dk/">Danish FSA</a></mj-text>
 		</mj-column>
 </mj-section>
 </mj-wrapper>

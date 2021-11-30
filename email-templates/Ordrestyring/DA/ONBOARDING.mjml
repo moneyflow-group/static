@@ -1,5 +1,6 @@
 <mjml>
-<!--SUBJECT: Hovedaftale underskrevet--> 
+<!--SUBJECT: Hovedaftale underskrevet-->
+<!--ATTACHEMENT: Signed main agreement--> 
   
 <!-- {{ company_name }} 				Name of seller company-->
 
@@ -113,7 +114,7 @@
 		<mj-column>
     		<mj-text align="center"
                  color="#808494"
-                 font-size="12px"> Du modtager denne e-mail, fordi det er første gang du bruger Invoice funding <br> Sendt af <a class="link-footer" href="https://moneyflow.io/en">Moneyflow Group A/S</a> på vegne af Ordrestyring <br> Moneyflow Group A/S | Langebrogade 4, 1411 København K | CVR 39228327 <br>Moneyflow er registreret og reguleret af <a class="link-footer" href="https://www.finanstilsynet.dk/">Finanstilsynet</a></mj-text>
+                 font-size="12px"> Du modtager denne e-mail, fordi du er bruger af Invoice Funding i Ordrestyring <br> Sendt af <a class="link-footer" href="https://moneyflow.io/">Moneyflow Group A/S</a> på vegne af <a class="link-footer" href="https://ordrestyring.dk/">Ordrestyring</a> <br> Moneyflow Group A/S | Langebrogade 4, 1411 København K | CVR 39228327 <br>Moneyflow er registreret og reguleret af <a class="link-footer" href="https://www.finanstilsynet.dk/">Finanstilsynet</a></mj-text>
 		</mj-column>
 </mj-section>
 </mj-wrapper>
