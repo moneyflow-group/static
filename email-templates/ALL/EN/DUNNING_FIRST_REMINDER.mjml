@@ -91,7 +91,7 @@
         		<mj-text font-size="14px"
              				 padding="0"
            				   font-family="Roboto, sans-serif">
-Dear {{ payer_company_name }}, <br/><br/>Unfortunately, we have not received payment for invoice no. {{ invoice_number }} from {{ company_name }} which was due on {{ due_date }}. There can be a number of reasons why we have not received your payment. <br/><br/> I have attached a copy of the invoice, and remind you that the payment of {{ invoice_amount }} kr. must be made to reg. {{ payment_reg_number }} account no. {{ payment_account_number }} as soon as possible.<br/><br/> If you have already paid, we apologise for this email.<br/><br/> If you experience any problems, or have questions, you can contact us at
+Dear {{ payer_company_name }}, <br/><br/>Unfortunately, we have not received payment for invoice no. {{ invoice_number }} from {{ company_name }} which was due on {{ due_date }}. There can be a number of reasons why we have not received your payment. <br/><br/> I have attached a copy of the invoice, and remind you that the payment of {{ invoice_amount }} kr. must be made to reg. {{ payment_reg_number }} account no. {{ payment_account_number }} as soon as possible.<br/><br/><b>If you have already paid this invoice, we kindly ask you to call us - or submit a payment receipt to our support email.</b><br/><br/> If you experience any problems, or have questions, you can contact us at
               <a href="mailto:support@moneyflow.io" 
                         class="link-nostyle">
                        	support@moneyflow.io</a>

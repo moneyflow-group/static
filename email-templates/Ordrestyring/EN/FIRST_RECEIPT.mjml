@@ -1,10 +1,12 @@
 <mjml>
-<!--SUBJECT: Kvittering for faktura nr. {{ invoice_number }}--> 
+<!--SUBJECT: Receipt for invoice no. {{ invoice_number }}-->
+<!--ATTACHEMENT: factoring receipt--> 
+  
 <!-- {{ invoice_number }} 		Invoice number-->
 <!-- {{ company_name }} 			Name of seller company-->
 <!-- {{ payout_amount }} 			Payout amount-->
 <mj-head>
-<mj-title>Receipt-DA</mj-title>
+<mj-title>Receipt-EN</mj-title>
   <mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:600"/>
 	<mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto:400,700"/>
   <mj-breakpoint width="480px"/>
@@ -51,7 +53,7 @@
           .link-footer { color: #808494;}
  					</mj-style>
  					<!--Preview text-->      
- 					<mj-preview>Vedhæftet denne email er kvitteringen for faktura nr. {{ invoice_number }} sendt med Moneyflow.</mj-preview> 
+ 					<mj-preview>Attached to this email is the receipt for invoice no. {{ invoice_number }} sent with Moneyflow.</mj-preview> 
 </mj-head>
 
 <mj-body background-color="#E4F0F7">
@@ -74,7 +76,7 @@
 <mj-wrapper css-class="border-top">
 <mj-section css-class="section">
 		<mj-column>
-				<mj-text> Kære {{ company_name }}<br></br>Vedhæftet denne email er kvitteringen for faktura nr. {{ invoice_number }} sendt med Moneyflow.<br></br>Det samlede beløb: {{ payout_amount }} vil straks blive overført til din konto.</mj-text>
+				<mj-text> Hi {{ company_name }}<br></br>Attached to this email is the receipt for invoice no. {{ invoice_number }} sent with Moneyflow.<br></br>The total amount: {{ payout_amount }} will soon be tranferred to your bank account.</mj-text>
 		</mj-column>
 </mj-section>
 </mj-wrapper>
@@ -90,10 +92,11 @@
 <mj-wrapper>
 <mj-section css-class="section">
 		<mj-column>
-    		<mj-text>Hvis du har spørgsmål vedrørende vores tjeneste, er du altid meget velkommen til at række ud til nogen af os på <a href="tel:004589877036" class="link-body">+45 89 87 70 36 </a>(hverdage 08-18), eller ved blot at besvare denne e-mail.<br></br>De bedste hilsner</mj-text>
+    		<mj-text>If you have any questions regarding our service, you are always very welcome to reach out to me or one of my skilled colleagues on <a href="tel:004589877036" class="link-body">+45 89 87 70 36 </a>(weekdays 8am-6pm), or by simply replying to this email. <br><br>Best regards,</mj-text>
  				<mj-text font-family="Montserrat"
                  font-weight="600"
-                 color="#5B93F0">Moneyflow</mj-text>
+                 padding-top="16px"
+                 color="#5B93F0">Moneyflow </mj-text>
 		</mj-column>
 </mj-section>
 </mj-wrapper>
@@ -112,7 +115,7 @@
 		<mj-column>
     		<mj-text align="center"
                  color="#808494"
-                 font-size="12px"> Du modtager denne e-mail, fordi det er første gang du bruger Invoice funding <br> Sendt af <a class="link-footer" href="https://moneyflow.io/en">Moneyflow Group A/S</a> på vegne af Ordrestyring <br> Moneyflow Group A/S | Langebrogade 4, 1411 København K | CVR 39228327 <br>Moneyflow er registreret og reguleret af <a class="link-footer" href="https://www.finanstilsynet.dk/">Finanstilsynet</a></mj-text>
+                 font-size="12px"> You are receiving this e-mail because you are a user of Invoice Funding in Ordrestyring <br> Sent by <a class="link-footer" href="https://moneyflow.io/en">Moneyflow Group A/S</a> on behalf of <a class="link-footer" href="https://ordrestyring.dk/">Ordrestyring</a> <br> Moneyflow Group A/S | Langebrogade 4, 1411 Copenhagen K | CVR 39228327 <br>Moneyflow is registered and regulated by the <a class="link-footer" href="https://www.dfsa.dk/">Danish FSA</a></mj-text>
 		</mj-column>
 </mj-section>
 </mj-wrapper>

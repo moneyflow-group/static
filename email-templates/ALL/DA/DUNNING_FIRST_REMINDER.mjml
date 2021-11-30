@@ -91,7 +91,7 @@
         		<mj-text font-size="14px"
              				 padding="0"
            				   font-family="Roboto, sans-serif">
-Kære {{ payer_company_name }}, <br/><br/>Vi har desværre ikke modtaget betaling for fakturanr. {{ invoice_number }} fra {{ company_name }} som skulle være betalt d. {{ due_date }}. Dette kan der selvfølgelig være flere grunde til. <br/><br/> Vi har vedhæftet en kopi af fakturaen og gør opmærksom på, at indbetalingen på {{ invoice_amount }} kr. skal ske til reg.nr. {{ payment_reg_number }}, kontonr. {{ payment_account_number }} hurtigst muligt.<br/><br/> Har du allerede betalt, beklager vi denne mail.<br/><br/> Hvis du oplever problemer eller har spørgsmål kan du altid kontakte os på 
+Kære {{ payer_company_name }}, <br/><br/>Vi har desværre ikke modtaget betaling for fakturanr. {{ invoice_number }} fra {{ company_name }} som skulle være betalt d. {{ due_date }}. Dette kan der selvfølgelig være flere grunde til. <br/><br/> Vi har vedhæftet en kopi af fakturaen og gør opmærksom på, at indbetalingen på {{ invoice_amount }} kr. skal ske til reg.nr. {{ payment_reg_number }}, kontonr. {{ payment_account_number }} hurtigst muligt.<br/><br/><b> Har du allerede betalt denne faktura, bedes du ringe til os - eller fremsende en betalingskvittering til vores support email.</b><br/><br/> Hvis du oplever problemer eller har spørgsmål kan du altid kontakte os på 
               <a href="mailto:support@moneyflow.io" 
                         class="link-nostyle">
                        	support@moneyflow.io</a>
