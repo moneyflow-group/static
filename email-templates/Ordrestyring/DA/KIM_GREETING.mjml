@@ -1,7 +1,7 @@
 <mjml>
 <!--SUBJECT: Status på din faktura--> 
 <!-- {{ company_name }} 		Name of seller company-->
-<!-- {{ status_page_da }} 	URL for the status/approved customer page of the seller company (in danish)-->
+<!-- {{ status_page }} 	URL for the status/approved customer page of the seller company (in danish)-->
 <mj-head>
 <mj-title>Kim_Greeting-DA</mj-title>
   <mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:600"/>

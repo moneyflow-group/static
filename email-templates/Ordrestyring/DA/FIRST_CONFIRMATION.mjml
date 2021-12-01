@@ -2,7 +2,7 @@
 <!--SUBJECT: Dine penge er snart på vej--> 
 <!-- {{ company_name }} 		Name of seller company-->
 <!-- {{ invoice_number }} 	Invoice number-->
-<!-- {{ status_page_da }} 	URL for the status/approved customer page of the seller company (in danish)-->
+<!-- {{ status_page }} 	URL for the status/approved customer page of the seller company (in danish)-->
 <mj-head>
 <mj-title>Confirmation-DA</mj-title>
   <mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:600"/>
@@ -75,7 +75,7 @@
 <mj-section css-class="section">
 		<mj-column>
 				<mj-text> Kære {{ company_name }},<br><br>Jeg hedder Anton og er ansvarlig for kundeservice hos Moneyflow. Jeg er her for at sørge for, at du får den bedst mulige oplevelse med vores service.<br><br>Først og fremmest vil vi gerne bare sige tak, fordi du har valgt at bruge vores service. Vi er vildt glade for at have dig ombord.<br><br>Inden vi sender pengene til din konto for faktura nr. {{ invoice_number }}, skal vi først lige godkende detaljerne på fakturaen. Du kan altid følge med i statussen på dine fakturaer ved at klikke på knappen nedenfor. Du modtager også en kvittering, så snart den er godkendt.</mj-text>
-        <mj-button href="{{ status_page_da }}">Se status på min faktura</mj-button>	
+        <mj-button href="{{ status_page }}">Se status på min faktura</mj-button>	
 		</mj-column>
 </mj-section>
 </mj-wrapper>

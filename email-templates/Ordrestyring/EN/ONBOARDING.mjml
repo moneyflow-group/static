@@ -1,10 +1,11 @@
 <mjml>
-<!--SUBJECT: Your money is soon on the way-->
-<!-- {{ company_name }} 		Name of seller company-->
-<!-- {{ invoice_number }} 	Invoice number-->
-<!-- {{ status_page_en }} 	URL for the status/approved customer page of the seller company (in english)-->
+<!--SUBJECT: Main agreement is signed-->
+<!--ATTACHEMENT: Signed main agreement--> 
+
+<!-- {{ company_name }} 				Name of seller company-->
+
 <mj-head>
-<mj-title>Confirmation-EN</mj-title>
+<mj-title>Onboarding-EN</mj-title>
   <mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:600"/>
 	<mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto:400,700"/>
   <mj-breakpoint width="480px"/>
@@ -51,7 +52,7 @@
           .link-footer { color: #808494;}
  					</mj-style>
  					<!--Preview text-->      
- 					<mj-preview>My name is Anton and I am resposible for the customer service at Moneyflow</mj-preview> 
+ 					<mj-preview>Thank you for signing the main agreement in order to use Moneyflow for {{ company_name }}</mj-preview> 
 </mj-head>
 
 <mj-body background-color="#E4F0F7">
@@ -74,8 +75,7 @@
 <mj-wrapper css-class="border-top">
 <mj-section css-class="section">
 		<mj-column>
-				<mj-text> Hi {{ company_name }},<br><br>My name is Anton and I am responsible for the customer service at Moneyflow. I am here to make sure that you get the best possible experience when using our service.<br><br>First of all we want to say thank you for choosing to use our service. We are very happy to have you on board.<br><br>Before tranferring money to your account for invoice no. {{ invoice_number }}, we just need to validate a few details on the invoice. You can always follow the status of your by clicking the button below. You will also receive a receipt as soon as the invoice is approved.</mj-text>
-        <mj-button href="{{ status_page_en }}">See status on my invoice</mj-button>	
+				<mj-text> Hi {{ company_name }},<br><br>Thank you for signing the main agreement in order to use Moneyflow for {{ company_name }} in Ordrestyring. You can now continue to use our service.<br><br>The signed Main agreement is attached to this email.<br><br>You can from now on choose to receive payment immidiately for the invoices you create and send in Ordrestyring.</mj-text>
 		</mj-column>
 </mj-section>
 </mj-wrapper>
@@ -87,15 +87,15 @@
 		</mj-column>
 </mj-section>
 
-<mj-raw><!-- Contact 2 columns --></mj-raw>
+<mj-raw><!-- Contact --></mj-raw>
 <mj-wrapper>
-<mj-section  css-class="section">
+<mj-section css-class="section">
 		<mj-column>
     		<mj-text>If you have any questions regarding our service, you are always very welcome to reach out to me or one of my skilled colleagues on <a href="tel:004589877036" class="link-body">+45 89 87 70 36 </a>(weekdays 8am-6pm), or by simply replying to this email. <br><br>Best regards,</mj-text>
  				<mj-text font-family="Montserrat"
                  font-weight="600"
                  padding-top="16px"
-                 color="#5B93F0">Anton and the rest of the team </mj-text>
+                 color="#5B93F0">Moneyflow </mj-text>
 		</mj-column>
 </mj-section>
 </mj-wrapper>
@@ -103,11 +103,11 @@
 <!-- Divider -->
 <mj-section padding="0">
 		<mj-column>
-				<mj-divider>
+				<mj-divider/>
 		</mj-column>
 </mj-section>
 
-<mj-raw><!-- Disclaimer-DA --></mj-raw>
+<mj-raw><!-- Disclaimer-EN --></mj-raw>
 <mj-wrapper>
 <mj-section padding="24px 0px 32px 0px"
             background-color="#E4F0F7">
