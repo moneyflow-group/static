@@ -544,6 +544,7 @@
         }
     },
     {
+        "model": "message_service.emailtemplate",
         "pk": "379f1e11-9de0-4901-800a-9b6befab07ce",
         "fields": {
             "created_at": "2021-06-26T14:13:01.452Z",
@@ -577,6 +578,7 @@
         }
     },
     {
+        "model": "message_service.emailtemplate",
         "pk": "e423c3ef-a936-45dd-8676-0eb783aec860",
         "fields": {
             "created_at": "2021-06-26T14:13:01.452Z",
@@ -610,6 +612,7 @@
         }
     },
     {
+        "model": "message_service.emailtemplate",
         "pk": "83748d44-f30f-4d06-9eb3-d3280b619983",
         "fields": {
             "created_at": "2021-06-26T14:13:01.452Z",
@@ -643,6 +646,7 @@
         }
     },
     {
+        "model": "message_service.emailtemplate",
         "pk": "318618f9-d347-4743-85ae-41980267c63d",
         "fields": {
             "created_at": "2021-06-26T14:13:01.452Z",
