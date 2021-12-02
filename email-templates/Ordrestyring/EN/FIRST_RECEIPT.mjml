@@ -76,7 +76,7 @@
 <mj-wrapper css-class="border-top">
 <mj-section css-class="section">
 		<mj-column>
-				<mj-text> Hi {{ company_name }}<br></br>Attached to this email is the receipt for invoice no. {{ invoice_number }} sent with Moneyflow.<br></br>The total amount: {{ payout_amount }}kr will soon be tranferred to your bank account.</mj-text>
+				<mj-text> Hi {{ company_name }}<br></br>Attached to this email is the receipt for invoice no. {{ invoice_number }} sent with Moneyflow.<br></br>The total amount: {{ payout_amount }} kr. will soon be tranferred to your bank account.</mj-text>
 		</mj-column>
 </mj-section>
 </mj-wrapper>

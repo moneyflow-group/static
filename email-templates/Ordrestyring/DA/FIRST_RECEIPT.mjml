@@ -76,7 +76,7 @@
 <mj-wrapper css-class="border-top">
 <mj-section css-class="section">
 		<mj-column>
-				<mj-text> Kære {{ company_name }}<br></br>Vedhæftet denne email er kvitteringen for faktura nr. {{ invoice_number }} sendt med Moneyflow.<br></br>Det samlede beløb: {{ payout_amount }}kr vil straks blive overført til din konto.</mj-text>
+				<mj-text> Kære {{ company_name }}<br></br>Vedhæftet denne email er kvitteringen for faktura nr. {{ invoice_number }} sendt med Moneyflow.<br></br>Det samlede beløb: {{ payout_amount }} kr. vil straks blive overført til din konto.</mj-text>
 		</mj-column>
 </mj-section>
 </mj-wrapper>

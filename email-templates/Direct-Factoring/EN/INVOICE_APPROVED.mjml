@@ -77,7 +77,7 @@
 <mj-wrapper css-class="border-top">
 <mj-section css-class="section">
 		<mj-column>
-				<mj-text>Dear {{ company_name }},<br><br>Your invoice no. {{ invoice_number }} to {{ payer_company_name }} has been approved and is now ready for payout.<br><br> The total amount of {{ payout_amount }}kr will be tranferred to your bank account within two hours.<br><br><b>Please, notify your customer about the updated payment information on the invoice.</b><br><br>Attached to this email is your receipt and agreement for Invoice funding. </mj-text>
+				<mj-text>Dear {{ company_name }},<br><br>Your invoice no. {{ invoice_number }} to {{ payer_company_name }} has been approved and is now ready for payout.<br><br> The total amount of {{ payout_amount }} kr. will be tranferred to your bank account within two hours.<br><br><b>Please, notify your customer about the updated payment information on the invoice.</b><br><br>Attached to this email is your receipt and agreement for Invoice funding. </mj-text>
 		</mj-column>
 </mj-section>
 </mj-wrapper>
