@@ -74,7 +74,7 @@
 <mj-wrapper css-class="border-top">
 <mj-section css-class="section">
 		<mj-column>
-				<mj-text> Kære {{ company_name }}<br></br>Vedhæftet denne email er kvitteringen for faktura nr. {{ invoice_number }} sendt med Straksindbetaling.<br></br>Det samlede beløb {{ payout_amount }} vil straks blive overført til din konto.<br></br> Godkend din postering direkte i e-conomic ved at følge linket nedenfor. Vi har allerede forberedt den, så det kræver blot nogle få klik fra dig. </mj-text>
+				<mj-text> Kære {{ company_name }}<br></br>Vedhæftet denne email er kvitteringen for faktura nr. {{ invoice_number }} sendt med Straksindbetaling.<br></br>Det samlede beløb {{ payout_amount }} kr. vil straks blive overført til din konto.<br></br> Godkend din postering direkte i e-conomic ved at følge linket nedenfor. Vi har allerede forberedt den, så det kræver blot nogle få klik fra dig. </mj-text>
         <mj-button href="https://secure.e-conomic.com/accounting/journals/">Godkend post på e-conomic</mj-button>
 		</mj-column>
 </mj-section>

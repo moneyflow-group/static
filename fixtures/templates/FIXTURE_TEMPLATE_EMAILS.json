@@ -544,6 +544,7 @@
         }
     },
     {
+        "model": "message_service.emailtemplate",
         "pk": "379f1e11-9de0-4901-800a-9b6befab07ce",
         "fields": {
             "created_at": "2021-06-26T14:13:01.452Z",
@@ -577,6 +578,7 @@
         }
     },
     {
+        "model": "message_service.emailtemplate",
         "pk": "e423c3ef-a936-45dd-8676-0eb783aec860",
         "fields": {
             "created_at": "2021-06-26T14:13:01.452Z",
@@ -610,6 +612,7 @@
         }
     },
     {
+        "model": "message_service.emailtemplate",
         "pk": "83748d44-f30f-4d06-9eb3-d3280b619983",
         "fields": {
             "created_at": "2021-06-26T14:13:01.452Z",
@@ -643,6 +646,7 @@
         }
     },
     {
+        "model": "message_service.emailtemplate",
         "pk": "318618f9-d347-4743-85ae-41980267c63d",
         "fields": {
             "created_at": "2021-06-26T14:13:01.452Z",
@@ -685,7 +689,7 @@
             "modified_by": null,
             "html_template": "",
             "text_template": "",
-            "subject": "Hovedaftale underskrevet",
+            "subject": "Main agreement is signed",
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "EN",
             "platform": "Ordrestyring",
@@ -711,7 +715,7 @@
     },
     {
         "model": "message_service.emailtemplate",
-        "pk": "adc23990-de85-4ed7-9dbf-57dc58907359",
+        "pk": "cddc17f3-9824-42a7-8b2b-69cb6ef8485a",
         "fields": {
             "created_at": "2021-11-29T17:13:01.452Z",
             "created_by": null,
@@ -719,7 +723,7 @@
             "modified_by": null,
             "html_template": "",
             "text_template": "",
-            "subject": "Status på din faktura",
+            "subject": "Status on your invoice",
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "EN",
             "platform": "Ordrestyring",
@@ -753,7 +757,7 @@
             "modified_by": null,
             "html_template": "",
             "text_template": "",
-            "subject": "Dine penge er snart på vej",
+            "subject": "Your money is soon on the way",
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "EN",
             "platform": "Ordrestyring",
@@ -787,7 +791,7 @@
             "modified_by": null,
             "html_template": "",
             "text_template": "",
-            "subject": "Kvittering for faktura nr. {{ invoice_number }}",
+            "subject": "Receipt for invoice no. {{ invoice_number }}",
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "EN",
             "platform": "Ordrestyring",

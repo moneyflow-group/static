@@ -2,7 +2,7 @@
 <!--SUBJECT: Your money is soon on the way-->
 <!-- {{ company_name }} 		Name of seller company-->
 <!-- {{ invoice_number }} 	Invoice number-->
-<!-- {{ status_page_en }} 	URL for the status/approved customer page of the seller company (in english)-->
+<!-- {{ status_page }} 	URL for the status/approved customer page of the seller company (in english)-->
 <mj-head>
 <mj-title>Confirmation-EN</mj-title>
   <mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:600"/>
@@ -75,7 +75,7 @@
 <mj-section css-class="section">
 		<mj-column>
 				<mj-text> Hi {{ company_name }},<br><br>My name is Anton and I am responsible for the customer service at Moneyflow. I am here to make sure that you get the best possible experience when using our service.<br><br>First of all we want to say thank you for choosing to use our service. We are very happy to have you on board.<br><br>Before tranferring money to your account for invoice no. {{ invoice_number }}, we just need to validate a few details on the invoice. You can always follow the status of your by clicking the button below. You will also receive a receipt as soon as the invoice is approved.</mj-text>
-        <mj-button href="{{ status_page_en }}">See status on my invoice</mj-button>	
+        <mj-button href="{{ status_page }}">See status on my invoice</mj-button>	
 		</mj-column>
 </mj-section>
 </mj-wrapper>

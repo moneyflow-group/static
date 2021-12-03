@@ -77,7 +77,7 @@
 <mj-wrapper css-class="border-top">
 <mj-section css-class="section">
 		<mj-column>
-				<mj-text>Kære {{ company_name }},<br><br>Din faktura nr {{ invoice_number }} til {{ payer_company_name }} er blevet godkendt og er nu klar til udbetaling.<br><br>Det samlede beløb: {{ payout_amount }} vil snart blive overført til din bankkonto.<br><br>
+				<mj-text>Kære {{ company_name }},<br><br>Din faktura nr {{ invoice_number }} til {{ payer_company_name }} er blevet godkendt og er nu klar til udbetaling.<br><br>Det samlede beløb: {{ payout_amount }} kr. vil snart blive overført til din bankkonto.<br><br>
 <b>Du bedes venligst gøre din kunde opmærksom på de opdaterede betalingsinformationer på fakturaen.</b><br><br>Vedhæftet denne e-mail finder du kvittering og tillægsaftal for Invoice funding</mj-text>
 		</mj-column>
 </mj-section>
