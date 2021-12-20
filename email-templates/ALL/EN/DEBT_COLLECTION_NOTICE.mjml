@@ -1,14 +1,14 @@
 <mjml>
 <!-- SUBJECT: Debt collection notice -->
   
-<!-- {{ incasso_date }} 					Original due date + 35 days-->
-<!-- {{ invoice_number }} 			    	invoice number-->
+<!-- {{ incasso_date }} 					Original due date + 30 days-->
+<!-- {{ invoice_number }} 			  invoice number-->
 <!-- {{ invoice_amount }}	 				Invoice amount-->
 <!-- {{ company_name }} 					Name of seller company-->
-<!-- {{ payer_company_name }} 	        	Name of payer company-->
-<!-- {{ outstanding_balance }} 	        	Invoice amount + late fee of 100 kr.-->
-<!-- {{ payment_reg_number }}	    		reg number for incoming payments-->
-<!-- {{ payment_account_number }}            account number for incoming payments-->   
+<!-- {{ payer_company_name }} 	  Name of payer company-->
+<!-- {{ outstanding_balance }} 	  Invoice amount + late fee of 100 kr.-->
+<!-- {{ payment_reg_number }}	    reg number for incoming payments-->
+<!-- {{ payment_account_number }} account number for incoming payments-->   
 <!-- {{ reminder_fee }} 					100 kr. reminder fee-->
   
 <mj-head>

@@ -1,7 +1,7 @@
 <mjml>
 <!-- SUBJECT: Inkassovarsel -->
   
-<!-- {{ incasso_date }} 					Original due date + 35 days-->
+<!-- {{ incasso_date }} 					Original due date + 30 days-->
 <!-- {{ invoice_number }} 				invoice number-->
 <!-- {{ invoice_amount }}	 				Invoice amount-->
 <!-- {{ company_name }} 					Name of seller company-->
