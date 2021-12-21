@@ -10,6 +10,7 @@
             "html": "",
             "language": "DA",
             "platform": "ALL",
+            "platforms": "[\"PLATFORM_FLOW\",\"PLATFORM_ECONOMIC\",\"PLATFORM_DINERO\",\"PLATFORM_ORDRESTYRING\",\"PLATFORM_MANUAL\",\"PLATFORM_DIRECT_FACTORING\",\"PLATFORM_REVENUE_FUNDING\"]",
             "identifier": "CREDITNOTE",
             "_width": 595,
             "_height": 842
@@ -26,6 +27,7 @@
             "html": "",
             "language": "DA",
             "platform": "DINERO",
+            "platforms": "[\"PLATFORM_DINERO\"]",
             "identifier": "RECEIPT",
             "_width": 595,
             "_height": 842
@@ -42,6 +44,7 @@
             "html": "",
             "language": "EN",
             "platform": "ALL",
+            "platforms": "[\"PLATFORM_FLOW\",\"PLATFORM_ECONOMIC\",\"PLATFORM_DINERO\",\"PLATFORM_ORDRESTYRING\",\"PLATFORM_MANUAL\",\"PLATFORM_DIRECT_FACTORING\",\"PLATFORM_REVENUE_FUNDING\"]",
             "identifier": "CREDITNOTE",
             "_width": 595,
             "_height": 842
@@ -58,6 +61,7 @@
             "html": "",
             "language": "DA",
             "platform": "ECONOMIC",
+            "platforms": "[\"PLATFORM_ECONOMIC\"]",
             "identifier": "RECEIPT",
             "_width": 595,
             "_height": 842
@@ -74,6 +78,7 @@
             "html": "",
             "language": "EN",
             "platform": "DINERO",
+            "platforms": "[\"PLATFORM_DINERO\"]",
             "identifier": "RECEIPT",
             "_width": 595,
             "_height": 842
@@ -90,6 +95,7 @@
             "html": "",
             "language": "EN",
             "platform": "ECONOMIC",
+            "platforms": "[\"PLATFORM_ECONOMIC\"]",
             "identifier": "RECEIPT",
             "_width": 595,
             "_height": 842
@@ -106,6 +112,7 @@
             "html": "",
             "language": "EN",
             "platform": "ALL",
+            "platforms": "[\"PLATFORM_FLOW\",\"PLATFORM_ECONOMIC\",\"PLATFORM_DINERO\",\"PLATFORM_ORDRESTYRING\",\"PLATFORM_MANUAL\",\"PLATFORM_DIRECT_FACTORING\",\"PLATFORM_REVENUE_FUNDING\"]",
             "identifier": "LATE_FEE_RECEIPT",
             "_width": 595,
             "_height": 842
@@ -122,7 +129,76 @@
             "html": "",
             "language": "DA",
             "platform": "ALL",
+            "platforms": "[\"PLATFORM_FLOW\",\"PLATFORM_ECONOMIC\",\"PLATFORM_DINERO\",\"PLATFORM_ORDRESTYRING\",\"PLATFORM_MANUAL\",\"PLATFORM_DIRECT_FACTORING\",\"PLATFORM_REVENUE_FUNDING\"]",
             "identifier": "LATE_FEE_RECEIPT",
+            "_width": 595,
+            "_height": 842
+        }
+    },
+    {
+        "model": "asset_service.receipttemplate",
+        "pk": "7240e433-fd79-4e62-b5cd-3eb839d494cf",
+        "fields": {
+            "created_at": "2021-05-20T15:37:27.349Z",
+            "created_by": null,
+            "modified_at": "2021-05-20T09:26:22.128Z",
+            "modified_by": null,
+            "html": "",
+            "language": "DA",
+            "platform": "MANUAL",
+            "platforms": "[\"PLATFORM_MANUAL\"]",
+            "identifier": "RECEIPT",
+            "_width": 595,
+            "_height": 842
+        }
+    },
+    {
+        "model": "asset_service.receipttemplate",
+        "pk": "2d003b49-44b9-488a-865e-831ffdf38df5",
+        "fields": {
+            "created_at": "2021-05-20T13:07:36.613Z",
+            "created_by": null,
+            "modified_at": "2021-05-20T15:30:11.353Z",
+            "modified_by": null,
+            "html": "",
+            "language": "EN",
+            "platform": "MANUAL",
+            "platforms": "[\"PLATFORM_MANUAL\"]",
+            "identifier": "RECEIPT",
+            "_width": 595,
+            "_height": 842
+        }
+    },
+    {
+        "model": "asset_service.receipttemplate",
+        "pk": "d6526206-62c6-4c50-adf3-d3c54f5e9195",
+        "fields": {
+            "created_at": "2021-05-20T13:07:36.613Z",
+            "created_by": null,
+            "modified_at": "2021-05-20T15:30:11.353Z",
+            "modified_by": null,
+            "html": "",
+            "language": "EN",
+            "platform": "ORDRESTYRING",
+            "platforms": "[\"PLATFORM_ORDRESTYRING\"]",
+            "identifier": "RECEIPT",
+            "_width": 595,
+            "_height": 842
+        }
+    },
+    {
+        "model": "asset_service.receipttemplate",
+        "pk": "13c99ba0-47cf-4154-9b95-139dccf79d3f",
+        "fields": {
+            "created_at": "2021-05-20T13:07:36.613Z",
+            "created_by": null,
+            "modified_at": "2021-05-20T15:30:11.353Z",
+            "modified_by": null,
+            "html": "",
+            "language": "DA",
+            "platform": "ORDRESTYRING",
+            "platforms": "[\"PLATFORM_ORDRESTYRING\"]",
+            "identifier": "RECEIPT",
             "_width": 595,
             "_height": 842
         }
