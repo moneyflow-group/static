@@ -1,7 +1,7 @@
-<mjml> 
-<!-- SUBJECT: We still haven’t received your payment -->
+<mjml>
+<!-- SUBJECT: We have still not received your payment -->
   
-<!-- {{ due_date_extended }} 			Original due date + 27 days-->
+<!-- {{ due_date_extended }} 			Original due date + 20 days-->
 <!-- {{ invoice_number }} 				invoice number-->
 <!-- {{ invoice_amount }}	 				Invoice amount-->
 <!-- {{ company_name }} 					Name of seller company-->
@@ -10,7 +10,6 @@
 <!-- {{ payment_reg_number }}	 		reg number for incoming payments-->
 <!-- {{ payment_account_number }} account number for incoming payments-->   
 <!-- {{ reminder_fee }} 					100 kr. reminder fee-->
-<!-- {{ partial_payment }}        Partially paid amount-->
   
 <mj-head>
 		<mj-title>Second reminder EN</mj-title>
@@ -42,7 +41,7 @@
   					    .link-nostyle { color: #0000FF; text-decoration: none }
  						   	</mj-style>
  								<!--Preview text-->      
- 								<mj-preview>We still haven't recieved your payment for invoice no. {{ invoice_number }} from {{ company_name }}</mj-preview>
+ 								<mj-preview>We have still not received your payment for invoice no. {{ invoice_number }} from {{ company_name }}</mj-preview>
 </mj-head> 
 <mj-body background-color="#E4F0F7">
   
@@ -80,7 +79,7 @@
                      font-size="28px"
                      font-family="Montserrat, sans-serif"
                      font-weight="600">
-                     We still haven't recieved <br/>your payment
+                     We have still not<br/>received your payment
           	</mj-text>
         </mj-column>
  				</mj-section>
@@ -94,71 +93,10 @@
         		<mj-text font-size="14px"
              				 padding="0"
            				   font-family="Roboto, sans-serif">
-Dear {{ payer_company_name }}, <br/><br/>Unfortunately, we note that we have still not received your full payment for invoice no. {{ invoice_number }} on {{ invoice_amount }} kr. from {{ company_name }} <br/><br/> This is your second reminder, and therefore, a fee of {{ reminder_fee }} kr. has been added, pursuant to §9b of the Danish Interest Act ('Renteloven').<br/><br/> Your outstanding balance is now {{ outstanding_balance }} kr.<br/><br/> This amount is to be paid by {{ due_date_extended }} to reg. no. {{ payment_reg_number }} account no. {{ payment_account_number }}. <br/><br/> If the amount is not paid by {{ due_date_extended }}, you will receive a debt collection notice. If the case is handed over for debt collection, this will result in additional costs.<br/><br/> If you experience any problems or have questions, you can always contact us at
-              <a href="mailto:support@moneyflow.io" 
-                        class="link-nostyle">
-                       	support@moneyflow.io</a>
-              					or
-              <a href="tel:004589877036"
-                        class="link-nostyle">
-                        +45 89 87 70 36 </a>
+Hi {{ payer_company_name }}, <br/><br/> Unfortunately, we note that we have still not received your payment for invoice no. {{ invoice_number }} on {{ invoice_amount }} kr., sent by {{ company_name }}.<br/><br/> This is the second reminder, and therefore, a fee of {{ reminder_fee }} kr. has been added, pursuant to §9b of the Danish Interest Act ('Renteloven').<br/><br/>Your outstanding balance is now {{ oustanding_balance }} kr. (invoice amount + {{ reminder_fee }} kr.)<br/><br/>The amount must be paid no later than {{ due_date_extended }} to Reg./Account number {{ payment_reg_number }} {{ payment_account_number }}.<br/><br/><b>It is very important that you contact Moneyflow if you experience any problems with:<ul><li>The service</li><li>The delivery</li><li>Errors/Deficiencies on the order</li><li>Missing credit note</li></ul></b>You can contact us every weekday between 8am and 6pm on <a href="tel:004589877036" class="link-nostyle">+45 89 87 70 36</a>, or by sending an e-mail to <a href="mailto:support@moneyflow.io" class="link-nostyle">support@moneyflow.io</a>
             </mj-text>
      		</mj-column>
    	</mj-section>
-</mj-wrapper>
-  
-<mj-raw><!-- Receipt(EC)-DA --></mj-raw>
-<mj-wrapper css-class="border-top">
-		<mj-section css-class="section"
-                padding-bottom="0">
-				<mj-column padding-bottom="0px">
-        		<mj-text font-family="Montserrat, sans-serif"
-                     font-size="16px"
-                     font-weight="600"
-                     padding="0"
-                     padding-bottom="30px">
-              			 Outstanding balance
-        		</mj-text>
-        </mj-column>
-    </mj-section>
-  	<mj-section css-class="section"
-                padding-top="0px">
-    		<mj-column>
-        		<mj-table padding="0"
-                      font-family="Roboto, sans-serif"
-                      font-size="14px">
-              	<tr>
-                    <td style="padding-bottom:15px">
-                               Invoice amount</td>
-                    <td style="text-align:right;
-                               padding-bottom:15px">
-                               {{ invoice_amount }} kr.</td>
-                </tr>
-                <tr>
-                    <td style="padding-bottom:15px">
-                               Reminder fee</td>
-                    <td style="text-align:right;
-                               padding-bottom:15px">
-                               {{ reminder_fee }} kr.</td>
-                </tr>
-                <tr>
-                    <td style="padding-bottom:15px">
-                               Paid amount</td>
-                    <td style="text-align:right;
-                               padding-bottom:15px">
-                               {{ partial_payment }} kr.</td>
-                </tr>
-                <tr style="border-top:1px solid #2F3344;
-                           font-weight:700;">
-                    <td style="padding-top:15px">
-                               Total amount</td>
-                    <td style="text-align:right;
-                               padding-top:15px">
-                               {{ outstanding_balance }} kr.</td>
-                </tr>
-            </mj-table>
-        </mj-column>
-    </mj-section>
 </mj-wrapper>
  
 <mj-raw><!-- Contact-EN --></mj-raw>
@@ -264,7 +202,7 @@ Dear {{ payer_company_name }}, <br/><br/>Unfortunately, we note that we have sti
           					 <a href="https://moneyflow.io/en/privacy/"
                         class="link-nostyle">
                         Privacy and Cookie Policy</a>
-              			 <a>|</a>
+              			 |
               			 <a href="https://moneyflow.io/en/terms/"
                         class="link-nostyle">
                         General Terms and Conditions</a>
@@ -275,7 +213,7 @@ Dear {{ payer_company_name }}, <br/><br/>Unfortunately, we note that we have sti
                      font-family="Roboto, sans-serif"
                      padding-bottom="5px">
             				 Moneyflow is registered by the 
-              			 <a href="https://www.finanstilsynet.dk/"
+              			 <a href="https://www.dfsa.dk/"
                         Class="link-nostyle">
                      Danish FSA</a>
           	</mj-text>

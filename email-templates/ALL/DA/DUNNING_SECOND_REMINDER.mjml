@@ -1,7 +1,7 @@
 <mjml>
-<!-- SUBJECT: Vi mangler stadig din betaling -->
+<!-- SUBJECT: Vi har stadigt ikke modtaget din betaling -->
   
-<!-- {{ due_date_extended }} 			Original due date + 27 days-->
+<!-- {{ due_date_extended }} 			Original due date + 20 days-->
 <!-- {{ invoice_number }} 				invoice number-->
 <!-- {{ invoice_amount }}	 				Invoice amount-->
 <!-- {{ company_name }} 					Name of seller company-->
@@ -10,7 +10,6 @@
 <!-- {{ payment_reg_number }}	 		reg number for incoming payments-->
 <!-- {{ payment_account_number }} account number for incoming payments-->   
 <!-- {{ reminder_fee }} 					100 kr. reminder fee-->
-<!-- {{ partial_payment }}        Partially paid amount-->
   
 <mj-head>
 		<mj-title>Second reminder DA</mj-title>
@@ -42,7 +41,7 @@
   					    .link-nostyle { color: #0000FF; text-decoration: none }
  						   	</mj-style>
  								<!--Preview text-->      
- 								<mj-preview>Vi mangler stadigt din betaling af fakturanr. {{ invoice_number }} fra {{ company_name }}</mj-preview>
+ 								<mj-preview>Vi har stadigt ikke modtaget din betaling af fakturanr. {{ invoice_number }} fra {{ company_name }}</mj-preview>
 </mj-head> 
 <mj-body background-color="#E4F0F7">
   
@@ -80,7 +79,7 @@
                      font-size="28px"
                      font-family="Montserrat, sans-serif"
                      font-weight="600">
-                     Vi har stadig ikke modtaget <br/> din betaling endnu
+                     Vi har stadig ikke <br/> modtaget din betaling
           	</mj-text>
         </mj-column>
  				</mj-section>
@@ -94,71 +93,10 @@
         		<mj-text font-size="14px"
              				 padding="0"
            				   font-family="Roboto, sans-serif">
-Kære {{ payer_company_name }}, <br/><br/>Vi må desværre konstatere, at vi stadig ikke har modtaget din fulde betaling for faktura nr. {{ invoice_number }} på {{ invoice_amount }} kr. fra {{ company_name }} <br/><br/> Dette er anden rykker og der er derfor blevet pålagt et rykkergebyr på {{ reminder_fee }} kr. jf. Rentelovens §9b.<br/><br/> Din udestående saldo er nu {{ outstanding_balance }} kr.<br/><br/> Dette beløb bedes indbetales senest den {{ due_date_extended }} på reg.nr. {{ payment_reg_number }} kontonr. {{ payment_account_number }}. <br/><br/> Er beløbet ikke betalt senest {{ due_date_extended }}, modtager du et inkassovarsel. Bliver sagen overdraget til inkasso, vil det være med yderligere omkostninger til følge.<br/><br/> Hvis du oplever problemer eller har spørgsmål kan du altid kontakte os på
-              <a href="mailto:support@moneyflow.io" 
-                        class="link-nostyle">
-                       	support@moneyflow.io</a>
-              					eller
-              <a href="tel:004589877036"
-                        class="link-nostyle">
-                        +45 89 87 70 36 </a>
+Kære {{ payer_company_name }}, <br/><br/>Vi må desværre konstatere at vi stadig ikke har modtaget betaling for faktura nr. {{ invoice_number }} på {{ invoice_amount }} kr. udstedt af {{ company_name }} <br/><br/> Dette er anden rykker, og der er derfor pålagt et gebyr på {{ reminder_fee }} kr. jf. rentelovens §9b.<br/><br/> Det samlede udestående er nu på {{ outstanding_balance }} kr. (hovedstol + {{ reminder_fee }} kr.)<br/><br/> Beløbet skal indbetales senest den {{ due_date_extended }} på Reg/Kontonummer {{ payment_reg_number }} {{ payment_account_number }}.<br/><br/><b>Det er meget vigtigt at du kontakter Moneyflow, hvis du oplever problemer med:<ul><li>Serviceydelsen</li><li>Leveringen</li><li>Fejl/mangler på ordren</li><li>Manglende kreditnota</li></ul></b>Du kan kontakte os alle hverdage mellem klokken 08.00 og 18.00 på telefon <a href="tel:004589877036" class="link-nostyle">+45 89 87 70 36</a> eller sende en e-mail til <a href="mailto:support@moneyflow.io" class="link-nostyle">support@moneyflow.io</a>
             </mj-text>
      		</mj-column>
    	</mj-section>
-</mj-wrapper>
-  
-<mj-raw><!-- Receipt(EC)-DA --></mj-raw>
-<mj-wrapper css-class="border-top">
-		<mj-section css-class="section"
-                padding-bottom="0">
-				<mj-column padding-bottom="0px">
-        		<mj-text font-family="Montserrat, sans-serif"
-                     font-size="16px"
-                     font-weight="600"
-                     padding="0"
-                     padding-bottom="30px">
-              			 Dit udestående
-        		</mj-text>
-        </mj-column>
-    </mj-section>
-  	<mj-section css-class="section"
-                padding-top="0px">
-    		<mj-column>
-        		<mj-table padding="0"
-                      font-family="Roboto, sans-serif"
-                      font-size="14px">
-              	<tr>
-                    <td style="padding-bottom:15px">
-                               Fakturabeløb</td>
-                    <td style="text-align:right;
-                               padding-bottom:15px">
-                               {{ invoice_amount }} kr.</td>
-                </tr>
-                <tr>
-                    <td style="padding-bottom:15px">
-                               Rykkergebyr</td>
-                    <td style="text-align:right;
-                               padding-bottom:15px">
-                               {{ reminder_fee }} kr.</td>
-                </tr>
-                <tr>
-                    <td style="padding-bottom:15px">
-                               Betalt beløb</td>
-                    <td style="text-align:right;
-                               padding-bottom:15px">
-                               {{ partial_payment }} kr.</td>
-                </tr>
-                <tr style="border-top:1px solid #2F3344;
-                           font-weight:700;">
-                    <td style="padding-top:15px">
-                               Samlet beløb</td>
-                    <td style="text-align:right;
-                               padding-top:15px">
-                               {{ outstanding_balance }} kr.</td>
-                </tr>
-            </mj-table>
-        </mj-column>
-    </mj-section>
 </mj-wrapper>
  
 <mj-raw><!-- Contact-DA --></mj-raw>
@@ -261,11 +199,11 @@ Kære {{ payer_company_name }}, <br/><br/>Vi må desværre konstatere, at vi sta
                      font-family="Roboto, sans-serif"
                      padding-top="10px"
                      padding-bottom="30px">
-          					 <a href="https://moneyflow.io/en/privacy/"
+          					 <a href="https://moneyflow.io/da/privacy/"
                         class="link-nostyle">
                         Privatlivs- og cookiepolitik</a>
-              			 <a>|</a>
-              			 <a href="https://moneyflow.io/en/terms/"
+              			 		|		
+              			 <a href="https://moneyflow.io/da/terms/"
                         class="link-nostyle">
                         Forretningsbetingelser</a>
           	</mj-text>
