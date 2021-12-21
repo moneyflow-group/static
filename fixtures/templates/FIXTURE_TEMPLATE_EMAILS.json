@@ -12,7 +12,7 @@
             "subject": "Dit fakturasalg er g\u00e5et igennem",
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "DA",
-            "platform": "Dinero",
+            "platforms": "[\"PLATFORM_DINERO\"]",
             "identifier": "POST_SALE"
         }
     },
@@ -29,7 +29,7 @@
             "subject": "Bekr\u00e6ft venligst din emailadresse indenfor 24 timer",
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "DA",
-            "platform": "Dinero",
+            "platforms": "[\"PLATFORM_DINERO\"]",
             "identifier": "ONBOARDING_VERIFY"
         }
     },
@@ -46,7 +46,7 @@
             "subject": "Dit f\u00f8rste fakturasalg er g\u00e5et igennem",
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "DA",
-            "platform": "Dinero",
+            "platforms": "[\"PLATFORM_DINERO\"]",
             "identifier": "POST_SALE_FIRST"
         }
     },
@@ -63,7 +63,7 @@
             "subject": "Du kan nu f\u00e5 tidlig betaling for dine fakturaer",
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "DA",
-            "platform": "Dinero",
+            "platforms": "[\"PLATFORM_DINERO\"]",
             "identifier": "ONBOARDING"
         }
     },
@@ -80,7 +80,7 @@
             "subject": "Dit fakturasalg er gennemf\u00f8rt",
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "DA",
-            "platform": "E-conomic",
+            "platforms": "[\"PLATFORM_ECONOMIC\"]",
             "identifier": "POST_SALE"
         }
     },
@@ -97,7 +97,7 @@
             "subject": "Your invoice sale is completed",
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "EN",
-            "platform": "E-conomic",
+            "platforms": "[\"PLATFORM_ECONOMIC\"]",
             "identifier": "POST_SALE"
         }
     },
@@ -114,7 +114,7 @@
             "subject": "You can now get early payment for your invoices",
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "EN",
-            "platform": "Dinero",
+            "platforms": "[\"PLATFORM_DINERO\"]",
             "identifier": "ONBOARDING"
         }
     },
@@ -131,7 +131,7 @@
             "subject": "You are now ready to get paid instantly",
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "EN",
-            "platform": "E-conomic",
+            "platforms": "[\"PLATFORM_ECONOMIC\"]",
             "identifier": "ONBOARDING"
         }
     },
@@ -148,7 +148,7 @@
             "subject": "Your invoice sale is completed",
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "EN",
-            "platform": "Dinero",
+            "platformss": "[\"PLATFORM_DINERO\"]",
             "identifier": "POST_SALE"
         }
     },
@@ -165,7 +165,7 @@
             "subject": "Du er nu klar til f\u00e5 betaling med det samme",
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "DA",
-            "platform": "E-conomic",
+            "platforms": "[\"PLATFORM_ECONOMIC\"]",
             "identifier": "ONBOARDING"
         }
     },
@@ -182,7 +182,7 @@
             "subject": "Dit f\u00f8rste fakturasalg er g\u00e5et igennem",
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "DA",
-            "platform": "E-conomic",
+            "platforms": "[\"PLATFORM_ECONOMIC\"]",
             "identifier": "POST_SALE_FIRST"
         }
     },
@@ -199,7 +199,7 @@
             "subject": "Please verify your email address within 24 hours",
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "EN",
-            "platform": "Dinero",
+            "platforms": "[\"PLATFORM_DINERO\"]",
             "identifier": "ONBOARDING_VERIFY"
         }
     },
@@ -216,7 +216,7 @@
             "subject": "Faktura #{{ invoice_number }} fra {{ company_name }}",
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "DA",
-            "platform": "Dinero",
+            "platforms": "[\"PLATFORM_DINERO\"]",
             "identifier": "INVOICE_PAYER"
         }
     },
@@ -233,7 +233,7 @@
             "subject": "Your first invoice sale is completed",
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "EN",
-            "platform": "E-conomic",
+            "platforms": "[\"PLATFORM_ECONOMIC\"]",
             "identifier": "POST_SALE_FIRST"
         }
     },
@@ -250,7 +250,7 @@
             "subject": "Your first invoice sale is completed",
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "EN",
-            "platform": "Dinero",
+            "platforms": "[\"PLATFORM_DINERO\"]",
             "identifier": "POST_SALE_FIRST"
         }
     },
@@ -267,7 +267,7 @@
             "subject": "Invoice #{{ invoice_number }} from {{ company_name }}",
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "EN",
-            "platform": "Dinero",
+            "platforms": "[\"PLATFORM_DINERO\"]",
             "identifier": "INVOICE_PAYER"
         }
     },
@@ -284,7 +284,7 @@
             "subject": "Vi mangler din betaling",
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "DA",
-            "platform": "ALL",
+            "platforms": "[\"PLATFORM_FLOW\",\"PLATFORM_ECONOMIC\",\"PLATFORM_DINERO\",\"PLATFORM_ORDRESTYRING\",\"PLATFORM_MANUAL\",\"PLATFORM_DIRECT_FACTORING\",\"PLATFORM_REVENUE_FUNDING\"]",
             "identifier": "DUNNING_FIRST_REMINDER"
         }
     },
@@ -301,7 +301,7 @@
             "subject": "We haven't received your payment",
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "EN",
-            "platform": "ALL",
+            "platforms": "[\"PLATFORM_FLOW\",\"PLATFORM_ECONOMIC\",\"PLATFORM_DINERO\",\"PLATFORM_ORDRESTYRING\",\"PLATFORM_MANUAL\",\"PLATFORM_DIRECT_FACTORING\",\"PLATFORM_REVENUE_FUNDING\"]",
             "identifier": "DUNNING_FIRST_REMINDER"
         }
     },
@@ -318,7 +318,7 @@
             "subject": "Vi mangler din betaling",
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "DA",
-            "platform": "ALL",
+            "platforms": "[\"PLATFORM_FLOW\",\"PLATFORM_ECONOMIC\",\"PLATFORM_DINERO\",\"PLATFORM_ORDRESTYRING\",\"PLATFORM_MANUAL\",\"PLATFORM_DIRECT_FACTORING\",\"PLATFORM_REVENUE_FUNDING\"]",
             "identifier": "DUNNING_SECOND_REMINDER"
         }
     },
@@ -335,7 +335,7 @@
             "subject": "We still haven't received your payment",
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "EN",
-            "platform": "ALL",
+            "platforms": "[\"PLATFORM_FLOW\",\"PLATFORM_ECONOMIC\",\"PLATFORM_DINERO\",\"PLATFORM_ORDRESTYRING\",\"PLATFORM_MANUAL\",\"PLATFORM_DIRECT_FACTORING\",\"PLATFORM_REVENUE_FUNDING\"]",
             "identifier": "DUNNING_SECOND_REMINDER"
         }
     },
@@ -352,7 +352,7 @@
             "subject": "Your payment of inovice no. {{ invoice_number }}",
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "EN",
-            "platform": "ALL",
+            "platforms": "[\"PLATFORM_FLOW\",\"PLATFORM_ECONOMIC\",\"PLATFORM_DINERO\",\"PLATFORM_ORDRESTYRING\",\"PLATFORM_MANUAL\",\"PLATFORM_DIRECT_FACTORING\",\"PLATFORM_REVENUE_FUNDING\"]",
             "identifier": "UPCOMING_NOTICE"
         }
     },
@@ -369,7 +369,7 @@
             "subject": "Din betaling af fakturanr. {{ invoice_number }}",
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "DA",
-            "platform": "ALL",
+            "platforms": "[\"PLATFORM_FLOW\",\"PLATFORM_ECONOMIC\",\"PLATFORM_DINERO\",\"PLATFORM_ORDRESTYRING\",\"PLATFORM_MANUAL\",\"PLATFORM_DIRECT_FACTORING\",\"PLATFORM_REVENUE_FUNDING\"]",
             "identifier": "UPCOMING_NOTICE"
         }
     },
@@ -386,7 +386,7 @@
             "subject": "Email failure, support needed",
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "EN",
-            "platform": "ALL",
+            "platforms": "[\"PLATFORM_FLOW\",\"PLATFORM_ECONOMIC\",\"PLATFORM_DINERO\",\"PLATFORM_ORDRESTYRING\",\"PLATFORM_MANUAL\",\"PLATFORM_DIRECT_FACTORING\",\"PLATFORM_REVENUE_FUNDING\"]",
             "identifier": "CS_EMAIL_NOTIFICATION"
         }
     },
@@ -403,7 +403,7 @@
             "subject": "Receipt for inovice no. {{ invoice_number }}",
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "EN",
-            "platform": "E-conomic",
+            "platforms": "[\"PLATFORM_ECONOMIC\"]",
             "identifier": "FIRST_RECEIPT"
         }
     },
@@ -420,7 +420,7 @@
             "subject": "Kvittering for faktura nr. {{ invoice_number }}",
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "DA",
-            "platform": "E-conomic",
+            "platforms": "[\"PLATFORM_ECONOMIC\"]",
             "identifier": "FIRST_RECEIPT"
         }
     },
@@ -437,7 +437,7 @@
             "subject": "Your invoice has been settled",
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "EN",
-            "platform": "E-conomic",
+            "platforms": "[\"PLATFORM_ECONOMIC\"]",
             "identifier": "INVOICE_SETTLED"
         }
     },
@@ -454,7 +454,7 @@
             "subject": "Din faktura er afregnet",
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "DA",
-            "platform": "E-conomic",
+            "platforms": "[\"PLATFORM_ECONOMIC\"]",
             "identifier": "INVOICE_SETTLED"
         }
     },
@@ -471,7 +471,7 @@
             "subject": "Your money is coming soon!",
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "EN",
-            "platform": "E-conomic",
+            "platforms": "[\"PLATFORM_ECONOMIC\"]",
             "identifier": "FIRST_CONFIRMATION"
         }
     },
@@ -488,7 +488,7 @@
             "subject": "Dine penge er snart på vej!",
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "DA",
-            "platform": "E-conomic",
+            "platforms": "[\"PLATFORM_ECONOMIC\"]",
             "identifier": "FIRST_CONFIRMATION"
         }
     },
@@ -505,7 +505,7 @@
             "subject": "Status of your invoice",
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "EN",
-            "platform": "E-conomic",
+            "platforms": "[\"PLATFORM_ECONOMIC\"]",
             "identifier": "KIM_GREETING"
         }
     },
@@ -522,7 +522,7 @@
             "subject": "Status på din faktura",
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "DA",
-            "platform": "E-conomic",
+            "platforms": "[\"PLATFORM_ECONOMIC\"]",
             "identifier": "KIM_GREETING"
         }
     },
@@ -539,7 +539,7 @@
             "subject": "Vi har modtaget betaling fra dig. Tak!",
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "DA",
-            "platform": "ALL",
+            "platforms": "[\"PLATFORM_FLOW\",\"PLATFORM_ECONOMIC\",\"PLATFORM_DINERO\",\"PLATFORM_ORDRESTYRING\",\"PLATFORM_MANUAL\",\"PLATFORM_DIRECT_FACTORING\",\"PLATFORM_REVENUE_FUNDING\"]",
             "identifier": "PAYER_SETTLED_INVOICE"
         }
     },
@@ -556,7 +556,7 @@
             "subject": "Din kunde er godkendt",
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "DA",
-            "platform": "Direct-Factoring",
+            "platforms": "[\"PLATFORM_DIRECT_FACTORING\"]",
             "identifier": "CUSTOMER_APPROVED"
         }
     },
@@ -573,7 +573,7 @@
             "subject": "We have received your payment. Thank you!",
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "EN",
-            "platform": "ALL",
+            "platforms": "[\"PLATFORM_FLOW\",\"PLATFORM_ECONOMIC\",\"PLATFORM_DINERO\",\"PLATFORM_ORDRESTYRING\",\"PLATFORM_MANUAL\",\"PLATFORM_DIRECT_FACTORING\",\"PLATFORM_REVENUE_FUNDING\"]",
             "identifier": "PAYER_SETTLED_INVOICE"
         }
     },
@@ -590,7 +590,7 @@
             "subject": "Your customer has been approved",
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "EN",
-            "platform": "Direct-Factoring",
+            "platforms": "[\"PLATFORM_DIRECT_FACTORING\"]",
             "identifier": "CUSTOMER_APPROVED"
         }
     },
@@ -607,7 +607,7 @@
             "subject": "Ubetalte fakturaer der har passeret forfaldsdatoen",
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "DA",
-            "platform": "ALL",
+            "platforms": "[\"PLATFORM_FLOW\",\"PLATFORM_ECONOMIC\",\"PLATFORM_DINERO\",\"PLATFORM_ORDRESTYRING\",\"PLATFORM_MANUAL\",\"PLATFORM_DIRECT_FACTORING\",\"PLATFORM_REVENUE_FUNDING\"]",
             "identifier": "BULK_REMINDER"
         }
     },
@@ -624,7 +624,7 @@
             "subject": "Din faktura er godkendt",
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "DA",
-            "platform": "Direct-Factoring",
+            "platforms": "[\"PLATFORM_DIRECT_FACTORING\"]",
             "identifier": "INVOICE_APPROVED"
         }
     },
@@ -641,7 +641,7 @@
             "subject": "Unpaid invoices that are overdue",
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "EN",
-            "platform": "ALL",
+            "platforms": "[\"PLATFORM_FLOW\",\"PLATFORM_ECONOMIC\",\"PLATFORM_DINERO\",\"PLATFORM_ORDRESTYRING\",\"PLATFORM_MANUAL\",\"PLATFORM_DIRECT_FACTORING\",\"PLATFORM_REVENUE_FUNDING\"]",
             "identifier": "BULK_REMINDER"
         }
     },
@@ -658,7 +658,7 @@
             "subject": "Your invoice has been approved",
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "EN",
-            "platform": "Direct-Factoring",
+            "platforms": "[\"PLATFORM_DIRECT_FACTORING\"]",
             "identifier": "INVOICE_APPROVED"
         }
     },
@@ -675,7 +675,7 @@
             "subject": "Hovedaftale underskrevet",
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "DA",
-            "platform": "Ordrestyring",
+            "platforms": "[\"PLATFORM_ORDRESTYRING\"]",
             "identifier": "ONBOARDING"
         }
     },
@@ -692,7 +692,7 @@
             "subject": "Main agreement is signed",
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "EN",
-            "platform": "Ordrestyring",
+            "platforms": "[\"PLATFORM_ORDRESTYRING\"]",
             "identifier": "ONBOARDING"
         }
     },
@@ -709,7 +709,7 @@
             "subject": "Status på din faktura",
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "DA",
-            "platform": "Ordrestyring",
+            "platforms": "[\"PLATFORM_ORDRESTYRING\"]",
             "identifier": "KIM_GREETING"
         }
     },
@@ -726,7 +726,7 @@
             "subject": "Status on your invoice",
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "EN",
-            "platform": "Ordrestyring",
+            "platforms": "[\"PLATFORM_ORDRESTYRING\"]",
             "identifier": "KIM_GREETING"
         }
     },
@@ -743,7 +743,7 @@
             "subject": "Dine penge er snart på vej",
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "DA",
-            "platform": "Ordrestyring",
+            "platforms": "[\"PLATFORM_ORDRESTYRING\"]",
             "identifier": "FIRST_CONFIRMATION"
         }
     },
@@ -760,7 +760,7 @@
             "subject": "Your money is soon on the way",
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "EN",
-            "platform": "Ordrestyring",
+            "platforms": "[\"PLATFORM_ORDRESTYRING\"]",
             "identifier": "FIRST_CONFIRMATION"
         }
     },
@@ -777,7 +777,7 @@
             "subject": "Kvittering for faktura nr. {{ invoice_number }}",
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "DA",
-            "platform": "Ordrestyring",
+            "platforms": "[\"PLATFORM_ORDRESTYRING\"]",
             "identifier": "FIRST_RECEIPT"
         }
     },
@@ -794,7 +794,7 @@
             "subject": "Receipt for invoice no. {{ invoice_number }}",
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "EN",
-            "platform": "Ordrestyring",
+            "platforms": "[\"PLATFORM_ORDRESTYRING\"]",
             "identifier": "FIRST_RECEIPT"
         }
     }
