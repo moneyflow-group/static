@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 import os
+import re
 import json
 import argparse
+from posixpath import split
 
 DIRNAME = os.path.dirname(os.path.abspath(__file__))
 
@@ -35,6 +37,8 @@ def generate_receipt_fixture():
             "ALL": f"{DIRNAME}/../receipt-templates/ALL",
             "DINERO": f"{DIRNAME}/../receipt-templates/Dinero",
             "ECONOMIC": f"{DIRNAME}/../receipt-templates/E-conomic",
+            "MANUAL": f"{DIRNAME}/../receipt-templates/Manual",
+            "ORDRESTYRING": f"{DIRNAME}/../receipt-templates/Ordrestyring",
         }
         template_filenames = {
             "RECEIPT": "receipt_template.html",
@@ -70,17 +74,22 @@ def generate_email_fixture():
         fixtures = json.loads(fixture_template.read())
         template_dirs = {
             "ALL": f"{DIRNAME}/../email-templates/ALL",
-            "Dinero": f"{DIRNAME}/../email-templates/Dinero",
-            "E-conomic": f"{DIRNAME}/../email-templates/E-conomic",
-            "Direct-Factoring": f"{DIRNAME}/../email-templates/Direct-Factoring",
-            "Ordrestyring": f"{DIRNAME}/../email-templates/Ordrestyring",
+            "DINERO": f"{DIRNAME}/../email-templates/Dinero",
+            "ECONOMIC": f"{DIRNAME}/../email-templates/E-conomic",
+            "DIRECT_FACTORING": f"{DIRNAME}/../email-templates/Direct-Factoring",
+            "ORDRESTYRING": f"{DIRNAME}/../email-templates/Ordrestyring",
         }
 
         for template in fixtures:
             identifier = template["fields"]["identifier"]
+            print(identifier)
             language = template["fields"]["language"]
-            platform = template["fields"]["platform"]
+            platforms = template["fields"]["platforms"]
 
+            match = re.split("\[?\"PLATFORM_(\w+)\"[,\]]?", platforms)
+            platform_list = [x for x in match if x]
+            platform = "ALL" if len(platform_list) > 1 else platform_list[0]
+            print(platform_list)
             template_dir = template_dirs[platform]
             html_template_file = f"{template_dir}/{language}/{identifier}.html"
             html_template = open(html_template_file)

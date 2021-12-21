@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Kvittering</title>
+
+<!-- {{ company_name }}         Name of seller company -->
+<!-- {{ signee_name }}          Name of signee of seller company -->  
+<!-- {{ company_street }}       Street of seller company -->
+<!-- {{ company_city }}         city of seller company -->
+<!-- {{ company_country }}      Country of seller company -->
+<!-- {{ company_crn }}          CVR of seller company -->
+<!-- {{ invoice_number }}       invoice number -->
+<!-- {{ factoring_amount }}     Amount that MF pay to seller (invoice amount - fee & VAT) -->
+<!-- {{ receipt_date }}         Date of creation of receipt -->
+<!-- {{ receipt_number }}       Receipt number -->
+<!-- {{ fee_amount }}           Amount of the credited fee -->
+<!-- {{ offer_cost_before_discount }} The fee cost before any discount is applied -->
+<!-- {{ offer_cost_discount }}  The amount of discount on the offer fee-->
+<!-- {{ offer_cost_discount_percent }}        The fee cost after any interest discount is applied --> 
+<!-- {{ vat_amount }}           VAT of the credited fee -->
+<!-- {{ vat_percent }}          VAT percentage -->
+<!-- {{ total_fee_amount }}     Total amount of credit note (Fee+VAT) -->
+
+  <style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto";
+    }
+
+    @page {
+        size: A4; /* Change from the default size of A4 */
+        margin: 0mm; /* Set margin on each page */
+    }
+    
+    .container {
+        width: 466px; 
+        margin-top:64px;
+        margin-left: 64px;
+        position: relative;
+    }
+
+    td {
+        vertical-align: top;
+    }
+
+    h2 {
+        font-family: "Montserrat";
+        font-weight: 600;
+        font-style: normal;
+        font-size: 16px;
+        color: #0E1019;
+        -webkit-font-smoothing: antialiased;
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-family: "Roboto";
+        font-weight: 400;
+        font-style: normal;
+        font-size: 12px;
+        color: #2F3344;
+        letter-spacing: -0.07px;
+        line-height: 20px;
+    }
+
+    h3 {
+        color: #2F3344;
+        font-family: "Montserrat";
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: -0.26px;
+        line-height: 15px;
+    }
+
+    th {
+        padding-bottom: 2px;
+        text-align: right;
+        border-bottom: 1px solid #2F3344;
+    }
+
+    .column2 {
+        text-align: right;
+    }
+
+    .column3 {
+        text-align: right;
+        padding-right: 5px;
+    }
+
+    h4 {
+        color: #2F3344;
+        font-family: "Montserrat";
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: -0.26px;
+        line-height: 15px;
+    }
+
+    .column4 {
+        text-align: right;
+    }
+
+    .row-orderlist{
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+
+    .total_fee_amount{
+        color: #2F3344;
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: 900;
+        letter-spacing: -0.07px;
+    }
+
+    .footer {
+        margin-top: 100px;
+        text-align: center;
+        color: #2F3344;
+        font-family: "Montserrat";
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 20px;
+    }
+  </style>
+  </head>
+  <body>
+    <div class="container">
+
+        <table style="width: 466px; margin-right: 0">
+        <!-- Customer and Moneyflow Logo -->
+        <tr>
+            <td style="width: 270px; padding-bottom: 50px">
+              <h2>Kunde</h2>
+              <p>
+                  {{ company_name }}<br/>
+                  Att: {{ signee_name }}<br/>
+                  {{ company_street }}<br/>
+                  {{ company_city }}, {{ company_country }}<br/>
+                  CVR: {{ company_crn }}<br/>
+              </p>
+            </td>
+            <td style="padding-left: 48px; text-align: right;">
+              <img src="https://github.com/moneyflow-group/static/raw/master/images/Logo%402x.png" style="width: 149px; height: 27px">
+            </td>
+        </tr>
+
+        <!-- Description and Receipt -->
+        <tr>
+            <td>
+              <h2>Beskrivelse</h2>
+              <p style="width: 270px">
+              Gebyr for tidlig betaling i forbindelse med administration af fordringer, herunder overtagelse af kreditrisiko for fakturanr.  <b>{{ invoice_number }}</b>, 
+              hvilken er købt af Moneyflow I A/S for <b>{{ factoring_amount }}</b> kr. Forskellen mellem fordringens pålydende værdi og købesummen er udtryk for vores 
+              honorering for overtagelse af kreditrisiko samt administration. Heri er indehold moms på <b>{{ vat_amount }}</b>kr.
+              </p>
+            </td>
+            <td style="padding-left: 48px; width: 149px;">
+              <h2>Kvittering</h2>
+              <table style="width: 100%">
+                <tr>
+                  <td><p>Dato:</p></td><td style="text-align: right"><p>{{ receipt_date }}</p></td>
+                </tr>
+                <tr>
+                  <td><p>Kvitteringsnr:</p></td><td style="text-align: right"><p>{{ receipt_number }}</p></td>
+                </tr>
+              </table>
+            </td>
+        </tr>
+
+        <!-- Order list -->
+        <tr>
+            <table style="width: 466px; padding-top: 80px">
+            <tr>
+                <th class="row-orderlist" style="padding-right: 200px; text-align: left;"><h3>Beskrivelse</h3></th>
+                <th class="row-orderlist" style="padding-right: 0px;"><h3>Antal</h3></th>
+                <th class="row-orderlist column3"><h3>Enhedspris</h3></th>
+                <th class="row-orderlist column4"><h3>Pris</h3></th>
+            </tr>
+            <tr>
+                <td class="row-orderlist"><p>Gebyr for tidlig betaling</p></td>
+                <td class="row-orderlist column2" style="border-bottom: 1px solid #2F3344"><p>1<p></td>
+                <td class="row-orderlist column3" style="border-bottom: 1px solid #2F3344"><p>{{ offer_cost_before_discount }}</p></td>
+                <td class="row-orderlist column4" style="border-bottom: 1px solid #2F3344"><p>{{ offer_cost_before_discount }}</p></td>
+            </tr>
+            <tr>
+              <td class="row-orderlist"><p>Gebyr rabat {{ fee_discount_text_dk }}</p></td>
+              <td class="row-orderlist column2" style="border-bottom: 1px solid #2F3344"><p>1<p></td>
+              <td class="row-orderlist column3" style="border-bottom: 1px solid #2F3344"><p>-{{ offer_cost_discount }}</p></td>
+              <td class="row-orderlist column4" style="border-bottom: 1px solid #2F3344"><p>-{{ offer_cost_discount }}</p></td>
+           </tr>
+            <tr>
+                <td class="row-orderlist"><p></p></td>
+                <td class="row-orderlist"><p></p></td>
+                <td class="row-orderlist column3"><h4>Subtotal</h4></td>
+                <td class="row-orderlist column4"><p>{{ fee_amount }}</p></td>
+            </tr>
+            <tr>
+                <td class="row-orderlist"><p></p></td>
+                <td class="row-orderlist"><p></p></td>
+                <td class="row-orderlist column3"><h4>Moms {{ vat_percent }}%</h4></td>
+                <td class="row-orderlist column4"><p>{{ vat_amount }}</p></td>
+            </tr>
+            <tr>
+                <td class="row-orderlist"><p></p></td>
+                <td class="row-orderlist"><p></p></td>
+                <td class="row-orderlist column3"><h4>Total DKK</h4></td>
+                <td class="row-orderlist column4"><p class="total_fee_amount">{{ total_fee_amount }}</p></td>
+            </tr>
+            </table>
+        </tr>
+        </table>
+
+      <!-- Footer -->
+      <div>
+        <p class="footer">Moneyflow Group A/S | Langebrogade 4, 1411 København K | CVR 39228327<br/>Telefon: +45 89 87 70 36 | E-mail: support@moneyflow.io</p>
+      </div>
+    </div>
+  </body>
+</html>
