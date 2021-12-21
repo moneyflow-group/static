@@ -148,7 +148,7 @@
             "subject": "Your invoice sale is completed",
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "EN",
-            "platformss": "[\"PLATFORM_DINERO\"]",
+            "platforms": "[\"PLATFORM_DINERO\"]",
             "identifier": "POST_SALE"
         }
     },
