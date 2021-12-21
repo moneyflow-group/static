@@ -1,7 +1,7 @@
 <mjml>
 <!-- SUBJECT: Vi har stadigt ikke modtaget din betaling -->
   
-<!-- {{ due_date_extended }} 			Original due date + 25 days-->
+<!-- {{ due_date_extended }} 			Original due date + 20 days-->
 <!-- {{ invoice_number }} 				invoice number-->
 <!-- {{ invoice_amount }}	 				Invoice amount-->
 <!-- {{ company_name }} 					Name of seller company-->
