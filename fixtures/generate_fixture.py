@@ -82,14 +82,12 @@ def generate_email_fixture():
 
         for template in fixtures:
             identifier = template["fields"]["identifier"]
-            print(identifier)
             language = template["fields"]["language"]
             platforms = template["fields"]["platforms"]
 
             match = re.split("\[?\"PLATFORM_(\w+)\"[,\]]?", platforms)
             platform_list = [x for x in match if x]
             platform = "ALL" if len(platform_list) > 1 else platform_list[0]
-            print(platform_list)
             template_dir = template_dirs[platform]
             html_template_file = f"{template_dir}/{language}/{identifier}.html"
             html_template = open(html_template_file)
