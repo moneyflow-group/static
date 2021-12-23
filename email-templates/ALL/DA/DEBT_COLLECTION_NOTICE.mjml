@@ -1,0 +1,159 @@
+<mjml>
+<!-- SUBJECT: Inkassovarsel -->
+  
+<!-- {{ incasso_date }} 					Original due date + 30 days-->
+<!-- {{ invoice_number }} 				invoice number-->
+<!-- {{ invoice_amount }}	 				Invoice amount-->
+<!-- {{ company_name }} 					Name of seller company-->
+<!-- {{ payer_company_name }} 		Name of payer company-->
+<!-- {{ outstanding_balance }} 		Invoice amount + late fee of 100 kr.-->
+<!-- {{ payment_reg_number }}	 		reg number for incoming payments-->
+<!-- {{ payment_account_number }} account number for incoming payments-->   
+<!-- {{ reminder_fee }} 					100 kr. reminder fee-->
+  
+<mj-head>
+		<mj-title>Debt collection notice DA</mj-title>
+    		<mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:600"/>
+		    <mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto:400,700"/>
+		    <mj-breakpoint width="480px" />
+				    <mj-attributes>
+			     	<mj-section padding="64px 80px" background-color="#ffffff"/>
+			      <mj-wrapper padding="0"/>
+ 				    <mj-text line-height="24px"/>
+				    </mj-attributes>
+  							<!--Divider-->
+      					<mj-style>
+                .border-top {
+ 				       	border-top: 3px solid #E4F0F7;
+					     	}
+                </mj-style>
+  							<!--padding on mobile-->
+                <mj-style>  
+                @media only screen and (max-width:480px) { 
+        				.section td {
+                padding-left:10px!important;
+                padding-right:10px!important;
+        					}
+      					}
+                </mj-style>
+      					<!--Removing underscore on links-->
+						    <mj-style inline="inline">
+  					    .link-nostyle { color: #0000FF; text-decoration: none }
+ 						   	</mj-style>
+ 								<!--Preview text-->      
+ 								<mj-preview>Vi er kede af at måtte konstatere, at vi fortsat ikke har modtaget betaling for faktura nr. {{ invoice_number }} på {{ invoice_amount }} kr. udstedt af {{ company_name }}</mj-preview>
+</mj-head> 
+<mj-body background-color="#E4F0F7">
+  
+<mj-raw><!-- Top bar(DIN) --></mj-raw>
+<mj-wrapper>
+		<mj-section padding="0">
+    		<mj-column>
+        		<mj-table padding="16px 0">
+            		<tr>
+            				<td style="padding:0 0 0 18px; line-height:1;">
+            						<img width="111"
+                             style="width:100%; max-width:111px; display:block"
+                             src="https://moneyflow-group.github.io/static/email-templates/moneyflow_logo.png"
+                             alt="moneyflow" />
+            				</td>
+            				</td>
+            		</tr>
+            </mj-table>
+       	</mj-column>
+    </mj-section>
+</mj-wrapper>  
+
+  
+<mj-raw><!-- Post sale text(DIN)-DA --></mj-raw>
+<mj-wrapper css-class="border-top">
+		<mj-section css-class="section"
+                background-color="#ffffff">
+    		<mj-column padding="0">
+        		<mj-text font-size="14px"
+             				 padding="0"
+           				   font-family="Roboto, sans-serif">
+              Kære {{ payer_company_name }}, <br/><br/>Vi er kede af at måtte konstatere, at vi fortsat ikke har modtaget betaling for faktura nr. {{ invoice_number }} på {{ invoice_amount }} kr. udstedt af {{ company_name }} <br/><br/> Dette er tredje og sidste rykker og samtidig et påkrav jf. inkassolovens §10.<br/><br/><b>Dit udestående dags dato opgøres således:</b></mj-text>
+            <mj-table padding="16px 0px 0px 0px"
+                      font-family="Roboto, sans-serif"
+                      font-size="14px">
+              	<tr>
+                    <td style="padding-bottom:16px;">
+                               Samlede pålydende på faktura</td>
+                    <td style="text-align:right;
+                               padding-bottom:16px">
+                               {{ invoice_amount }} kr.</td>
+                </tr>
+              	<tr>
+                    <td style="padding-bottom:16px;">
+                               Rykkergebyr jf. 2. rykker</td>
+                    <td style="text-align:right;
+                               padding-bottom:16px">
+                               {{ reminder_fee }} kr.</td>
+                </tr>
+                <tr style="border-top:1px solid #2F3344;
+                           font-weight:700;">
+                    <td style="padding-top:16px">
+                               I alt</td>
+                    <td style="text-align:right;
+                               padding-top:16px">
+                               {{ outstanding_balance }} kr.</td>
+                </tr>
+            </mj-table>  
+            <mj-text font-size="14px"
+             				 padding="0"
+                     padding-top="24px"
+           				   font-family="Roboto, sans-serif">
+Hele beløbet, {{ outstanding_balance }} kr., bedes indbetalt indenfor 10 dage, senest d. {{ incasso_date }} på {{ payment_reg_number }} {{ payment_account_number }} med {{ invoice_number }} anført.<br/><br/>Er beløbet ikke betalt inden d. {{ incasso_date }}, overgår sagen herefter til inkasso med yderligere omkostninger til følge.<br/><br/>Du kan kontakte os alle hverdage mellem klokken 08.00 og 18.00 på telefon <a href="tel:004589877036" class="link-nostyle">+45 89 87 70 36</a> eller sende en e-mail til <a href="mailto:support@moneyflow.io" class="link-nostyle">support@moneyflow.io</a>
+          </mj-text>
+     		</mj-column>
+   	</mj-section>
+</mj-wrapper>
+  
+<mj-raw><!-- Footer-DA --></mj-raw>
+<mj-wrapper css-class="border-top">
+		<mj-section css-class="section"
+                background-color="#ffffff"
+                padding-top="30px"
+                padding-bottom="20px">
+				<mj-column padding="0">
+						<mj-image width="111px"
+                      align="center"
+                      src="https://raw.githubusercontent.com/moneyflow-group/static/master/email-templates/moneyflow_logo.png">
+          	</mj-image>
+        		<mj-text font-size="12px"
+                     align="center"
+                     padding="0"
+                     font-family="Roboto, sans-serif"
+                     padding-top="10px"
+                     padding-bottom="30px">
+          					 <a href="https://moneyflow.io/da/privacy/"
+                        class="link-nostyle">
+                        Privatlivs- og cookiepolitik</a>
+              			 		|		
+              			 <a href="https://moneyflow.io/da/terms/"
+                        class="link-nostyle">
+                        Forretningsbetingelser</a>
+          	</mj-text>
+						<mj-text font-size="12px"
+                     align="center"
+                     padding="0"
+                     font-family="Roboto, sans-serif"
+                     padding-bottom="5px">
+            				 Moneyflow er godkendt af 
+              			 <a href="https://www.finanstilsynet.dk/"
+                        Class="link-nostyle">
+                     Finanstilsynet</a>
+          	</mj-text>
+            <mj-text font-size="12px"
+                     align="center"
+                     padding="0"
+                     font-family="Roboto, sans-serif">
+            				 Moneyflow Group A/S | Langebrogade 4, 1411 København | CVR 39228327
+          	</mj-text>
+				</mj-column>
+		</mj-section>
+</mj-wrapper>
+
+</mj-body>
+</mjml>
