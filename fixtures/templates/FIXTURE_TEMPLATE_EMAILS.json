@@ -797,5 +797,39 @@
             "platforms": "[\"PLATFORM_ORDRESTYRING\"]",
             "identifier": "FIRST_RECEIPT"
         }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "895f429f-2b74-4e05-87a1-55b3b1ea08c0",
+        "fields": {
+            "created_at": "2021-12-23T17:13:01.452Z",
+            "created_by": null,
+            "modified_at": "2021-12-23T17:13:01.452Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Inkassovarsel",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
+            "language": "DA",
+            "platforms": "[\"PLATFORM_FLOW\",\"PLATFORM_ECONOMIC\",\"PLATFORM_DINERO\",\"PLATFORM_ORDRESTYRING\",\"PLATFORM_MANUAL\",\"PLATFORM_DIRECT_FACTORING\",\"PLATFORM_REVENUE_FUNDING\"]",
+            "identifier": "DEBT_COLLECTION_NOTICE"
+        }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "582a9841-bc5b-4400-8706-c19f69b25ae2",
+        "fields": {
+            "created_at": "2021-12-23T17:13:01.452Z",
+            "created_by": null,
+            "modified_at": "2021-12-23T17:13:01.452Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Debt collection notice",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
+            "language": "EN",
+            "platforms": "[\"PLATFORM_FLOW\",\"PLATFORM_ECONOMIC\",\"PLATFORM_DINERO\",\"PLATFORM_ORDRESTYRING\",\"PLATFORM_MANUAL\",\"PLATFORM_DIRECT_FACTORING\",\"PLATFORM_REVENUE_FUNDING\"]",
+            "identifier": "DEBT_COLLECTION_NOTICE"
+        }
     }
 ]
