@@ -831,5 +831,39 @@
             "platforms": "[\"PLATFORM_FLOW\",\"PLATFORM_ECONOMIC\",\"PLATFORM_DINERO\",\"PLATFORM_ORDRESTYRING\",\"PLATFORM_MANUAL\",\"PLATFORM_DIRECT_FACTORING\",\"PLATFORM_REVENUE_FUNDING\"]",
             "identifier": "DEBT_COLLECTION_NOTICE"
         }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "107f36d1-73af-4633-a002-75abf720e1b6",
+        "fields": {
+            "created_at": "2022-01-21T17:13:01.452Z",
+            "created_by": null,
+            "modified_at": "2021-01-21T17:13:01.452Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Anmodning om upload af legitimation",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
+            "language": "DA",
+            "platforms": "[\"PLATFORM_FLOW\",\"PLATFORM_ECONOMIC\",\"PLATFORM_DINERO\",\"PLATFORM_ORDRESTYRING\",\"PLATFORM_MANUAL\",\"PLATFORM_DIRECT_FACTORING\",\"PLATFORM_REVENUE_FUNDING\"]",
+            "identifier": "EXTRA_KYC"
+        }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "e4857fe0-aa5f-41a4-9807-efe922997f1d",
+        "fields": {
+            "created_at": "2021-01-21T17:13:01.452Z",
+            "created_by": null,
+            "modified_at": "2021-01-21T17:13:01.452Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Request for upload of ID",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
+            "language": "EN",
+            "platforms": "[\"PLATFORM_FLOW\",\"PLATFORM_ECONOMIC\",\"PLATFORM_DINERO\",\"PLATFORM_ORDRESTYRING\",\"PLATFORM_MANUAL\",\"PLATFORM_DIRECT_FACTORING\",\"PLATFORM_REVENUE_FUNDING\"]",
+            "identifier": "EXTRA_KYC"
+        }
     }
 ]
