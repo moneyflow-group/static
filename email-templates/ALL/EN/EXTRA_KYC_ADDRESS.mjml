@@ -1,10 +1,9 @@
 <mjml>
 <!--SUBJECT: Request for upload of ID-->
-<!-- {{ company_name }} 			Name of seller company-->
-<!-- {{ beneficial_owners }} 	List of beneficial owner(s)-->
+<!-- {{ signee_name }} 			Name of signee-->
 <!-- {{ company_upload }}     URL for company specific upload documentation-->
 <mj-head>
-<mj-title>Extra_KYC_address-DA</mj-title>
+<mj-title>Extra_KYC_address-EN</mj-title>
   <mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:600"/>
 	<mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto:400,700"/>
   <mj-breakpoint width="480px"/>
@@ -73,22 +72,8 @@
 <mj-wrapper css-class="border-top">
 <mj-section css-class="section">
 		<mj-column>
-				<mj-text> Dear {{ company_name }},<br></br>We are very happy that you are interested in using our service.<br></br>As Moneyflow complies with the Danish FSA, we are obliged to carry out a Know Your Customer (KYC) process.<br></br>We have already taken care of most things for you. We only need your help to be able to confirm the identity of the company's beneficial owner(s). As there is more than one beneficial owner in the company, or the signee is not the same person as the beneficial owner, we kindly ask the person(s) below to upload a photo of their passport or driver's licence and health insurance card:</mj-text>
-          <mj-table padding-top="32px"
-                   	padding="0"
-                   	font-family="Roboto, sans-serif"
-                   	line-height="24px"
-                   	font-size="14px"
-                   	color="#2F3344">
-                				{% for owner in beneficial_owners %}
-                				<tr>
-                				<td>
-                				• {{ owner }}
-                				</td>
-                				</tr>
-      									{% endfor %}
-            </mj-table>
- 				<mj-text padding-top="16px">Click on the button below to upload photos of your passport or driver's license and health insurance card.</mj-text>
+				<mj-text> Dear {{ signee_name }},<br></br>We are very happy that you are interested in using our service.<br></br>During your onboarding, we were unable to verify your address with NemID. This may be either because you have a hidden address or an address outside Denmark. Therefore, we kindly ask you to submit a photo of ID (passport, driver's license, or ID card) and proof of residence (Danish yellow health card, a utility bill, or similar).
+<br></br>Click on the button below to upload your documentation.</mj-text>
         		<mj-button href="{{ company_upload }}">Upload ID</mj-button>
       	<mj-text padding-top="16px">You will hear from us as soon as we have received and reviewed the documentation.
 </mj-text>
@@ -130,7 +115,7 @@
 		<mj-column>
     		<mj-text align="center"
                  color="#808494"
-                 font-size="12px">You are receiving this email because you have signed up for a Moneyflow service<br><a class="link-footer" href="https://moneyflow.io/">Moneyflow Group A/S</a> | Langebrogade 4, 1411 Copenhagen K | CVR 39228327 <br>Moneyflow is registered and regulated by the <a class="link-footer" href="https://www.finanstilsynet.dk/">Danish FSA</a></mj-text>
+                 font-size="12px">You are receiving this email because you have tried to sign up for a Moneyflow service<br><a class="link-footer" href="https://moneyflow.io/">Moneyflow Group A/S</a> | Langebrogade 4, 1411 Copenhagen K | CVR 39228327 <br>Moneyflow is registered and regulated by the <a class="link-footer" href="https://www.finanstilsynet.dk/">Danish FSA</a></mj-text>
 		</mj-column>
 </mj-section>
 </mj-wrapper>
