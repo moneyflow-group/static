@@ -4,7 +4,7 @@
 <!-- {{ beneficial_owners }} 	List of beneficial owner(s)-->
 <!-- {{ company_upload }}     URL for company specific upload documentation-->
 <mj-head>
-<mj-title>Extra_KYC_address-DA</mj-title>
+<mj-title>Extra_KYC-EN</mj-title>
   <mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:600"/>
 	<mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto:400,700"/>
   <mj-breakpoint width="480px"/>
