@@ -1,9 +1,8 @@
 <mjml>
 <!--SUBJECT: Anmodning om upload af legitimation-->
 <!-- {{ company_name }} 			Name of seller company-->
-<!-- {{ beneficial_owners }} 	List of beneficial owners -->
+<!-- {{ beneficial_owners }} 	List of beneficial owner(S) -->
 <!-- {{ company_upload }}     URL for company specific upload documentation-->
- <!-- {{ signee_name }}       Name of the signee-->
 <mj-head>
 <mj-title>Extra_KYC-DA</mj-title>
   <mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:600"/>
@@ -74,18 +73,13 @@
 <mj-wrapper css-class="border-top">
 <mj-section css-class="section">
 		<mj-column>
-				<mj-text> Kære {{ company_name }}<br></br>Vi er rigtig glade for, at I er interesserede i at bruge vores service.<br></br>Da Moneyflow er underlagt hvidvaskloven og er reguleret af Finanstilsynet, er vi forpligtede til at gennemføre kundekendskabsprocedurer (KYC).<br></br>Vi har allerede klaret det meste helt automatisk, men vi har brug for jeres hjælp for at kunne bekræfte identiteten på alle virksomhedens reelle ejere. Da der er mere end én reel ejer i virksomheden, beder vi venligst alle nedenstående personer om at uploade et foto af deres pas eller kørekort samt sygesikringsbevis:</mj-text>
+				<mj-text> Kære {{ company_name }}<br></br>Vi er rigtig glade for, at I er interesserede i at bruge vores service.<br></br>Da Moneyflow er underlagt hvidvaskloven og er reguleret af Finanstilsynet, er vi forpligtede til at gennemføre kundekendskabsprocedurer (KYC).<br></br>Vi har allerede klaret det meste helt automatisk, men vi har brug for jeres hjælp for at kunne bekræfte identiteten på virksomhedens reelle ejer(e). Da der er mere end én reel ejere i virksomheden, eller at underskriver ikke er den reelle ejer, beder vi venligst nedenstående person(er) om at uploade et foto af deres pas eller kørekort samt sygesikringsbevis:</mj-text>
           <mj-table padding-top="32px"
                    	padding="0"
                    	font-family="Roboto, sans-serif"
                    	line-height="24px"
                    	font-size="14px"
                    	color="#2F3344">
-              					<tr>
-                				<td>
-                				• {{ signee_name }}
-                				</td>
-            						</tr>
                 				{% for owner in beneficial_owners %}
                 				<tr>
                 				<td>
@@ -95,8 +89,8 @@
       									{% endfor %}
             </mj-table>
  				<mj-text padding-top="16px">Klik på knappen nedenfor for at uploade billeder af pas eller kørekort samt sygesikringsbevis.</mj-text>
-        		<mj-button href="{{ company_upload }}">Upload legitimation her </mj-button>
-      	<mj-text padding-top="16px">Du vil høre fra os, så snart vi har modtaget og gennemgået det tilsendte.</mj-text>
+        		<mj-button href="{{ company_upload }}">Upload legitimation</mj-button>
+      	<mj-text padding-top="16px">I vil høre fra os, så snart vi har modtaget og gennemgået det tilsendte.</mj-text>
 		</mj-column>
 </mj-section>
 </mj-wrapper>
