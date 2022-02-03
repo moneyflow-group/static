@@ -1,7 +1,7 @@
 <mjml>
 <!--SUBJECT: Verify your email-->
 <!-- {{ lead_name }} 			First name of lead-->
-<!-- {{ verify email }}     URL for verifying your email-->
+<!-- {{ verify_email }}     URL for verifying your email-->
 <mj-head>
 <mj-title>KYC-EN</mj-title>
   <mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:600"/>
