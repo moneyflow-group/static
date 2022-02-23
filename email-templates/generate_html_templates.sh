@@ -9,7 +9,7 @@
 #
 
 echo "[+] Running MJML server..."
-docker run --rm -p 80:80 --name "mjml-server" -d alokinplc/mjmlserver
+docker run --rm -p 8090:80 --name "mjml-server" -d alokinplc/mjmlserver
 
 # Wait for MJML server to boot
 sleep 2
@@ -20,7 +20,7 @@ for file in $FILES; do
     INPUT=$file
     OUTPUT=$(echo $INPUT | sed s/mjml/html/)
     # echo "   $INPUT --> $OUTPUT"
-    http localhost <$INPUT >$OUTPUT
+    http localhost:8090 <$INPUT >$OUTPUT
 done
 
 echo "[+] Stopping MJML server..."
