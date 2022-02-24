@@ -936,7 +936,7 @@
     },
     {
         "model": "message_service.emailtemplate",
-        "pk": "d64fb35d-b16e-422e-b347-a1bd5c7051ff'",
+        "pk": "d64fb35d-b16e-422e-b347-a1bd5c7051ff",
         "fields": {
             "created_at": "2021-01-27T17:13:01.452Z",
             "created_by": null,
