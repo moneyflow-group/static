@@ -3,7 +3,6 @@
 <!-- {{ company_name }} 			Name of seller company-->
 <!-- {{ invoice_number }} 	  Number of the invoice -->
 <!-- {{ payer_company_name }}     Name of the payer company-->
-<!-- {{ kotakt_invoice }}       Blue button - opens up a reply email. Should say "Send faktura"--> 
 
 
 <mj-head>

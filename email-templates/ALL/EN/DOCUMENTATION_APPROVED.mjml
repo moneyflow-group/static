@@ -54,7 +54,7 @@
           .link-footer { color: #808494;}
  					</mj-style>
  					<!--Preview text-->
- 					<mj-preview>Documentation for invoice no. [invoice number] to [payer company name] has been approved. </mj-preview>
+ 					<mj-preview>Documentation for invoice no. {{ invoice number }} to {{ payer company name }} has been approved. </mj-preview>
 </mj-head>
 
 <mj-body background-color="#E4F0F7">
@@ -77,7 +77,7 @@
 <mj-wrapper css-class="border-top">
 <mj-section css-class="section">
 		<mj-column>
-				<mj-text> Dear {{ company_name }},<br></br>Documentation for invoice no. [invoice_number] to [payer_company_name] has been approved. You are now able to proceed with the invoice by cliking ‘Send invoice’.<br></br>Please note that the offer will expire on [expiration_date].</mj-text>
+				<mj-text> Dear {{ company_name }},<br></br>Documentation for invoice no. {{ invoice_number }} to {{ payer_company_name }} has been approved. You are now able to proceed with the invoice by cliking ‘Send invoice’.<br></br>Please note that the offer will expire on {{ expiration_date }}.</mj-text>
         		<mj-button href="{{ company_upload }}">Send invoice</mj-button>
 		</mj-column>
 </mj-section>
