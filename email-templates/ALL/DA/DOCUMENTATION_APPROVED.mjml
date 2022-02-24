@@ -78,7 +78,7 @@
 <mj-section css-class="section">
 		<mj-column>
 				<mj-text> Kære {{ company_name }}<br></br>Dokumentation vedrørende fakturanr. {{ invoice_number }} til {{ payer_company_name }} er blevet godkendt. Du vil nu være i stand til at fortsætte med fakturaen ved at klikke på “Send faktura”.<br></br>Bemærk venligst, at tilbuddet udløber den {{ expiration_date }}.</mj-text>
-        		<mj-button href="{{ company_upload }}">Send faktura</mj-button>
+        		<mj-button href="{{ send_invoice }}">Send faktura</mj-button>
 		</mj-column>
 </mj-section>
 </mj-wrapper>

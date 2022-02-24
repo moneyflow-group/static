@@ -78,7 +78,7 @@
 <mj-section css-class="section">
 		<mj-column>
 				<mj-text> Dear {{ company_name }},<br></br>Documentation for invoice no. {{ invoice_number }} to {{ payer_company_name }} has been approved. You are now able to proceed with the invoice by cliking ‘Send invoice’.<br></br>Please note that the offer will expire on {{ expiration_date }}.</mj-text>
-        		<mj-button href="{{ company_upload }}">Send invoice</mj-button>
+        		<mj-button href="{{ send_invoice }}">Send invoice</mj-button>
 		</mj-column>
 </mj-section>
 </mj-wrapper>
