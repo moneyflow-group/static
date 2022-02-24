@@ -1,14 +1,13 @@
 <mjml>
-<!--SUBJECT: Din dokumentation er godkendt -->
+<!--SUBJECT: Nyt om din faktura -->
 <!-- {{ company_name }} 			Name of seller company-->
 <!-- {{ invoice_number }} 	  Number of the invoice -->
 <!-- {{ payer_company_name }}     Name of the payer company-->
-<!-- {{ expiration_date }}       Date of expiration of the offer - current date + 1 day--> 
-<!-- {{ send_invoice }}       Blue button - link to draft invoice page in economic. Should say "Send faktura"--> 
+<!-- {{ kotakt_invoice }}       Blue button - opens up a reply email. Should say "Send faktura"--> 
 
 
 <mj-head>
-<mj-title>Din dokumentation er godkendt</mj-title>
+<mj-title>Nyt om din faktura</mj-title>
   <mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:600"/>
 	<mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto:400,700"/>
   <mj-breakpoint width="480px"/>
@@ -54,7 +53,7 @@
           .link-footer { color: #808494;}
  					</mj-style>
  					<!--Preview text-->
- 					<mj-preview>Dokumentation vedrørende fakturanr. [invoice_number] til [payer_company_name] er blevet godkendt.</mj-preview>
+ 					<mj-preview>Vi har gennemgået din dokumentation vedrørende fakturanr. {{ invoice_number }} til {{ payer_company_name }} og har besluttet</mj-preview>
 </mj-head>
 
 <mj-body background-color="#E4F0F7">
@@ -77,8 +76,8 @@
 <mj-wrapper css-class="border-top">
 <mj-section css-class="section">
 		<mj-column>
-				<mj-text> Kære {{ company_name }}<br></br>Dokumentation vedrørende fakturanr. [invoice_number] til [payer_company_name] er blevet godkendt. Du vil nu være i stand til at fortsætte med fakturaen ved at klikke på “Send faktura”.<br></br>Bemærk venligst, at tilbuddet udløber den [expiration_date].</mj-text>
-        		<mj-button href="{{ company_upload }}">Send faktura</mj-button>
+				<mj-text> Kære {{ company_name }}<br></br>Vi har gennemgået din dokumentation vedrørende fakturanr. {{ invoice_number }} til {{ payer_company_name }} og har besluttet, at vi desværre ikke kan fortsætte med denne faktura. Kontakt gerne vores support, hvis du ønsker en uddybning.</mj-text>
+        		<mj-button href="{{ company_upload }}">Kontakt support</mj-button>
 		</mj-column>
 </mj-section>
 </mj-wrapper>
