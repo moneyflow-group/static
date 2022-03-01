@@ -1,0 +1,126 @@
+<mjml>
+<!--SUBJECT: Your documentation is approved-->
+<!-- {{ company_name }} 			Name of seller company-->
+<!-- {{ invoice_number }} 	  Number of the invoice -->
+<!-- {{ payer_company_name }}     Name of the payer company-->
+<!-- {{ expiration_date }}       Date of expiration of the offer - current date + 1 day--> 
+<!-- {{ send_invoice }}       Blue button - link to draft invoice page in economi. Shoukd say "Send invoice"--> 
+
+
+<mj-head>
+<mj-title>Your documentation is approved</mj-title>
+  <mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:600"/>
+	<mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto:400,700"/>
+  <mj-breakpoint width="480px"/>
+  		<mj-attributes>
+					<mj-section padding="64px 80px"
+                      background-color="#ffffff"/>
+			    <mj-wrapper padding="0"/>
+ 				  <mj-text font-family="Roboto, sans-serif"
+                   line-height="24px"
+                   font-size="14px"
+                   color="#2F3344"
+                   padding="0"/>
+          <mj-button background-color="#5B93F0"
+                     font-family="montserrat, sans-serif"
+                     font-size="12px"
+                     line-height="24px"
+                     border-radius="6px"
+                     inner-padding="8px 24px"
+                     padding-top="32px"/>
+          <mj-divider padding="0"
+                      border-width="2px"
+                      border-style="dashed"
+                      border-color="#E4F0F7"/>
+			</mj-attributes>
+      </mj-style>
+  				<!--padding on mobile-->
+          <mj-style>
+          @media only screen and (max-width:480px) {
+        	.section td {
+          padding:16px 8px 16px 8px!important;
+        		}
+      		}
+          </mj-style>
+  				<!--Top border-->
+      		<mj-style inline="inline">
+          .border-top {
+ 				  border-top: 4px solid #5B93F0;
+					}
+          </mj-style>
+      		<!--Removing underscore on links-->
+					<mj-style inline="inline">
+  				.link-body { color: #5B93F0; text-decoration: none; font-weight: 700; }
+          .link-footer { color: #808494;}
+ 					</mj-style>
+ 					<!--Preview text-->
+ 					<mj-preview>Documentation for invoice no. {{ invoice number }} to {{ payer company name }} has been approved. </mj-preview>
+</mj-head>
+
+<mj-body background-color="#E4F0F7">
+
+<mj-raw><!-- Top bar --></mj-raw>
+<mj-wrapper>
+<mj-section padding="0"
+            background-color="#E4F0F7">
+		<mj-column>
+    		<mj-image width="140px"
+                  align="left"
+                  padding="24px 0px 16px 8px"
+                  src="https://moneyflow-group.github.io/static/email-templates/moneyflow_logo.png"
+                  alt="moneyflow"/>
+		</mj-column>
+</mj-section>
+</mj-wrapper>
+
+<mj-raw><!-- Body --></mj-raw>
+<mj-wrapper css-class="border-top">
+<mj-section css-class="section">
+		<mj-column>
+				<mj-text> Dear {{ company_name }},<br></br>Documentation for invoice no. {{ invoice_number }} to {{ payer_company_name }} has been approved. You are now able to proceed with the invoice by cliking ‘Send invoice’.<br></br>Please note that the offer will expire on {{ expiration_date }}.</mj-text>
+        		<mj-button href="{{ send_invoice }}">Send invoice</mj-button>
+		</mj-column>
+</mj-section>
+</mj-wrapper>
+
+<!-- Divider -->
+<mj-section padding="0">
+		<mj-column>
+				<mj-divider>
+		</mj-column>
+</mj-section>
+
+<mj-raw><!-- Contact --></mj-raw>
+<mj-wrapper>
+<mj-section css-class="section">
+		<mj-column>
+    		<mj-text>
+         If you have questions, you are always very welcome to reach out to us on <a href="tel:004589877036" class="link-body">+45 89 87 70 36</a> (weekdays 8 am - 6 pm) or by simply answering this email.<br></br>Best wishes,
+</mj-text>
+ 				<mj-text font-family="Montserrat"
+                 color="#5B93F0">Team Moneyflow</mj-text>
+		</mj-column>
+</mj-section>
+</mj-wrapper>
+
+<!-- Divider -->
+<mj-section padding="0">
+		<mj-column>
+				<mj-divider/>
+		</mj-column>
+</mj-section>
+
+<mj-raw><!-- Disclaimer-EN --></mj-raw>
+<mj-wrapper>
+<mj-section padding="24px 0px 32px 0px"
+            background-color="#E4F0F7">
+		<mj-column>
+    		<mj-text align="center"
+                 color="#808494"
+                 font-size="12px">Sent by <a class="link-footer" href="https://moneyflow.io/en">Moneyflow Group A/S</a> on behalf of Instant Payment by e-conomic <br> Moneyflow Group A/S | Langebrogade 4, 1411 København K | CVR 39228327 <br>Moneyflow is registered and regulated by the <a class="link-footer" href="https://www.dfsa.dk/">Danish FSA</a></mj-text>
+		</mj-column>
+</mj-section>
+</mj-wrapper>
+
+</mj-body>
+</mjml>
