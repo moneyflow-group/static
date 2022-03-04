@@ -1,7 +1,8 @@
 <mjml>
-<!--SUBJECT: Reset password-->
+<!--SUBJECT: You have a Revenue Funding offer-->
+<!--ATTACHEMENTS: Offer Letter-->
 <!-- {{ lead_name }} 			First name of lead-->
-<!-- {{ reset_password }} URL for resetting your password-->
+<!-- {{ interface_url }}  URL for continuing the set up process-->
 <mj-head>
 <mj-title>KYC-EN</mj-title>
   <mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:600"/>
@@ -49,7 +50,7 @@
           .link-footer { color: #808494;}
  					</mj-style>
  					<!--Preview text-->
- 					<mj-preview>Hi {{ lead_name }}. We have registered a request to reset your password.</mj-preview>
+ 					<mj-preview>Hi {{ lead_name }}. We are excited to inform you that you have received an offer for Revenue Funding.</mj-preview>
 </mj-head>
 
 <mj-body background-color="#E4F0F7">
@@ -72,8 +73,8 @@
 <mj-wrapper css-class="border-top">
 <mj-section css-class="section">
 		<mj-column>
-				<mj-text> Hi {{ lead_name }}.<br></br>We have registered a request to reset your password. <br></br>If you have not requested a password reset, please ignore this email, otherwise click the button below.</mj-text>
-        		<mj-button href="{{ reset_password }}">Reset password</mj-button>
+				<mj-text>Hi {{ lead_name }}.<br></br>We are excited to inform you that you have received an offer for Revenue Funding.<br></br>You can find the offer letter attached to this email, or you can click the button below and find it directly in through Revenue Funding interface.</mj-text>
+        		<mj-button href="{{ interface_url }}">Continue set up</mj-button>
 </mj-text>
 		</mj-column>
 </mj-section>
