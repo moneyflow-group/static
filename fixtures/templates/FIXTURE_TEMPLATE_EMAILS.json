@@ -967,5 +967,73 @@
             "platforms": "[\"PLATFORM_FLOW\",\"PLATFORM_ECONOMIC\",\"PLATFORM_DINERO\",\"PLATFORM_ORDRESTYRING\",\"PLATFORM_MANUAL\",\"PLATFORM_DIRECT_FACTORING\",\"PLATFORM_REVENUE_FUNDING\"]",
             "identifier": "DOCUMENTATION_DECLINED"
         }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "4457e1a0-c072-46da-9662-3bc7d28fe4ed",
+        "fields": {
+            "created_at": "2022-03-07T17:13:01.452Z",
+            "created_by": null,
+            "modified_at": "2022-03-07T17:13:01.452Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Information vedr. faktura {{ invoice_number }} to {{ payer_company_name }}",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
+            "language": "DA",
+            "platforms": "[\"PLATFORM_FLOW\",\"PLATFORM_ECONOMIC\",\"PLATFORM_DINERO\",\"PLATFORM_ORDRESTYRING\",\"PLATFORM_MANUAL\",\"PLATFORM_DIRECT_FACTORING\",\"PLATFORM_REVENUE_FUNDING\"]",
+            "identifier": "PAYER_APPROVAL_REQUEST_SELLER"
+        }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "51329e34-5ab0-4e2c-aefc-c67b8ab04d1c",
+        "fields": {
+            "created_at": "2022-03-07T17:13:01.452Z",
+            "created_by": null,
+            "modified_at": "2022-03-07T17:13:01.452Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Fakturakladde fra {{ contact_person_name }} kræver gennemgang",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
+            "language": "DA",
+            "platforms": "[\"PLATFORM_FLOW\",\"PLATFORM_ECONOMIC\",\"PLATFORM_DINERO\",\"PLATFORM_ORDRESTYRING\",\"PLATFORM_MANUAL\",\"PLATFORM_DIRECT_FACTORING\",\"PLATFORM_REVENUE_FUNDING\"]",
+            "identifier": "PAYER_APPROVAL_REQUEST_PAYER"
+        }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "ad01751c-2ff4-410c-b394-ce78ff3462a8",
+        "fields": {
+            "created_at": "2022-03-07T17:13:01.452Z",
+            "created_by": null,
+            "modified_at": "2022-03-07T17:13:01.452Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Information regarding invoice {{ invoice_number }} to {{ payer_company_name }}",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
+            "language": "EN",
+            "platforms": "[\"PLATFORM_FLOW\",\"PLATFORM_ECONOMIC\",\"PLATFORM_DINERO\",\"PLATFORM_ORDRESTYRING\",\"PLATFORM_MANUAL\",\"PLATFORM_DIRECT_FACTORING\",\"PLATFORM_REVENUE_FUNDING\"]",
+            "identifier": "PAYER_APPROVAL_REQUEST_SELLER"
+        }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "465ea753-e158-4998-aee7-b355bbbb768c",
+        "fields": {
+            "created_at": "2022-03-07T17:13:01.452Z",
+            "created_by": null,
+            "modified_at": "2022-03-07T17:13:01.452Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Draft invoice from {{ company_name }} review required",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
+            "language": "EN",
+            "platforms": "[\"PLATFORM_FLOW\",\"PLATFORM_ECONOMIC\",\"PLATFORM_DINERO\",\"PLATFORM_ORDRESTYRING\",\"PLATFORM_MANUAL\",\"PLATFORM_DIRECT_FACTORING\",\"PLATFORM_REVENUE_FUNDING\"]",
+            "identifier": "PAYER_APPROVAL_REQUEST_PAYER"
+        }
     }
 ]
