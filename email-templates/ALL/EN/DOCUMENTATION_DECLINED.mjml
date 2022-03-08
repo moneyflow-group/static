@@ -76,7 +76,7 @@
 <mj-section css-class="section">
 		<mj-column>
 				<mj-text> Dear {{ company_name }},<br></br>We have reviewed the documentation uploaded for invoice no. {{ invoice_number }} to {{ payer_company_name }} and unfortunately have decided not to proceed any further. To learn more contact our support.</mj-text>
-      	<mj-button href="{{ company_upload }}">Contact support</mj-button>
+      	<mj-button href="mailto:support@moneyflow.io">Contact support</mj-button>
 		</mj-column>
 </mj-section>
 </mj-wrapper>

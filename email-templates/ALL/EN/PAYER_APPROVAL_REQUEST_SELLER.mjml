@@ -1,5 +1,5 @@
 <mjml>
-<!--SUBJECT:  Information regards invoice {{ invoice_number }} 	to {{ payer_company_name }}->
+<!--SUBJECT:  Information regarding invoice {{ invoice_number }} to {{ payer_company_name }}->
 <!-- {{ company_name }} 			Name of seller company-->
 <!-- {{ invoice_number }} 	  Number of the invoice -->
 <!-- {{ payer_company_name }}     Name of the payer company-->
