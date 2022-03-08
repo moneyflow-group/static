@@ -76,7 +76,7 @@
 <mj-section css-class="section">
 		<mj-column>
 				<mj-text> Kære {{ company_name }}<br></br>Vi har gennemgået din dokumentation vedrørende fakturanr. {{ invoice_number }} til {{ payer_company_name }} og har besluttet, at vi desværre ikke kan fortsætte med denne faktura. Kontakt gerne vores support, hvis du ønsker en uddybning.</mj-text>
-        		<mj-button href="{{ company_upload }}">Kontakt support</mj-button>
+        		<mj-button href="mailto:support@moneyflow.io">Kontakt support</mj-button>
 		</mj-column>
 </mj-section>
 </mj-wrapper>
