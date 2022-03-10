@@ -1,7 +1,6 @@
 <mjml>
 <!--SUBJECT: Your documentation is approved-->
 <!-- {{ company_name }} 			Name of seller company-->
-<!-- {{ invoice_number }} 	  Number of the invoice -->
 <!-- {{ payer_company_name }}     Name of the payer company-->
 <!-- {{ expiration_date }}       Date of expiration of the offer - current date + 1 day--> 
 <!-- {{ send_invoice }}       Blue button - link to draft invoice page in economi. Shoukd say "Send invoice"--> 
@@ -54,7 +53,7 @@
           .link-footer { color: #808494;}
  					</mj-style>
  					<!--Preview text-->
- 					<mj-preview>Documentation for invoice no. {{ invoice number }} to {{ payer company name }} has been approved. </mj-preview>
+ 					<mj-preview>Your documentation regarding the invoice to {{ payer_company_name }} has been approved. </mj-preview>
 </mj-head>
 
 <mj-body background-color="#E4F0F7">
@@ -77,7 +76,7 @@
 <mj-wrapper css-class="border-top">
 <mj-section css-class="section">
 		<mj-column>
-				<mj-text> Dear {{ company_name }},<br></br>Documentation for invoice no. {{ invoice_number }} to {{ payer_company_name }} has been approved. You are now able to proceed with the invoice by cliking ‘Send invoice’.  <br></br>Please note that in order to refresh the offer you need to add a new invoice line with an amount of at least 1 kr. After this has been done, you can delete the added invoice line as the offer has now been refreshed. <br></br>Offer will expire on {{ expiration_date }}.</mj-text>
+				<mj-text> Dear {{ company_name }},<br></br>Your documentation regarding the invoice to {{ payer_company_name }} has been approved. You are now able to proceed with the invoice by cliking 'Send invoice'.<br></br>Please note that in order to refresh the offer you need to add a new invoice line with an amount of at least 1 kr. After this has been done, you can delete the added invoice line as the offer has now been refreshed.<br></br>Please note that the offer will expire on {{ expiration_date }}.</mj-text>
         		<mj-button href="{{ send_invoice }}">Send invoice</mj-button>
 		</mj-column>
 </mj-section>
