@@ -1046,7 +1046,7 @@
             "modified_by": null,
             "html_template": "",
             "text_template": "",
-            "subject": "Fakturakladde fra {{ contact_person_name }} kræver gennemgang",
+            "subject": "Fakturakladde fra {{ company_name }} kræver gennemgang",
             "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
             "language": "DA",
             "platforms": "[\"PLATFORM_FLOW\",\"PLATFORM_ECONOMIC\",\"PLATFORM_DINERO\",\"PLATFORM_ORDRESTYRING\",\"PLATFORM_MANUAL\",\"PLATFORM_DIRECT_FACTORING\",\"PLATFORM_REVENUE_FUNDING\"]",
