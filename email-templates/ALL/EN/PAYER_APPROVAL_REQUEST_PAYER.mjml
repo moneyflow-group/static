@@ -1,12 +1,17 @@
 <mjml>
-<!--SUBJECT: Update on your invoice-->
+<!--SUBJECT:  Draft invoice from {{ company_name }} review required->
+<!-- {{ contact_person_name }} Contact person name entered by seller on the payer approval page  --> 
 <!-- {{ company_name }} 			Name of seller company-->
 <!-- {{ invoice_number }} 	  Number of the invoice -->
+<!-- {{ payer_company_invoice_email }} 	  Email where the invoice is sent  -->
 <!-- {{ payer_company_name }}     Name of the payer company-->
+<!-- {{ message_from_seller}} Message added by the seller on the payer approval page  -->
+<!-- {{ company_signee_name }}     Name of the person who signed for the seller  company-->
+<!-- {{ review_and_confirm_url }}       Blue button - link to the payer approval page for the payer"-->
 
 
 <mj-head>
-<mj-title>Update on your invoice</mj-title>
+<mj-title>Draft invoice from {{ company_name }}  review required</mj-title>
   <mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:600"/>
 	<mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto:400,700"/>
   <mj-breakpoint width="480px"/>
@@ -52,7 +57,7 @@
           .link-footer { color: #808494;}
  					</mj-style>
  					<!--Preview text-->
- 					<mj-preview>We have reviewed your documentation uploaded for invoice no. {{ invoice_number }} to {{ payer_company_name }}</mj-preview>
+ 					<mj-preview>Description: {{ company_name }} is about to send you an invoice and they are using Moneyflow </mj-preview>
 </mj-head>
 
 <mj-body background-color="#E4F0F7">
@@ -75,8 +80,14 @@
 <mj-wrapper css-class="border-top">
 <mj-section css-class="section">
 		<mj-column>
-				<mj-text> Dear {{ company_name }},<br></br>We have reviewed the documentation uploaded for invoice no. {{ invoice_number }} to {{ payer_company_name }} and unfortunately have decided not to proceed any further. To learn more contact our support.</mj-text>
-      	<mj-button href="mailto:support@moneyflow.io">Contact support</mj-button>
+      <mj-text> Dear {{ contact_person_name }},<br></br><strong>{{ company_name }} </strong> is about to send you an invoice to <strong>{{ payer_company_invoice_email }}</strong> where Moneyflow is used for flexible payment. Please confirm details regarding the attached draft invoice.
+      <br></br>Message from {{ company_signee_name }} from {{ company_name }}:<br></br>
+{{ message_from_seller}} </mj-text>
+           <mj-text><br></br><strong>Please review the draft invoice and confirm following:</strong><br></br>∙ I confirm that this invoice is paid directly to Moneyflow using the payment details stated on the invoice.<br></br>∙ I confirm that there are no disputes on the invoice (amount, conditions, content etc.).<br></br>∙ I confirm that this invoice is paid according to the payment terms stated on the invoice.
+      </mj-text>
+        		<mj-button href="{{ review_and_confirm_url }}">Review and confirm</mj-button>
+       <mj-text align=center> or </mj-text>mj-text>
+      <mj-text align=center><a href="www.google.com" class="link-body">Report a problem</a>  </mj-text>
 		</mj-column>
 </mj-section>
 </mj-wrapper>
@@ -114,8 +125,8 @@
             background-color="#E4F0F7">
 		<mj-column>
     		<mj-text align="center"
-                 color="#808494"
-                 font-size="12px">Sent by <a class="link-footer" href="https://moneyflow.io/en">Moneyflow Group A/S</a> on behalf of Instant Payment by e-conomic <br> Moneyflow Group A/S | Langebrogade 4, 1411 København K | CVR 39228327 <br>Moneyflow is registered and regulated by the <a class="link-footer" href="https://www.dfsa.dk/">Danish FSA</a></mj-text>
+                 color="#808494">
+ Moneyflow Group A/S | Langebrogade 4, 1411 Copenhagen K | CVR 39228327 <br>Moneyflow is registered and regulated by the <a class="link-footer" href="https://www.dfsa.dk/">Danish FSA</a></mj-text>
 		</mj-column>
 </mj-section>
 </mj-wrapper>
