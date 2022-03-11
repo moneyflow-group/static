@@ -1,5 +1,5 @@
 <mjml>
-<!--SUBJECT: Fakturakladde fra {{ contact_person_name }} kræver gennemgang->
+<!--SUBJECT: Fakturakladde fra {{ company_name }} kræver gennemgang->
 <!-- {{ contact_person_name }} Contact person name added in the payer approval page  --> 
 <!-- {{ company_name }} 			Name of seller company-->
 <!-- {{ invoice_number }} 	  Number of the invoice -->
