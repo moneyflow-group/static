@@ -1,6 +1,7 @@
 <mjml>
 <!--SUBJECT: Your documentation is approved-->
 <!-- {{ company_name }} 			Name of seller company-->
+<!-- {{ invoice_number }} 	  Number of the invoice -->
 <!-- {{ payer_company_name }}     Name of the payer company-->
 <!-- {{ expiration_date }}       Date of expiration of the offer - current date + 1 day--> 
 <!-- {{ send_invoice }}       Blue button - link to draft invoice page in economi. Shoukd say "Send invoice"--> 
@@ -76,7 +77,7 @@
 <mj-wrapper css-class="border-top">
 <mj-section css-class="section">
 		<mj-column>
-				<mj-text> Dear {{ company_name }},<br></br>Your documentation regarding the invoice to {{ payer_company_name }} has been approved. You are now able to proceed with the invoice by cliking 'Send invoice'.<br></br>Please note that in order to refresh the offer you need to add a new invoice line with an amount of at least 1 kr. After this has been done, you can delete the added invoice line as the offer has now been refreshed.<br></br>Please note that the offer will expire on {{ expiration_date }}.</mj-text>
+				<mj-text> Dear {{ company_name }},<br></br>Your documentation regarding the invoice to {{ payer_company_name }} has been approved. You are now able to proceed with this specific invoice by cliking 'Send invoice'.<br></br>Please note that in order to refresh the offer you need to add a new invoice line with an amount of at least 1 kr. After this has been done, you can delete the added invoice line as the offer has now been refreshed.<br></br>Please note that the offer will expire on {{ expiration_date }} and that the approved documentation applies only to this invoice.</mj-text>
         		<mj-button href="{{ send_invoice }}">Send invoice</mj-button>
 		</mj-column>
 </mj-section>
@@ -116,7 +117,7 @@
 		<mj-column>
     		<mj-text align="center"
                  color="#808494"
-                 font-size="12px">Sent by <a class="link-footer" href="https://moneyflow.io/en">Moneyflow Group A/S</a> on behalf of Instant Payment by e-conomic <br> Moneyflow Group A/S | Langebrogade 4, 1411 København K | CVR 39228327 <br>Moneyflow is registered and regulated by the <a class="link-footer" href="https://www.dfsa.dk/">Danish FSA</a></mj-text>
+                 font-size="12px"><br> Moneyflow Group A/S | Langebrogade 4, 1411 København K | CVR 39228327 <br>Moneyflow is registered and regulated by the <a class="link-footer" href="https://www.dfsa.dk/">Danish FSA</a></mj-text>
 		</mj-column>
 </mj-section>
 </mj-wrapper>

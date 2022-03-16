@@ -12,7 +12,7 @@ echo "[+] Running MJML server..."
 docker run --rm -p 8090:80 --name "mjml-server" -d alokinplc/mjmlserver
 
 # Wait for MJML server to boot
-sleep 2
+sleep 5
 
 echo "[+] Compiling MJML to HTML..."
 FILES=$(find . -name "*.mjml")
