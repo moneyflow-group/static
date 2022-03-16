@@ -109,8 +109,7 @@
         <mj-column>
             <mj-text align="center"
                  color="#808494"
-                 font-size="12px">Sendt af <a class="link-footer" href="https://moneyflow.io/"
-<br><a class="link-footer" href="https://moneyflow.io/">Moneyflow Group A/S </a>| Langebrogade 4, 1411 København K | CVR 39228327<br>Moneyflow er registreret og reguleret af <a class="link-footer" href="https://www.finanstilsynet.dk/">Finanstilsynet</a></mj-text>
+                 font-size="12px"><br><a class="link-footer" href="https://moneyflow.io/">Moneyflow Group A/S </a>| Langebrogade 4, 1411 København K | CVR 39228327<br>Moneyflow er registreret og reguleret af <a class="link-footer" href="https://www.finanstilsynet.dk/">Finanstilsynet</a></mj-text>
 </a></mj-text>
         </mj-column>
 </mj-section>
