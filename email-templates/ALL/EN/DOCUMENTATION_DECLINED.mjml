@@ -123,11 +123,10 @@
 		<mj-column>
     		<mj-text align="center"
                  color="#808494"
-                 font-size="12px"<br> Moneyflow Group A/S | Langebrogade 4, 1411 København K | CVR 39228327 <br>Moneyflow is registered and regulated by the <a class="link-footer" href="https://www.dfsa.dk/">Danish FSA</a></mj-text>
+                 font-size="12px"><br> Moneyflow Group A/S | Langebrogade 4, 1411 København K | CVR 39228327 <br>Moneyflow is registered and regulated by the <a class="link-footer" href="https://www.dfsa.dk/">Danish FSA</a></mj-text>
 		</mj-column>
 </mj-section>
 </mj-wrapper>
 
 </mj-body>
 </mjml>
-  
