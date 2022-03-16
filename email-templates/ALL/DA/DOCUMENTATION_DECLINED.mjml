@@ -3,7 +3,6 @@
 <!-- {{ company_name }} 			Name of seller company-->
 <!-- {{ invoice_number }} 	  Number of the invoice -->
 <!-- {{ payer_company_name }}     Name of the payer company-->
-<!-- {{ kotakt_invoice }}       Blue button - opens up a reply email. Should say "Send faktura"--> 
 
 
 <mj-head>
@@ -53,7 +52,7 @@
           .link-footer { color: #808494;}
  					</mj-style>
  					<!--Preview text-->
- 					<mj-preview>Vi har gennemgået din dokumentation vedrørende fakturaen til {{ payer_company_name }}</mj-preview>
+ 					<mj-preview>Vi har gennemgået din dokumentation vedrørende fakturanr. {{ invoice_number }} til {{ payer_company_name }} og har besluttet</mj-preview>
 </mj-head>
 
 <mj-body background-color="#E4F0F7">
@@ -76,8 +75,8 @@
 <mj-wrapper css-class="border-top">
 <mj-section css-class="section">
 		<mj-column>
-				<mj-text> Kære {{ company_name }}<br></br>Vi har gennemgået din dokumentation vedrørende fakturaen til {{ payer_company_name }} og kan desværre ikke tilbyde vores service på denne faktura. Kontakt gerne vores support, hvis du ønsker mere information.</mj-text>
-        		<mj-button href="{{ company_upload }}">Kontakt support</mj-button>
+				<mj-text> Kære {{ company_name }}<br></br>Vi har gennemgået din dokumentation vedrørende fakturanr. {{ invoice_number }} til {{ payer_company_name }} og har besluttet, at vi desværre ikke kan fortsætte med denne faktura. Kontakt gerne vores support, hvis du ønsker en uddybning.</mj-text>
+        		<mj-button href="mailto:support@moneyflow.io">Kontakt support</mj-button>
 		</mj-column>
 </mj-section>
 </mj-wrapper>
@@ -113,14 +112,15 @@
 <mj-wrapper>
 <mj-section padding="24px 0px 32px 0px"
             background-color="#E4F0F7">
-        <mj-column>
-            <mj-text align="center"
+		<mj-column>
+    		<mj-text align="center"
                  color="#808494"
-                 font-size="12px">Sendt af <a class="link-footer" href="https://moneyflow.io/"
+                 font-size="12px">Sendt af <a class="link-footer" href="https://moneyflow.io/">Moneyflow Group A/S</a> på vegne af Straksindbetaling fra e-conomic
 <br><a class="link-footer" href="https://moneyflow.io/">Moneyflow Group A/S </a>| Langebrogade 4, 1411 København K | CVR 39228327<br>Moneyflow er registreret og reguleret af <a class="link-footer" href="https://www.finanstilsynet.dk/">Finanstilsynet</a></mj-text>
 </a></mj-text>
-        </mj-column>
+		</mj-column>
 </mj-section>
 </mj-wrapper>
+
 </mj-body>
 </mjml>
