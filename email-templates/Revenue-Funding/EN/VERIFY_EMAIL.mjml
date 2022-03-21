@@ -49,7 +49,7 @@
           .link-footer { color: #808494;}
  					</mj-style>
  					<!--Preview text-->
- 					<mj-preview>AHi {{ lead_name }}. Thank you for signing up for Revenue Funding.</mj-preview>
+ 					<mj-preview>Hi {{ lead_name }}. Thank you for signing up for Revenue Funding.</mj-preview>
 </mj-head>
 
 <mj-body background-color="#E4F0F7">
