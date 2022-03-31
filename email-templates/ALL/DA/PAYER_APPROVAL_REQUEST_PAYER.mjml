@@ -57,7 +57,7 @@
           .link-footer { color: #808494;}
  					</mj-style>
  					<!--Preview text-->
- 					<mj-preview>Description: {{ company_name }}  er ved at sende dig en faktura til {{payer_company_invoice_email }} hvor Moneyflow </mj-preview>
+ 					<mj-preview>Description: {{ company_name }} er ved at sende dig en faktura til {{payer_company_invoice_email }} hvor Moneyflow </mj-preview>
 </mj-head>
 
 <mj-body background-color="#E4F0F7">
