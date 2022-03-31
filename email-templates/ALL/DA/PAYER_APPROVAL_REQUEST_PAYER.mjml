@@ -7,11 +7,11 @@
 <!-- {{ payer_company_name }}     Name of the payer company-->
 <!-- {{ message_from_seller}} Message added by the seller on the payer approval page  -->
 <!-- {{ company_signee_name }}     Name of the person who signed for the seller  company-->
-<!-- {{ review_and_confirm_url }}       Blue button - link to the payer approval page for the payer"-->
+<!-- {{ Review_and_confirm }}       Blue button - link to the payer approval page for the payer"--> 
 
 
 <mj-head>
-<mj-title> Fakturakladde fra {{ contact_person_name }} kræver gennemgang</mj-title>
+<mj-title> Fakturakladde fra {{ company_name }} kræver gennemgang</mj-title>
   <mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:600"/>
 	<mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto:400,700"/>
   <mj-breakpoint width="480px"/>
@@ -57,7 +57,7 @@
           .link-footer { color: #808494;}
  					</mj-style>
  					<!--Preview text-->
- 					<mj-preview>Description: {{ company_name }} er ved at sende dig en faktura til {{payer_company_invoice_email }} hvor Moneyflow </mj-preview>
+ 					<mj-preview>Description: {{ company_name }}  er ved at sende dig en faktura til {{payer_company_invoice_email }} hvor Moneyflow </mj-preview>
 </mj-head>
 
 <mj-body background-color="#E4F0F7">
@@ -80,13 +80,13 @@
 <mj-wrapper css-class="border-top">
 <mj-section css-class="section">
 		<mj-column>
-      <mj-text> Kære {{ contact_person_name }}<br></br><strong>{{ company_name }} </strong> er ved at sende dig en faktura til <strong>{{ payer_company_invoice_email }}</strong> hvor Moneyflow er blevet anvendt. Bekræft venligst detaljer vedrørende vedhæftede fakturakladde. <br></br>Beskd fra {{ company_signee_name }} fra {{ company_name }}:<br></br>
+      <mj-text> Kære {{ contact_person_name }}<br></br><strong>{{ company_name }} </strong> er ved at sende dig en faktura til <strong>{{ payer_company_invoice_email }}</strong> hvor Moneyflow er blevet anvendt. Bekræft venligst detaljer vedrørende vedhæftede fakturakladde. <br></br>Beskd fra {{ company_signee_name }} fra {{ company_name }}:
 {{ message_from_seller}}  </mj-text> 
       <mj-text><br></br><strong>Vær venlig at gennemgå fakturakladden, og bekræft følgende:</strong><br></br>∙ Jeg bekræfter, at denne faktura bliver betalt direkte til Moneyflow, til den konto som står på fakturaen.<br></br>∙ Jeg bekræfter, at der ikke er nogen indsigelser på denne faktura (fakturabeløb, betingelser, indhold osv.).<br></br>∙Jeg bekræfter, at denne faktura bliver betalt med de betalingsbetingelser, som er indikeret på fakturaen.
       </mj-text>
-        		<mj-button href="{{ review_and_confirm_url }}">Gennemgå og bekræft  </mj-button>
+        		<mj-button href="{{ company_upload }}">Gennemgå og bekræft  </mj-button>
       <mj-text align=center> eller </mj-text>mj-text>
-      <mj-text align=center><a href="www.google.com" class="link-body">Rapportér et problem</a>  </mj-text>
+      <mj-text align=center><a href="https://pages.moneyflow.io/rapporter-et-problem" class="link-body">Rapportér et problem</a>  </mj-text>
 		</mj-column>
 </mj-section>
 </mj-wrapper>
