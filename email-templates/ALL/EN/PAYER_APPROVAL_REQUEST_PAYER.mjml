@@ -80,14 +80,14 @@
 <mj-wrapper css-class="border-top">
 <mj-section css-class="section">
 		<mj-column>
-      <mj-text> Dear {{ contact_person_name }},<br></br><strong>{{ company_name }} </strong> is about to send you an invoice to <strong>{{ payer_company_invoice_email }}</strong> where Moneyflow is used for flexible payment. Please confirm details regarding the attached draft invoice.
-      <br></br>Message from {{ company_signee_name }} from {{ company_name }}:<br></br>
+      <mj-text> Dear {{ contact_person_name }},<br></br><strong>{{ company_name }} </strong> is about to send you an invoice to <strong>{{ payer_company_invoice_email }}</strong> where Moneyflow is used for flexible payment. Please confirm the details regarding the attached draft invoice.
+      <br></br>Message from {{ company_signee_name }} from {{ company_name }}:
 {{ message_from_seller}} </mj-text>
            <mj-text><br></br><strong>Please review the draft invoice and confirm following:</strong><br></br>∙ I confirm that this invoice is paid directly to Moneyflow using the payment details stated on the invoice.<br></br>∙ I confirm that there are no disputes on the invoice (amount, conditions, content etc.).<br></br>∙ I confirm that this invoice is paid according to the payment terms stated on the invoice.
       </mj-text>
         		<mj-button href="{{ review_and_confirm_url }}">Review and confirm</mj-button>
        <mj-text align=center> or </mj-text>mj-text>
-      <mj-text align=center><a href="www.google.com" class="link-body">Report a problem</a>  </mj-text>
+      <mj-text align=center><a href="https://pages.moneyflow.io/rapporter-et-problem" class="link-body">Report a problem</a>  </mj-text>
 		</mj-column>
 </mj-section>
 </mj-wrapper>
