@@ -7,7 +7,7 @@
 <!-- {{ payer_company_name }}     Name of the payer company-->
 <!-- {{ message_from_seller}} Message added by the seller on the payer approval page  -->
 <!-- {{ company_signee_name }}     Name of the person who signed for the seller  company-->
-<!-- {{ Review_and_confirm }}       Blue button - link to the payer approval page for the payer"--> 
+<!-- {{ review_and_confirm_url }}       Blue button - link to the payer approval page for the payer"-->
 
 
 <mj-head>
@@ -85,7 +85,7 @@
 {{ message_from_seller}} </mj-text>
            <mj-text><br></br><strong>Please review the draft invoice and confirm following:</strong><br></br>∙ I confirm that this invoice is paid directly to Moneyflow using the payment details stated on the invoice.<br></br>∙ I confirm that there are no disputes on the invoice (amount, conditions, content etc.).<br></br>∙ I confirm that this invoice is paid according to the payment terms stated on the invoice.
       </mj-text>
-        		<mj-button href="{{ company_upload }}">Review and confirm</mj-button>
+        		<mj-button href="{{ review_and_confirm_url }}">Review and confirm</mj-button>
        <mj-text align=center> or </mj-text>mj-text>
       <mj-text align=center><a href="https://pages.moneyflow.io/rapporter-et-problem" class="link-body">Report a problem</a>  </mj-text>
 		</mj-column>
