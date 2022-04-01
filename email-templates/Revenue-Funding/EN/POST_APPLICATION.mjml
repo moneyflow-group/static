@@ -1,0 +1,108 @@
+<mjml>
+<!--SUBJECT: Your Revenue Funding application has been successfully submitted-->
+<!-- {{ lead_name }} 			First name of lead-->
+<mj-head>
+<mj-title>Post_application-EN</mj-title>
+  <mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:600"/>
+	<mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto:400,700"/>
+  <mj-breakpoint width="480px"/>
+  		<mj-attributes>
+					<mj-section padding="64px 80px"
+                      background-color="#ffffff"/>
+			    <mj-wrapper padding="0"/>
+ 				  <mj-text font-family="Roboto, sans-serif"
+                   line-height="24px"
+                   font-size="14px"
+                   color="#2F3344"
+                   padding="0"/>
+          <mj-button background-color="#5B93F0"
+                     font-family="montserrat, sans-serif"
+                     font-size="12px"
+                     line-height="24px"
+                     border-radius="6px"
+                     inner-padding="8px 24px"
+                     padding-top="32px"/>
+          <mj-divider padding="0"
+                      border-width="2px"
+                      border-style="dashed"
+                      border-color="#E4F0F7"/>
+			</mj-attributes>
+      </mj-style>
+  				<!--padding on mobile-->
+          <mj-style>
+          @media only screen and (max-width:480px) {
+        	.section td {
+          padding:16px 8px 16px 8px!important;
+        		}
+      		}
+          </mj-style>
+  				<!--Top border-->
+      		<mj-style inline="inline">
+          .border-top {
+ 				  border-top: 4px solid #5B93F0;
+					}
+          </mj-style>
+      		<!--Removing underscore on links-->
+					<mj-style inline="inline">
+  				.link-body { color: #5B93F0; text-decoration: none; font-weight: 700; }
+          .link-footer { color: #808494;}
+ 					</mj-style>
+ 					<!--Preview text-->
+ 					<mj-preview>Hi {{ lead_name }}. Thank you for submitting your application! It is currently being analyzed by our finance team.</mj-preview>
+</mj-head>
+
+<mj-body background-color="#E4F0F7">
+
+<mj-raw><!-- Top bar --></mj-raw>
+<mj-wrapper>
+<mj-section padding="0"
+            background-color="#E4F0F7">
+		<mj-column>
+    		<mj-image width="140px"
+                  align="left"
+                  padding="24px 0px 16px 8px"
+                  src="https://moneyflow-group.github.io/static/email-templates/moneyflow_logo.png"
+                  alt="moneyflow"/>
+		</mj-column>
+</mj-section>
+</mj-wrapper>
+
+<mj-raw><!-- Body --></mj-raw>
+<mj-wrapper css-class="border-top">
+<mj-section css-class="section">
+		<mj-column>
+				<mj-text> Hi {{ lead_name }}<br></br>Thank you for submitting your application! It is currently being analyzed by our finance team. This process usually takes around 72 hours.<br></br>Once the application assessment is complete, you will receive an email with information about what we can offer you in Revenue Funding.</mj-text>
+		</mj-column>
+</mj-section>
+</mj-wrapper>
+
+<!-- Divider -->
+<mj-section padding="0">
+		<mj-column>
+				<mj-divider/>
+		</mj-column>
+</mj-section>
+
+<mj-raw><!-- Contact --></mj-raw>
+<mj-wrapper>
+<mj-section css-class="section">
+		<mj-column>
+				<mj-text> If you have any questions regarding this process, you are always very welcome to reach out to us on <a href="tel:004589877036" class="link-body">+45 89 87 70 36 </a> (weekdays 8am-6pm) or simply by replying to this email.</mj-text>
+		</mj-column>
+</mj-section>
+</mj-wrapper>
+  
+<mj-raw><!-- Disclaimer --></mj-raw>
+<mj-wrapper>
+<mj-section padding="24px 0px 32px 0px"
+            background-color="#E4F0F7">
+		<mj-column>
+    		<mj-text align="center"
+                 color="#808494"
+                 font-size="12px">You are receiving this email because you have signed up for a Moneyflow service.<br><a class="link-footer" href="https://moneyflow.io/en/">Moneyflow Group A/S</a> | Langebrogade 4, 1411 Copenhagen K | CVR 39228327 <br>Moneyflow is registered and regulated by the <a class="link-footer" href="https://www.dfsa.dk/">Danish FSA</a></mj-text>
+		</mj-column>
+</mj-section>
+</mj-wrapper>
+
+</mj-body>
+</mjml>
