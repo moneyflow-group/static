@@ -1,5 +1,5 @@
 <mjml>
-<!--SUBJECT: Information vedr. faktura {{ invoice_number }} to {{ payer_company_name }} -->
+<!-- SUBJECT: Information vedr. faktura {{ invoice_number }} til {{ payer_company_name }} -->
 <!-- {{ company_name }} 			Name of seller company-->
 <!-- {{ invoice_number }} 	  Number of the invoice -->
 <!-- {{ payer_company_name }}     Name of the payer company-->
@@ -8,7 +8,7 @@
 
 
 <mj-head>
-<mj-title>Information vedr. faktura {{ invoice_number }} to {{ payer_company_name }}</mj-title>
+<mj-title>Information vedr. faktura {{ invoice_number }} til {{ payer_company_name }}</mj-title>
   <mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:600"/>
 	<mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto:400,700"/>
   <mj-breakpoint width="480px"/>
@@ -77,12 +77,8 @@
 <mj-wrapper css-class="border-top">
 <mj-section css-class="section">
 		<mj-column>
-				<mj-text> Kære {{ company_name }}<br></br>
-          
-          
-          
-          Som udbyder af finansielle tjenesteydelser er vi forpligtede til at bede om yderligere dokumentation for udvalgte fakturaer. Derfor vil vi gerne bekræfte enkelte detaljer vedrørende <b>fakturaen {{ invoice_number }}</b> til <b>{{ payer_company_name }}}</b>. Det er en nem og hurtig proces, der kun tager få minutter.</mj-text>
-        		<mj-button href="{{ request_confirmation_url }}  ">Anmod om bekræftelse</mj-button>
+				<mj-text> Kære {{ company_name }}<br></br>Som udbyder af finansielle tjenesteydelser er vi forpligtede til at bede om yderligere dokumentation for udvalgte fakturaer. Derfor vil vi gerne bekræfte enkelte detaljer vedrørende <b>fakturaen {{ invoice_number }}</b> til <b>{{ payer_company_name }}}</b>. Det er en nem og hurtig proces, der kun tager få minutter.</mj-text>
+        		<mj-button href="{{ request_confirmation_url }}">Anmod om bekræftelse</mj-button>
     <mj-text padding-top="32px">Bemærk venligst, at hvis vi ikke har modtaget en bekræftelse fra din kunde inden {{ expiration_date|date:"d/m/y" }}, kan vi desværre ikke fortsætte med fakturaen.
 </mj-text>
 		</mj-column>
