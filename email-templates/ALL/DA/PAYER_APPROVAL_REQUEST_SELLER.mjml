@@ -1,14 +1,14 @@
 <mjml>
-<!--SUBJECT: Information vedr. faktura {{ invoice_number }} to {{ payer_company_name }}-->
+<!-- SUBJECT: Information vedr. faktura {{ invoice_number }} til {{ payer_company_name }} -->
 <!-- {{ company_name }} 			Name of seller company-->
 <!-- {{ invoice_number }} 	  Number of the invoice -->
 <!-- {{ payer_company_name }}     Name of the payer company-->
-<!-- {{ expiration_date }}       current date + 7 days--> 
+<!-- {{ expiration_date }}   request date + 5 days--> 
 <!-- {{ request_confirmation_url }}       Blue button - link to the seller payer approval request page should say "Request confirmation"-->
 
 
 <mj-head>
-<mj-title>Information vedr. faktura {{ invoice_number }} to {{ payer_company_name }}</mj-title>
+<mj-title>Information vedr. faktura {{ invoice_number }} til {{ payer_company_name }}</mj-title>
   <mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:600"/>
 	<mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto:400,700"/>
   <mj-breakpoint width="480px"/>
@@ -54,7 +54,7 @@
           .link-footer { color: #808494;}
  					</mj-style>
  					<!--Preview text-->
- 					<mj-preview>Description: Din faktura {{ invoice_number }} til {{ payer_company_name }} kræver lidt ekstra behandling før vi kan udbetale den til dig. </mj-preview>
+ 					<mj-preview>Description: Din faktura {{ invoice_number }} til {{ payer_company_name }} kræver lidt ekstra behandling, før vi kan udbetale den til dig. </mj-preview>
 </mj-head>
 
 <mj-body background-color="#E4F0F7">
@@ -77,11 +77,10 @@
 <mj-wrapper css-class="border-top">
 <mj-section css-class="section">
 		<mj-column>
-				<mj-text> Kære {{ company_name }}<br></br>Din faktura {{ invoice_number }} til {{ payer_company_name }} kræver lidt ekstra behandling før vi kan udbetale den til dig. For at kunne benytte vores service på denne faktura, har vi behov for en bekræftelse fra din kunde. Dette tager kun få minutter. 
-
-Klik på den nedenstående knap og start processen.</mj-text>
+				<mj-text> Kære {{ company_name }}<br></br>Som udbyder af finansielle tjenesteydelser er vi forpligtede til at bede om yderligere dokumentation for udvalgte fakturaer. Derfor vil vi gerne bekræfte enkelte detaljer vedrørende <b>fakturaen {{ invoice_number }}</b> til <b>{{ payer_company_name }}}</b>. Det er en nem og hurtig proces, der kun tager få minutter.</mj-text>
         		<mj-button href="{{ request_confirmation_url }}">Anmod om bekræftelse</mj-button>
-    <mj-text padding-top="32px"> Modtager vi ikke en bekræftelse før d. {{ expiration_date }}, kan vi desværre ikke godkende din faktura.</mj-text>
+    <mj-text padding-top="32px">Bemærk venligst, at hvis vi ikke har modtaget en bekræftelse fra din kunde inden {{ expiration_date|date:"d/m/y" }}, kan vi desværre ikke fortsætte med fakturaen.
+</mj-text>
 		</mj-column>
 </mj-section>
 </mj-wrapper>

@@ -1,9 +1,9 @@
 <mjml>
-<!--SUBJECT:  Information regarding invoice {{ invoice_number }} to {{ payer_company_name }}->
+<!--SUBJECT: Information regards invoice {{ invoice_number }} to {{ payer_company_name }} -->
 <!-- {{ company_name }} 			Name of seller company-->
 <!-- {{ invoice_number }} 	  Number of the invoice -->
 <!-- {{ payer_company_name }}     Name of the payer company-->
-<!-- {{ expiration_date }}   current date + 7 days--> 
+<!-- {{ expiration_date }}   request date + 5 days--> 
 <!-- {{ request_confirmation_url }}       Blue button - link to the seller payer approval request page should say "Request confirmation"-->
 
 
@@ -77,9 +77,11 @@
 <mj-wrapper css-class="border-top">
 <mj-section css-class="section">
 		<mj-column>
-				<mj-text> Dear {{ company_name }},<br></br>Your invoice {{ invoice_number }}  to {{ payer_company_name }}  needs a little extra care before we can make the payout to you. In order to continiue using our service on this invoice, we would like to confirm a couple of details with your customer. It takes less than a minute and only requires couple of clicks.</mj-text>
+				<mj-text> Dear {{ company_name }},<br></br>
+As a financial service provider, we are required to ask for further documentation on selected invoices. Therefore, we would like to confirm a couple of details on your <b>invoice no. {{ invoice_number }}</b>  to <b>{{ payer_company_name }}}</b>. It is a fast and easy process that takes only a few minutes.</mj-text>
+      
         		<mj-button href="{{ request_confirmation_url }}">Request confirmation</mj-button>
-      <mj-text padding-top="32px"> If we have not received a confirmation by {{ expiration_date }}, we are unfortunately not able to proceed with the invoice.</mj-text>
+      <mj-text padding-top="32px">Please do note that if we have not received a confirmation from your customer by {{ expiration_date|date:"d/m/y" }}, we are unfortunately not able to proceed with the invoice.</mj-text>
 		</mj-column>
 </mj-section>
 </mj-wrapper>
