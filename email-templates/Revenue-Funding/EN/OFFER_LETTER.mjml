@@ -1,6 +1,6 @@
 <mjml>
 <!--SUBJECT: You have a Revenue Funding offer-->
-<!--ATTACHEMENTS: Offer Letter-->
+<!--ATTACHEMENTS:         Draft of addendum-->
 <!-- {{ lead_name }} 			First name of lead-->
 <!-- {{ interface_url }}  URL for continuing the set up process-->
 <mj-head>
@@ -73,8 +73,8 @@
 <mj-wrapper css-class="border-top">
 <mj-section css-class="section">
 		<mj-column>
-				<mj-text>Hi {{ lead_name }}.<br></br>We are excited to inform you that you have received an offer for Revenue Funding.<br></br>You can find the offer letter attached to this email, or you can click the button below and find it directly in through Revenue Funding interface.</mj-text>
-        		<mj-button href="{{ interface_url }}">Continue set up</mj-button>
+				<mj-text>Hi {{ lead_name }}.<br></br>We are excited to inform you that you have received an offer for Revenue Funding.<br></br>Attached to this email is a draft of your addendum, which includes the figure and terms of the offer. Please note that this addendum is only a draft and therefore not valid, until you have signed the Master Agreement.<br></br>Click the button below to continue the setup of Revenue Funding.</mj-text>
+        		<mj-button href="{{ interface_url }}">Continue setup</mj-button>
 </mj-text>
 		</mj-column>
 </mj-section>
