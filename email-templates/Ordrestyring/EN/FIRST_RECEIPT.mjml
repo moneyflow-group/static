@@ -1,6 +1,6 @@
 <mjml>
 <!--SUBJECT: Receipt for invoice no. {{ invoice_number }}-->
-<!--ATTACHEMENT: factoring receipt--> 
+<!--ATTACHMENT: factoring receipt--> 
   
 <!-- {{ invoice_number }} 		Invoice number-->
 <!-- {{ company_name }} 			Name of seller company-->
