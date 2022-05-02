@@ -74,7 +74,6 @@
 		<mj-column>
 				<mj-text> Hi {{ lead_name }}.<br></br>Thank you for signing up for Revenue Funding.<br></br>We are excited to guide you throguh the application process, but before we can do that, we just need you to verify your email. <br></br>Pease click the button below and let the application process begin.</mj-text>
         		<mj-button href="{{ verify_email }}">Verify email</mj-button>
-</mj-text>
 		</mj-column>
 </mj-section>
 </mj-wrapper>
