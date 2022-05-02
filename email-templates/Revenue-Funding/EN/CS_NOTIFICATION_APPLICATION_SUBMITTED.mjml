@@ -1,0 +1,67 @@
+<mjml>
+  <!--SUBJECT: New Revenue Funding application submitted, assessment is required-->
+
+  <!-- {{ rf_session_url }}           URL to the backoffice page of the Revenue Funding session-->
+  <!-- {{ company_name }}       			Name of the company-->
+  <!-- {{ offer_deadline }}       		time of application submitted + 72 hours-->
+
+
+  <mj-head>
+    <mj-title>CS_NOTIFICATION_APPLICATION-EN</mj-title>
+    <mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:600" />
+    <mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto:400,700" />
+    <mj-breakpoint width="480px" />
+    <mj-attributes>
+      <mj-section padding="64px 80px" background-color="#ffffff" />
+      <mj-wrapper padding="0" />
+      <mj-text line-height="24px" />
+      <mj-button background-color="#5B93F0"
+                     font-family="montserrat, sans-serif"
+                     font-size="12px"
+                     line-height="24px"
+                     border-radius="6px"
+                     inner-padding="8px 24px"
+                     padding-top="32px"/>
+    </mj-attributes>
+    <!--Divider-->
+    <mj-style inline="inline">
+      .border-top {
+        border-top: 3px solid #E4F0F7;
+      }
+    </mj-style>
+    <!--padding on mobile-->
+    <mj-style>
+      @media only screen and (max-width:480px) {
+        .section td {
+          padding-left: 10px !important;
+          padding-right: 10px !important;
+        }
+      }
+    </mj-style>
+    <!--Removing underscore on links-->
+    <mj-style inline="inline">
+      .link-nostyle {
+        color: #0000FF;
+        text-decoration: none
+      }
+    </mj-style>
+    <!--Preview text-->
+    <mj-preview>New Revenue Funding application has been submitted by {{ company_name }}. Please review application and assess if an Revenue Funding offer can be made. The deadline is {{ offer_deadline }}</mj-preview>
+  </mj-head>
+  <mj-body background-color="#E4F0F7">
+
+    <mj-raw>
+      <!-- Text section -->
+    </mj-raw>
+    <mj-wrapper css-class="border-top">
+      <mj-section css-class="section" background-color="#ffffff">
+        <mj-column>
+          <mj-text font-size="14px" padding="0" font-family="Roboto, sans-serif">
+            New Revenue Funding application has been submitted by {{ company_name }}.<br></br>Please review application and assess if an Revenue Funding offer can be made. The deadline is {{ offer_deadline }}
+          </mj-text>
+          <mj-button href="{{ rf_session_url }}">Assess application</mj-button>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+  </mj-body>
+</mjml>
