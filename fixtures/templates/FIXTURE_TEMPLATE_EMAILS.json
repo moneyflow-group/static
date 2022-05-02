@@ -1137,5 +1137,39 @@
             "platforms": "[\"PLATFORM_REVENUE_FUNDING\"]",
             "identifier": "POST_FIRST_PAYOUT"
         }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "df947587-da24-412e-ab01-b13a5f499f3b",
+        "fields": {
+            "created_at": "2022-05-02T15:10:01.452Z",
+            "created_by": null,
+            "modified_at": "2022-05-02T15:10:01.452Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "New Revenue Funding application submitted, assessment is required",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
+            "language": "EN",
+            "platforms": "[\"PLATFORM_REVENUE_FUNDING\"]",
+            "identifier": "CS_NOTIFICATION_APPLICATION_SUBMITTED"
+        }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "0605d9f3-d89c-4312-b4d4-16ab5940b495",
+        "fields": {
+            "created_at": "2022-05-02T15:10:01.452Z",
+            "created_by": null,
+            "modified_at": "2022-05-02T15:10:01.452Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "New Revenue Funding setup completed, verification and payout is required",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
+            "language": "EN",
+            "platforms": "[\"PLATFORM_REVENUE_FUNDING\"]",
+            "identifier": "CS_NOTIFICATION_SETUP_COMPLETED"
+        }
     }
 ]
