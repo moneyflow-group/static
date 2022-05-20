@@ -7,7 +7,7 @@
 
 
   <mj-head>
-    <mj-title>CS_NOTIFICATION_APPLICATION-EN</mj-title>
+    <mj-title>CS_NOTIFICATION_APPLICATION_SUBMITTED-EN</mj-title>
     <mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:600" />
     <mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto:400,700" />
     <mj-breakpoint width="480px" />
