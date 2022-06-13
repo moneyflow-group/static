@@ -39,6 +39,7 @@ def generate_receipt_fixture():
             "ECONOMIC": f"{DIRNAME}/../receipt-templates/E-conomic",
             "MANUAL": f"{DIRNAME}/../receipt-templates/Manual",
             "ORDRESTYRING": f"{DIRNAME}/../receipt-templates/Ordrestyring",
+            "TRAEDE": f"{DIRNAME}/../receipt-templates/Traede",
         }
         template_filenames = {
             "RECEIPT": "receipt_template.html",
@@ -79,6 +80,7 @@ def generate_email_fixture():
             "DIRECT_FACTORING": f"{DIRNAME}/../email-templates/Direct-Factoring",
             "ORDRESTYRING": f"{DIRNAME}/../email-templates/Ordrestyring",
             "REVENUE_FUNDING": f"{DIRNAME}/../email-templates/Revenue-Funding",
+            "TRAEDE": f"{DIRNAME}/../email-templates/Traede",
         }
 
         for template in fixtures:
