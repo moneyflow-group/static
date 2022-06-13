@@ -5,6 +5,13 @@ A place for static files.
 # Templates
 **E-mail** templates are written in `mjml` and converted to `html` by `generate_html_templates.sh`
 
+## Adding new platforms
+1. Create appropriate folder in `/email-templates/` and `/receipt-templates/`
+2. Add that folder to `generate_fixture.py`'s template_dirs variable
+3. Add new templates to the app's folder in the correct language folder
+4. Add the required templates to the `FIXTURE_TEMPLATE_EMAILS.json` or `FIXTURE_TEMPLATE_RECEIPTS.json`
+5. Proceed to generate the templates as explained below
+
 #### Usage
 ```
 static > ./email-templates/generate_html_templates.sh 
