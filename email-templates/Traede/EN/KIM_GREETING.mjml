@@ -1,0 +1,141 @@
+<mjml>
+<!--SUBJECT: Status on your invoice-> 
+  
+  
+<!-- {{ company_name }} 	  Name of a seller company-->
+<!-- {{ platform_name }} 		Platform where the seller is onboarded--> 
+<!-- {{ status_page }} 	URL for the status/approved customer page of the seller company-->
+
+  
+  
+<mj-head>
+<mj-title>KIM_GREETING_ENG</mj-title>
+  <mj-font name="work-sans" href="https://fonts.googleapis.com/css?family=work+sans:400,700"/>
+  <mj-breakpoint width="480px"/>
+  		<mj-attributes>
+					<mj-section padding="56px 80px"
+                      background-color="#ffffff"/>
+			    <mj-wrapper padding="0"/>
+ 				  <mj-text font-family="work-sans, sans-serif"
+                   font-weight="400"
+                   line-height="24px"
+                   font-size="16px"
+                   color="#252525"
+                   padding="0"/>
+          <mj-button background-color="#0023f5"
+                     font-family="work-sans, sans-serif"
+                     font-size="16px"
+                     font-weight="400"
+                     line-height="24px"
+                     border-radius="200px"
+                     inner-padding="10px 32px 10px 32px"
+                     padding-top="56px"/>
+          <mj-divider padding="0"
+                      border-width="2px"
+                      border-style="dashed"
+                      border-color="#F1F1F1"/>
+			</mj-attributes>
+  				<!--padding on mobile-->
+          <mj-style>  
+          @media only screen and (max-width:480px) { 
+        	.section td {
+          padding-left:10px!important;
+          padding-right:10px!important;
+        		}		
+      		}
+          </mj-style>
+  				<!--Top border-->
+      		<mj-style inline="inline">
+          .border-top {
+ 				  border-top: 4px solid #999999;
+					}
+          </mj-style>
+      		<!--Removing underscore on links-->
+					<mj-style inline="inline">
+  				.link-body { color: #0023f5; text-decoration: none; font-weight: 400; }
+          .link-footer { color: #999999; }
+ 					</mj-style>
+
+  		<!--Preview text-->
+ 			<mj-preview>And a personal greeting from the director of Invoice Funding</mj-preview> 
+</mj-head>
+
+<mj-body background-color="#F1F1F1">
+
+<mj-raw><!-- Top bar --></mj-raw>
+<mj-wrapper>
+<mj-section padding="0"
+            background-color="#F1F1F1">
+		<mj-column>
+    		<mj-image width="170px"
+                  align="left"
+                  padding="16px 0px 16px 4px"
+                  src="https://moneyflow-group.github.io/static/email-templates/moneyflow_logo.png"
+                  alt="moneyflow"/>
+		</mj-column>
+</mj-section>
+</mj-wrapper>
+
+<mj-raw><!-- Body --></mj-raw>
+<mj-wrapper css-class="border-top">
+<mj-section css-class="section">
+		<mj-column>
+				<mj-text>Dear {{ company_name }},<br><br> My name is Kim Ulf, and I am the founder as well as the director of  Moneyflow. I just wanted to take a moment to give you a proper welcome.<br><br>Being a first-time user of our services, I understand that leaving the customer contact to us might feel a bit unusual. I can, however, guarantee you that our team is both polite and professional, as was the case with Anton, to whom you were introduced in the previous email.<br><br>I hope that you are satisfied with our service, and if you are interested in using us again in the future, you can already see which of your customers are eligible. </mj-text>
+        <mj-button href="Approved payers page">View eligible customers</mj-button>	
+		</mj-column>
+</mj-section>
+</mj-wrapper>
+
+<!-- Divider -->
+<mj-section padding="0">
+		<mj-column>
+    		<mj-divider/>
+		</mj-column>
+</mj-section>
+
+<mj-raw><!-- Contact 2 columns --></mj-raw>
+<mj-wrapper>
+<mj-section  css-class="section">
+<!-- Left column -->
+		<mj-column>
+ 				<mj-image align="center"
+                  padding="0px"
+                  width="180px"
+                  src="https://moneyflow-group.github.io/static/email-templates/Kim-email.png"
+                  alt="Kim Ulf"/>
+		</mj-column>
+<!-- Right column -->
+		<mj-column>
+				<mj-text>Best regards,</mj-text>
+      	<mj-image align="left"
+                  padding="16px 0px 16px 0px"
+                  src="https://moneyflow-group.github.io/static/email-templates/Kim-signature.png"
+                  alt="Kim Signature"/>
+    		<mj-text font-family="Montserrat"
+                 color="#5B93F0">Kim Ulf Rehfeld Thoden</mj-text>
+      	<mj-text>Director, Moneyflow</mj-text>
+		</mj-column>
+</mj-section>
+</mj-wrapper>
+  
+<!-- Divider -->
+<mj-section padding="0">
+		<mj-column>
+				<mj-divider/>
+		</mj-column>
+</mj-section>
+
+<mj-raw><!-- Disclaimer --></mj-raw>
+<mj-wrapper>
+<mj-section padding="24px 0px 24px 0px"
+            background-color="#F1F1F1">
+		<mj-column>
+    		<mj-text align="center"
+                 color="#999999"
+                 font-size="12px"> You are receiving this e-mail because you are a user of Invoice Funding in {{ platform_name }}<br> Sent by <a class="link-footer" href="https://moneyflow.io/en">Moneyflow Group A/S</a> on behalf of <a class="link-footer" href="https://traede.com">{{ platform_name }}</a> <br> Moneyflow Group A/S | Langebrogade 4, 1411 Copenhagen K | CVR 39228327 <br>Moneyflow is registered and regulated by the <a class="link-footer" href="https://www.dfsa.dk/">Danish FSA</a></mj-text>
+		</mj-column>
+</mj-section>
+</mj-wrapper>
+  
+</mj-body>
+</mjml>

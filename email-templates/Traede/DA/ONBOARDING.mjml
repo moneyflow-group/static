@@ -1,0 +1,120 @@
+<mjml>
+<!--SUBJECT: Instant payment is now set up--> 
+  
+<!--ATTACHEMENT: Signed Main Agreement--> 
+  
+<!-- {{ signee_name }} 		Signee name for seller company-->
+<!-- {{ company_name }} 	Name of the seller company--> 
+<!-- {{ platform_name }} 		Platform where the seller is onboarded--> 
+
+  
+  
+<mj-head>
+<mj-title>Instant payment is now set up</mj-title>
+  <mj-font name="work-sans" href="https://fonts.googleapis.com/css?family=work+sans:400,700"/>
+  <mj-breakpoint width="480px"/>
+  		<mj-attributes>
+					<mj-section padding="56px 80px"
+                      background-color="#ffffff"/>
+			    <mj-wrapper padding="0"/>
+ 				  <mj-text font-family="work-sans, sans-serif"
+                   font-weight="400"
+                   line-height="24px"
+                   font-size="16px"
+                   color="#252525"
+                   padding="0"/>
+          <mj-button background-color="#0023f5"
+                     font-family="work-sans, sans-serif"
+                     font-size="16px"
+                     font-weight="400"
+                     line-height="24px"
+                     border-radius="200px"
+                     inner-padding="10px 32px 10px 32px"
+                     padding-top="56px"/>
+          <mj-divider padding="0"
+                      border-width="2px"
+                      border-style="dashed"
+                      border-color="#F1F1F1"/>
+			</mj-attributes>
+  				<!--padding on mobile-->
+          <mj-style>  
+          @media only screen and (max-width:480px) { 
+        	.section td {
+          padding-left:10px!important;
+          padding-right:10px!important;
+        		}		
+      		}
+          </mj-style>
+  				<!--Top border-->
+      		<mj-style inline="inline">
+          .border-top {
+ 				  border-top: 4px solid #999999;
+					}
+          </mj-style>
+      		<!--Removing underscore on links-->
+					<mj-style inline="inline">
+  				.link-body { color: #0023f5; text-decoration: none; font-weight: 400; }
+          .link-footer { color: #999999; }
+ 					</mj-style>
+
+  		<!--Preview text-->
+ 			<mj-preview>Thank you for showing interest in Moneyflow and for signing the Main Agreement to use our service in {{ platform_name }}.</mj-preview> 
+</mj-head>
+
+<mj-body background-color="#F1F1F1">
+
+<mj-raw><!-- Top bar --></mj-raw>
+<mj-wrapper>
+<mj-section padding="0"
+            background-color="#F1F1F1">
+		<mj-column>
+    		<mj-image width="170px"
+                  align="left"
+                  padding="16px 0px 16px 4px"
+                  src="https://moneyflow-group.github.io/static/email-templates/moneyflow_logo.png"
+                  alt="moneyflow"/>
+		</mj-column>
+</mj-section>
+</mj-wrapper>
+
+<mj-raw><!-- Body --></mj-raw>
+<mj-wrapper css-class="border-top">
+<mj-section css-class="section">
+		<mj-column>
+				<mj-text>Hej {{ signee_name }} <br><br>Du har nu gennemført installationen af Invoice Funding for {{ company_name }} i {{ platform_name }} og kan få betaling med det samme for fakturaer gennem Moneyflow.<br><br>Vedhæftet denne e-mail finder du hovedaftalen, som du har underskrevet.<br><br>Når du opretter og sender en faktura, har du nu mulighed for at aktivere Invoice Funding for den specifikke faktura.
+        </mj-text>
+		</mj-column>
+</mj-section>
+</mj-wrapper>
+
+<mj-raw><!-- Contact --></mj-raw>
+<mj-wrapper>
+<mj-section css-class="section">
+		<mj-column>
+    		<mj-text>Hvis du har spørgsmål vedrørende vores tjeneste, er du altid meget velkommen til at række ud til os på <a href="tel:004589877036" class="link-body">+45 89 87 70 36 </a>(hverdage 08-18), eller ved blot at besvare denne e-mail. <br><br>De bedste hilsner</mj-text>
+ 				<mj-text font-weight="700"> Moneyflow </a> </mj-text>
+		</mj-column>
+</mj-section>
+</mj-wrapper>
+  
+<!-- Divider -->
+<mj-section padding="0">
+		<mj-column>
+				<mj-divider/>
+		</mj-column>
+</mj-section>
+
+<mj-raw><!-- Disclaimer --></mj-raw>
+<mj-wrapper>
+<mj-section padding="24px 0px 24px 0px"
+            background-color="#F1F1F1">
+		<mj-column>
+    		<mj-text align="center"
+                 color="#999999"
+                 font-size="12px"> Du modtager denne e-mail, fordi du er bruger af Invoice Funding i {{ platform_name }}<br>Sendt af  <a class="link-footer" href="https://moneyflow.io/en">Moneyflow Group A/S</a>  på vegne af <a class="link-footer" href="https://traede.com">{{ platform_name }}</a><br> Moneyflow Group A/S | Langebrogade 4, 1411 København K | CVR 39228327 <br>Moneyflow er registreret og reguleret af <a class="link-footer" href="https://www.dfsa.dk/">Finanstilsynet</a></mj-text>
+		</mj-column>
+</mj-section>
+</mj-wrapper>
+  
+</mj-body>
+</mjml>
