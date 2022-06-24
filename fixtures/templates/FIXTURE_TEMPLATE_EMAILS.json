@@ -1222,5 +1222,175 @@
             "platforms": "[\"PLATFORM_REVENUE_FUNDING\"]",
             "identifier": "POST_ERP_SIGNUP"
         }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "f0134301-1c4d-45af-9539-3146272f0425",
+        "fields": {
+            "created_at": "2022-06-13T12:10:50.687Z",
+            "created_by": null,
+            "modified_at": "2022-06-13T13:53:29.884Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Your money is coming soon!",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
+            "language": "EN",
+            "platforms": "[\"PLATFORM_TRAEDE\"]",
+            "identifier": "FIRST_CONFIRMATION"
+        }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "fb9619f1-87c4-431b-8928-c59c676625f0",
+        "fields": {
+            "created_at": "2022-06-13T12:10:50.687Z",
+            "created_by": null,
+            "modified_at": "2022-06-13T13:53:29.884Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Dine penge er snart på vej!",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
+            "language": "DA",
+            "platforms": "[\"PLATFORM_TRAEDE\"]",
+            "identifier": "FIRST_CONFIRMATION"
+        }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "677736aa-bf7e-4a37-beeb-f1d3650bdc64",
+        "fields": {
+            "created_at": "2022-06-13T12:10:50.687Z",
+            "created_by": null,
+            "modified_at": "2022-06-13T13:53:29.884Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Status of your invoice",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
+            "language": "EN",
+            "platforms": "[\"PLATFORM_TRAEDE\"]",
+            "identifier": "KIM_GREETING"
+        }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "ec4d1ad3-f1f1-42cb-a72e-70b90cfd7a10",
+        "fields": {
+            "created_at": "2022-06-13T12:10:50.687Z",
+            "created_by": null,
+            "modified_at": "2022-06-13T13:53:29.884Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Status på din faktura",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
+            "language": "DA",
+            "platforms": "[\"PLATFORM_TRAEDE\"]",
+            "identifier": "KIM_GREETING"
+        }
+    },    
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "1b40d222-f057-49f8-856e-3a87bc58d3ee",
+        "fields": {
+            "created_at": "2022-06-13T12:10:50.687Z",
+            "created_by": null,
+            "modified_at": "2022-06-13T13:53:29.884Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "You are now ready to get paid instantly",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
+            "language": "EN",
+            "platforms": "[\"PLATFORM_TRAEDE\"]",
+            "identifier": "ONBOARDING"
+        }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "345ab679-4765-4a0c-bcca-36ceda55ca20",
+        "fields": {
+            "created_at": "2022-06-13T12:10:50.687Z",
+            "created_by": null,
+            "modified_at": "2022-06-13T13:53:29.884Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Du er nu klar til f\u00e5 betaling med det samme",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
+            "language": "DA",
+            "platforms": "[\"PLATFORM_TRAEDE\"]",
+            "identifier": "ONBOARDING"
+        }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "e61d98de-c33b-49df-b1c7-07a683d861e0",
+        "fields": {
+            "created_at": "2022-06-13T12:10:50.687Z",
+            "created_by": null,
+            "modified_at": "2022-06-13T13:53:29.884Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Dit fakturasalg er gennemf\u00f8rt",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
+            "language": "DA",
+            "platforms": "[\"PLATFORM_TRAEDE\"]",
+            "identifier": "POST_SALE"
+        }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "ce8c0387-051c-45e6-acd0-989ce7996660",
+        "fields": {
+            "created_at": "2022-06-13T12:10:50.687Z",
+            "created_by": null,
+            "modified_at": "2022-06-13T13:53:29.884Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Your invoice sale is completed",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
+            "language": "EN",
+            "platforms": "[\"PLATFORM_TRAEDE\"]",
+            "identifier": "POST_SALE"
+        }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "a43c849f-684b-4799-9afc-9326e179e3de",
+        "fields": {
+            "created_at": "2022-06-13T12:10:50.687Z",
+            "created_by": null,
+            "modified_at": "2022-06-13T13:53:29.884Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Dit f\u00f8rste fakturasalg er g\u00e5et igennem",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
+            "language": "DA",
+            "platforms": "[\"PLATFORM_TRAEDE\"]",
+            "identifier": "POST_SALE_FIRST"
+        }
+    },   
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "ebfc21c2-7a74-4dbb-a269-a241e8ab1dee",
+        "fields": {
+            "created_at": "2022-06-13T12:10:50.687Z",
+            "created_by": null,
+            "modified_at": "2022-06-13T13:53:29.884Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Your first invoice sale is completed",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
+            "language": "EN",
+            "platforms": "[\"PLATFORM_TRAEDE\"]",
+            "identifier": "POST_SALE_FIRST"
+        }
     }
 ]
