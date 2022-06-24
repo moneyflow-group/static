@@ -104,7 +104,7 @@
              				 padding="0"
                      padding-top="24px"
            				   font-family="Roboto, sans-serif">
-The full amount, {{ outstanding_balance }} kr., must be paid within 10 days, no later than {{ incasso_date }} to the bank account {{ payment_reg_number }} {{ payment_account_number }} with {{ invoice_number }} as reference.<br/><br/>If the amount is not paid before {{ incasso_date }}, the case will be transferred to debt collection with additional costs as a result.<br/><br/>You can contact us every weekday between 8am and 6pm on <a href="tel:004589877036" class="link-nostyle">+45 89 87 70 36</a>, or by sending an e-mail to <a href="mailto:support@moneyflow.io" class="link-nostyle">support@moneyflow.io</a>
+The full amount, {{ outstanding_balance }} kr., must be paid within 10 days, no later than {{ incasso_date }} to the bank account {{ payment_reg_number }} {{ payment_account_number }} with {{ invoice_number }} as reference.<br/><br/>If the amount is not paid before {{ incasso_date }}, the case will be transferred to debt collection with additional costs as a result.<br/><br/>You can contact us every weekday between 8am and 5pm on <a href="tel:004589877036" class="link-nostyle">+45 89 87 70 36</a>, or by sending an e-mail to <a href="mailto:support@moneyflow.io" class="link-nostyle">support@moneyflow.io</a>
           </mj-text>
      		</mj-column>
    	</mj-section>

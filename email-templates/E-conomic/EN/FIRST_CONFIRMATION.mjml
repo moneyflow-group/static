@@ -100,7 +100,7 @@
 		</mj-column>
 <!-- Right column -->
 		<mj-column>
-				<mj-text padding-top="16px">If you have any questions regarding our service, you are always very welcome to reach out to me or one of my skilled colleagues on <a href="tel:004589877036" class="link-body">+45 89 87 70 36 </a>(weekdays 8am-6pm), or by simply replying to this email. <br></br>Best regards,</mj-text>
+				<mj-text padding-top="16px">If you have any questions regarding our service, you are always very welcome to reach out to me or one of my skilled colleagues on <a href="tel:004589877036" class="link-body">+45 89 87 70 36 </a>(weekdays 8am-5pm), or by simply replying to this email. <br></br>Best regards,</mj-text>
     		<mj-text font-family="Montserrat"
                  color="#5B93F0">Camilla and the team </mj-text>
 		</mj-column>
