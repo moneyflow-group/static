@@ -1,13 +1,14 @@
 <mjml>
-<!--SUBJECT:Reminder: Draft invoice from {{ company_name }} requires review
+<!--SUBJECT: Påmindelse: Faktura kladde fra {{ company_name }} kræver gennemgang->
+<!-- {{ contact_person_name }} Contact person name added in the payer approval page--> 
 <!-- {{ company_name }}          Name of seller company-->
-<!-- {{ invoice_number }}      Number of the invoice -->
-<!-- {{ payer_company_name }}     Name of the payer company-->
+<!-- {{ message_from_seller}} Message added by the seller on the payer approval page--> 
+<!-- {{ company_signee_name }} Name of the person who signed for the seller  company-->
+<!-- {{ review_and_confirm }}       Blue button - link to the payer approval page for the payer"--> 
 <!-- {{ expiration_date }}   invoice date + 5 days-->
-<!-- {{ contact_person_email }}   email that the seller added on the landing page-->
   
- 
-<mj-head>Payer-reminder-ENG</mj-title>
+<mj-head>
+<mj-title>Payer-reminder-DA</mj-title>
   <mj-font name="work-sans" href="https://fonts.googleapis.com/css?family=work+sans:400,700"/>
   <mj-breakpoint width="480px"/>
   		<mj-attributes>
@@ -53,14 +54,9 @@
   				.link-body { color: #0023f5; text-decoration: none; font-weight: 400; }
           .link-footer { color: #999999; }
  					</mj-style>
-      		<!--Removing underscore on links-->
-					<mj-style inline="inline">
-  				.link-body { color: #0023f5; text-decoration: none; font-weight: 400; }
-          .link-footer { color: #999999; }
- 					</mj-style>
 
                     <!--Preview text-->
-                    <mj-preview>We would like to remind you to confirm the details on the invoice that {{ company_name }} is about to send </mj-preview>
+                    <mj-preview>Vi vil gerne påminde dig om at bekræfte detaljerne på fakturaen, som {{ company_name }} er ved at sende</mj-preview>
 </mj-head>
 <mj-body background-color="#F1F1F1">
 
@@ -81,28 +77,28 @@
 <mj-wrapper css-class="border-top">
 <mj-section css-class="section">
         <mj-column>
-      <mj-text> Dear {{ contact_person_name }},<br></br>We would like to remind you to confirm the details on the invoice that <strong>{{ company_name }} </strong> is about to send where Moneyflow is used for flexible payment before  {{ expiration_date|date:"d/m/y" }}.
-      <br></br>Message from {{ company_signee_name }} from {{ company_name }}:
-{{ message_from_seller}} <br></br><strong>Please review the draft invoice and confirm following:</strong><br></br>• I confirm that this invoice is paid directly to Moneyflow using the payment details stated on the invoice.<br></br>• I confirm that there are no disputes on the invoice (amount, conditions, content etc.).<br></br>• I confirm that this invoice is paid according to the payment terms stated on the invoice.
+      <mj-text> Kære {{ contact_person_name }}<br></br>Vi vil gerne påminde dig om at bekræfte detaljerne på faktura, som <strong>{{ company_name }} </strong> er ved at sende, hvor Moneyflow benyttes til  fleksibel betaling inden {{ expiration_date|date:"d/m/y" }}. <br></br>Meddelselse fra {{ company_signee_name }} fra {{ company_name }}:
+{{ message_from_seller}} <br></br><strong>Vær venlig at gennemgå fakturakladden, og bekræft følgende:</strong><br></br>• Jeg bekræfter, at denne faktura bliver betalt direkte til Moneyflow, til den konto som står på fakturaen.<br></br>• Jeg bekræfter, at der ikke er nogen indsigelser på denne faktura (fakturabeløb, betingelser, indhold osv.).<br></br>• Jeg bekræfter, at denne faktura bliver betalt med de betalingsbetingelser, som er indikeret på fakturaen.
       </mj-text>
-                <mj-button href="{{ review_and_confirm }}">Review and confirm</mj-button>
-       <mj-text align=center> or </mj-text>mj-text>
-      <mj-text align=center><a href="https://pages.moneyflow.io/rapporter-et-problem" class="link-body">Report a problem</a>  </mj-text>
+                <mj-button href="{{ review_and_confirm }}">Gennemgå og bekræft  </mj-button>
+      <mj-text align=center> eller </mj-text>mj-text>
+      <mj-text align=center><a href="https://pages.moneyflow.io/rapporter-et-problem" class="link-body">Rapportér et problem</a>  </mj-text>
         </mj-column>
 </mj-section>
 </mj-wrapper>
 <!-- Divider -->
 <mj-section padding="0">
 		<mj-column>
-				<mj-divider>
+				<mj-divider/>
 		</mj-column>
 </mj-section>
-  
 <mj-raw><!-- Contact --></mj-raw>
 <mj-wrapper>
 <mj-section css-class="section">
-		<mj-column>
-    		<mj-text>If you have any questions regarding our service, you are always very welcome to reach out to us on <a href="tel:004589877036" class="link-body">+45 89 87 70 36 </a>(weekdays 8am-6pm), or by simply replying to this email. <br><br>Best regards,</mj-text>
+        <mj-column>
+            <mj-text>
+        Hvis du har spørgsmål vedrørende din faktura, er du altid meget velkommen til at kontakte os på <a href="tel:004589877036" class="link-body">+45 89 87 70 36</a> eller ved blot at besvare denne e-mail.<br></br>De bedste hilsner
+</mj-text>
  				<mj-text font-weight="700"> Moneyflow </a> </mj-text>
 		</mj-column>
 </mj-section>
@@ -114,7 +110,6 @@
 				<mj-divider/>
 		</mj-column>
 </mj-section>
-
 <mj-raw><!-- Disclaimer --></mj-raw>
 <mj-wrapper>
 <mj-section padding="24px 0px 24px 0px"
@@ -122,7 +117,7 @@
 		<mj-column>
     		<mj-text align="center"
                  color="#999999"
-                 font-size="12px"> Sent by <a class="link-footer" href="https://moneyflow.io/en">Moneyflow Group A/S</a> </a> <br> Moneyflow Group A/S | Langebrogade 4, 1411 Copenhagen K | CVR 39228327 <br>Moneyflow is registered and regulated by the <a class="link-footer" href="https://www.dfsa.dk/">Danish FSA</a></mj-text>
+                 font-size="12px">Sendt af  <a class="link-footer" href="https://moneyflow.io/en">Moneyflow Group A/S</a></a><br> Moneyflow Group A/S | Langebrogade 4, 1411 København K | CVR 39228327 <br>Moneyflow er registreret og reguleret af <a class="link-footer" href="https://www.dfsa.dk/">Finanstilsynet</a></mj-text>
 		</mj-column>
 </mj-section>
 </mj-wrapper>
