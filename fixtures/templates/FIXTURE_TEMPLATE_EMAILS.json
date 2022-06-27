@@ -1392,5 +1392,45 @@
             "platforms": "[\"PLATFORM_TRAEDE\"]",
             "identifier": "POST_SALE_FIRST"
         }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "8cc0b6a1-1e88-4927-b383-985afba76f52",
+        "fields": {
+            "created_at": "2022-06-27T07:11:42.319Z",
+            "created_by": "49785b87-2d85-4341-b102-056c77feafd0",
+            "modified_at": "2022-06-27T07:11:42.319Z",
+            "modified_by": "49785b87-2d85-4341-b102-056c77feafd0",
+            "html_template": "",
+            "text_template": "",
+            "subject": "Påmindelse: Faktura kladde fra {{ company_name }} kræver gennemgang",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
+            "language": "DA",
+            "identifier": "PAYER_APPROVAL_REMINDER_PAYER",
+            "platform": "E-conomic",
+            "platforms": "[\"PLATFORM_FLOW\", \"PLATFORM_ECONOMIC\", \"PLATFORM_DINERO\", \"PLATFORM_ORDRESTYRING\", \"PLATFORM_MANUAL\", \"PLATFORM_DIRECT_FACTORING\", \"PLATFORM_REVENUE_FUNDING\"]",
+            "test_context": null,
+            "test_email_recipient": null
+        }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "05da7597-149f-4d08-bc49-29735d79d8c5",
+        "fields": {
+            "created_at": "2022-06-27T07:11:55.665Z",
+            "created_by": "49785b87-2d85-4341-b102-056c77feafd0",
+            "modified_at": "2022-06-27T07:11:55.665Z",
+            "modified_by": "49785b87-2d85-4341-b102-056c77feafd0",
+            "html_template": "",
+            "text_template": "",
+            "subject": "Reminder: Draft invoice from {{ company_name }} requires review",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
+            "language": "EN",
+            "identifier": "PAYER_APPROVAL_REMINDER_PAYER",
+            "platform": "E-conomic",
+            "platforms": "[\"PLATFORM_FLOW\", \"PLATFORM_ECONOMIC\", \"PLATFORM_DINERO\", \"PLATFORM_ORDRESTYRING\", \"PLATFORM_MANUAL\", \"PLATFORM_DIRECT_FACTORING\", \"PLATFORM_REVENUE_FUNDING\"]",
+            "test_context": null,
+            "test_email_recipient": null
+        }
     }
 ]
