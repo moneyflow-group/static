@@ -57,7 +57,7 @@
  					</mj-style>
 
   		<!--Preview text-->
- 			<mj-preview>ADD WHAT THE USER SHOULD SEE AS PREVIEW TEXT HERE</mj-preview> 
+ 			<mj-preview>Vi har modtaget din anmodning om at få gennemgået dine nuværende grænser for fakturakladde nr.</mj-preview> 
 </mj-head>
 
 <mj-body background-color="#F1F1F1">
