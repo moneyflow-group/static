@@ -97,7 +97,7 @@
 <mj-wrapper>
 <mj-section css-class="section">
 		<mj-column>
-    		<mj-text>Hvis du har spørgsmål vedrørende vores tjeneste, er du altid meget velkommen til at række ud til os på <a href="tel:004589877036" class="link-body">+45 89 87 70 36 </a>(hverdage 08-18), eller ved blot at besvare denne e-mail. <br><br>De bedste hilsner</mj-text>
+    		<mj-text>Hvis du har spørgsmål vedrørende vores tjeneste, er du altid meget velkommen til at række ud til os på <a href="tel:004589877036" class="link-body">+45 89 87 70 36 </a>(hverdage 08-17), eller ved blot at besvare denne e-mail. <br><br>De bedste hilsner</mj-text>
  				<mj-text font-weight="700"> Moneyflow </a> </mj-text>
 		</mj-column>
 </mj-section>

@@ -97,7 +97,7 @@
 <mj-wrapper>
 <mj-section css-class="section">
 		<mj-column>
-    		<mj-text>If you have any questions regarding our service, you are always very welcome to reach out to us on <a href="tel:004589877036" class="link-body">+45 89 87 70 36 </a>(weekdays 8am-6pm), or by simply replying to this email. <br><br>Best regards,</mj-text>
+    		<mj-text>If you have any questions regarding our service, you are always very welcome to reach out to us on <a href="tel:004589877036" class="link-body">+45 89 87 70 36 </a>(weekdays 8am-5pm), or by simply replying to this email. <br><br>Best regards,</mj-text>
  				<mj-text font-weight="700"> Moneyflow </a> </mj-text>
 		</mj-column>
 </mj-section>
