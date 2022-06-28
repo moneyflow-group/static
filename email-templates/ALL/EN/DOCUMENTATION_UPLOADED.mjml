@@ -57,7 +57,7 @@
  					</mj-style>
 
   		<!--Preview text-->
- 			<mj-preview>Vi har modtaget din anmodning om at få gennemgået dine nuværende grænser for fakturakladde nr.</mj-preview> 
+ 			<mj-preview>We have received your request to review your current limits regards the draft invoice no.</mj-preview> 
 </mj-head>
 
 <mj-body background-color="#F1F1F1">
