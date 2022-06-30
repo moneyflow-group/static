@@ -1,72 +1,76 @@
 <mjml>
-<!--SUBJECT: Information regards invoice {{ invoice_number }} to {{ payer_company_name }} -->
-<!-- {{ company_name }} 			Name of seller company-->
-<!-- {{ invoice_number }} 	  Number of the invoice -->
+<!--SUBJECT:  Information regards invoice {{ invoice_number }}   to {{ payer_company_name }}->
+
+<!--ATTACHEMENT: Invoice PFD with a watermark-> 
+
+<!-- {{ company_name }}          Name of seller company-->
+<!-- {{ invoice_number }}      Number of the invoice -->
 <!-- {{ payer_company_name }}     Name of the payer company-->
-<!-- {{ expiration_date }}   request date + 5 days--> 
-<!-- {{ request_confirmation_url }}       Blue button - link to the seller payer approval request page should say "Request confirmation"-->
-
-
+<!-- {{ expiration_date }}   invoice date + 5 days-->
+<!-- {{ request_confirmation }}       Blue button - link to the seller payer approval request page Shoukd say "Request confirmation"-->
+  
 <mj-head>
-<mj-title>Information regards invoice {{ invoice_number }} to {{ payer_company_name }}</mj-title>
-  <mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:600"/>
-	<mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto:400,700"/>
+<mj-title>PA Request to the seller</mj-title>
+  <mj-font name="work-sans" href="https://fonts.googleapis.com/css?family=work+sans:400,700"/>
   <mj-breakpoint width="480px"/>
   		<mj-attributes>
-					<mj-section padding="64px 80px"
+					<mj-section padding="56px 80px"
                       background-color="#ffffff"/>
 			    <mj-wrapper padding="0"/>
- 				  <mj-text font-family="Roboto, sans-serif"
+ 				  <mj-text font-family="work-sans, sans-serif"
+                   font-weight="400"
                    line-height="24px"
-                   font-size="14px"
-                   color="#2F3344"
+                   font-size="16px"
+                   color="#252525"
                    padding="0"/>
-          <mj-button background-color="#5B93F0"
-                     font-family="montserrat, sans-serif"
-                     font-size="12px"
+          <mj-button background-color="#0023f5"
+                     font-family="work-sans, sans-serif"
+                     font-size="16px"
+                     font-weight="400"
                      line-height="24px"
-                     border-radius="6px"
-                     inner-padding="8px 24px"
-                     padding-top="32px"/>
+                     border-radius="200px"
+                     inner-padding="10px 32px 10px 32px"
+                     padding-top="56px"/>
           <mj-divider padding="0"
                       border-width="2px"
                       border-style="dashed"
-                      border-color="#E4F0F7"/>
+                      border-color="#F1F1F1"/>
 			</mj-attributes>
-      </mj-style>
   				<!--padding on mobile-->
-          <mj-style>
-          @media only screen and (max-width:480px) {
+          <mj-style>  
+          @media only screen and (max-width:480px) { 
         	.section td {
-          padding:16px 8px 16px 8px!important;
-        		}
+          padding-left:10px!important;
+          padding-right:10px!important;
+        		}		
       		}
           </mj-style>
   				<!--Top border-->
       		<mj-style inline="inline">
           .border-top {
- 				  border-top: 4px solid #5B93F0;
+ 				  border-top: 4px solid #999999;
 					}
           </mj-style>
       		<!--Removing underscore on links-->
 					<mj-style inline="inline">
-  				.link-body { color: #5B93F0; text-decoration: none; font-weight: 700; }
-          .link-footer { color: #808494;}
+  				.link-body { color: #0023f5; text-decoration: none; font-weight: 400; }
+          .link-footer { color: #999999; }
  					</mj-style>
- 					<!--Preview text-->
- 					<mj-preview>Description: Your invoice {{ invoice_number }} to {{ payer_company_name }} needs a little extra care </mj-preview>
+
+  		<!--Preview text-->
+ 			<mj-preview>Your invoice {{ invoice_number }}to {{ payer_company_name }} needs a little extra care</mj-preview> 
 </mj-head>
 
-<mj-body background-color="#E4F0F7">
+<mj-body background-color="#F1F1F1">
 
 <mj-raw><!-- Top bar --></mj-raw>
 <mj-wrapper>
 <mj-section padding="0"
-            background-color="#E4F0F7">
+            background-color="#F1F1F1">
 		<mj-column>
-    		<mj-image width="140px"
+    		<mj-image width="170px"
                   align="left"
-                  padding="24px 0px 16px 8px"
+                  padding="16px 0px 16px 4px"
                   src="https://moneyflow-group.github.io/static/email-templates/moneyflow_logo.png"
                   alt="moneyflow"/>
 		</mj-column>
@@ -77,35 +81,31 @@
 <mj-wrapper css-class="border-top">
 <mj-section css-class="section">
 		<mj-column>
-				<mj-text> Dear {{ company_name }},<br></br>
-As a financial service provider, we are required to ask for further documentation on selected invoices. Therefore, we would like to confirm a couple of details on your <b>invoice no. {{ invoice_number }}</b>  to <b>{{ payer_company_name }}}</b>. It is a fast and easy process that takes only a few minutes.</mj-text>
-      
-        		<mj-button href="{{ request_confirmation_url }}">Request confirmation</mj-button>
-      <mj-text padding-top="32px">Please do note that if we have not received a confirmation from your customer by {{ expiration_date|date:"d/m/y" }}, we are unfortunately not able to proceed with the invoice.</mj-text>
-		</mj-column>
+				  <mj-text> Dear {{ company_name }},<br></br>
+We would like to confirm a couple of details on your invoice no. {{ invoice_number }} to {{ payer_company_name }} before we can proceed with making the payout. It is a fast and easy process that only takes a few minutes.<br></br>
+         As  a financial service provider, we are required to ask for further documentation on selected invoices. This mostly occurs in customer relationships with no paid invoices to Moneyflow.</mj-text>
+                <mj-button href="{{ company_upload }}">Request confirmation</mj-button>
+      <mj-text padding-top="32px">If we have not received a confirmation from your customer by {{ expiration_date }}, we will cancel the invoice. Your customer will not receive the invoice if it is cancelled.</mj-text>
+        </mj-column>
 </mj-section>
 </mj-wrapper>
-
 <!-- Divider -->
 <mj-section padding="0">
 		<mj-column>
 				<mj-divider>
 		</mj-column>
 </mj-section>
-
+  
 <mj-raw><!-- Contact --></mj-raw>
 <mj-wrapper>
 <mj-section css-class="section">
 		<mj-column>
-    		<mj-text>
-         If you have questions, you are always very welcome to reach out to us on <a href="tel:004589877036" class="link-body">+45 89 87 70 36</a> (weekdays 8 am - 6 pm) or by simply answering this email.<br></br>Best wishes,
-</mj-text>
- 				<mj-text font-family="Montserrat"
-                 color="#5B93F0">Team Moneyflow</mj-text>
+    		<mj-text>If you have any questions regarding our service, you are always very welcome to reach out to us on <a href="tel:004589877036" class="link-body">+45 89 87 70 36 </a>(weekdays 8am-5pm), or by simply replying to this email. <br><br>Best regards,</mj-text>
+ 				<mj-text font-weight="700"> Moneyflow </a> </mj-text>
 		</mj-column>
 </mj-section>
 </mj-wrapper>
-
+  
 <!-- Divider -->
 <mj-section padding="0">
 		<mj-column>
@@ -113,17 +113,17 @@ As a financial service provider, we are required to ask for further documentatio
 		</mj-column>
 </mj-section>
 
-<mj-raw><!-- Disclaimer-EN --></mj-raw>
+<mj-raw><!-- Disclaimer --></mj-raw>
 <mj-wrapper>
-<mj-section padding="24px 0px 32px 0px"
-            background-color="#E4F0F7">
+<mj-section padding="24px 0px 24px 0px"
+            background-color="#F1F1F1">
 		<mj-column>
     		<mj-text align="center"
-                 color="#808494">
- Moneyflow Group A/S | Langebrogade 4, 1411 Copenhagen K | CVR 39228327 <br>Moneyflow is registered and regulated by the <a class="link-footer" href="https://www.dfsa.dk/">Danish FSA</a></mj-text>
+                 color="#999999"
+                 font-size="12px"> Sent by <a class="link-footer" href="https://moneyflow.io/en">Moneyflow Group A/S</a> <br> Moneyflow Group A/S | Langebrogade 4, 1411 Copenhagen K | CVR 39228327 <br>Moneyflow is registered and regulated by the <a class="link-footer" href="https://www.dfsa.dk/">Danish FSA</a></mj-text>
 		</mj-column>
 </mj-section>
 </mj-wrapper>
-
+  
 </mj-body>
 </mjml>
