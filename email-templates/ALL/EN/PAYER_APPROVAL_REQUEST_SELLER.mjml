@@ -82,7 +82,7 @@
 <mj-section css-class="section">
 		<mj-column>
 				  <mj-text> Dear {{ company_name }},<br></br>
-We would like to confirm a couple of details on your invoice no. {{ invoice_number }} to {{ payer_company_name }}} before we can proceed with making the payout. It is a fast and easy process that only takes a few minutes.<br></br>
+We would like to confirm a couple of details on your invoice no. {{ invoice_number }} to {{ payer_company_name }} before we can proceed with making the payout. It is a fast and easy process that only takes a few minutes.<br></br>
          As  a financial service provider, we are required to ask for further documentation on selected invoices. This mostly occurs in customer relationships with no paid invoices to Moneyflow.</mj-text>
                 <mj-button href="{{ company_upload }}">Request confirmation</mj-button>
       <mj-text padding-top="32px">If we have not received a confirmation from your customer by {{ expiration_date }}, we will cancel the invoice. Your customer will not receive the invoice if it is cancelled.</mj-text>
