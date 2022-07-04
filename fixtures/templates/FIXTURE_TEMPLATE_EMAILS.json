@@ -1472,5 +1472,45 @@
             "test_context": null,
             "test_email_recipient": null
         }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "5a1a58ee-c857-4c53-9683-87762b3ba797",
+        "fields": {
+            "created_at": "2022-06-28T08:24:26.361Z",
+            "created_by": null,
+            "modified_at": "2022-06-28T08:24:26.363Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Anmodning om bekræftelse er sendt til {{ payer_company_name }}",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
+            "language": "DA",
+            "identifier": "PAYER_APPROVAL_RECEIPT_SELLER",
+            "platform": "E-conomic",
+            "platforms": "[\"PLATFORM_FLOW\", \"PLATFORM_ECONOMIC\", \"PLATFORM_DINERO\", \"PLATFORM_ORDRESTYRING\", \"PLATFORM_MANUAL\", \"PLATFORM_DIRECT_FACTORING\", \"PLATFORM_REVENUE_FUNDING\"]",
+            "test_context": null,
+            "test_email_recipient": null
+        }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "9eeb20b0-311b-455d-8f3e-91d285182e33",
+        "fields": {
+            "created_at": "2022-06-28T08:24:26.361Z",
+            "created_by": null,
+            "modified_at": "2022-06-28T08:24:26.363Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Confirmation request has been sent to {{ payer_company_name }}",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
+            "language": "EN",
+            "identifier": "PAYER_APPROVAL_RECEIPT_SELLER",
+            "platform": "E-conomic",
+            "platforms": "[\"PLATFORM_FLOW\", \"PLATFORM_ECONOMIC\", \"PLATFORM_DINERO\", \"PLATFORM_ORDRESTYRING\", \"PLATFORM_MANUAL\", \"PLATFORM_DIRECT_FACTORING\", \"PLATFORM_REVENUE_FUNDING\"]",
+            "test_context": null,
+            "test_email_recipient": null
+        }
     }
 ]
