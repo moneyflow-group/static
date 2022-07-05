@@ -80,7 +80,7 @@
 <mj-wrapper css-class="border-top">
 <mj-section css-class="section">
 		<mj-column>
-      <mj-text> Kære {{ contact_person_name }}<br></br><strong>{{ company_name }} </strong> er ved at sende dig en faktura til <strong>{{ payer_company_invoice_email }}</strong> hvor Moneyflow er blevet anvendt. Bekræft venligst detaljer vedrørende vedhæftede fakturakladde. <br></br>Beskd fra {{ company_signee_name }} fra {{ company_name }}:
+      <mj-text> Kære {{ contact_person_name }}<br></br><strong>{{ company_name }} </strong> er ved at sende dig en faktura til <strong>{{ payer_company_invoice_email }}</strong> hvor Moneyflow er blevet anvendt. Bekræft venligst detaljer vedrørende vedhæftede fakturakladde. <br></br>Besked fra {{ company_signee_name }} fra {{ company_name }}:
 {{ message_from_seller}}  </mj-text> 
       <mj-text><br></br><strong>Vær venlig at gennemgå fakturakladden, og bekræft følgende:</strong><br></br>∙ Jeg bekræfter, at denne faktura bliver betalt direkte til Moneyflow, til den konto som står på fakturaen.<br></br>∙ Jeg bekræfter, at der ikke er nogen indsigelser på denne faktura (fakturabeløb, betingelser, indhold osv.).<br></br>∙Jeg bekræfter, at denne faktura bliver betalt med de betalingsbetingelser, som er indikeret på fakturaen.
       </mj-text>

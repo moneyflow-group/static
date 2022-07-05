@@ -7,7 +7,7 @@
 <!-- {{ invoice_number }}      Number of the invoice -->
 <!-- {{ payer_company_name }}     Name of the payer company-->
 <!-- {{ expiration_date }}   invoice date + 5 days-->
-<!-- {{ request_confirmation }}       Blue button - link to the seller payer approval request page Shoukd say "Request confirmation"-->
+<!-- {{ request_confirmation_url }}       Blue button - link to the seller payer approval request page Shoukd say "Request confirmation"-->
   
 <mj-head>
 <mj-title>PA Request to the seller DA</mj-title>
@@ -83,7 +83,7 @@
 		<mj-column>
 				  <mj-text> Kære {{ company_name }}<br></br>
          Vi vil gerne have bekræftet enkelte oplysninger vedrørende faktura nr. {{ invoice_number }} til {{ payer_company_name }}. Det er en nem og hurtig proces, som kun tager få minutter.<br></br> Som udbyder af finansielle tjenesteydelser, er vi forpligtede til at bede om supplerende dokumentation for udvalgte fakturaer. Dette forekommer primært ved relationer, hvor Moneyflow ikke tidligere har været benyttet. </mj-text>
-                <mj-button href="{{ request_confirmation }}  ">Anmod om bekræftelse</mj-button>
+                <mj-button href="{{ request_confirmation_url }}  ">Anmod om bekræftelse</mj-button>
     <mj-text padding-top="32px">Har vi ikke modtaget en bekræftelse fra din kunde inden den {{ expiration_date }}, vil fakturaen blive annulleret. Din kunde modtager ikke fakturaen, hvis den annulleres. </mj-text>
         </mj-column>
 </mj-section>
