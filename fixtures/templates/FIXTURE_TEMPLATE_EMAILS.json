@@ -1512,5 +1512,45 @@
             "test_context": null,
             "test_email_recipient": null
         }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "994a53ce-5e3e-4fd0-9953-8b69fe5c9d9d",
+        "fields": {
+            "created_at": "2022-07-14T12:13:01.452Z",
+            "created_by": null,
+            "modified_at": "2022-07-14T12:13:01.452Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Din betaling af fakturanr. {{ invoice_number }}",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
+            "language": "DA",
+            "identifier": "UPCOMING_NOTICE_AION_FUND",
+            "platform": "E-conomic",
+            "platforms": "[\"PLATFORM_ECONOMIC\"]",
+            "test_context": null,
+            "test_email_recipient": null
+        }
+    },
+    {
+        "model": "message_service.emailtemplate",
+        "pk": "8e901664-04b4-4857-96bf-023dd69f559b",
+        "fields": {
+            "created_at": "2022-07-14T12:13:01.452Z",
+            "created_by": null,
+            "modified_at": "2022-07-14T12:13:01.452Z",
+            "modified_by": null,
+            "html_template": "",
+            "text_template": "",
+            "subject": "Your payment of inovice no. {{ invoice_number }}",
+            "from_email": "\"Moneyflow.io\" <support@moneyflow.io>",
+            "language": "EN",
+            "identifier": "UPCOMING_NOTICE_AION_FUND",
+            "platform": "E-conomic",
+            "platforms": "[\"PLATFORM_ECONOMIC\"]",
+            "test_context": null,
+            "test_email_recipient": null
+        }
     }
 ]
