@@ -146,7 +146,7 @@
             		     font-family="Roboto, sans-serif">
               As a friendly reminder, the invoice is due {{ due_date }}. If you are not resposible for payment of this invoice, please forward this email to the appropriate person.<br></br>
 
-<b>Additional information about this invoice </b><br><mj-text <br><br>As we are cooperating with Aion Bank SA, they are the controller of your personal data. They will process it to purchase the resulting receivables mentioned in the email. Read more <a class="link-nostyle" href="https://www.moneyflow.io/da/receivables-terms">here.</a></mj-text>
+<b>Additional information about this invoice </b><mj-text <br><br>As we are cooperating with Aion Bank SA, they are the controller of your personal data. They will process it to purchase the resulting receivables mentioned in the email. Read more <a class="link-nostyle" href="https://www.moneyflow.io/da/receivables-terms">here.</a></mj-text>
 
 
           	</mj-text>

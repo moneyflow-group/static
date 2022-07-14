@@ -144,7 +144,7 @@ Kære {{ payer_company_name }}, <br/><br/>Vi skriver til dig for at gøre opmær
             		     padding="0"
             		     font-family="Roboto, sans-serif">
               Til høflig orientering forfalder fakturaen d. {{ due_date }}. Hvis ikke du er ansvarlig for betalingen af denne faktura, så videresend gerne denne mail til rette vedkommende.</br></br>
-<b>Supplerende oplysninger om denne faktura</b><br>
+<b>Supplerende oplysninger om denne faktura</b>
 <mj-text <br><br>Da vi samarbejder med Aion Bank SA, er de dataansvarlige for dine personoplysninger. De vil håndtere denne i forbindelse med køb af de tilgodehavender, der er nævnt i e-mailen. Læs mere <a class="link-nostyle" href="https://www.moneyflow.io/en/receivables-terms">her.</a></mj-text>
 
 
