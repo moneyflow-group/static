@@ -6,7 +6,7 @@
 <!-- {{ company_name }} 	  Name of a seller company-->
 <!-- {{ invoice_number }}   Invoice number on the factored invoice-->
 <!-- {{ platform_name }} 		Platform where the seller is onboarded--> 
-<!-- {{ payout_amount }} 	  Invoice amount minus fee and VAT---> 
+<!-- {{ factoring_amount }} 	  Invoice amount minus fee and VAT---> 
   
 <mj-head>
 <mj-title>POST_SALE_DA</mj-title>
@@ -80,7 +80,7 @@
 <mj-wrapper css-class="border-top">
 <mj-section css-class="section">
 		<mj-column>
-				<mj-text>Kære {{ company_name }} <br><br>Tak fordi du bruger en Moneyflow service. Vedhæftet denne e-mail er kvitteringen for faktura nr. {{ invoice_number }}.<br><br>Vi er glade for at kunne informere dig om, at det fulde beløb {{ payout_amount }} vil bliver overført til din bankkonto indenfor 2 timer.
+				<mj-text>Kære {{ company_name }} <br><br>Tak fordi du bruger en Moneyflow service. Vedhæftet denne e-mail er kvitteringen for faktura nr. {{ invoice_number }}.<br><br>Vi er glade for at kunne informere dig om, at det fulde beløb {{ factoring_amount }} vil bliver overført til din bankkonto indenfor 2 timer.
         </mj-text>
 		</mj-column>
 </mj-section>
