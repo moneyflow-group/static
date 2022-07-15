@@ -6,7 +6,7 @@
 <!-- {{ company_name }} 	  Name of a seller company-->
 <!-- {{ invoice_number }}   Invoice number on the factored invoice-->
 <!-- {{ platform_name }} 		Platform where the seller is onboarded--> 
-<!-- {{ payout_amount }} 	  Invoice amount minus fee and VAT---> 
+<!-- {{ factoring_amount }} 	  Invoice amount minus fee and VAT---> 
   
 <mj-head>
 <mj-title>POST_SALE_ENG</mj-title>
@@ -80,7 +80,7 @@
 <mj-wrapper css-class="border-top">
 <mj-section css-class="section">
 		<mj-column>
-				<mj-text>Dear {{ company_name }}, <br><br>Thank you for using Invoice Funding. Attached to this email is the receipt for invoice no. {{ invoice_number }}.<br><br>We are happy to inform you that the total amount, {{ payout_amount }}, will be transferred to your bank account within 2 hours.
+				<mj-text>Dear {{ company_name }}, <br><br>Thank you for using Invoice Funding. Attached to this email is the receipt for invoice no. {{ invoice_number }}.<br><br>We are happy to inform you that the total amount, {{ factoring_amount }}, will be transferred to your bank account within 2 hours.
         </mj-text>
 		</mj-column>
 </mj-section>

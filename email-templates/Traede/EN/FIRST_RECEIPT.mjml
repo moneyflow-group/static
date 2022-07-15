@@ -2,7 +2,7 @@
 <!--SUBJECT: Receipt for invoice no. {{ invoice_number }}--> 
 <!-- {{ invoice_number }} 		Invoice number-->
 <!-- {{ company_name }} 			Name of seller company-->
-<!-- {{ payout_amount }} 			Payout amount-->
+<!-- {{ factoring_amount }} 			Payout amount-->
 <mj-head>
 <mj-title>Receipt-EN</mj-title>
   <mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:600"/>
@@ -74,7 +74,7 @@
 <mj-wrapper css-class="border-top">
 <mj-section css-class="section">
 		<mj-column>
-				<mj-text> Dear {{ company_name }},<br></br>Attached to this email is the receipt for invoice no. {{ invoice_number }} sent with Instant Payment.<br></br>The total amount: {{ payout_amount }} kr. will soon be tranferred to your bank account.<br></br> Approve your entry directly from traede by following the link below. We have already prepared it, so it only needs a few clicks from you.</mj-text>
+				<mj-text> Dear {{ company_name }},<br></br>Attached to this email is the receipt for invoice no. {{ invoice_number }} sent with Instant Payment.<br></br>The total amount: {{ factoring_amount }} kr. will soon be tranferred to your bank account.<br></br> Approve your entry directly from traede by following the link below. We have already prepared it, so it only needs a few clicks from you.</mj-text>
         <mj-button href="https://secure.traede.com/accounting/journals/">Approve entry in traede</mj-button>
 		</mj-column>
 </mj-section>
