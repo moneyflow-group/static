@@ -81,7 +81,7 @@
 <mj-wrapper css-class="border-top">
 <mj-section css-class="section">
 		<mj-column>
-				<mj-text>Dear {{ payer_company_name }},<br><br>As you are aware, Moneyflow is used on invoice no. {{ invoce_number }}. In case you have not already noticed the invoice payment information, you can see the payment details below.</mj-text>
+				<mj-text>Dear {{ payer_company_name }},<br><br>As you are aware, Moneyflow is used on invoice no. {{ invoice_number }}. In case you have not already noticed the invoice payment information, you can see the payment details below.</mj-text>
 
 
 

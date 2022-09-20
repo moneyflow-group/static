@@ -81,7 +81,7 @@
 <mj-wrapper css-class="border-top">
 <mj-section css-class="section">
 		<mj-column>
-				<mj-text>Kære {{ payer_company_name }}<br><br>Som du ved, er Moneyflow blevet brugt på faktura nr. {{ invoce_number }}. Hvis du ikke allerede har set fakturaens betalingsoplysninger, kan du se dem nedenfor.<br></mj-text>
+				<mj-text>Kære {{ payer_company_name }}<br><br>Som du ved, er Moneyflow blevet brugt på faktura nr. {{ invoice_number }}. Hvis du ikke allerede har set fakturaens betalingsoplysninger, kan du se dem nedenfor.<br></mj-text>
 
 
 
