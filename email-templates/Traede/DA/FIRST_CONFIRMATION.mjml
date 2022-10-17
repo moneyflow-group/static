@@ -54,7 +54,7 @@
  					</mj-style>
 
   		<!--Preview text-->
- 			<mj-preview>Kære {{ company_name }}, Jeg hedder Anton og er ansvarlig for kundeservice i teamet bag Invoice Funding.</mj-preview> 
+ 			<mj-preview>Kære {{ company_name }}, Jeg hedder Mary og er ansvarlig for kundeservice i teamet bag Invoice Funding.</mj-preview> 
 </mj-head>
 
 <mj-body background-color="#F1F1F1">
@@ -77,7 +77,7 @@
 <mj-wrapper css-class="border-top">
 <mj-section css-class="section">
 		<mj-column>
-				<mj-text>Kære {{ company_name }} <br><br>Jeg hedder Anton og er ansvarlig for kundeservice hos Moneyflow. Jeg er her for at sørge for, at du får den bedst mulige oplevelse med vores service.<br><br>Først og fremmest vil vi gerne sige tak for at du har valgt, at bruge vores service. Vi er rigtig glade for at have dig om bord. <br><br>
+				<mj-text>Kære {{ company_name }} <br><br>Jeg hedder Mary og er ansvarlig for kundeservice hos Moneyflow. Jeg er her for at sørge for, at du får den bedst mulige oplevelse med vores service.<br><br>Først og fremmest vil vi gerne sige tak for at du har valgt, at bruge vores service. Vi er rigtig glade for at have dig om bord. <br><br>
 Da det er første gang du bruger tjenesten, skal nogle af oplysningerne på fakturaen bekræftes. Du vil blive kontaktet, hvis der opstår behov for afklarende spørgsmål.<br><br>Du kan altid følge med i statussen på dine fakturaer, ved at klikke på knappen nedenfor. Du modtager også en kvittering, så snart den er godkendt.
         </mj-text>
              <mj-button href="Approved payers page">Se fakturastatus</mj-button>	

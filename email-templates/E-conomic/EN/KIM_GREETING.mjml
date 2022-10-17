@@ -73,7 +73,7 @@
 <mj-wrapper css-class="border-top">
 <mj-section css-class="section">
 		<mj-column>
-				<mj-text> Dear {{ company_name }},<br></br>My name is Kim Ulf, and I am the director and founder of the company behind Instant Payment. I just wanted to take a moment to give you a proper welcome.<br></br> Now when it's the first time you are using Instant Payment, I know that it can be a little nervous that we are handeling the communication with your customer. However, I can guarantee you that it is some incredibly talented people who take care of it - among others, Camilla, whom you greeted in the last email.<br></br>In the meantime, you can have a look at your personal status page to see which other customer you can use Instant Payment on.</mj-text>
+				<mj-text> Dear {{ company_name }},<br></br>My name is Kim Ulf, and I am the director and founder of the company behind Instant Payment. I just wanted to take a moment to give you a proper welcome.<br></br> Now when it's the first time you are using Instant Payment, I know that it can be a little nervous that we are handeling the communication with your customer. However, I can guarantee you that it is some incredibly talented people who take care of it - among others, Mary, whom you greeted in the last email.<br></br>In the meantime, you can have a look at your personal status page to see which other customer you can use Instant Payment on.</mj-text>
         <mj-button href="{{ status_page }}">See available customers</mj-button>	
 		</mj-column>
 </mj-section>

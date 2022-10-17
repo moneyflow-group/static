@@ -75,7 +75,7 @@
 <mj-wrapper css-class="border-top">
 <mj-section css-class="section">
 		<mj-column>
-				<mj-text> Kære {{ company_name }}<br></br>Camilla her igen.<br></br>Vi vil egentlig bare informere dig om, at din kunde, {{ payer_company_name }}, har betalt fakturaen, {{ invoice_number }}, som du overdrog til os.<br></br> Vi har haft en mega god oplevelse med din kunde, og vi vil gerne gribe chancen for at gøre dig opmærksom på, at du kan slå Straksindbetaling til for alle fakturaer til {{ payer_company_name }}. Det kan forhåbentligt gøre både dit og vores administrative arbejde endnu nemmere. <br></br>Hvis du klikker på knappen nedenfor, kan du ved siden af <b>{{ payer_company_name }}</b> trykke på <b>Redigér</b> > <b>Øvrigt</b> > og markere afkrydsningsfeltet <b>Aktivér Straksindbetaling</b>, og tjenesten er derefter automatisk slået til, næste gang du opretter en faktura til denne kunde.</mj-text>
+				<mj-text> Kære {{ company_name }}<br></br>Mary her igen.<br></br>Vi vil egentlig bare informere dig om, at din kunde, {{ payer_company_name }}, har betalt fakturaen, {{ invoice_number }}, som du overdrog til os.<br></br> Vi har haft en mega god oplevelse med din kunde, og vi vil gerne gribe chancen for at gøre dig opmærksom på, at du kan slå Straksindbetaling til for alle fakturaer til {{ payer_company_name }}. Det kan forhåbentligt gøre både dit og vores administrative arbejde endnu nemmere. <br></br>Hvis du klikker på knappen nedenfor, kan du ved siden af <b>{{ payer_company_name }}</b> trykke på <b>Redigér</b> > <b>Øvrigt</b> > og markere afkrydsningsfeltet <b>Aktivér Straksindbetaling</b>, og tjenesten er derefter automatisk slået til, næste gang du opretter en faktura til denne kunde.</mj-text>
         <mj-button href="{{ status_page }}">Se din kundeliste</mj-button>
  				<mj-image align="center"
                   padding="0px"
@@ -104,7 +104,7 @@
 		<mj-column>
     		<mj-text>Hvis du har spørgsmål vedrørende vores tjeneste, er du altid meget velkommen til at række ud til nogen af os på <a href="tel:004589877036" class="link-body">+45 89 87 70 36 </a>(hverdage 08-17), eller ved blot at besvare denne e-mail.<br></br>De bedste hilsner,</mj-text>
  				<mj-text font-family="Montserrat"
-                 color="#5B93F0">Camilla, Ansvarlig for kundeservice</mj-text>
+                 color="#5B93F0">Mary, Ansvarlig for kundeservice</mj-text>
 		</mj-column>
 </mj-section>
 </mj-wrapper>

@@ -50,7 +50,7 @@
           .link-footer { color: #808494;}
  					</mj-style>
  					<!--Preview text-->
- 					<mj-preview>Dear {{ company_name }}, My name is Camilla and I am resposible for the Customer Care team behind Instant Payment.</mj-preview>
+ 					<mj-preview>Dear {{ company_name }}, My name is Mary and I am resposible for the Customer Care team behind Instant Payment.</mj-preview>
 </mj-head>
 
 <mj-body background-color="#E4F0F7">
@@ -74,7 +74,7 @@
 <mj-wrapper css-class="border-top">
 <mj-section css-class="section">
 		<mj-column>
-				<mj-text> Dear {{ company_name }},<br></br>My name is Camilla and I am resposible for the Customer Care team behind Instant Payment. I am here to make sure that you get the best possible experience with our service.<br></br>First of all, we want to say thank you for choosing to use Instant Payment. We are very happy to have you on board.<br></br> Before we transfer the money to your account for invoice no. {{ invoice_number }}, we must approve the details on the invoice. You can always follow the status of your invoices by clicking the button below. You will also receive a receipt as soon as it gets approved.</mj-text>
+				<mj-text> Dear {{ company_name }},<br></br>My name is Mary and I am resposible for the Customer Care team behind Instant Payment. I am here to make sure that you get the best possible experience with our service.<br></br>First of all, we want to say thank you for choosing to use Instant Payment. We are very happy to have you on board.<br></br> Before we transfer the money to your account for invoice no. {{ invoice_number }}, we must approve the details on the invoice. You can always follow the status of your invoices by clicking the button below. You will also receive a receipt as soon as it gets approved.</mj-text>
         <mj-button href="{{ status_page }}">See status on my invoice</mj-button>
 		</mj-column>
 </mj-section>
@@ -95,14 +95,14 @@
  				<mj-image align="center"
                   padding="0px"
                   width="180px"
-                  src="https://moneyflow-group.github.io/static/email-templates/Camilla-polaroid-EN.png"
-                  alt="Camilla">
+                  src="https://moneyflow-group.github.io/static/email-templates/Mary-email-img.png"
+                  alt="Mary">
 		</mj-column>
 <!-- Right column -->
 		<mj-column>
 				<mj-text padding-top="16px">If you have any questions regarding our service, you are always very welcome to reach out to me or one of my skilled colleagues on <a href="tel:004589877036" class="link-body">+45 89 87 70 36 </a>(weekdays 8am-5pm), or by simply replying to this email. <br></br>Best regards,</mj-text>
     		<mj-text font-family="Montserrat"
-                 color="#5B93F0">Camilla and the team </mj-text>
+                 color="#5B93F0">Mary and the team </mj-text>
 		</mj-column>
 </mj-section>
 </mj-wrapper>

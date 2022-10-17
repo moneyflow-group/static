@@ -80,7 +80,7 @@
 <mj-wrapper css-class="border-top">
 <mj-section css-class="section">
 		<mj-column>
-				<mj-text>Kære {{ company_name }}<br><br> Mit navn er Kim Ulf og jeg er stifter og direktør i Moneyflow. Jeg vil gerne have lov, at byde dig ordentlig velkommen.<br><br>Nu, hvor det er første gang, at du bruger vores service, ved jeg, at det kan være en smule uvant at lade andre stå for kommunikationen med din kunde. Jeg kan dog garantere, at vores folk både er høflige og professionelle, som det var tilfældet med Anton, der introducerede sig selv i foregående e-mail.<br><br>Jeg håber, at du er tilfreds med vores service, og hvis du er interesseret i at bruge os igen i fremtiden, så kan du allerede nu se, hvilke af dine kunder, der opfylder vores krav. </mj-text>
+				<mj-text>Kære {{ company_name }}<br><br> Mit navn er Kim Ulf og jeg er stifter og direktør i Moneyflow. Jeg vil gerne have lov, at byde dig ordentlig velkommen.<br><br>Nu, hvor det er første gang, at du bruger vores service, ved jeg, at det kan være en smule uvant at lade andre stå for kommunikationen med din kunde. Jeg kan dog garantere, at vores folk både er høflige og professionelle, som det var tilfældet med Mary, der introducerede sig selv i foregående e-mail.<br><br>Jeg håber, at du er tilfreds med vores service, og hvis du er interesseret i at bruge os igen i fremtiden, så kan du allerede nu se, hvilke af dine kunder, der opfylder vores krav. </mj-text>
         <mj-button href="Approved payers page">Se tilgængelige kunder</mj-button>	
 		</mj-column>
 </mj-section>
