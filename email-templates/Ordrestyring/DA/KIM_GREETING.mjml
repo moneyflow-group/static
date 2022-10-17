@@ -73,7 +73,7 @@
 <mj-wrapper css-class="border-top">
 <mj-section css-class="section">
 		<mj-column>
-				<mj-text> Kære {{ company_name }}<br></br>Mit navn er Kim Ulf, og jeg er direktør og stifter af Moneyflow. Jeg tænkte, at jeg lige ville byde dig ordentligt velkommen.<br></br>Nu hvor det er første gang, du bruger vores service, ved jeg, at det måske er lidt nervepirrende, at det er os, der står for kommunikationen med din kunde. Jeg kan dog garantere dig, at det er nogle ufatteligt dygtige folk, der tager sig af det - bl.a. Anton, som du hilste på i sidste email.<br></br> I mellemtiden kan du på din personlige statusside se hvilke andre kunder, du kan anvende vores service på.</mj-text>
+				<mj-text> Kære {{ company_name }}<br></br>Mit navn er Kim Ulf, og jeg er direktør og stifter af Moneyflow. Jeg tænkte, at jeg lige ville byde dig ordentligt velkommen.<br></br>Nu hvor det er første gang, du bruger vores service, ved jeg, at det måske er lidt nervepirrende, at det er os, der står for kommunikationen med din kunde. Jeg kan dog garantere dig, at det er nogle ufatteligt dygtige folk, der tager sig af det - bl.a. Mary, som du hilste på i sidste email.<br></br> I mellemtiden kan du på din personlige statusside se hvilke andre kunder, du kan anvende vores service på.</mj-text>
         <mj-button href="{{ status_page_da }}">Se tilgængelige kunder</mj-button>	
 		</mj-column>
 </mj-section>

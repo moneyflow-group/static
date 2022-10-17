@@ -51,7 +51,7 @@
           .link-footer { color: #808494;}
  					</mj-style>
  					<!--Preview text-->      
- 					<mj-preview>Jeg hedder Anton og er ansvarlig for kundeservice i teamet bag Moneyflow</mj-preview> 
+ 					<mj-preview>Jeg hedder Mary og er ansvarlig for kundeservice i teamet bag Moneyflow</mj-preview> 
 </mj-head>
 
 <mj-body background-color="#E4F0F7">
@@ -74,7 +74,7 @@
 <mj-wrapper css-class="border-top">
 <mj-section css-class="section">
 		<mj-column>
-				<mj-text> Kære {{ company_name }},<br><br>Jeg hedder Anton og er ansvarlig for kundeservice hos Moneyflow. Jeg er her for at sørge for, at du får den bedst mulige oplevelse med vores service.<br><br>Først og fremmest vil vi gerne bare sige tak, fordi du har valgt at bruge vores service. Vi er vildt glade for at have dig ombord.<br><br>Inden vi sender pengene til din konto for faktura nr. {{ invoice_number }}, skal vi først lige godkende detaljerne på fakturaen. Du kan altid følge med i statussen på dine fakturaer ved at klikke på knappen nedenfor. Du modtager også en kvittering, så snart den er godkendt.</mj-text>
+				<mj-text> Kære {{ company_name }},<br><br>Jeg hedder Mary og er ansvarlig for kundeservice hos Moneyflow. Jeg er her for at sørge for, at du får den bedst mulige oplevelse med vores service.<br><br>Først og fremmest vil vi gerne bare sige tak, fordi du har valgt at bruge vores service. Vi er vildt glade for at have dig ombord.<br><br>Inden vi sender pengene til din konto for faktura nr. {{ invoice_number }}, skal vi først lige godkende detaljerne på fakturaen. Du kan altid følge med i statussen på dine fakturaer ved at klikke på knappen nedenfor. Du modtager også en kvittering, så snart den er godkendt.</mj-text>
         <mj-button href="{{ status_page }}">Se status på min faktura</mj-button>	
 		</mj-column>
 </mj-section>
@@ -94,7 +94,7 @@
 				<mj-text>Hvis du har spørgsmål vedrørende vores tjeneste, er du altid meget velkommen til at række ud til mig eller en af mine dygtige kollegaer på <a href="tel:004589877036" class="link-body">+45 89 87 70 36 </a>(hverdage 08-17), eller ved blot at besvare denne e-mail.<br></br>De bedste hilsner</mj-text>
     		<mj-text font-family="Montserrat"
                  font-weight="600"
-                 color="#5B93F0">Anton og resten af teamet</mj-text>
+                 color="#5B93F0">Mary og resten af teamet</mj-text>
 		</mj-column>
 </mj-section>
 </mj-wrapper>

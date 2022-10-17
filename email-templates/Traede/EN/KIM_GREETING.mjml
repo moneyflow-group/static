@@ -80,7 +80,7 @@
 <mj-wrapper css-class="border-top">
 <mj-section css-class="section">
 		<mj-column>
-				<mj-text>Dear {{ company_name }},<br><br> My name is Kim Ulf, and I am the founder as well as the director of  Moneyflow. I just wanted to take a moment to give you a proper welcome.<br><br>Being a first-time user of our services, I understand that leaving the customer contact to us might feel a bit unusual. I can, however, guarantee you that our team is both polite and professional, as was the case with Anton, to whom you were introduced in the previous email.<br><br>I hope that you are satisfied with our service, and if you are interested in using us again in the future, you can already see which of your customers are eligible. </mj-text>
+				<mj-text>Dear {{ company_name }},<br><br> My name is Kim Ulf, and I am the founder as well as the director of  Moneyflow. I just wanted to take a moment to give you a proper welcome.<br><br>Being a first-time user of our services, I understand that leaving the customer contact to us might feel a bit unusual. I can, however, guarantee you that our team is both polite and professional, as was the case with Mary, to whom you were introduced in the previous email.<br><br>I hope that you are satisfied with our service, and if you are interested in using us again in the future, you can already see which of your customers are eligible. </mj-text>
         <mj-button href="Approved payers page">View eligible customers</mj-button>	
 		</mj-column>
 </mj-section>

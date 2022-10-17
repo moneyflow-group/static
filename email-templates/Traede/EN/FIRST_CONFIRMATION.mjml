@@ -54,7 +54,7 @@
  					</mj-style>
 
   		<!--Preview text-->
- 			<mj-preview>Dear {{ company_name }}, My name is Anton and I am resposible for the Customer Care team behind Invoice Funding.</mj-preview> 
+ 			<mj-preview>Dear {{ company_name }}, My name is Mary and I am resposible for the Customer Care team behind Invoice Funding.</mj-preview> 
 </mj-head>
 
 <mj-body background-color="#F1F1F1">
@@ -77,7 +77,7 @@
 <mj-wrapper css-class="border-top">
 <mj-section css-class="section">
 		<mj-column>
-				<mj-text>Dear {{ company_name }}, <br><br>My name is Anton and I am responsible on the Moneyflow Customer Care Team. I am here to make sure that you get the best possible experience with our service.<br><br> We want to thank you for using a Moneyflow service for invoice no. {{ invoice_number }}. We are happy to have you on board. <br><br>As you are using the service for the first time, some details of the invoice will be verified. You will be contacted if there are any issues.<br><br>If you want to follow the status of your invoice, please click the button below.
+				<mj-text>Dear {{ company_name }}, <br><br>My name is Mary and I am responsible on the Moneyflow Customer Care Team. I am here to make sure that you get the best possible experience with our service.<br><br> We want to thank you for using a Moneyflow service for invoice no. {{ invoice_number }}. We are happy to have you on board. <br><br>As you are using the service for the first time, some details of the invoice will be verified. You will be contacted if there are any issues.<br><br>If you want to follow the status of your invoice, please click the button below.
         </mj-text>
              <mj-button href="Approved payers page">See status</mj-button>	
 		</mj-column>
