@@ -1,0 +1,153 @@
+<mjml>
+<!--SUBJECT: You have successfully used {{ product_name }} on invoice no. {{ invoice_number }}--> 
+  
+<!--ATTACHEMENT: Fee receipt--> 
+  
+<!-- {{ invoice_number }} 					Invoice number-->
+<!-- {{ payer_company_name }} }} 		Company name of payer-->
+<!-- {{ product_name }} 						Platform product name (i.e Straksindbetaling/OS Strax)-->
+<!-- {{ payout_amount }} 						Payout amount-->
+<!-- {{ platform }} 								Name of platform (i.e e-conomic/Dinero)-->
+  
+<mj-head>
+<mj-title>Post_sale-EN</mj-title>
+  <mj-font name="work-sans" href="https://fonts.googleapis.com/css?family=work+sans:400,700"/>
+  <mj-breakpoint width="480px"/>
+  		<mj-attributes>
+					<mj-section padding="56px 80px"
+                      background-color="#ffffff"/>
+			    <mj-wrapper padding="0"/>
+ 				  <mj-text font-family="work-sans, sans-serif"
+                   font-weight="400"
+                   line-height="24px"
+                   font-size="16px"
+                   color="#252525"
+                   padding="0"/>
+          <mj-divider padding="0"
+                      border-width="2px"
+                      border-style="dashed"
+                      border-color="#F1F1F1"/>
+			</mj-attributes>
+  				<!--padding on mobile-->
+          <mj-style>  
+          @media only screen and (max-width:480px) { 
+        	.section td {
+          padding-left:8px!important;
+          padding-right:8px!important;
+          padding-top:16px!important;
+          padding-bottom:16px!important;
+        		}		
+      		}
+          </mj-style>
+  				<!--Top border-->
+      		<mj-style inline="inline">
+          .border-top {
+ 				  border-top: 4px solid #999999;
+					}
+          </mj-style>
+      		<!--Removing underscore on links-->
+					<mj-style inline="inline">
+  				.link-body { color: #0023f5; text-decoration: none; font-weight: 400; }
+          .link-footer { color: #999999; }
+          .headline-big { font-size: 32px; line-height: 120%; font-weight: 700; }
+          .p-XL { font-size: 24px; line-height: 140%;}
+          .disclaimer { font-size: 14px; color: #999999; }
+ 					</mj-style>
+
+  		<!--Preview text-->
+ 			<mj-preview>You have successfully sent invoice no. {{ invoice_number }} to {{ payer_company_name }} with {{ product_name }}.</mj-preview> 
+</mj-head>
+
+<mj-body background-color="#F1F1F1">
+  
+<mj-raw><!-- Top bar --></mj-raw>
+<mj-wrapper>
+		<mj-section padding="0"
+                background-color="#F1F1F1">
+    		<mj-column>
+        		<mj-table padding="16px 4px 8px 4px">
+            		<tr height="40px">
+            				<td>
+            						<img style="height:100%; display:block"
+                             src="https://moneyflow-group.github.io/static/email-templates/moneyflow-logo-email.png"
+                             alt="moneyflow" />
+            				</td>
+<!-- For partner logo
+                  	<td>
+            						<img style="height:100%; display:block"
+                             align="right"
+                             src="{{ partner_logo_url }}"
+                             alt="{{ partner }}" />
+            				</td>
+-->
+            		</tr>
+            </mj-table>
+       	</mj-column>
+    </mj-section>
+</mj-wrapper>
+
+<mj-raw><!-- Body --></mj-raw>
+<mj-wrapper css-class="border-top">
+<mj-section css-class="section"background-url="https://moneyflow-group.github.io/static/email-templates/success-confetti.png">
+		<mj-column>
+				<mj-text><a class="headline-big">Success!</a><br></br>You have successfully sent invoice no. <b>{{ invoice_number }}</b> to <b>{{ payer_company_name }}</b> with {{ product_name }}.<br></br>
+          <b>{{ payout_amount }}</b> will be sent to your bank account shortly. <br></br>
+          A receipt for the fee is attached to this email, and the bookkeeping will be prepared for you in {{ platform }} once the money is in your account. <br></br> <a class="disclaimer">Payouts are executed within two hours on weekdays 8am-5pm. Outside these hours,  the money will be transferred the following weekday.</a></mj-text>
+		</mj-column>
+</mj-section>
+</mj-wrapper>
+
+<!-- Divider -->
+<mj-section padding="0">
+		<mj-column>
+				<mj-divider>
+		</mj-column>
+</mj-section>
+  
+<mj-raw><!-- Body --></mj-raw>
+<mj-wrapper>
+<mj-section css-class="section">
+		<mj-column>
+      	<mj-text><b>What will my customer experience?</b><br>The payment information on the invoice has been updated with a bank account connected to Moneyflow. So your customer will receive and pay the invoice, just like normal, by following the information stated on the invoice.<br></br><b>What if there is an error on the invoice?</b><br>We know that mistakes can happen. If you or your customer realises that there is an issue on the invoice, please contact our customer support and we will guide you through the process.<br></br><b>For more information</b><br><a class="link-body" href="https://www.moneyflow.io/en/faq">Read our FAQ</a></mj-text>
+  	</mj-column>
+</mj-section>
+</mj-wrapper>
+
+<!-- Divider -->
+<mj-section padding="0">
+		<mj-column>
+				<mj-divider>
+		</mj-column>
+</mj-section>
+  
+<mj-raw><!-- Contact --></mj-raw>
+<mj-wrapper>
+<mj-section css-class="section">
+		<mj-column>
+    		<mj-text>If you have any questions, you are always very welcome to reach out to us on <a href="tel:004589877036" class="link-body">+45 89 87 70 36 </a>(weekdays 8am-5pm), or by simply replying to this email.<br></br>Best regards,<br><b>Moneyflow</b></mj-text>
+		</mj-column>
+</mj-section>
+</mj-wrapper>
+  
+<!-- Divider -->
+<mj-section padding="0">
+		<mj-column>
+				<mj-divider/>
+		</mj-column>
+</mj-section>
+
+<mj-raw><!-- Disclaimer --></mj-raw>
+<mj-wrapper>
+<mj-section padding="24px 0px 24px 0px"
+            background-color="#F1F1F1">
+		<mj-column>
+    		<mj-text align="center"
+                 color="#999999"
+                 font-size="12px"
+                 padding="0px 8px 0px 8px"> Sent by <a class="link-footer" href="https://moneyflow.io/en">Moneyflow Group A/S</a><br> Moneyflow Group A/S | Langebrogade 4, 1411 Copenhagen | CVR 39228327 <br>Moneyflow is registered and regulated by the <a class="link-footer" href="https://www.dfsa.dk/">Danish FSA</a></mj-text>
+		</mj-column>
+</mj-section>
+</mj-wrapper> 
+  
+</mj-body>
+</mjml>

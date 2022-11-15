@@ -1,0 +1,148 @@
+<mjml>
+<!--SUBJECT: {{ product_name }} er nu sat op!--> 
+  
+<!--ATTACHEMENT: Signed main agreement--> 
+  
+<!-- {{ company_name }} }} 					Company name of seller-->
+<!-- {{ product_name }} 						Platform product name (i.e Straksindbetaling/OS Strax)-->
+  
+<mj-head>
+<mj-title>Onboarding</mj-title>
+  <mj-font name="work-sans" href="https://fonts.googleapis.com/css?family=work+sans:400,700"/>
+  <mj-breakpoint width="480px"/>
+  		<mj-attributes>
+					<mj-section padding="56px 80px"
+                      background-color="#ffffff"/>
+			    <mj-wrapper padding="0"/>
+ 				  <mj-text font-family="work-sans, sans-serif"
+                   font-weight="400"
+                   line-height="24px"
+                   font-size="16px"
+                   color="#252525"
+                   padding="0"/>
+          <mj-divider padding="0"
+                      border-width="2px"
+                      border-style="dashed"
+                      border-color="#F1F1F1"/>
+			</mj-attributes>
+  				<!--padding on mobile-->
+          <mj-style>  
+          @media only screen and (max-width:480px) { 
+        	.section td {
+          padding-left:8px!important;
+          padding-right:8px!important;
+          padding-top:16px!important;
+          padding-bottom:16px!important;
+        		}		
+      		}
+          </mj-style>
+  				<!--Top border-->
+      		<mj-style inline="inline">
+          .border-top {
+ 				  border-top: 4px solid #999999;
+					}
+          </mj-style>
+      		<!--Removing underscore on links-->
+					<mj-style inline="inline">
+  				.link-body { color: #0023f5; text-decoration: none; font-weight: 400; }
+          .link-footer { color: #999999; }
+          .headline-big { font-size: 24px; line-height: 120%; font-weight: 700; }
+          .disclaimer { font-size: 14px; color: #999999; }
+ 					</mj-style>
+
+  		<!--Preview text-->
+ 			<mj-preview>Du har færdiggjort opsætningen af {{ product_name }} for {{ company_name }}, og du kan nu finansiere fakturaer med Moneyflow.</mj-preview> 
+</mj-head>
+
+<mj-body background-color="#F1F1F1">
+
+
+<mj-raw><!-- Top bar --></mj-raw>
+<mj-wrapper>
+		<mj-section padding="0"
+                background-color="#F1F1F1">
+    		<mj-column>
+        		<mj-table padding="16px 4px 8px 4px">
+            		<tr height="40px">
+            				<td>
+            						<img style="height:100%; display:block"
+                             src="https://moneyflow-group.github.io/static/email-templates/moneyflow-logo-email.png"
+                             alt="moneyflow" />
+            				</td>
+<!-- For partner logo
+                  	<td>
+            						<img style="height:100%; display:block"
+                             align="right"
+                             src="{{ partner_logo_url }}"
+                             alt="{{ partner }}" />
+            				</td>
+-->
+            		</tr>
+            </mj-table>
+       	</mj-column>
+    </mj-section>
+</mj-wrapper>
+
+<mj-raw><!-- Body --></mj-raw>
+<mj-wrapper css-class="border-top">
+<mj-section css-class="section">
+		<mj-column>
+				<mj-text><a class="headline-big">{{ product_name }} er nu sat op!</a><br></br>Du har færdiggjort opsætningen af {{ product_name }} for {{ company_name }}, og du kan nu finansiere fakturaer med Moneyflow.<br></br> Vedhæftet denne e-mail er den hovedaftale, du har underskrevet.</a></mj-text>
+		</mj-column>
+</mj-section>
+</mj-wrapper>
+
+<!-- Divider -->
+<mj-section padding="0">
+		<mj-column>
+				<mj-divider>
+		</mj-column>
+</mj-section>
+  
+<mj-raw><!-- Body --></mj-raw>
+<mj-wrapper>
+<mj-section css-class="section">
+		<mj-column>
+      	<mj-text><b>Hvordan fungerer {{ product_name }}?</b><br>Når du udsteder en faktura via Moneyflow, overtager vi det juridiske ejerskab af fakturaen. Dette omfatter risiko, administration og eventuel betalingsopfølgning med din kunde. Det betyder, at du kan bruge tid på det, du er bedst til, nemlig at drive din virksomhed.<br></br><b>Hvad er oplevelsen for min kunde?</b><br>Vi opdaterer automatisk betalingsoplysningerne på fakturaen, inden vi sender den. Det betyder, at din kunde modtager og betaler fakturaen som normalt ved at følge de oplysninger, der står på fakturaen.<br></br><b>Hvornår kan jeg bruge {{ product_name }}?</b><br>Hver gang du opretter en ny fakurakladde, foretages der en automatisk vudering for at se, om fakturaen opfylder kravene til fakturafinansiering. Du kan allerede nu se, hvilke af dine kunder der kvalificerer sig til {{ product_name }} på din <a class="link-body" href="http://flow.moneyflow.io/da/accounts/auth0/login/">Moneyflow-konto.</a><br></br><b>For flere oplysninger</b><br><a class="link-body" href="https://www.moneyflow.io/da/faq">Læs vores FAQ</a></mj-text>
+  	</mj-column>
+</mj-section>
+</mj-wrapper>
+
+<!-- Divider -->
+<mj-section padding="0">
+		<mj-column>
+				<mj-divider>
+		</mj-column>
+</mj-section>
+  
+<mj-raw><!-- Contact --></mj-raw>
+<mj-wrapper>
+<mj-section css-class="section">
+		<mj-column>
+    		<mj-text>Hvis du har spørgsmål, er du altid meget velkommen til at kontakte os på <a href="tel:004589877036" class="link-body">+45 89 87 70 36 </a>(hverdage kl. 8-17) eller ved blot at svare på denne e-mail.<br></br>De bedste hilsner,<br><b>Moneyflow</b></mj-text>
+		</mj-column>
+</mj-section>
+</mj-wrapper>
+  
+<!-- Divider -->
+<mj-section padding="0">
+		<mj-column>
+				<mj-divider/>
+		</mj-column>
+</mj-section>
+
+<mj-raw><!-- Disclaimer --></mj-raw>
+<mj-wrapper>
+<mj-section padding="24px 0px 24px 0px"
+            background-color="#F1F1F1">
+		<mj-column>
+    		<mj-text align="center"
+                 color="#999999"
+                 font-size="12px"
+                 padding="0px 8px 0px 8px"> Sendt af <a class="link-footer" href="https://moneyflow.io/">Moneyflow Group A/S</a><br> Moneyflow Group A/S | Langebrogade 4, 1411 København K | CVR 39228327 <br>Moneyflow er registreret og reguleret af <a class="link-footer" href="https://www.finanstilsynet.dk/">Finanstilsynet</a></mj-text>
+		</mj-column>
+</mj-section>
+</mj-wrapper> 
+  
+</mj-body>
+</mjml>
