@@ -1,0 +1,156 @@
+<mjml>
+<!--SUBJECT: Du har modtaget faktura nr. {{ invoice_number }} fra {{ company_name }}--> 
+  
+<!--ATTACHEMENT: Actual invoice--> 
+  
+<!-- {{ company_name }} }} 					Company name of seller-->
+<!-- {{ payer_company_name }} }} 		Company name of payer-->
+<!-- {{ invoice_number }} 					Invoice number-->
+<!-- {{ invoice_amount }} 					Original amount of invoice-->
+<!-- {{ bank }} 										Bank the invoice is to be paid to-->
+<!-- {{ reg_no }} 									Reg no. the invoice is to be paid to-->
+<!-- {{ acc_no }} 									Acc no. the invoice is to be paid to-->
+<!-- {{ due_date }} 								Due date of the invoice-->
+  
+<mj-head>
+<mj-title>Invoice_payer-DA</mj-title>
+  <mj-font name="work-sans" href="https://fonts.googleapis.com/css?family=work+sans:400,700"/>
+  <mj-breakpoint width="480px"/>
+  		<mj-attributes>
+					<mj-section padding="56px 80px"
+                      background-color="#ffffff"/>
+			    <mj-wrapper padding="0"/>
+ 				  <mj-text font-family="work-sans, sans-serif"
+                   font-weight="400"
+                   line-height="24px"
+                   font-size="16px"
+                   color="#252525"
+                   padding="0"/>
+          <mj-divider padding="0"
+                      border-width="2px"
+                      border-style="dashed"
+                      border-color="#F1F1F1"/>
+			</mj-attributes>
+  				<!--padding on mobile-->
+          <mj-style>  
+          @media only screen and (max-width:480px) { 
+        	.section td {
+          padding-left:8px!important;
+          padding-right:8px!important;
+          padding-top:16px!important;
+          padding-bottom:16px!important;
+        		}		
+      		}
+          </mj-style>
+  				<!--Top border-->
+      		<mj-style inline="inline">
+          .border-top {
+ 				  border-top: 4px solid #999999;
+					}
+          </mj-style>
+      		<!--Removing underscore on links-->
+					<mj-style inline="inline">
+  				.link-body { color: #0023f5; text-decoration: none; font-weight: 400; }
+          .link-footer { color: #999999; }
+          .headline-big { font-size: 24px; line-height: 120%; font-weight: 700; }
+          .disclaimer { font-size: 14px; color: #999999; }
+ 					</mj-style>
+
+  		<!--Preview text-->
+ 			<mj-preview>Som faktureringspartner til {{ company_name }} sender vi dig faktura nr. {{ invoice_number }} vedhæftet denne e-mail.</mj-preview> 
+</mj-head>
+
+<mj-body background-color="#F1F1F1">
+
+
+<mj-raw><!-- Top bar --></mj-raw>
+<mj-wrapper>
+		<mj-section padding="0"
+                background-color="#F1F1F1">
+    		<mj-column>
+        		<mj-table padding="16px 4px 8px 4px">
+            		<tr height="40px">
+            				<td>
+            						<img style="height:100%; display:block"
+                             src="https://moneyflow-group.github.io/static/email-templates/moneyflow-logo-email.png"
+                             alt="moneyflow" />
+            				</td>
+<!-- For partner logo
+                  	<td>
+            						<img style="height:100%; display:block"
+                             align="right"
+                             src="{{ partner_logo_url }}"
+                             alt="{{ partner }}" />
+            				</td>
+-->
+            		</tr>
+            </mj-table>
+       	</mj-column>
+    </mj-section>
+</mj-wrapper>
+
+<mj-raw><!-- Body --></mj-raw>
+<mj-wrapper css-class="border-top">
+<mj-section css-class="section">
+		<mj-column>
+				<mj-text>Kære {{ payer_company_name }}.<br></br>Som faktureringspartner til <b>{{ company_name }}</b> sender vi dig faktura nr. <b>{{ invoice_number }}</b> vedhæftet denne e-mail.<br></br>Det fulde fakturabeløb på <b>{{ invoice_amount }}</b> skal betales til:<br></br>
+Bank: <b>{{ bank }}</b><br>Registreringsnummer: <b>{{ reg_no }}</b><br>Kontonummer: <b>{{ acc_ no }}</b><br></br>
+Fakturaen forfalder d. <b>{{ due_date }}</b></mj-text>
+		</mj-column>
+</mj-section>
+</mj-wrapper>
+
+<!-- Divider -->
+<mj-section padding="0">
+		<mj-column>
+				<mj-divider>
+		</mj-column>
+</mj-section>
+  
+<mj-raw><!-- Body --></mj-raw>
+<mj-wrapper>
+<mj-section css-class="section">
+		<mj-column>
+      	<mj-text><b>Denne faktura er blevet sendt med Moneyflow for mere fleksible betalinger</b><br></br>Denne faktura er overført til Moneyflow og kan derfor kun betales med frigørende virkning til Moneyflow Group A/S.<br></br> <a class="link-body" href="https://www.moneyflow.io/">Læs mere om Moneyflow</a></mj-text>
+  	</mj-column>
+</mj-section>
+</mj-wrapper>
+
+<!-- Divider -->
+<mj-section padding="0">
+		<mj-column>
+				<mj-divider>
+		</mj-column>
+</mj-section>
+  
+<mj-raw><!-- Contact --></mj-raw>
+<mj-wrapper>
+<mj-section css-class="section">
+		<mj-column>
+    		<mj-text>Hvis indholdet af denne faktura ikke er korrekt, bedes du sende en e-mail med en forklaring på problemet til <b>{{ company_name }}</b> med <b>support@moneyflow.io</b> som CC på e-mailen.</mj-text>
+		</mj-column>
+</mj-section>
+</mj-wrapper>
+  
+<!-- Divider -->
+<mj-section padding="0">
+		<mj-column>
+				<mj-divider/>
+		</mj-column>
+</mj-section>
+
+<mj-raw><!-- Disclaimer --></mj-raw>
+<mj-wrapper>
+<mj-section padding="24px 0px 24px 0px"
+            background-color="#F1F1F1">
+		<mj-column>
+    		<mj-text align="center"
+                 color="#999999"
+                 font-size="12px"
+                 padding="0px 8px 0px 8px"> Sendt af <a class="link-footer" href="https://moneyflow.io/">Moneyflow Group A/S</a> på vegne af {{ company_name }}<br> Moneyflow Group A/S | Langebrogade 4, 1411 København K | CVR 39228327 <br>Moneyflow er registreret og reguleret af <a class="link-footer" href="https://www.finanstilsynet.dk/">Finanstilsynet</a></mj-text>
+		</mj-column>
+</mj-section>
+</mj-wrapper> 
+  
+</mj-body>
+</mjml>

@@ -1,0 +1,152 @@
+<mjml>
+<!--SUBJECT: Du har brugt {{ product_name }} på faktura nr. {{ invoice_number }}--> 
+  
+<!--ATTACHEMENT: Fee receipt--> 
+  
+<!-- {{ invoice_number }} 					Invoice number-->
+<!-- {{ payer_company_name }} }} 		Company name of payer-->
+<!-- {{ product_name }} 						Platform product name (i.e Straksindbetaling/OS Strax)-->
+<!-- {{ payout_amount }} 						Payout amount-->
+<!-- {{ platform }} 								Name of platform (i.e e-conomic/Dinero)-->
+  
+<mj-head>
+<mj-title>Post_sale-DA</mj-title>
+  <mj-font name="work-sans" href="https://fonts.googleapis.com/css?family=work+sans:400,700"/>
+  <mj-breakpoint width="480px"/>
+  		<mj-attributes>
+					<mj-section padding="56px 80px"
+                      background-color="#ffffff"/>
+			    <mj-wrapper padding="0"/>
+ 				  <mj-text font-family="work-sans, sans-serif"
+                   font-weight="400"
+                   line-height="24px"
+                   font-size="16px"
+                   color="#252525"
+                   padding="0"/>
+          <mj-divider padding="0"
+                      border-width="2px"
+                      border-style="dashed"
+                      border-color="#F1F1F1"/>
+			</mj-attributes>
+  				<!--padding on mobile-->
+          <mj-style>  
+          @media only screen and (max-width:480px) { 
+        	.section td {
+          padding-left:8px!important;
+          padding-right:8px!important;
+          padding-top:16px!important;
+          padding-bottom:16px!important;
+        		}		
+      		}
+          </mj-style>
+  				<!--Top border-->
+      		<mj-style inline="inline">
+          .border-top {
+ 				  border-top: 4px solid #999999;
+					}
+          </mj-style>
+      		<!--Removing underscore on links-->
+					<mj-style inline="inline">
+  				.link-body { color: #0023f5; text-decoration: none; font-weight: 400; }
+          .link-footer { color: #999999; }
+          .headline-big { font-size: 32px; line-height: 120%; font-weight: 700; }
+          .p-XL { font-size: 24px; line-height: 140%;}
+          .disclaimer { font-size: 14px; color: #999999; }
+ 					</mj-style>
+
+  		<!--Preview text-->
+ 			<mj-preview>Du har sendt faktura nr. {{ invoice_number }} til {{ payer_company_name }} med {{ product_name }}.</mj-preview> 
+</mj-head>
+
+<mj-body background-color="#F1F1F1">
+  
+<mj-raw><!-- Top bar --></mj-raw>
+<mj-wrapper>
+		<mj-section padding="0"
+                background-color="#F1F1F1">
+    		<mj-column>
+        		<mj-table padding="16px 4px 8px 4px">
+            		<tr height="40px">
+            				<td>
+            						<img style="height:100%; display:block"
+                             src="https://moneyflow-group.github.io/static/email-templates/moneyflow-logo-email.png"
+                             alt="moneyflow" />
+            				</td>
+<!-- For partner logo
+                  	<td>
+            						<img style="height:100%; display:block"
+                             align="right"
+                             src="{{ partner_logo_url }}"
+                             alt="{{ partner }}" />
+            				</td>
+-->
+            		</tr>
+            </mj-table>
+       	</mj-column>
+    </mj-section>
+</mj-wrapper>
+
+<mj-raw><!-- Body --></mj-raw>
+<mj-wrapper css-class="border-top">
+<mj-section css-class="section"background-url="https://moneyflow-group.github.io/static/email-templates/success-confetti.png">
+		<mj-column>
+				<mj-text><a class="headline-big">Succes!</a><br></br>Du har sendt faktura nr. <b>{{ invoice_number }}</b> til <b>{{ payer_company_name }}</b> med {{ product_name }}.<br></br>
+          <b>{{ payout_amount }}</b> vil blive overført til din bankkonto inden længe. <br></br>En kvittering for gebyret er vedhæftet denne e-mail, og bogføringen vil blive klargjort for dig i {{ platform }}, når pengene er på din konto. <br></br> <a class="disclaimer">Udbetalinger foretages inden for 2 timer på hverdage kl. 8.00-17.00. Uden for dette tidsrum vil pengene blive overført den følgende hverdag.</a></mj-text>
+		</mj-column>
+</mj-section>
+</mj-wrapper>
+
+<!-- Divider -->
+<mj-section padding="0">
+		<mj-column>
+				<mj-divider>
+		</mj-column>
+</mj-section>
+  
+<mj-raw><!-- Body --></mj-raw>
+<mj-wrapper>
+<mj-section css-class="section">
+		<mj-column>
+      	<mj-text><b>Hvad er oplevelsen for min kunde?</b><br>Betalingsoplysningerne på fakturaen er blevet opdateret med en bankkonto, der er tilhører Moneyflow. Din kunde modtager og betaler fakturaen som normalt ved at følge de oplysninger, der står på fakturaen.<br></br><b>Hvad sker der, hvis der er en fejl på fakturaen?</b><br>Vi ved, at der kan ske fejl. Hvis du eller din kunde opdager, at  fakturaen indeholder fejl, bedes du kontakte vores kundeservice, så vil vi guide dig gennem processen.<br></br><b>For flere oplysninger</b><br><a class="link-body" href="https://www.moneyflow.io/da/faq">Læs vores FAQ</a></mj-text>
+  	</mj-column>
+</mj-section>
+</mj-wrapper>
+
+<!-- Divider -->
+<mj-section padding="0">
+		<mj-column>
+				<mj-divider>
+		</mj-column>
+</mj-section>
+  
+<mj-raw><!-- Contact --></mj-raw>
+<mj-wrapper>
+<mj-section css-class="section">
+		<mj-column>
+    		<mj-text>Hvis du har spørgsmål, er du altid meget velkommen til at kontakte os på <a href="tel:004589877036" class="link-body">+45 89 87 70 36 </a>(hverdage kl. 8-17) eller ved blot at svare på denne e-mail.<br></br>De bedste hilsner,<br><b>Moneyflow</b></mj-text>
+		</mj-column>
+</mj-section>
+</mj-wrapper>
+  
+<!-- Divider -->
+<mj-section padding="0">
+		<mj-column>
+				<mj-divider/>
+		</mj-column>
+</mj-section>
+
+<mj-raw><!-- Disclaimer --></mj-raw>
+<mj-wrapper>
+<mj-section padding="24px 0px 24px 0px"
+            background-color="#F1F1F1">
+		<mj-column>
+    		<mj-text align="center"
+                 color="#999999"
+                 font-size="12px"
+                 padding="0px 8px 0px 8px"> Sendt af <a class="link-footer" href="https://moneyflow.io/">Moneyflow Group A/S</a><br> Moneyflow Group A/S | Langebrogade 4, 1411 København K | CVR 39228327 <br>Moneyflow er registreret og reguleret af <a class="link-footer" href="https://www.finanstilsynet.dk/">Finanstilsynet</a></mj-text>
+		</mj-column>
+</mj-section>
+</mj-wrapper> 
+  
+</mj-body>
+</mjml>
