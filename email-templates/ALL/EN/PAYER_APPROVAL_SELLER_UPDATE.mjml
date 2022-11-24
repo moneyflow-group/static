@@ -1,0 +1,136 @@
+<mjml>
+
+<!--SUBJECT:  {{ payer_company_name }} has not validated invoice no. {{ invoice_number}} yet-->
+
+<!--ATTACHEMENT: Invoice PFD with a watermark--> 
+
+<!-- {{ invoice_number }}      		Number of the invoice -->
+<!-- {{ payer_company_name }}  		Name of the payer company-->
+<!-- {{ expiration_date }}     		Invoice date + 7 days-->
+<!-- {{ contact_person_email }} 	Email that was entered by the seller on the request PA page -->
+  
+
+<mj-head>
+<mj-title>Seller update-EN</mj-title>
+  <mj-font name="work-sans" href="https://fonts.googleapis.com/css?family=work+sans:400,700"/>
+  <mj-breakpoint width="480px"/>
+  		<mj-attributes>
+					<mj-section padding="56px 80px"
+                      background-color="#ffffff"/>
+			    <mj-wrapper padding="0"/>
+ 				  <mj-text font-family="work-sans, sans-serif"
+                   font-weight="400"
+                   line-height="24px"
+                   font-size="16px"
+                   color="#252525"
+                   padding="0"/>
+          <mj-divider padding="0"
+                      border-width="2px"
+                      border-style="dashed"
+                      border-color="#F1F1F1"/>
+			</mj-attributes>
+  				<!--padding on mobile-->
+          <mj-style>  
+          @media only screen and (max-width:480px) { 
+        	.section td {
+          padding-left:8px!important;
+          padding-right:8px!important;
+          padding-top:16px!important;
+          padding-bottom:16px!important;
+        		}		
+      		}
+          </mj-style>
+  				<!--Top border-->
+      		<mj-style inline="inline">
+          .border-top {
+ 				  border-top: 4px solid #999999;
+					}
+          </mj-style>
+      		<!--Removing underscore on links-->
+					<mj-style inline="inline">
+  				.link-body { color: #0023f5; text-decoration: none; font-weight: 400; }
+          .link-footer { color: #999999; }
+          .headline-big { font-size: 24px; line-height: 120%; font-weight: 700; }
+          .disclaimer { font-size: 14px; color: #999999; }
+ 					</mj-style>
+
+  		<!--Preview text-->
+ 			<mj-preview>We are still waiting for {{ payer_company_name }} to approve the details on invoice no. {{ invoice_number }}.</mj-preview> 
+</mj-head>
+
+<mj-body background-color="#F1F1F1">
+
+
+<mj-raw><!-- Top bar --></mj-raw>
+<mj-wrapper>
+		<mj-section padding="0"
+                background-color="#F1F1F1">
+    		<mj-column>
+        		<mj-table padding="16px 4px 8px 4px">
+            		<tr height="40px">
+            				<td>
+            						<img style="height:100%; display:block"
+                             src="https://moneyflow-group.github.io/static/email-templates/moneyflow-logo-email.png"
+                             alt="moneyflow" />
+            				</td>
+<!-- For partner logo
+                  	<td>
+            						<img style="height:100%; display:block"
+                             align="right"
+                             src="{{ partner_logo_url }}"
+                             alt="{{ partner }}" />
+            				</td>
+-->
+            		</tr>
+            </mj-table>
+       	</mj-column>
+    </mj-section>
+</mj-wrapper>
+
+<mj-raw><!-- Body --></mj-raw>
+<mj-wrapper css-class="border-top">
+<mj-section css-class="section">
+		<mj-column>
+				<mj-text><a class="headline-big">{{ payer_company_name }} has still not validated the details on invoice no. {{ invoice_number}}</a><br></br>We are still waiting for {{ payer_company_name }} to approve the details on invoice no. {{ invoice_number }}<br></br>We have sent a request and a reminder to {{ contact_person_email }}, but have not heard back from them. You are welcome to reach out to your customer and ask them to finalise the process.<br></br>If we have not received an answer by {{ expiration_date }}, we might not be able to fund this invoice.</be></a></mj-text>
+		</mj-column>
+</mj-section>
+</mj-wrapper>
+
+<!-- Divider -->
+<mj-section padding="0">
+		<mj-column>
+				<mj-divider>
+		</mj-column>
+</mj-section>
+
+<mj-raw><!-- Contact --></mj-raw>
+<mj-wrapper>
+<mj-section css-class="section">
+		<mj-column>
+    		<mj-text>If you have any questions, you are always very welcome to reach out to us on <a href="tel:004589877036" class="link-body">+45 89 87 70 36 </a>(weekdays 8am-5pm), or by simply replying to this email.<br></br>Best regards,<br><b>Moneyflow</b></mj-text>
+		</mj-column>
+</mj-section>
+</mj-wrapper>
+
+<!-- Divider -->
+<mj-section padding="0">
+		<mj-column>
+				<mj-divider/>
+		</mj-column>
+</mj-section>
+
+<mj-raw><!-- Disclaimer --></mj-raw>
+<mj-wrapper>
+<mj-section padding="24px 0px 24px 0px"
+            background-color="#F1F1F1">
+		<mj-column>
+    		<mj-text align="center"
+                 color="#999999"
+                 font-size="12px"
+                 padding="0px 8px 0px 8px"> Sent by <a class="link-footer" href="https://moneyflow.io/en">Moneyflow Group A/S</a><br> Moneyflow Group A/S | Langebrogade 4, 1411 Copenhagen | CVR 39228327 <br>Moneyflow is registered and regulated by the <a class="link-footer" href="https://www.dfsa.dk/">Danish FSA</a></mj-text>
+		</mj-column>
+</mj-section>
+</mj-wrapper> 
+
+</mj-body>
+</mjml>

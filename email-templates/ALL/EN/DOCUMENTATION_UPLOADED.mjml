@@ -3,7 +3,7 @@
   
   
 <!-- {{ company_name }}		Variable description-->
-<!-- {{ erp_invoice_number }} Invoice number in the erp->
+<!-- {{ erp_invoice_number }} Invoice number in the erp-->
 <!-- {{ payer_company_name }}		Variable description-->
 <!-- {{ status_page }} 	URL for the draft offer page where the user upladed the documents to -->
 
