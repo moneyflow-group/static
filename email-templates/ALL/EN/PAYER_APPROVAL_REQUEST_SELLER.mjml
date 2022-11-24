@@ -1,7 +1,7 @@
 <mjml>
-<!--SUBJECT:  Information regards invoice {{ invoice_number }}   to {{ payer_company_name }}->
+<!--SUBJECT:  Information regards invoice {{ invoice_number }}   to {{ payer_company_name }}-->
 
-<!--ATTACHEMENT: Invoice PFD with a watermark-> 
+<!--ATTACHEMENT: Invoice PFD with a watermark--> 
 
 <!-- {{ company_name }}          Name of seller company-->
 <!-- {{ invoice_number }}      Number of the invoice -->

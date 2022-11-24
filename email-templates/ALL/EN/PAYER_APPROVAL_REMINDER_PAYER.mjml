@@ -1,5 +1,5 @@
 <mjml>
-<!--SUBJECT:Reminder: Draft invoice from {{ company_name }} requires review
+<!--SUBJECT:Reminder: Draft invoice from {{ company_name }} requires review -->
 <!-- {{ company_name }}          Name of seller company-->
 <!-- {{ invoice_number }}      Number of the invoice -->
 <!-- {{ payer_company_name }}     Name of the payer company-->
