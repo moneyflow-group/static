@@ -46,7 +46,7 @@
 					<mj-style inline="inline">
   				.link-body { color: #0023f5; text-decoration: none; font-weight: 400; }
           .link-footer { color: #999999; }
-          .headline-big { font-size: 24px; line-height: 120%; font-weight: 700; }
+          .headline-big { font-size: 24px; line-height: 120%; font-weight: 700; color:#252525; }
           .disclaimer { font-size: 14px; color: #999999; }
  					</mj-style>
 
