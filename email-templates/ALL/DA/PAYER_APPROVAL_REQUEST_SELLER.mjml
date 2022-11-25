@@ -1,16 +1,16 @@
 <mjml>
-<!--SUBJECT:  Information vedr. faktura {{ invoice_number }} to {{ payer_company_name }}->
 
-<!--ATTACHEMENT: Invoice PFD with a watermark-> 
+<!--SUBJECT: Bekræftelse mangler for faktura nr. {{ invoice_number }} til {{ payer_company_name }}-->
 
-<!-- {{ company_name }}          Name of seller company-->
-<!-- {{ invoice_number }}      Number of the invoice -->
-<!-- {{ payer_company_name }}     Name of the payer company-->
-<!-- {{ expiration_date }}   invoice date + 5 days-->
-<!-- {{ request_confirmation_url }}       Blue button - link to the seller payer approval request page Shoukd say "Request confirmation"-->
-  
+<!--ATTACHEMENT: Invoice PFD with a watermark--> 
+
+<!-- {{ invoice_number }}      				Number of the invoice -->
+<!-- {{ payer_company_name }}  				Name of the payer company-->
+<!-- {{ expiration_date }}     				Invoice date + 7 days-->
+<!-- {{ request_confirmation_url }}  	URL to seller payer approval request page -->
+
 <mj-head>
-<mj-title>PA Request to the seller DA</mj-title>
+<mj-title>Seller request DA</mj-title>
   <mj-font name="work-sans" href="https://fonts.googleapis.com/css?family=work+sans:400,700"/>
   <mj-breakpoint width="480px"/>
   		<mj-attributes>
@@ -23,14 +23,14 @@
                    font-size="16px"
                    color="#252525"
                    padding="0"/>
-          <mj-button background-color="#0023f5"
+         	<mj-button background-color="#0023f5"
                      font-family="work-sans, sans-serif"
                      font-size="16px"
                      font-weight="400"
                      line-height="24px"
                      border-radius="200px"
                      inner-padding="10px 32px 10px 32px"
-                     padding-top="56px"/>
+                     padding-top="32px"/>
           <mj-divider padding="0"
                       border-width="2px"
                       border-style="dashed"
@@ -40,8 +40,8 @@
           <mj-style>  
           @media only screen and (max-width:480px) { 
         	.section td {
-          padding-left:10px!important;
-          padding-right:10px!important;
+          padding-left:8px!important;
+          padding-right:8px!important;
         		}		
       		}
           </mj-style>
@@ -55,46 +55,69 @@
 					<mj-style inline="inline">
   				.link-body { color: #0023f5; text-decoration: none; font-weight: 400; }
           .link-footer { color: #999999; }
+          .headline-big { font-size: 24px; line-height: 120%; font-weight: 700; color: #252525; }
+          .disclaimer { font-size: 14px; color: #999999; }
  					</mj-style>
 
   		<!--Preview text-->
- 			<mj-preview>Din faktura {{ invoice_number }} til {{ payer_company_name }} kræver lidt ekstra behandling, før vi kan udbetale den til dig.</mj-preview> 
+ 			<mj-preview>Før vi kan gennemføre godkendelsen af faktura nr {{ invoice_number }} til {{ payer_company_name }}, har vi behov for at få bekræftet fakturaen hos din kunde.</mj-preview> 
 </mj-head>
 
 <mj-body background-color="#F1F1F1">
 
+
 <mj-raw><!-- Top bar --></mj-raw>
 <mj-wrapper>
-<mj-section padding="0"
-            background-color="#F1F1F1">
-		<mj-column>
-    		<mj-image width="170px"
-                  align="left"
-                  padding="16px 0px 16px 4px"
-                  src="https://moneyflow-group.github.io/static/email-templates/moneyflow_logo.png"
-                  alt="moneyflow"/>
-		</mj-column>
-</mj-section>
+		<mj-section padding="0"
+                background-color="#F1F1F1">
+    		<mj-column>
+        		<mj-table padding="16px 4px 8px 4px">
+            		<tr height="40px">
+            				<td>
+            						<img style="height:100%; display:block"
+                             src="https://moneyflow-group.github.io/static/email-templates/moneyflow-logo-email.png"
+                             alt="moneyflow" />
+            				</td>
+            		</tr>
+            </mj-table>
+       	</mj-column>
+    </mj-section>
 </mj-wrapper>
 
 <mj-raw><!-- Body --></mj-raw>
 <mj-wrapper css-class="border-top">
 <mj-section css-class="section">
 		<mj-column>
-				  <mj-text> Kære {{ company_name }}<br></br>
-         Vi vil gerne have bekræftet enkelte oplysninger vedrørende faktura nr. {{ invoice_number }} til {{ payer_company_name }}. Det er en nem og hurtig proces, som kun tager få minutter.<br></br> Som udbyder af finansielle tjenesteydelser, er vi forpligtede til at bede om supplerende dokumentation for udvalgte fakturaer. Dette forekommer primært ved relationer, hvor Moneyflow ikke tidligere har været benyttet. </mj-text>
-                <mj-button href="{{ request_confirmation_url }}  ">Anmod om bekræftelse</mj-button>
-    <mj-text padding-top="32px">Har vi ikke modtaget en bekræftelse fra din kunde inden den {{ expiration_date }}, vil fakturaen blive annulleret. Din kunde modtager ikke fakturaen, hvis den annulleres. </mj-text>
-        </mj-column>
+				<mj-text><a class="headline-big">Fakturaen, du har sendt til  {{ payer_company_name }}, kræver bekræftelse, før den kan udbetales.</a><br></br>Før vi kan gennemføre godkendelsen af faktura nr {{ invoice_number }} til {{ payer_company_name }}, har vi behov for at få bekræftet fakturaen hos din kunde.</mj-text>  
+  				<mj-button href="{{ request_confirmation_url }}">Anmod om bekræftelse</mj-button>
+       <mj-text><br>Vær venligst opmærksom på at hvis vi ikke har modtaget bekræftelsen fra {{ payer_company_name }} d. <b>{{ expiration_date }}</b>, kan vi formentlig ikke godkende denne faktura.</mj-text>
+		</mj-column>
 </mj-section>
 </mj-wrapper>
+
 <!-- Divider -->
 <mj-section padding="0">
 		<mj-column>
 				<mj-divider>
 		</mj-column>
 </mj-section>
-  
+
+<mj-raw><!-- Body --></mj-raw>
+<mj-wrapper>
+<mj-section css-class="section">
+		<mj-column>
+      	<mj-text><b>Hvorfor skal denne faktura godkendes?</b><br>Som finansiel udbyder, er vi forpligtede til at indhente dokumentation på enkelte fakturaer. Dette er som regelt for at validere nye kundeforhold hvor Moneyflow endnu ikke har været involveret, eller ved særligt store fakturabeløb.<br></br><b>Hvordan fungerer godkendelsesprocessen?</b><br>Når du klikker ‘Anmod om bekræftelse’ i denne mail, får du mulighed for at sende en anmodning til din kunde. Når vi har modtaget godkendelsen fra dem, vil vi fortsætte med udbetalingen til din konto.</mj-text>
+  	</mj-column>
+</mj-section>
+</mj-wrapper>
+
+<!-- Divider -->
+<mj-section padding="0">
+		<mj-column>
+				<mj-divider>
+		</mj-column>
+</mj-section>
+
 <mj-raw><!-- Contact --></mj-raw>
 <mj-wrapper>
 <mj-section css-class="section">
@@ -121,7 +144,7 @@
 		<mj-column>
     		<mj-text align="center"
                  color="#999999"
-                 font-size="12px"> Sendt af <a class="link-footer" href="https://moneyflow.io/en">Moneyflow Group A/S</a> <br> Moneyflow Group A/S | Langebrogade 4, 1411 København K  | CVR 39228327 <br>Moneyflow er registreret og reguleret af <a class="link-footer" href="https://www.dfsa.dk/">Danish FSA</a></mj-text>
+                 font-size="12px"> Sendt af <a class="link-footer" href="https://moneyflow.io/en">Moneyflow Group A/S</a> <br> Moneyflow Group A/S | Langebrogade 4, 1411 København K  | CVR 39228327 <br>Moneyflow er registreret og reguleret af <a class="link-footer" href="https://www.finanstilsynet.dk/">Finanstilsynet</a></mj-text>
 		</mj-column>
 </mj-section>
 </mj-wrapper>
