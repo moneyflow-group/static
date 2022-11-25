@@ -1,16 +1,17 @@
 <mjml>
 
-  <!--SUBJECT:  Bekræftelse mangler for faktura nr. {{ invoice_number }} til {{ payer_company_name }}->
+<!--SUBJECT: {{ payer_company_name }} har ikke valideret faktura nr. {{ faktura_nummer}} endnu-->
 
-<!--ATTACHEMENT: Invoice PFD with a watermark-> 
+<!--ATTACHEMENT: Invoice PFD with a watermark--> 
 
-<!-- {{ invoice_number }}      Number of the invoice -->
-<!-- {{ payer_company_name }}  Name of the payer company-->
-<!-- {{ expiration_date }}     Invoice date + 7 days-->
-<!-- {{ request_validation }}  Blue button - link to the seller payer approval request page-->
+<!-- {{ invoice_number }}      		Number of the invoice -->
+<!-- {{ payer_company_name }}  		Name of the payer company-->
+<!-- {{ expiration_date }}     		Invoice date + 7 days-->
+<!-- {{ contact_person_email }} 	Email that was entered by the seller on the request PA page -->
+  
 
 <mj-head>
-<mj-title>Seller request DA</mj-title>
+<mj-title>Seller update-DA</mj-title>
   <mj-font name="work-sans" href="https://fonts.googleapis.com/css?family=work+sans:400,700"/>
   <mj-breakpoint width="480px"/>
   		<mj-attributes>
@@ -23,14 +24,6 @@
                    font-size="16px"
                    color="#252525"
                    padding="0"/>
-         <mj-button background-color="#0023f5"
-                     font-family="work-sans, sans-serif"
-                     font-size="16px"
-                     font-weight="400"
-                     line-height="24px"
-                     border-radius="200px"
-                     inner-padding="10px 32px 10px 32px"
-                     padding-top="56px"/>
           <mj-divider padding="0"
                       border-width="2px"
                       border-style="dashed"
@@ -62,7 +55,7 @@
  					</mj-style>
 
   		<!--Preview text-->
- 			<mj-preview>Før vi kan gennemføre godkendelsen af faktura nr {{ invoice_number }} til {{ payer_company_name }}, har vi behov for at få bekræftet fakturaen hos din kunde.</mj-preview> 
+ 			<mj-preview>Vi afventer fortsat at {{ payer_company_name }} godkender oplysningerne på faktura nr {{ invoice_number }}.</mj-preview> 
 </mj-head>
 
 <mj-body background-color="#F1F1F1">
@@ -98,10 +91,7 @@
 <mj-wrapper css-class="border-top">
 <mj-section css-class="section">
 		<mj-column>
-				<mj-text><a class="headline-big">Fakturaen, du har sendt til  {{ payer_company_name }}, kræver bekræftelse, før den kan udbetales.</a><br></br>Før vi kan gennemføre godkendelsen af faktura nr {{ invoice_number }} til {{ payer_company_name }}, har vi behov for at få bekræftet fakturaen hos din kunde. </mj-text>  
-  <mj-button href="{{ request_validation }}">Anmod om bekræftelse</mj-button>
-     
-         <mj-text></a><br>Vær venligst opmærksom på at hvis vi ikke har modtaget bekræftelsen fra {{ payer_company_name }} d. <b>{{ expiration_date }}</b>, kan vi formentlig ikke godkende denne faktura</a></mj-text>
+				<mj-text><a class="headline-big">{{ payer_company_name }} har endnu ikke godkendt oplysningerne på faktura nr {{ invoice_number}}</a><br></br>Vi afventer fortsat at {{ payer_company_name }} godkender oplysningerne på faktura nr {{ invoice_number }}.<br></br>Vi har sendt en anmodning samt en påmindelse til {{ contact_person_email }}, men har endnu ikke hørt tilbage fra dem. Du er velkommen til at kontakte din kunde og bede dem godkende oplysningerne.<br></br>Såfremt vi ikke har modtaget en godkendelse før d. {{ expiration_date }}, vil vi ikke kunne udbetale beløbet for denne faktura.</be></a></mj-text>
 		</mj-column>
 </mj-section>
 </mj-wrapper>
@@ -113,23 +103,7 @@
 		</mj-column>
 </mj-section>
 
-<mj-raw><!-- Body --></mj-raw>
-<mj-wrapper>
-<mj-section css-class="section">
-		<mj-column>
-      	<mj-text><b>Hvorfor skal denne faktura godkendes?</b><br>Som finansiel udbyder, er vi forpligtede til at indhente dokumentation på enkelte fakturaer. Dette er som regelt for at validere nye kundeforhold hvor Moneyflow endnu ikke har været involveret, eller ved særligt store fakturabeløb.<br></br><b>Hvordan fungerer godkendelsesprocessen?</b><br>Når du klikker ‘Anmod om bekræftelse’ i denne mail, får du mulighed for at sende en anmodning til din kunde. Når vi har modtaget godkendelsen fra dem, vil vi fortsætte med udbetalingen til din konto.</a></mj-text>
-  	</mj-column>
-</mj-section>
-</mj-wrapper>
-
-<!-- Divider -->
-<mj-section padding="0">
-		<mj-column>
-				<mj-divider>
-		</mj-column>
-</mj-section>
-
-<mj-raw><!-- Contact --></mj-raw>
+  <mj-raw><!-- Contact --></mj-raw>
 <mj-wrapper>
 <mj-section css-class="section">
 		<mj-column>
