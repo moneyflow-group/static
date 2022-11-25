@@ -2,7 +2,7 @@
 
   <!--SUBJECT:  Validation needed for invoice no. {{ invoice_number }} to {{ payer_company_name }}->
 
-<!--ATTACHEMENT: Invoice PFD with a watermark--> 
+<!--ATTACHEMENT: Invoice PFD with a watermark-> 
 
 <!-- {{ invoice_number }}      Number of the invoice -->
 <!-- {{ payer_company_name }}  Name of the payer company-->
