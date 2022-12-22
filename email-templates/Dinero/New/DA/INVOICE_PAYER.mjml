@@ -94,7 +94,7 @@
 <mj-section css-class="section">
 		<mj-column>
 				<mj-text>Kære {{ payer_company_name }}.<br></br>Som faktureringspartner til <b>{{ company_name }}</b> sender vi dig faktura nr. <b>{{ invoice_number }}</b> vedhæftet denne e-mail.<br></br>Det fulde fakturabeløb på <b>{{ invoice_amount }}</b> skal betales til:<br></br>
-Bank: <b>{{ bank }}</b><br>Registreringsnummer: <b>{{ reg_no }}</b><br>Kontonummer: <b>{{ acc_ no }}</b><br></br>
+Bank: <b>{{ bank }}</b><br>Registreringsnummer: <b>{{ reg_no }}</b><br>Kontonummer: <b>{{ acc_no }}</b><br></br>
 Fakturaen forfalder d. <b>{{ due_date }}</b></mj-text>
 		</mj-column>
 </mj-section>
