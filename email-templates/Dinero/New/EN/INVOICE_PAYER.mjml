@@ -94,7 +94,7 @@
 <mj-section css-class="section">
 		<mj-column>
 				<mj-text>Dear {{ payer_company_name }}.<br></br>As an invoice partner to <b>{{ company_name }}</b>, we are sending you invoice no. <b>{{ invoice_number }}</b>, attached to this email.<br></br>The full invoice amount of <b>{{ invoice_amount }}</b>, is to be paid to:<br></br>
-Bank: <b>{{ bank }}</b><br>Registration no. <b>{{ reg_no }}</b><br>Account no. <b>{{ acc_ no }}</b><br></br>
+Bank: <b>{{ bank }}</b><br>Registration no. <b>{{ reg_no }}</b><br>Account no. <b>{{ acc_no }}</b><br></br>
 The invoice is due on <b>{{ due_date }}</b></mj-text>
 		</mj-column>
 </mj-section>
